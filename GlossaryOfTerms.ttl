@@ -339,7 +339,7 @@ source:
     a skos:Concept ;
     schema:name "SPINRulesVocab"@en ;
     skos:prefLabel "SPIN Inference Rules Vocabulary"@en ;
-    schema:comment """Vocabulary of terms that enable the creation of custom reasoning & inference rules using SPARQL CONSTRUCT queries. Fundamentally, this is the product of appling the combined prowess of RDF data definition language, SPARQL query language, and a Vocabulary to produce a modern variant of Datalog that has the added benefit of working naturally with the infrastructure provided by the underlying architecture of the World Wide Web."""@en ;
+    schema:comment """Vocabulary of terms that enable the creation of custom reasoning & inference rules using SPARQL CONSTRUCT queries. Fundamentally, this is the product of applying the combined prowess of RDF data definition language, SPARQL query language, and a Vocabulary to produce a modern variant of Datalog that has the added benefit of working naturally with the infrastructure provided by the underlying architecture of the World Wide Web."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#SpinRules"   ;
     schema:image <https://cdn-images-1.medium.com/max/1760/1*CJTkzYltA3w-h0kA7w4lQg.png> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
@@ -358,7 +358,7 @@ source:
     a skos:Concept ;
     schema:name "SHACLInferenceVocab"@en ;
     skos:prefLabel "SHACL Inference Rules Vocabulary"@en ;
-    schema:comment """Vocabulary of terms that enable the creation of custom reasoning & inference rules using SPARQL CONSTRUCT queries. In similar fashion to the SPIN Inference Rules Vocabulary, it leverages the combined prowess of RDF data definition language, SPARQL query language, and a Vocabulary of terms produce a modern variant of Datalog. It differs from SPIN's vocabulary by using a different namespace anbd including terms that allows the usew of curies in SPARQL CONSTRUCT statements used to create rules."""@en ;
+    schema:comment """Vocabulary of terms that enable the creation of custom reasoning & inference rules using SPARQL CONSTRUCT queries. In similar fashion to the SPIN Inference Rules Vocabulary, it leverages the combined prowess of RDF data definition language, SPARQL query language, and a Vocabulary of terms produce a modern variant of Datalog. It differs from SPIN's vocabulary by using a different namespace and including terms that allows the use of curies in SPARQL CONSTRUCT statements used to create rules."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#ShaclRules"   ;
     schema:image <https://pbs.twimg.com/media/DKGvHuNX0AAuKso.jpg> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
@@ -381,7 +381,7 @@ source:
     skos:altLabel "Line-Of-Business (LOB) Systems or Applications" ;
     schema:image <https://datachatter.files.wordpress.com/2015/02/pace-system-of-record-view.png> ;
     schema:description """Systems that focus on capture and analysis of data representing customers, orders, invoices, employees, accounts, etc.
-                          Typical examples include ERP, CRM, and HR systems (a/k/a Line Of Business Applications).
+                          Typical examples include ERP, CRM, and HR systems (also known as Line Of Business Applications).
                         """ ;
     skos:related <https://twitter.com/hashtag/RDBMS#this>,
                  <https://twitter.com/hashtag/OLTP#this>,
@@ -439,7 +439,7 @@ source:
 
 
 
-## Data Virtualizatation
+## Data Virtualization
 
 <http://data.openlinksw.com/oplweb/glossary-term/ConceptualDataVirtualization#this>
     a skos:Concept;
@@ -472,7 +472,7 @@ source:
                       privacy privileges of all EU citizens that must be adhered to by all solution providers
                       that collate personally identifiable information (e.g., Email Addresses, Driver's Licenses,
                       Passport Numbers, Social Security Numbers, and other identifiers that share similar
-                      identitty reconciliatory characteristics. )"""@en ;
+                      identity reconciliatory characteristics. )"""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#GDPR"   ;
     schema:image <http://www.innovateidentity.com/wp-content/uploads/2016/11/Data-protection3.jpg> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
@@ -510,7 +510,7 @@ source:
     schema:image <https://i.pinimg.com/originals/85/a3/94/85a3947077ef62896babe04985cbbd68.png>,
                  <https://i.pinimg.com/originals/f7/91/e8/f791e8d7131da860c6c197e83d773bba.png> ;
     schema:description """Information about disparate data sources that include personally identifiable information (PII)
-                          that's used for identity reconcilliation, e.g., explicit co-referencing using owl:sameAs
+                          that's used for identity reconciliation, e.g., explicit co-referencing using owl:sameAs
                           relationship type semantics or implicit co-referencing using owl:InverseFunctional relationship
                           type semantics """@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
@@ -577,7 +577,7 @@ skos:inScheme :this .
 <http://data.openlinksw.com/oplweb/glossary-term/PII#this>
 a skos:Concept;
 schema:name "PII" ;
-skos:altLabel "Personally Identifable Information"@en ;
+skos:altLabel "Personally Identifiable Information"@en ;
 skos:prefLabel "Personally Identifiable Information"@en ;
 schema:image <https://i.pinimg.com/originals/71/96/d2/7196d29bbb232c1c071ae3ef50809ab7.png> ;
 schema:description """Information that can inform data meshing (smushing) and/or entity relationship graph expansion (in
@@ -601,7 +601,7 @@ skos:inScheme :this .
 <https://www.linkedin.com/feed/update/urn:li:activity:6390269545386438656>
 a    schema:CreativeWork,
      foaf:Document ;
-schema:name "Demomnstrating PII Fluidity using Entity Relationship Type Semantics" ;
+schema:name "Demonstrating PII Fluidity using Entity Relationship Type Semantics" ;
 schema:image <https://i.pinimg.com/originals/71/96/d2/7196d29bbb232c1c071ae3ef50809ab7.png> ;
 skos:related   <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this>,
                <http://data.openlinksw.com/oplweb/product_feature/AtributeBasedAccessControls#this>,
@@ -683,7 +683,7 @@ schema:comment """Data abstraction that provides a unified and trusted view of d
                   of sources. Typically, this applies to both internal and external data sources. In all cases,
                   data transformation and semantic cleansing are critical challenges that always impact the quality
                   and utility of the final product, i.e., Reference Data that serves the trust and quality needs Data Science,
-                  Analytics, and Informatics practioners within the enterprise  ."""@en ;
+                  Analytics, and Informatics practitioners within the enterprise  ."""@en ;
 <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#MDM"   ;
 schema:image <https://virtuoso.openlinksw.com/images/virt-concept-2017.png> ;
 skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
@@ -718,7 +718,7 @@ dcterms:isReferencedBy source: .
   schema:name "Tag" ;
   wdrs:describedby  source: ;
   schema:comment """HTTP URI baseed Name that Identifies a Topic. For example
-                    Weblog Post topics (a/k/a Tweets) are/used to be identified (named)
+                    Weblog Post topics (also known as Tweets) are/used to be identified (named)
                     using tags. Unfortunately, this kind of identification was based on
                     literals as opposed to HTTP URIs which ultimately lead to emergence of
                     hashtags which are now broadly used across the Web and Internet, courtesy
@@ -736,7 +736,7 @@ dcterms:isReferencedBy source: .
   wdrs:describedby  source: ;
   skos:prefLabel "Hash Tag" ;
   schema:comment """HTTP URI baseed Name that Identifies a Topic. For example
-                    Twitter Post topics [a/k/a Tweets] are identified (named) on Twitter using
+                    Twitter Post topics [also known as Tweets] are identified (named) on Twitter using
                     hashtags. """@en ;
   skos:related <http://data.openlinksw.com/oplweb/glossary-term/WorldWideWeb#this>  ,
               <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -1118,7 +1118,7 @@ rdf:Property
   wdrs:describedby  source: ;
   schema:comment """A string based identifier used to denote (signify, name, or "refer to")
                     a JDBC accessible database item (Table, View, Stored Procedure).
-                    Basically, this takes the form of jdbc: scheme URL.
+                    Basically, this takes the form of a jdbc: scheme URL.
                     """@en ;
   <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#DSN",
                                                                  "#JDBC" ;
@@ -1360,7 +1360,7 @@ rdf:Property
                          <http://slidesha.re/1hF48QL> ,
                          <http://ontolog.cim3.net/forum/ontolog-forum/2014-02/msg00259.html> .
 
-# Relatinonships
+# Relationships
 
 <http://data.openlinksw.com/oplweb/glossary-term/Relationship#this>
   a skos:Concept ;
@@ -1705,7 +1705,7 @@ a skos:Concept ;
 owl:sameAs <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this> ;
 skos:inScheme :this ;
 schema:name "Data Virtualization" ;
-schema:comment """Abstraction that provides a harmonized interface to heterogenously shaped data oringinating from disparate
+schema:comment """Abstraction that provides a harmonized interface to heterogeneously shaped data originating from disparate
                 sources."""@en ;
 <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#DataVirtualization" ;
 schema:image <http://media-cache-ec0.pinimg.com/originals/f0/a5/a3/f0a5a31a7153ed228e87f24c26fb152b.jpg> ;
@@ -3530,7 +3530,7 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
   schema:name "ODBC Driver Manager" ;
   skos:altLabel "ODBC DM" ;
   schema:comment """Runtime component that associates (binds) an ODBC Data Source Name (DN)
-                    with an actual data source specific data access driver (aka. ODBC Driver).
+                    with an actual data source specific data access driver (also known as an ODBC Driver).
                  """@en  ;
   dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this> ,
                      <http://data.openlinksw.com/oplweb/glossary-term/ODBCDSN#this> ;
@@ -3613,7 +3613,7 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
   schema:name "JDBC Driver Manager" ;
   skos:altLabel "JDBC DM" ;
   schema:comment """A Java runtime component that associates (binds) a JDBC Data Source Name (DN)
-                    with an actual data source specific data access driver (aka. JDBC Driver).
+                    with an actual data source specific data access driver (also known as an JDBC Driver).
                  """@en  ;
   dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> ,
                      <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
@@ -4144,7 +4144,7 @@ schema:about <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
 <http://www.w3.org/TR/2014/REC-json-ld-20140116/>
   schema:name "JSON-LD 1.0 Data Representation Notation Specification" ;
   schema:comment """JSON based language specification from the W3C for constructing both
-                    basic and web-like (or webby) structured data (aka. Linked Data)."""@en ;
+                    basic and web-like (or webby) structured data (also known as Linked Data)."""@en ;
   a schema:WebPage, 
       schema:CreativeWork, 
       schema:Article, 
