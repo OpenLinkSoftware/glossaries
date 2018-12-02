@@ -150,7 +150,6 @@ source:
                   <http://data.openlinksw.com/oplweb/glossary-term/Identifier#this>  ,
                   <http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#this>  ,
                   <http://data.openlinksw.com/oplweb/glossary-term/SDQ#this> ,
-
                   <http://data.openlinksw.com/oplweb/glossary-term/HTTP#this>  ,
                   <http://data.openlinksw.com/oplweb/glossary-term/DBpediaLive#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/OpenLinkDBpediaLive#this> ,
@@ -171,7 +170,6 @@ source:
                   <http://data.openlinksw.com/oplweb/glossary-term/partOf#this>  ,
                   <http://data.openlinksw.com/oplweb/glossary-term/hasPart#this>  ,
                   <http://data.openlinksw.com/oplweb/glossary-term/WorldWideWeb#this> ,
-
                   <http://data.openlinksw.com/oplweb/glossary-term/DSN#this>  ,
                   <http://data.openlinksw.com/oplweb/glossary-term/ODBCDSNConnectString#this>  ,
                   <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSNConnectString#this>  ,
@@ -210,11 +208,12 @@ source:
                   <http://data.openlinksw.com/oplweb/glossary-term/PII#this>,
                   <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfEngagement#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfIntelligence#this> ,
-                  <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfRecord#this> ,
-                  <https://medium.com/virtuoso-blog/generate-relational-tables-to-rdf-relational-graphs-mappings-using-virtuosos-rdb2rdf-wizard-c4b83402599a>,
-                  <https://medium.com/virtuoso-blog/conceptual-data-virtualization-for-sql-and-rdf-using-open-standards-24520925c7ce>,
+                  <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfRecord#this> ,                  <https://medium.com/virtuoso-blog/generate-relational-tables-to-rdf-relational-graphs-mappings-using-virtuosos-rdb2rdf-wizard-c4b83402599a>,                  <https://medium.com/virtuoso-blog/conceptual-data-virtualization-for-sql-and-rdf-using-open-standards-24520925c7ce>,
                   <http://data.openlinksw.com/oplweb/glossary-term/ConceptualDataVirtualization#this>,
-                  <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>  ;
+                  <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>,
+				  <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>,
+				  <http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDiscipline#this>,
+				  <http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDisciplineOptimization#this>  ;
   schema:mentions
                   <http://www.w3.org/People/Berners-Lee/card#i> ,
                   <http://bit.ly/1kVSEFs> ,
@@ -438,6 +437,70 @@ source:
     schema:cite <https://www.linkedin.com/pulse/intelligent-computing-systems-how-enterprise-evolve-geoffrey-moore#this> ; skos:inScheme :this .
 
 
+## Digital Transformation
+
+<http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>
+a skos:Concept;
+schema:name "Digital Transformation"@en ;
+schema:image <https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Digital_Transformation.png/600px-Digital_Transformation.png> ;
+schema:description """Move from siloed application programming code to data interaction orchestration as the 
+                      method for optimizing market leadership discipline optimization that produce new systems-of-intelligence
+					  that are loosely-coupled with existing systems-of-record and systems-of-engagement.
+                      ."""@en ;
+# skos:broader <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> ;
+schema:mentions <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfRecord#this>, 
+				<http://data.openlinksw.com/oplweb/glossary-term/SystemsOfEngagement#this>,
+				<http://data.openlinksw.com/oplweb/glossary-term/SystemsOfIntelligence#this> ;
+skos:related <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDiscipline#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfRecord#this>, 
+			 <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfEngagement#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfIntelligence#this>,
+			 dbpedia:Digital_transformation ; 
+schema:mainEntityOfPage <https://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/digital-strategy-the-four-fights-you-have-to-win> ;
+skos:inScheme :this .
+
+
+## Market Leadership Discipline
+
+<http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDiscipline#this> 
+a skos:Concept;
+schema:name "Market Leadership Discipline"@en ;
+schema:image <https://www.marsdd.com/wp-content/uploads/2013/12/competitive-strategies-rev1.jpg> ;
+schema:description """Identification and selection of fundamental strategic focus by an enterprise that informs
+                      its strategy for market growth and dominance. 
+					  
+					  Strategic focus is typically along the following lines: Product Innovation, Operational Excellence, 
+					  and Customer Intimacy.             
+                      """@en ;
+skos:broader <http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDisciplineOptimization#this>  ;
+skos:related <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDisciplineOptimization#this>,
+			 dbpedia:Digital_transformation,
+			 dbpedia:The_Discipline_of_Market_Leaders ;
+schema:mainEntityOfPage <http://www.business-wisdom.com/articles/ArtclDisciplineOfMarket.html>, <https://hbr.org/1993/01/customer-intimacy-and-other-value-disciplines> ;
+skos:inScheme :this .
+
+## Market Leadership Discipline Optimization
+
+<http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDisciplineOptimization#this> 
+a skos:Concept;
+schema:name "Market Leadership Discipline Optimization"@en ;
+schema:image <https://cdn2.slidemodel.com/wp-content/uploads/6857-01-value-discipline-model-2.jpg> ;
+skos:altLabel "MLDO" ;
+schema:description """Calibration of the combined use of Product Innovation, Operation Excellence, and Customer Intimacy as Market Leadership Disciplines that drive an enterprises underlying business model. 
+
+Due to the fact that organizations cannot excel at all three disciplines at the same levels simultaneously, it is incumbent 
+on management to devise strategies for selecting and monitoring degrees on emphasis with regards to these fundamental strategies. For instance, in the early years of an organization it might opt for a stronger emphasis on Product Innovation over Customer Intimacy combined with progressive amounts of Operational Excellence.                
+                      """@en ;
+# skos:broader <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> ;
+skos:related <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>,
+			 dbpedia:Digital_transformation,
+			 dbpedia:The_Discipline_of_Market_Leaders ;
+schema:mainEntityOfPage <http://www.business-wisdom.com/articles/ArtclDisciplineOfMarket.html>, <https://hbr.org/1993/01/customer-intimacy-and-other-value-disciplines> ;
+skos:inScheme :this .
 
 ## Data Virtualization
 
