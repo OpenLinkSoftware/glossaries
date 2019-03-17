@@ -34,7 +34,7 @@ sourceDAV:
   schema:comment """Description of OpenLink Software Glossary of Terms."""@en ;
   schema:author <http://www.openlinksw.com/#this> ;
   schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-  schema:dateModified "2018-11-30T11:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2019-03-17T11:00:00-05:00"^^xsd:dateTime ;
   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
   cc:attributionName "OpenLink Software" ;
   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -46,7 +46,7 @@ source:
   schema:comment """Covers the definition of a variety of terms associated with realm of
                     Data, Networks, and Cloud abstractions."""@en ;
   schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-  schema:dateModified "2018-11-30T11:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2019-03-17T11:00:00-05:00"^^xsd:dateTime ;
   owl:sameAs sourceDAV: ;
   schema:author <http://www.openlinksw.com/#this> ;
   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -213,7 +213,10 @@ source:
                   <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>,
 				  <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>,
 				  <http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDiscipline#this>,
-				  <http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDisciplineOptimization#this>  ;
+				  <http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDisciplineOptimization#this>,
+				  <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>,
+				  <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this> ;
+
   schema:mentions
                   <http://www.w3.org/People/Berners-Lee/card#i> ,
                   <http://bit.ly/1kVSEFs> ,
@@ -229,7 +232,9 @@ source:
                   <http://www.w3.org/DesignIssues/Webize.html> ,
                   <http://danbri.org/foaf.rdf#danbri> ,
                   <http://dbpedia.org/resource/Peter_Chen> ,
-                  <http://www.gartner.com/it-glossary/data-lake#this> .
+                  <http://www.gartner.com/it-glossary/data-lake#this>,
+				  <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>,
+				  <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this> .
 
 ## InfluencedBy Relation Clarification (Local Context enhancement)
 
@@ -357,7 +362,13 @@ source:
     a skos:Concept ;
     schema:name "SHACLInferenceVocab"@en ;
     skos:prefLabel "SHACL Inference Rules Vocabulary"@en ;
-    schema:comment """Vocabulary of terms that enable the creation of custom reasoning & inference rules using SPARQL CONSTRUCT queries. In similar fashion to the SPIN Inference Rules Vocabulary, it leverages the combined prowess of RDF data definition language, SPARQL query language, and a Vocabulary of terms produce a modern variant of Datalog. It differs from SPIN's vocabulary by using a different namespace and including terms that allows the use of curies in SPARQL CONSTRUCT statements used to create rules."""@en ;
+    schema:comment """Vocabulary of terms that enable the creation of custom reasoning & inference 
+					  rules using SPARQL CONSTRUCT queries. In similar fashion to the SPIN Inference 
+					  Rules Vocabulary, it leverages the combined prowess of RDF data definition language, 
+					  SPARQL query language, and a Vocabulary of terms produce a modern variant of Datalog. 
+					  It differs from SPIN's vocabulary by using a different namespace and including terms 
+					  that allows the use of curies in SPARQL CONSTRUCT statements used to create rules.
+					"""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#ShaclRules"   ;
     schema:image <https://pbs.twimg.com/media/DKGvHuNX0AAuKso.jpg> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
@@ -369,6 +380,52 @@ source:
                  dbpedia:Prolog ;
     schema:mainEntityOfPage <https://www.w3.org/TR/shacl-af/#SPARQLRule> ;
     dcterms:isReferencedBy source: .
+
+
+## Industry Trends ##
+<http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>
+a skos:Concept ;
+schema:name "Artificial Intelligence"@en ;
+skos:altLabel "AI" ;
+schema:description """Software and Software-driven machinery equipped with an ability to apply reasoning 
+					  and inference to data associated with situations. A single situation is a specific 
+					  frame of data in a continuum.
+                   """@en ;
+skos:related dbpedia:Deductive_database,
+             dbpedia:Analytics,
+             dbpedia:Semantic_Web,
+             dbpedia:Linked_Data,
+			 dbpedia:Cognition, 
+			 dbpedia:Machine_learning,
+			 <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
+skos:narrower dbpedia:Semantic_Web ;
+schema:image <https://www.aitrends.com/wp-content/uploads/2016/06/pyramidofai-696x406.jpg> ;
+schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artificial-intelligence/> ;
+schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-operations-to-drive-business-value/>,
+				   <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this> ;
+skos:inScheme :this .
+
+
+<http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>
+a skos:Concept ;
+schema:name "Knowledge Graph"@en ;
+schema:image <https://www.researchgate.net/profile/Hijaz_Ahmad/post/What_is_Knowledge_Graphs/attachment/5ab8df4b4cde266d5893ceb5/AS%3A608399813251073%401522065227594/download/main-qimg-a8f2f3b409c3336d5839f247f10c9921.png> ;
+skos:altLabel "KG"@en ;
+schema:description """An Entity Relationship Type Collection depicted as a Graph (Web or Network). In this
+                      kind of pictorial each Entity is depicted as a Node (or Vertex) while each Entity Relationship Type is 
+					  depicted as a Labelled Connection (or Edge).
+					  """@en ;
+skos:related dbpedia:Knowledge_graph,
+             dbpedia:Semantic_Web,
+             dbpedia:Linked_Data,
+			 dbpedia:Knowledgebase, 
+			 dbpedia:Machine_learning,
+			 <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this> ;
+schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artificial-intelligence/>,
+			<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this> ;
+schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-operations-to-drive-business-value/>,
+                   <https://searchengineland.com/library/google/google-knowledge-graph> ;
+skos:inScheme :this .
 
 ## Business Systems
 
@@ -2770,15 +2827,18 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
   schema:image <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg>;
   schema:comment """Semantically Enhanced Linked Data Network (Cloud)."""@en ;
   schema:description """Webby (or Web-like) Structured Data that's endowed with machine- and
-                        human-comprehensible entity relationship semantics. Basically, the
-                        meaning of a relationshipo between two entities is understandable by
-                        machines and humans, e.g.,
+                        human-comprehensible Entity Relationship Type semantics. Basically, the
+                        meaning of a relationship between two entities is represented in a manner that is 
+						understandable by both machines and humans, e.g.,
                         <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
                         <http://dbpedia.org/resource/Semantic_Web>,
                         <http://yago-knowledge.org/resource/Semantic_Web>,
                         <http://rdf.freebase.com/ns/m.076k0>, and
-                        <http://www.wikidata.org/entity/Q54837> all refer to (name or denote)
-                        the same entity (thing)."""@en ;
+                        <http://www.wikidata.org/entity/Q54837> are terms that identify (name) the same entity, 
+						using a pattern recognizable by both humans or software applications that understand
+						RDF language sentences published using Linked Data principles (i.e., Entity Names resolve to
+						Entity Description Documents).
+					"""@en ;
   skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
                   <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfIntelligence#this>,
                <http://dbpedia.org/resource/Semantic_Web>,
