@@ -1,0 +1,222 @@
+@prefix dbpedia-yago: <http://dbpedia.org/class/yago/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix iri: <http://data.openlinksw.com/oplweb/glossary-term/IRI#> .
+@prefix uri: <http://data.openlinksw.com/oplweb/glossary-term/URI#> .
+@prefix tuple: <http://data.openlinksw.com/oplweb/glossary-term/Tuple#> .
+@prefix odbc: <http://data.openlinksw.com/oplweb/glossary-term/OpenDatabaseConnectivity#> .
+@prefix jdbc: <http://data.openlinksw.com/oplweb/glossary-term/OpenDatabaseConnectivity#> .
+@prefix tables: <http://data.openlinksw.com/oplweb/glossary-term/SQLRelation#> .
+@prefix rdf-graphs: <http://data.openlinksw.com/oplweb/glossary-term/RDFRelation#> .
+@prefix rdf-turtle: <http://data.openlinksw.com/oplweb/glossary-term/Turtle#> .
+@prefix rdf-ntriples: <http://data.openlinksw.com/oplweb/glossary-term/NTriples#> .
+@prefix rdf-xml: <http://data.openlinksw.com/oplweb/glossary-term/RDFXML#> .
+@prefix json-ld: <http://data.openlinksw.com/oplweb/glossary-term/JSONLD#> .  
+@prefix html-microdata: <http://data.openlinksw.com/oplweb/glossary-term/Microdata#> .
+@prefix xhtml-rdfa: <http://data.openlinksw.com/oplweb/glossary-term/RDFa#> .
+@prefix csv: <http://data.openlinksw.com/oplweb/glossary-term/CSV#> . 
+@prefix sql-ddl: <http://data.openlinksw.com/oplweb/glossary-term/SQL#> . 
+@prefix rdf-ddl: <http://data.openlinksw.com/oplweb/glossary-term/RDF#> .
+@prefix owl-ddl: <http://data.openlinksw.com/oplweb/glossary-term/OWL#> .
+@prefix spin-lang: <http://data.openlinksw.com/oplweb/glossary-term/SPINRulesVocab#> . 
+@prefix rbac: <http://data.openlinksw.com/oplweb/glossary-term/RBAC#> .
+@prefix abac: <http://data.openlinksw.com/oplweb/glossary-term/ABAC#> .
+@prefix rdf-schema: <http://data.openlinksw.com/oplweb/glossary-term/RDFSchema#> .
+@prefix sparql: <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#> .
+@prefix lubm: <http://swat.cse.lehigh.edu/projects/lubm/> . 
+@prefix bsbm: <http://wifo5-03.informatik.uni-mannheim.de/bizer/berlinsparqlbenchmark/> .
+@prefix hobbit-fct: <https://github.com/hobbit-project/faceted-benchmark#> .
+@prefix ldbc: <http://ldbcouncil.org/> . 
+@prefix ldbc-spb: <http://ldbcouncil.org/benchmarks/spb#> .
+@prefix tpca: <http://www.tpc.org/tpca/default.asp#> .
+@prefix tpcc: <http://www.tpc.org/tpcc/default.asp#> .
+@prefix tpch: <http://www.tpc.org/tpch/default.asp#> .
+@prefix cc:      <http://creativecommons.org/ns#> .
+@prefix dbms-ontology: <http://www.openlinksw.com/ontology/dbms#> .
+@prefix : <http://www.openlinksw.com/ontology/dbms#> .
+
+
+dbms-ontology:this a owl:Ontology ;
+rdfs:label """OpenLink Database Management Systems Ontology"""^^xsd:string ;
+rdfs:comment """Ontology that defines entity and relation types used to describe 
+			  Database Management Systems software.
+		   """@en ;
+dcterms:created "2019-04-17T13:00:00-05:00"^^xsd:dateTime ;
+schema:creator <http://www.openlinksw.com/#this> ;
+dcterms:modified "2019-04-17T16:21:00-05:00"^^xsd:dateTime ;
+owl:versionInfo "1.0.0"^^xsd:string ;
+wdrs:describedby <> . 
+
+## Classes
+
+:DatabaseManagementSystem
+rdfs:subClassOf schema:Application ;
+rdfs:label "Database Management System" ;
+skos:altLabel "DBMS" ;
+rdfs:comment "A Software Application that provides Structured Data Definition and Manipulation functionality." ;
+owl:equivalentClass dbpedia-yago:DatabaseManagementSystem106588785 ;
+schema:maninEntityOfPage <https://docs.google.com/spreadsheets/d/1QHbPEsZqyNb6k0JB5j8vHkuI514c44mkNu-SaO8DekM/edit#gid=1757189899>,
+	 					 <http://www.openlinksw.com/data/turtle/general/tabulated-data-comparison.ttl>,
+						 <http://linkeddata.uriburner.com/describe/?url=https%3A%2F%2Fwww.openlinksw.com%2Fdata%2Fturtle%2Fgeneral%2Ftabulated-data-comparison.ttl%23content&graph=http%3A%2F%2Fwww.openlinksw.com%2Fdata%2Fturtle%2Fgeneral%2Ftabulated-data-comparison.ttl&distinct=1> ;
+rdfs:isDefinedby <#this> . 
+
+## Properties 
+
+:supportsIdentifierType
+a owl:ObjectProperty ;
+rdfs:label "supportsIdentifierType" ;
+rdfs:comment """Associates a Database Management System (DBMS) with supported Identifier Types. Examples include
+              IRIs, URIs, and other""" ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range dbpedia-yago:Identifier107270601 ;
+skos:related iri:this, uri:this ;
+rdfs:isDefinedby <#this> . 
+
+:identifierQuoteChar
+a owl:ObjectProperty ;
+rdfs:label "identifierQuoteChar" ;
+rdfs:comment """Associates a Database Management System (DBMS) with supported Identifier Quotation character 
+                for system artificat naming/identification (relations/tables, inferred-relations/views, stored procedures)
+				e.g., double-quotes, single-quotes, less-than and greater-than characters""" ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range xsd:literal ;
+skos:related iri:this, uri:this ;
+rdfs:isDefinedby <#this> . 
+
+
+:relationsModeledAs
+a owl:ObjectProperty ;
+rdfs:label "relationsModeledAs" ;
+rdfs:comment """Associates a Database Management System (DBMS) with how it models Entity Relationship Types (Relations)""" ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range dbpedia-yago:Sequence108459252 ;
+skos:related tables:this, rdf-graphs:this, dbpedia:Directed_graph ;
+rdfs:isDefinedby <#this> . 
+
+
+:relationStructure
+a owl:ObjectProperty ;
+rdfs:label "relationStructure" ;
+rdfs:comment """Associates a Database Management System (DBMS) with how it Entity Relationship Types (Relations) 
+				are structured e.g., N-Tuples, 3-Tuples etc.
+			 """ ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range dbpedia-yago:DataStructure105728493 ;
+skos:related dbpedia:Semantic_triple, dbpedia:Tuple, tuple:this ;
+rdfs:isDefinedby <#this> . 
+
+:relationPartitioning
+a owl:ObjectProperty ;
+rdfs:label "relationPartitioning" ;
+rdfs:comment """Associates a Database Management System (DBMS) with how it partitions relations
+                for unambiguous identification using namespacing. For example: catalog.schema.relation,
+				database.schema.relation, schema.relation, urn:xyz:data, http://example.com/entity/,
+				or http://example.com/entity#this etc.
+			 """ ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range xsd:literal ;
+skos:related dbpedia:Semantic_triple, dbpedia:Tuple, tuple:this ;
+rdfs:isDefinedby <#this> . 
+
+
+:tupleNotation
+a owl:ObjectProperty ;
+rdfs:label "tupleNotation" ;
+rdfs:comment """Associates a Database Management System (DBMS) with the supported notations for
+				representing N-Tuples, 3-Tuples etc.
+			 """ ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range dbpedia-yago:Notation106808493 ;
+skos:related rdf-turtle:this, rdf-ntriples:this, rdf-xml:this, json-ld:this, html-microdata:this,
+			 xhtml-rdfa:this, csv:this, tuple:this ;
+rdfs:isDefinedby <#this> . 
+
+
+:declarativeDataDefinitionLang
+a owl:ObjectProperty ;
+rdfs:label "declarativeDataDefinitionLang" ;
+skos:altLabel "DDL" ;
+rdfs:comment """Associates a Database Management System (DBMS) with supported declarative 
+				Data Definition Languages.
+			 """ ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range dbpedia-yago:WikicatDataModelingLanguages ;
+skos:related rdf-ddl:this, owl-ddl:this, sql-ddl:this ;
+rdfs:isDefinedby <#this> . 
+
+
+:declarativeDataManipulationLang
+a owl:ObjectProperty ;
+rdfs:label "declarativeDataManipulationLang" ;
+skos:altLabel "DML" ;
+rdfs:comment """Associates a Database Management System (DBMS) with supported declarative 
+				Data Manipulation Languages.
+			 """ ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range dbpedia-yago:WikicatQueryLanguages ;
+skos:related sparql:this, sql-ddl:this, rdf-schema:this, owl-ddl:this, rdf-ddl:this ;
+rdfs:isDefinedby <#this> . 
+
+:declarativeReasoningLang
+a owl:ObjectProperty ;
+rdfs:label "declarativeReasoningLang" ;
+rdfs:comment """Associates a Database Management System (DBMS) with supported declarative 
+				Reasoning & Inference Languages.
+			 """ ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range dbpedia-yago:ArtificialLanguage106894544, dbpedia-yago:WikicatQueryLanguages ;
+skos:related spin-lang:this, sparql:this, sql-ddl:this ;
+rdfs:isDefinedby <#this> . 
+
+
+:dataAccessAPI
+a owl:ObjectProperty ;
+rdfs:label "dataAccessAPI" ;
+rdfs:altLabel "Data Access API" ;
+rdfs:comment """Associates a Database Management System (DBMS) with supported Data
+				Access Programming Interfaces e.g., ODBC, JDBC, ADO.NET, OLE-DB, 
+				XMLA, HTTP etc.
+			 """ ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range dbpedia-yago:WikicatComputerLibraries ;
+skos:related odbc:this, jdbc:this ;
+rdfs:isDefinedby <#this> . 
+
+
+:transactionSemantics
+a owl:ObjectProperty ;
+rdfs:label "transactionSemantics" ;
+skos:altLabel "ACID" ;
+rdfs:comment """Associates a Database Management System (DBMS) with supported Transaction Semantics e.g.,
+                Atomicity (A), Consistency (C), Isolation (I), and Durability (D).
+			 """ ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range skos:Concept ;
+skos:related dbpedia:Transaction_processing, dbpedia:ACID ;
+rdfs:isDefinedby <#this> . 
+
+:dataAccessControl
+a owl:ObjectProperty ;
+rdfs:label "dataAccessControl" ;
+skos:altLabel "Data Security" ;
+rdfs:comment """Associates a Database Management System (DBMS) with supported modalities
+				for controlling access to data e.g., Role-based Access Control (RBAC) or 
+				Attributed-based Access Control (ABAC).
+			 """ ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range dbpedia-yago:Identifier107270601 ;
+skos:related rbac:this, abac:this ;
+rdfs:isDefinedby <#this> . 
+
+
+:benchmarkStandards
+a owl:ObjectProperty ;
+rdfs:label "benchmarkStandards" ;
+skos:altLabel "Industry Standard Performance Benchmarks" ;
+rdfs:comment """Associates a Database Management System (DBMS) with supported industry standard
+				benchmarks e.g., TPC-A, TPC-D, TPC-H, LDBC, LUBM, Berlin SPARQL Benchmark etc..
+			 """ ;
+rdfs:domain :DatabaseManagementSystem ;
+rdfs:range dbpedia-yago:Identifier107270601 ;
+skos:related lubm:this, bsbm:this, hobbit-fct:this, ldbc:this, ldbc-spb:this, tpca:this, tpcc:this,
+			 tpch:this ;
+rdfs:isDefinedby <#this> . 
