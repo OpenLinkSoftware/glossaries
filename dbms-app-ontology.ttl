@@ -32,6 +32,8 @@
 @prefix tpch: <http://www.tpc.org/tpch/default.asp#> .
 @prefix cc:      <http://creativecommons.org/ns#> .
 @prefix dbms-ontology: <http://www.openlinksw.com/ontology/dbms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
 @prefix : <http://www.openlinksw.com/ontology/dbms#> .
 
 
