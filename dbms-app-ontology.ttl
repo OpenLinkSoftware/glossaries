@@ -35,6 +35,29 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> . 
 @prefix : <http://www.openlinksw.com/ontology/dbms#> .
+@prefix source:      <http://www.openlinksw.com/data/turtle/dbms-ontology.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/data/turtle/dbms-ontology.ttl> .
+
+sourceDAV:
+    a schema:CreativeWork ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    cc:attributionName "OpenLink Software" ;
+    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+    schema:datePublished "2019-04-18T13:00:00-05:00"^^xsd:dateTime ;
+    schema:dateCreated "2019-04-17T13:00:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2019-04-18T15:00:00-05:00"^^xsd:dateTime ;
+    schema:name  """OpenLink Database Ontology Document """ ;
+    schema:description  """Document that describes an Ontology of terms associated with 
+						   Database Management Systems (DBMS) genres. Terms in this ontology enable
+						   structured descriptions of DBMS products.  
+						 """^^xsd:string ;
+    schema:keywords  """ODBC, ODBC Driver, JDBC, JDBC Driver, ADO.NET, ADO.NET Provider, OLE-DB, OLE-DB Provider, 
+						UDA, Data Access, Data Access Driver, Data Access Middleware, Database, Database Management System, 
+						DBMS, Relational Database Management System, RDBMS, Resource Description Framework, RDF, Relation,
+						NoSQL, SQL, SPARQL.
+		 			 """;
+    owl:sameAs source: .
 
 
 dbms-ontology:this a owl:Ontology ;
