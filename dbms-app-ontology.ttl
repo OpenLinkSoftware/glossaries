@@ -40,9 +40,10 @@
 @prefix dcterms: <http://purl.org/dc/terms/> . 
 @prefix wdrs: <http://www.w3.org/2007/05/powder-s#> . 
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix source:      <http://www.openlinksw.com/data/turtle/dbms-app-ontology.ttl> .
+# @prefix source:      <http://www.openlinksw.com/data/turtle/dbms-app-ontology.ttl> .
+@prefix source:      <http://www.openlinksw.com/ontology/dbms-app-ontology#> .
 @prefix sourceDAV:   <http://www.openlinksw.com/DAV/data/turtle/dbms-app-ontology.ttl> .
-@prefix : <http://www.openlinksw.com/ontology/dbms#> .
+@prefix : <http://www.openlinksw.com/ontology/dbms-app-ontology#> .
 
 sourceDAV:
     a schema:CreativeWork ;
@@ -67,7 +68,8 @@ sourceDAV:
     owl:sameAs source: .
 
 
-:this a owl:Ontology ;
+: a owl:Ontology ;
+dcterms:title """OpenLink Database Management Systems Ontology"""^^xsd:string ;
 rdfs:label """OpenLink Database Management Systems Ontology"""^^xsd:string ;
 rdfs:comment """Ontology that defines entity and relation types used to describe 
 			  Database Management Systems software.
@@ -89,7 +91,7 @@ owl:equivalentClass dbpedia-yago:DatabaseManagementSystem106588785 ;
 schema:maninEntityOfPage <https://docs.google.com/spreadsheets/d/1QHbPEsZqyNb6k0JB5j8vHkuI514c44mkNu-SaO8DekM/edit#gid=1757189899>,
 	 					 <http://www.openlinksw.com/data/turtle/general/tabulated-data-comparison.ttl>,
 						 <http://linkeddata.uriburner.com/describe/?url=https%3A%2F%2Fwww.openlinksw.com%2Fdata%2Fturtle%2Fgeneral%2Ftabulated-data-comparison.ttl%23content&graph=http%3A%2F%2Fwww.openlinksw.com%2Fdata%2Fturtle%2Fgeneral%2Ftabulated-data-comparison.ttl&distinct=1> ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 ## Properties 
 
@@ -101,7 +103,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported Id
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:Identifier107270601 ;
 skos:related iri:this, uri:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 :identifierQuoteChar
 a owl:ObjectProperty ;
@@ -112,7 +114,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported Id
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range xsd:literal ;
 skos:related iri:this, uri:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 
 :relationsModeledAs
@@ -122,7 +124,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with how it model
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:Sequence108459252 ;
 skos:related tables:this, rdf-graphs:this, dbpedia:Directed_graph ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 
 :relationStructure
@@ -134,7 +136,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with how it Entit
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:DataStructure105728493 ;
 skos:related dbpedia:Semantic_triple, dbpedia:Tuple, tuple:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 :relationPartitioning
 a owl:ObjectProperty ;
@@ -147,7 +149,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with how it parti
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range xsd:literal ;
 skos:related dbpedia:Semantic_triple, dbpedia:Tuple, tuple:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 
 :tupleNotation
@@ -160,7 +162,7 @@ rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:Notation106808493 ;
 skos:related rdf-turtle:this, rdf-ntriples:this, rdf-xml:this, json-ld:this, html-microdata:this,
 			 xhtml-rdfa:this, csv:this, tuple:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 
 :declarativeDataDefinitionLang
@@ -173,7 +175,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported de
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:WikicatDataModelingLanguages ;
 skos:related rdf-ddl:this, owl-ddl:this, sql-ddl:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 
 :declarativeDataManipulationLang
@@ -186,7 +188,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported de
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:WikicatQueryLanguages ;
 skos:related sparql:this, sql-ddl:this, rdf-schema:this, owl-ddl:this, rdf-ddl:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 :declarativeReasoningLang
 a owl:ObjectProperty ;
@@ -197,7 +199,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported de
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:ArtificialLanguage106894544, dbpedia-yago:WikicatQueryLanguages ;
 skos:related spin-lang:this, sparql:this, sql-ddl:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 
 :dataAccessAPI
@@ -211,7 +213,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported Da
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:WikicatComputerLibraries ;
 skos:related odbc:this, jdbc:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 
 :transactionSemantics
@@ -224,7 +226,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported Tr
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range skos:Concept ;
 skos:related dbpedia:Transaction_processing, dbpedia:ACID ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 :dataAccessControl
 a owl:ObjectProperty ;
@@ -237,7 +239,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported mo
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:Identifier107270601 ;
 skos:related rbac:this, abac:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
 
 
 :benchmarkStandards
@@ -251,4 +253,4 @@ rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:Identifier107270601 ;
 skos:related lubm:this, bsbm:this, hobbit-fct:this, ldbc:this, ldbc-spb:this, tpca:this, tpcc:this,
 			 tpch:this ;
-rdfs:isDefinedBy :this . 
+rdfs:isDefinedBy source: .
