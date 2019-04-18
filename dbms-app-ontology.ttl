@@ -34,9 +34,15 @@
 @prefix dbms-ontology: <http://www.openlinksw.com/ontology/dbms#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix schema: <http://schema.org/> .
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix dcterms: <http://purl.org/dc/terms/> . 
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> . 
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix source:      <http://www.openlinksw.com/data/turtle/dbms-app-ontology.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/data/turtle/dbms-app-ontology.ttl> .
 @prefix : <http://www.openlinksw.com/ontology/dbms#> .
-@prefix source:      <http://www.openlinksw.com/data/turtle/dbms-ontology.ttl> .
-@prefix sourceDAV:   <http://www.openlinksw.com/DAV/data/turtle/dbms-ontology.ttl> .
 
 sourceDAV:
     a schema:CreativeWork ;
@@ -47,7 +53,7 @@ sourceDAV:
     schema:datePublished "2019-04-18T13:00:00-05:00"^^xsd:dateTime ;
     schema:dateCreated "2019-04-17T13:00:00-05:00"^^xsd:dateTime ;
     schema:dateModified "2019-04-18T15:00:00-05:00"^^xsd:dateTime ;
-    schema:name  """OpenLink Database Ontology Document """ ;
+    schema:name  """OpenLink Database Management System Ontology Document """ ;
     schema:description  """Document that describes an Ontology of terms associated with 
 						   Database Management Systems (DBMS) genres. Terms in this ontology enable
 						   structured descriptions of DBMS products.  
