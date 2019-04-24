@@ -1,3 +1,43 @@
+## LinkedIn Tags
+@prefix LinkedInTagGraphDatabases: <https://www.linkedin.com/feed/topic/?keywords=%23GraphDatabase#> .
+@prefix LinkedInTagGraphDatabase: <https://www.linkedin.com/feed/topic/?keywords=%23GraphDatabases#> .
+@prefix LinkedInTagGraphDB: <https://www.linkedin.com/feed/topic/?keywords=%23GraphDB#> .
+@prefix LinkedInTagDocumentDatabases: <https://www.linkedin.com/feed/topic/?keywords=%23DocumentDatabase#> .
+@prefix LinkedInTagDocumentDatabase: <https://www.linkedin.com/feed/topic/?keywords=%23DocumentDatabases#> .
+@prefix LinkedInTagDocumentDB: <https://www.linkedin.com/feed/topic/?keywords=%23DocumentDB#> .
+@prefix LinkedInTagLinkedData: <https://www.linkedin.com/feed/topic/?keywords=%23LinkedData#> .
+@prefix LinkedInTagLinkedData: <https://www.linkedin.com/feed/topic/?keywords=%23LinkedData#> .
+@prefix LinkedInTagSemanticWeb: <https://www.linkedin.com/feed/topic/?keywords=%23SemanticWeb#> .
+@prefix LinkedInTagRDBMS: <https://www.linkedin.com/feed/topic/?keywords=%23RDBMS#> .
+@prefix LinkedInTagKnowledgeGraph: <https://www.linkedin.com/feed/topic/?keywords=%23KnowledgeGraph#> .
+
+## Twitter Tags
+
+@prefix TwitterTagGraphDatabases: <https://twitter.com/hashtag/GraphDatabases#> . 
+@prefix TwitterTagGraphDatabase: <https://twitter.com/hashtag/GraphDatabase#> . 
+@prefix TwitterTagGraphDB: <https://twitter.com/hashtag/GraphDB#> . 
+@prefix TwitterTagDocumentDatabases: <https://twitter.com/hashtag/DocumentDatabases#> . 
+@prefix TwitterTagDocumentDatabase: <https://twitter.com/hashtag/DocumentDatabase#> . 
+@prefix TwitterTagDocumentDB: <https://twitter.com/hashtag/DocumentDB#> . 
+@prefix TwitterTagRDBMS: <https://twitter.com/hashtag/RDBMS#> . 
+@prefix TwitterTagKnowledgeGraph: <https://twitter.com/hashtag/KnowledgeGraph#> . 
+
+## Facebook Tags
+
+@prefix FacebookTagGraphDatabase: <https://www.facebook.com/hashtag/GraphDatabase#> .
+@prefix FacebookTagGraphDatabases: <https://www.facebook.com/hashtag/GraphDatabases#> .
+@prefix FacebookTagGraphDB: <https://www.facebook.com/hashtag/GraphDB#> .
+@prefix FacebookTagDocumentDatabase: <https://www.facebook.com/hashtag/DocumentDatabase#> .
+@prefix FacebookTagDocumentDatabases: <https://www.facebook.com/hashtag/DocumentDatabases#> .
+@prefix FacebookTagDocumentDB: <https://www.facebook.com/hashtag/DocumentDB#> .
+@prefix FacebookTagLinkedData: <https://www.facebook.com/hashtag/LinkedData#> .
+@prefix FacebookTagSemanticWeb: <https://www.facebook.com/hashtag/SemanticWeb#> .
+@prefix FacebookTagRDBMS: <https://www.facebook.com/hashtag/RDBMS#> .
+@prefix FacebookTagRDBMS: <https://www.facebook.com/hashtag/KnowledgeGraph#> .
+@prefix FacebookTagKnowledgeGraph: <https://www.facebook.com/hashtag/KnowledgeGraph#> .
+
+## Others 
+
 @prefix dbpedia-yago: <http://dbpedia.org/class/yago/> .
 @prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix iri: <http://data.openlinksw.com/oplweb/glossary-term/IRI#> .
@@ -6,6 +46,7 @@
 @prefix odbc: <http://data.openlinksw.com/oplweb/glossary-term/OpenDatabaseConnectivity#> .
 @prefix jdbc: <http://data.openlinksw.com/oplweb/glossary-term/OpenDatabaseConnectivity#> .
 @prefix tables: <http://data.openlinksw.com/oplweb/glossary-term/SQLRelation#> .
+@prefix sparql-protocol: <http://data.openlinksw.com/oplweb/glossary-term/SPARQLProtocol#> .
 @prefix rdf-graphs: <http://data.openlinksw.com/oplweb/glossary-term/RDFRelation#> .
 @prefix rdf-turtle: <http://data.openlinksw.com/oplweb/glossary-term/Turtle#> .
 @prefix rdf-ntriples: <http://data.openlinksw.com/oplweb/glossary-term/NTriples#> .
@@ -40,10 +81,14 @@
 @prefix dcterms: <http://purl.org/dc/terms/> . 
 @prefix wdrs: <http://www.w3.org/2007/05/powder-s#> . 
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-# @prefix source:      <http://www.openlinksw.com/data/turtle/dbms-app-ontology.ttl> .
+@prefix database: <http://data.openlinksw.com/oplweb/glossary-term/Database#> .
+@prefix rdf-relation: <http://data.openlinksw.com/oplweb/glossary-term/RDFRelation#> . 
+@prefix sql-relation: <http://data.openlinksw.com/oplweb/glossary-term/SQLRelation#> .
+@prefix virtuoso: <http://data.openlinksw.com/oplweb/product/Virtuoso#> .
 @prefix source:      <http://www.openlinksw.com/ontology/dbms-app-ontology#> .
 @prefix sourceDAV:   <http://www.openlinksw.com/DAV/data/turtle/dbms-app-ontology.ttl> .
 @prefix : <http://www.openlinksw.com/ontology/dbms-app-ontology#> .
+
 
 sourceDAV:
     a schema:CreativeWork ;
@@ -64,7 +109,7 @@ sourceDAV:
 						DBMS, Relational Database Management System, RDBMS, Resource Description Framework, RDF, Relation,
 						NoSQL, SQL, SPARQL.
 		 			 """;
-	schema:mainEnity :this ;
+	schema:mainEnity : ;
     owl:sameAs source: .
 
 
@@ -76,9 +121,11 @@ rdfs:comment """Ontology that defines entity and relation types used to describe
 		   """@en ;
 dcterms:created "2019-04-17T13:00:00-05:00"^^xsd:dateTime ;
 schema:creator <http://www.openlinksw.com/#this> ;
-dcterms:modified "2019-04-17T16:21:00-05:00"^^xsd:dateTime ;
+dcterms:modified "2019-04-22T16:21:00-05:00"^^xsd:dateTime ;
 owl:versionInfo "1.0.0"^^xsd:string ;
 wdrs:describedby <> . 
+
+
 
 ## Classes
 
@@ -88,10 +135,26 @@ rdfs:label "Database Management System" ;
 skos:altLabel "DBMS" ;
 rdfs:comment "A Software Application that provides Structured Data Definition and Manipulation functionality." ;
 owl:equivalentClass dbpedia-yago:DatabaseManagementSystem106588785 ;
+skos:related LinkedInTagGraphDatabases:this, LinkedInTagDocumentDatabase:this, LinkedInTagDocumentDB:this, 
+			 LinkedInTagRDBMS:this, TwitterTagGraphDatabases:this, TwitterInTagDocumentDatabase:this, 
+			 TwitterTagDocumentDB:this, TwitterTagRDBMS:this, FacebookTagGraphDatabases:this, 
+			 FacebookTagDocumentDatabase:this, FacebookTagDocumentDB:this, FacebookTagRDBMS:this ; 
 schema:maninEntityOfPage <https://docs.google.com/spreadsheets/d/1QHbPEsZqyNb6k0JB5j8vHkuI514c44mkNu-SaO8DekM/edit#gid=1757189899>,
 	 					 <http://www.openlinksw.com/data/turtle/general/tabulated-data-comparison.ttl>,
 						 <http://linkeddata.uriburner.com/describe/?url=https%3A%2F%2Fwww.openlinksw.com%2Fdata%2Fturtle%2Fgeneral%2Ftabulated-data-comparison.ttl%23content&graph=http%3A%2F%2Fwww.openlinksw.com%2Fdata%2Fturtle%2Fgeneral%2Ftabulated-data-comparison.ttl&distinct=1> ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
+
+## External Classes
+
+dbpedia-yago:Identifier107270601 rdfs:label "Class: Identifier" .
+dbpedia-yago:Sequence108459252 rdfs:label "Class: Sequence" .
+dbpedia-yago:WikicatComputerLibraries rdfs:label "Class: Computer Library" .
+dbpedia-yago:ArtificialLanguage106894544 rdfs:label "Class: Artificial Language" .
+dbpedia-yago:WikicatQueryLanguages rdfs:label "Class: Query Language" .
+dbpedia-yago:WikicatDataModelingLanguages rdfs:label "Class: Modeling Language" .
+dbpedia-yago:Notation106808493 rdfs:label "Class: Notation" .
+dbpedia-yago:DataStructure105728493 rdfs:label "Class: Data Structure" .
+dbpedia-yago:DatabaseManagementSystem106588785 rdfs:label "Class: Database Management System" . 
 
 ## Properties 
 
@@ -103,7 +166,8 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported Id
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:Identifier107270601 ;
 skos:related iri:this, uri:this ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
+
 
 :identifierQuoteChar
 a owl:ObjectProperty ;
@@ -114,7 +178,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported Id
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range xsd:literal ;
 skos:related iri:this, uri:this ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
 
 
 :relationsModeledAs
@@ -124,7 +188,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with how it model
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:Sequence108459252 ;
 skos:related tables:this, rdf-graphs:this, dbpedia:Directed_graph ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
 
 
 :relationStructure
@@ -136,7 +200,8 @@ rdfs:comment """Associates a Database Management System (DBMS) with how it Entit
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:DataStructure105728493 ;
 skos:related dbpedia:Semantic_triple, dbpedia:Tuple, tuple:this ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
+
 
 :relationPartitioning
 a owl:ObjectProperty ;
@@ -149,7 +214,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with how it parti
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range xsd:literal ;
 skos:related dbpedia:Semantic_triple, dbpedia:Tuple, tuple:this ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
 
 
 :tupleNotation
@@ -162,8 +227,7 @@ rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:Notation106808493 ;
 skos:related rdf-turtle:this, rdf-ntriples:this, rdf-xml:this, json-ld:this, html-microdata:this,
 			 xhtml-rdfa:this, csv:this, tuple:this ;
-rdfs:isDefinedBy source: .
-
+rdfs:isDefinedBy : .
 
 :declarativeDataDefinitionLang
 a owl:ObjectProperty ;
@@ -175,7 +239,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported de
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:WikicatDataModelingLanguages ;
 skos:related rdf-ddl:this, owl-ddl:this, sql-ddl:this ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
 
 
 :declarativeDataManipulationLang
@@ -188,7 +252,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported de
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:WikicatQueryLanguages ;
 skos:related sparql:this, sql-ddl:this, rdf-schema:this, owl-ddl:this, rdf-ddl:this ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
 
 :declarativeReasoningLang
 a owl:ObjectProperty ;
@@ -199,8 +263,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported de
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:ArtificialLanguage106894544, dbpedia-yago:WikicatQueryLanguages ;
 skos:related spin-lang:this, sparql:this, sql-ddl:this ;
-rdfs:isDefinedBy source: .
-
+rdfs:isDefinedBy : .
 
 :dataAccessAPI
 a owl:ObjectProperty ;
@@ -213,7 +276,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported Da
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:WikicatComputerLibraries ;
 skos:related odbc:this, jdbc:this ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
 
 
 :transactionSemantics
@@ -226,7 +289,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported Tr
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range skos:Concept ;
 skos:related dbpedia:Transaction_processing, dbpedia:ACID ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
 
 :dataAccessControl
 a owl:ObjectProperty ;
@@ -239,7 +302,7 @@ rdfs:comment """Associates a Database Management System (DBMS) with supported mo
 rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:Identifier107270601 ;
 skos:related rbac:this, abac:this ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
 
 
 :benchmarkStandards
@@ -253,4 +316,5 @@ rdfs:domain :DatabaseManagementSystem ;
 rdfs:range dbpedia-yago:Identifier107270601 ;
 skos:related lubm:this, bsbm:this, hobbit-fct:this, ldbc:this, ldbc-spb:this, tpca:this, tpcc:this,
 			 tpch:this ;
-rdfs:isDefinedBy source: .
+rdfs:isDefinedBy : .
+
