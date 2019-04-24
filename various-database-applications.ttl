@@ -12,10 +12,7 @@
 
 <http://www.openlinksw.com/data/turtle/database-applications/#8c49c3c68c749183c7a38a3749ce34c9> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Oracle " ;
-	schema:category "Relational DBMS" , """
-Document store""" , """
-Graph DBMS""" , """
-RDF store""" ;
+	schema:category "Relational DBMS" , "Document store" , "Graph DBMS" , "RDF Store" ;
 	owl:sameAs <http://dbpedia.org/resource/Oracle_Database> .
 
 <http://productontology.org/id/Oracle_Database> a schema:Product .
@@ -46,16 +43,13 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#8c49c3c68c749183c7a38a3749ce34c9> schema:mainEntityOfPage <https://angel.co/oracle-1> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#270085566d6200c501fde2aada153de2> schema:category "Relational DBMS" ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "MySQL " ;
-	schema:category """
-Document store""" ;
-	owl:sameAs <http://dbpedia.org/resource/MySQL> .
-
 <http://productontology.org/id/MySQL> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#270085566d6200c501fde2aada153de2> skos:related <http://productontology.org/id/MySQL> .
+<http://www.openlinksw.com/data/turtle/database-applications/#270085566d6200c501fde2aada153de2> skos:related <http://productontology.org/id/MySQL> ;
+	a dbms:DatabaseManagementSystem ;
+	rdfs:label "MySQL " ;
+	schema:category "Relational DBMS" , "Document store" ;
+	owl:sameAs <http://dbpedia.org/resource/MySQL> .
 
 <https://finance.yahoo.com/quote/ORCL?p=ORCL#finance> schema:name "Funding Page" .
 
@@ -81,12 +75,12 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#270085566d6200c501fde2aada153de2> schema:mainEntityOfPage <https://angel.co/mysql> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#b87b60bc8698609dd3eaf96c8d2fd0c9> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#b87b60bc8698609dd3eaf96c8d2fd0c9> schema:category "Document store" ;
+	owl:sameAs <http://dbpedia.org/resource/Microsoft_SQL_Server> ;
+	schema:category "Graph DBMS" ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Microsoft SQL Server " ;
-	schema:category "Relational DBMS" , """
-Document store""" , """
-Graph DBMS""" ;
-	owl:sameAs <http://dbpedia.org/resource/Microsoft_SQL_Server> .
+	schema:category "Relational DBMS" .
 
 <http://productontology.org/id/Microsoft_SQL_Server> a schema:Product .
 
@@ -116,11 +110,9 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#b87b60bc8698609dd3eaf96c8d2fd0c9> schema:mainEntityOfPage <https://angel.co/microsoft-sql-server> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#20a028628edbb3462400721ddac09b9f> schema:category "Relational DBMS" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#20a028628edbb3462400721ddac09b9f> a dbms:DatabaseManagementSystem ;
 	rdfs:label "PostgreSQL " ;
-	a dbms:DatabaseManagementSystem ;
-	schema:category """
-Document store""" ;
+	schema:category "Relational DBMS" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/PostgreSQL> .
 
 <http://productontology.org/id/PostgreSQL> a schema:Product .
@@ -147,8 +139,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#20a028628edbb3462400721ddac09b9f> schema:mainEntityOfPage <https://angel.co/postgresql> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#0962588ff732485386c4aa04082a9722> rdfs:label "MongoDB " ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#0962588ff732485386c4aa04082a9722> a dbms:DatabaseManagementSystem ;
+	rdfs:label "MongoDB " ;
 	schema:category "Document" ;
 	owl:sameAs <http://dbpedia.org/resource/MongoDB> .
 
@@ -182,9 +174,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#79ffc5f2d5ea227fc029acfb625d3548> a dbms:DatabaseManagementSystem ;
 	rdfs:label "IBM Db2 " ;
-	schema:category "Relational DBMS" , """
-Document store""" , """
-RDF store""" ;
+	schema:category "Relational DBMS" , "Document store" , "RDF Store" ;
 	owl:sameAs <http://dbpedia.org/resource/IBM_DB2> .
 
 <http://productontology.org/id/IBM_DB2> a schema:Product .
@@ -205,22 +195,17 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#79ffc5f2d5ea227fc029acfb625d3548> schema:mainEntityOfPage <https://angel.co/ibmdb2> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#f18b7f183f4e2ffd054a4b8637eb8724> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Redis " ;
-	schema:category "Key-value" , """
-Document store""" , """
-Graph DBMS""" , """
-Search engine""" , """
-Time Series DBMS""" ;
-	owl:sameAs <http://dbpedia.org/resource/Redis> .
-
 <http://productontology.org/id/Redis> a schema:Product .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#f18b7f183f4e2ffd054a4b8637eb8724> skos:related <http://productontology.org/id/Redis> .
 
 <https://www.crunchbase.com/search/funding_rounds/field/organizations/funding_total/redis-labs#funding> schema:name "Funding Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#f18b7f183f4e2ffd054a4b8637eb8724> schema:mainEntityOfPage <https://www.crunchbase.com/search/funding_rounds/field/organizations/funding_total/redis-labs#funding> .
+<http://www.openlinksw.com/data/turtle/database-applications/#f18b7f183f4e2ffd054a4b8637eb8724> schema:mainEntityOfPage <https://www.crunchbase.com/search/funding_rounds/field/organizations/funding_total/redis-labs#funding> ;
+	a dbms:DatabaseManagementSystem ;
+	rdfs:label "Redis " ;
+	schema:category "Key-value" , "Document store" , "Graph DBMS" , "Search engine" , "Time Series DBMS" ;
+	owl:sameAs <http://dbpedia.org/resource/Redis> .
 
 <https://db-engines.com/en/system/Redis> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -244,8 +229,7 @@ Time Series DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#192764775ba7120e77ee75a73096a928> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Elasticsearch " ;
-	schema:category "Search engine" , """
-Document store""" ;
+	schema:category "Search engine" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/Elasticsearch> .
 
 <http://productontology.org/id/Elasticsearch> a schema:Product .
@@ -276,10 +260,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#192764775ba7120e77ee75a73096a928> schema:mainEntityOfPage <https://angel.co/elasticsearch> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4034885a0218494f192f6458b8620215> rdfs:label "Microsoft Access" ;
-	a dbms:DatabaseManagementSystem ;
-	schema:category "Relational DBMS" ;
-	owl:sameAs <http://dbpedia.org/resource/Microsoft_Access> .
+<http://www.openlinksw.com/data/turtle/database-applications/#4034885a0218494f192f6458b8620215> owl:sameAs <http://dbpedia.org/resource/Microsoft_Access> .
 
 <http://productontology.org/id/Microsoft_Access> a schema:Product .
 
@@ -287,7 +268,10 @@ Document store""" ;
 
 <https://finance.yahoo.com/quote/MSFT?p=MSFT#finance> schema:name "Funding Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4034885a0218494f192f6458b8620215> schema:mainEntityOfPage <https://finance.yahoo.com/quote/MSFT?p=MSFT#finance> .
+<http://www.openlinksw.com/data/turtle/database-applications/#4034885a0218494f192f6458b8620215> schema:mainEntityOfPage <https://finance.yahoo.com/quote/MSFT?p=MSFT#finance> ;
+	a dbms:DatabaseManagementSystem ;
+	rdfs:label "Microsoft Access" ;
+	schema:category "Relational DBMS" .
 
 <https://db-engines.com/en/system/Microsoft+Access> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -304,9 +288,9 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#4034885a0218494f192f6458b8620215> schema:mainEntityOfPage <https://angel.co/microsoft-access> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#82a529b5a07665bc86250115a1b39def> rdfs:label "SQLite " ;
+<http://www.openlinksw.com/data/turtle/database-applications/#82a529b5a07665bc86250115a1b39def> schema:category "Relational DBMS" ;
+	rdfs:label "SQLite " ;
 	a dbms:DatabaseManagementSystem ;
-	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/SQLite> .
 
 <http://productontology.org/id/SQLite> a schema:Product .
@@ -356,12 +340,9 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#72da77a267dc3303053276752c75cbd1> schema:mainEntityOfPage <https://angel.co/cassandra> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#037f3a56dc366adce15bd73d3d79d8b0> schema:category """
-Document store""" , """
-Graph DBMS""" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#037f3a56dc366adce15bd73d3d79d8b0> a dbms:DatabaseManagementSystem ;
 	rdfs:label "MariaDB " ;
-	schema:category "Relational DBMS" ;
+	schema:category "Relational DBMS" , "Document store" , "Graph DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/MariaDB> .
 
 <http://productontology.org/id/MariaDB> a schema:Product .
@@ -388,9 +369,9 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#037f3a56dc366adce15bd73d3d79d8b0> schema:mainEntityOfPage <https://angel.co/mariadb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#2f9304fe9b427489507405bef9a0bb9f> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Splunk" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#2f9304fe9b427489507405bef9a0bb9f> rdfs:label "Splunk" ;
 	schema:category "Search engine" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/Splunk> .
 
 <http://productontology.org/id/Splunk> a schema:Product .
@@ -421,9 +402,9 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#2f9304fe9b427489507405bef9a0bb9f> schema:mainEntityOfPage <https://angel.co/Splunk> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#74ebaaffdfa86195aa354ade4df832cb> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Teradata " ;
+<http://www.openlinksw.com/data/turtle/database-applications/#74ebaaffdfa86195aa354ade4df832cb> rdfs:label "Teradata " ;
 	schema:category "Relational DBMS" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/Teradata> .
 
 <http://productontology.org/id/Teradata> a schema:Product .
@@ -454,9 +435,9 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#74ebaaffdfa86195aa354ade4df832cb> schema:mainEntityOfPage <https://angel.co/teradata> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#eb662eb705e1d8e688d029644a63ceae> rdfs:label "Hive " ;
-	schema:category "Relational DBMS" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#eb662eb705e1d8e688d029644a63ceae> schema:category "Relational DBMS" ;
 	a dbms:DatabaseManagementSystem ;
+	rdfs:label "Hive " ;
 	owl:sameAs <http://dbpedia.org/resource/Apache_Hive> .
 
 <http://productontology.org/id/Apache_Hive> a schema:Product .
@@ -507,27 +488,24 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#dcdb64c465b9d12742a2ea4c88c32d30> schema:mainEntityOfPage <https://angel.co/solr> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#ea99739c8dbb7025e731ca866f7f14b3> skos:related <http://productontology.org/id/Apache_HBase> ;
-	rdfs:label "HBase" .
+<http://www.openlinksw.com/data/turtle/database-applications/#ea99739c8dbb7025e731ca866f7f14b3> a dbms:DatabaseManagementSystem ;
+	rdfs:label "HBase" ;
+	schema:category "Wide column" ;
+	owl:sameAs <http://dbpedia.org/resource/Apache_HBase> .
 
-<https://www.linkedin.com/groups/1407857/> schema:name "LinkedIn Page" .
+<http://productontology.org/id/Apache_HBase> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#ea99739c8dbb7025e731ca866f7f14b3> schema:mainEntityOfPage <https://www.linkedin.com/groups/1407857/> ;
-	schema:category "Wide column" .
+<http://www.openlinksw.com/data/turtle/database-applications/#ea99739c8dbb7025e731ca866f7f14b3> skos:related <http://productontology.org/id/Apache_HBase> .
 
-<https://db-engines.com/en/system/HBase> schema:name "DB Engines Analysis Page" .
+<https://db-engines.com/en/system/HBase> a schema:CreativeWork ;
+	schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#ea99739c8dbb7025e731ca866f7f14b3> schema:mainEntityOfPage <https://db-engines.com/en/system/HBase> .
 
-<https://db-engines.com/en/system/HBase> a schema:CreativeWork .
+<https://www.linkedin.com/groups/1407857/> a schema:CreativeWork ;
+	schema:name "LinkedIn Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#ea99739c8dbb7025e731ca866f7f14b3> a dbms:DatabaseManagementSystem .
-
-<https://www.linkedin.com/groups/1407857/> a schema:CreativeWork .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#ea99739c8dbb7025e731ca866f7f14b3> owl:sameAs <http://dbpedia.org/resource/Apache_HBase> .
-
-<http://productontology.org/id/Apache_HBase> a schema:Product .
+<http://www.openlinksw.com/data/turtle/database-applications/#ea99739c8dbb7025e731ca866f7f14b3> schema:mainEntityOfPage <https://www.linkedin.com/groups/1407857/> .
 
 <https://angel.co/hbase> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
@@ -595,9 +573,9 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#ecc6739149c9939decc32258d6526f43> schema:mainEntityOfPage <https://angel.co/amazon-dynamodb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#7fe3d3fd482b928a96d9afe853e49938> rdfs:label "SAP Adaptive Server" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#7fe3d3fd482b928a96d9afe853e49938> a dbms:DatabaseManagementSystem ;
+	rdfs:label "SAP Adaptive Server" ;
 	schema:category "Relational DBMS" ;
-	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/Adaptive_Server_Enterprise> .
 
 <http://productontology.org/id/Adaptive_Server_Enterprise> a schema:Product .
@@ -623,11 +601,10 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7fe3d3fd482b928a96d9afe853e49938> schema:mainEntityOfPage <https://angel.co/sap> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#1bcd33990c3005e67b0c2f9a0f39c5ee> a dbms:DatabaseManagementSystem ;
-	rdfs:label "SAP HANA " ;
-	schema:category "Relational DBMS" , """
-Document store""" , """
-Graph DBMS""" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#1bcd33990c3005e67b0c2f9a0f39c5ee> rdfs:label "SAP HANA " ;
+	schema:category "Relational DBMS" ;
+	a dbms:DatabaseManagementSystem ;
+	schema:category "Document store" , "Graph DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/SAP_HANA> .
 
 <http://productontology.org/id/SAP_HANA> a schema:Product .
@@ -676,10 +653,7 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#fc1826eb80c5c1c3c25e1dd9c0100fdb> schema:mainEntityOfPage <https://angel.co/neo4j-3> .
 
-<https://www.linkedin.com/company/couchbase/> schema:name "LinkedIn Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#a7208c8a668149dcf89f029181253a3a> schema:mainEntityOfPage <https://www.linkedin.com/company/couchbase/> ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#a7208c8a668149dcf89f029181253a3a> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Couchbase " ;
 	schema:category "Document" ;
 	owl:sameAs <http://dbpedia.org/resource/Couchbase_Server> .
@@ -693,7 +667,10 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#a7208c8a668149dcf89f029181253a3a> schema:mainEntityOfPage <https://db-engines.com/en/system/Couchbase> .
 
-<https://www.linkedin.com/company/couchbase/> a schema:CreativeWork .
+<https://www.linkedin.com/company/couchbase/> a schema:CreativeWork ;
+	schema:name "LinkedIn Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#a7208c8a668149dcf89f029181253a3a> schema:mainEntityOfPage <https://www.linkedin.com/company/couchbase/> .
 
 <https://www.crunchbase.com/organization/couchbase> a schema:CreativeWork ;
 	schema:name "Crunchbase Page" .
@@ -707,9 +684,7 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#e5f74f4179e717b37bfe98dd157129d1> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Microsoft Azure SQL Database" ;
-	schema:category "Relational DBMS" , """
-Document store""" , """
-Graph DBMS""" ;
+	schema:category "Relational DBMS" , "Document store" , "Graph DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Microsoft_Azure_SQL_Database> .
 
 <http://productontology.org/id/Microsoft_Azure_SQL_Database> a schema:Product .
@@ -726,9 +701,9 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#e5f74f4179e717b37bfe98dd157129d1> schema:mainEntityOfPage <https://www.crunchbase.com/organization/azure> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#05894ba2c918dd33592bf1bd21c347f6> rdfs:label "Memcached" ;
-	schema:category "Key-value" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#05894ba2c918dd33592bf1bd21c347f6> schema:category "Key-value" ;
 	a dbms:DatabaseManagementSystem ;
+	rdfs:label "Memcached" ;
 	owl:sameAs <http://dbpedia.org/resource/MemcacheDB> .
 
 <http://productontology.org/id/MemcacheDB> a schema:Product .
@@ -761,9 +736,7 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#39046d7db7de492f0295971f225974ff> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Informix" ;
-	schema:category "Relational DBMS" , """
-Document store""" , """
-Time Series DBMS""" ;
+	schema:category "Relational DBMS" , "Document store" , "Time Series DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/IBM_Informix> .
 
 <http://productontology.org/id/IBM_Informix> a schema:Product .
@@ -794,16 +767,16 @@ Time Series DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#39046d7db7de492f0295971f225974ff> schema:mainEntityOfPage <https://angel.co/informix-software> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#a27b8d5549372461acd51b871c5be756> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#a27b8d5549372461acd51b871c5be756> owl:sameAs <http://dbpedia.org/resource/Cosmos_DB> ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Microsoft Azure Cosmos DB " ;
-	schema:category "Multi-model Document store" , """
-Key-value store""" , """
-Wide column store""" ;
-	owl:sameAs <http://dbpedia.org/resource/Cosmos_DB> .
+	schema:category "Multi-model Document store" , "Key-value store" .
 
 <http://productontology.org/id/Cosmos_DB> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#a27b8d5549372461acd51b871c5be756> skos:related <http://productontology.org/id/Cosmos_DB> .
+<http://www.openlinksw.com/data/turtle/database-applications/#a27b8d5549372461acd51b871c5be756> skos:related <http://productontology.org/id/Cosmos_DB> ;
+	schema:category """
+Wide column store""" .
 
 <https://finance.yahoo.com/quote/MSFT?p=MSFT#finance> schema:name "Funding Page" .
 
@@ -821,8 +794,7 @@ Wide column store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#ab1fd332cdb4eb909b543b6ffb6fd514> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Vertica " ;
-	schema:category "Relational DBMS" , """
-Document store""" ;
+	schema:category "Relational DBMS" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/Vertica> .
 
 <http://productontology.org/id/Vertica> a schema:Product .
@@ -838,9 +810,9 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#ab1fd332cdb4eb909b543b6ffb6fd514> schema:mainEntityOfPage <https://db-engines.com/en/system/Vertica> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#a148375f4456d843936aaf034bff1b45> schema:category "Relational DBMS" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#a148375f4456d843936aaf034bff1b45> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Amazon Redshift " ;
+	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Amazon_Redshift> .
 
 <http://productontology.org/id/Amazon_Redshift> a schema:Product .
@@ -891,8 +863,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#859e00b3f78bddd5452dd5f4b5c869ba> schema:mainEntityOfPage <https://angel.co/firebird> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#93fb7fd4c4e590e40d66bb93c958fd3c> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Google BigQuery " ;
+<http://www.openlinksw.com/data/turtle/database-applications/#93fb7fd4c4e590e40d66bb93c958fd3c> rdfs:label "Google BigQuery " ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/BigQuery> .
 
@@ -1031,8 +1003,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#8fc20d978449ca8dfa142f6d1dc51fa1> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Impala" ;
-	schema:category "Relational DBMS" , """
-Document store""" ;
+	schema:category "Relational DBMS" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/Apache_Impala> .
 
 <http://productontology.org/id/Apache_Impala> a schema:Product .
@@ -1061,9 +1032,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#9986184bdf5faf78165ae30f9db364d4> a dbms:DatabaseManagementSystem ;
 	rdfs:label "MarkLogic " ;
-	schema:category "Multi-model Document store" , """
-RDF store""" , """
-Search engine""" ;
+	schema:category "Multi-model Document store" , "RDF store" , "Search engine" ;
 	owl:sameAs <http://dbpedia.org/resource/MarkLogic> .
 
 <http://productontology.org/id/MarkLogic> a schema:Product .
@@ -1094,10 +1063,9 @@ Search engine""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#9986184bdf5faf78165ae30f9db364d4> schema:mainEntityOfPage <https://angel.co/influxdb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4f7b2ed493383e633bbe43345890c804> schema:category "Relational DBMS" , """
-Document store""" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#4f7b2ed493383e633bbe43345890c804> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Greenplum" ;
+	schema:category "Relational DBMS" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/Greenplum> .
 
 <http://productontology.org/id/Greenplum> a schema:Product .
@@ -1124,9 +1092,9 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#4f7b2ed493383e633bbe43345890c804> schema:mainEntityOfPage <https://angel.co/marklogic> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#d840bc8d8a1cb2445aa4e93f93dfa41c> schema:category "Relational DBMS" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#d840bc8d8a1cb2445aa4e93f93dfa41c> a dbms:DatabaseManagementSystem ;
 	rdfs:label "dBASE" ;
+	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/DBase> .
 
 <http://productontology.org/id/DBase> a schema:Product .
@@ -1154,22 +1122,21 @@ Document store""" ;
 <http://www.openlinksw.com/data/turtle/database-applications/#d840bc8d8a1cb2445aa4e93f93dfa41c> schema:mainEntityOfPage <https://angel.co/greenplum-software> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#43b490b8e275a05d670f024daca324f4> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Oracle Essbase" .
-
-<https://db-engines.com/en/system/Oracle+Essbase> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#43b490b8e275a05d670f024daca324f4> schema:category "Relational DBMS" ;
-	owl:sameAs <http://dbpedia.org/resource/Essbase> ;
-	schema:mainEntityOfPage <https://db-engines.com/en/system/Oracle+Essbase> .
-
-<https://www.linkedin.com/company/dbasellc/> a schema:CreativeWork .
+	rdfs:label "Oracle Essbase" ;
+	schema:category "Relational DBMS" ;
+	owl:sameAs <http://dbpedia.org/resource/Essbase> .
 
 <http://productontology.org/id/Essbase> a schema:Product .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#43b490b8e275a05d670f024daca324f4> skos:related <http://productontology.org/id/Essbase> .
 
-<https://www.linkedin.com/company/dbasellc/> schema:name "LinkedIn Page" .
+<https://db-engines.com/en/system/Oracle+Essbase> a schema:CreativeWork ;
+	schema:name "DB Engines Analysis Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#43b490b8e275a05d670f024daca324f4> schema:mainEntityOfPage <https://db-engines.com/en/system/Oracle+Essbase> .
+
+<https://www.linkedin.com/company/dbasellc/> a schema:CreativeWork ;
+	schema:name "LinkedIn Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#43b490b8e275a05d670f024daca324f4> schema:mainEntityOfPage <https://www.linkedin.com/company/dbasellc/> .
 
@@ -1179,8 +1146,8 @@ Document store""" ;
 <http://www.openlinksw.com/data/turtle/database-applications/#43b490b8e275a05d670f024daca324f4> schema:mainEntityOfPage <https://angel.co/dbase-1> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#cf391cf12459e93a7dafedd48af037e7> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Firebase Realtime Database" ;
 	schema:category "Document" ;
+	rdfs:label "Firebase Realtime Database" ;
 	owl:sameAs <http://dbpedia.org/resource/Firebase> .
 
 <http://productontology.org/id/Firebase> a schema:Product .
@@ -1203,9 +1170,7 @@ Document store""" ;
 <http://www.openlinksw.com/data/turtle/database-applications/#cf391cf12459e93a7dafedd48af037e7> schema:mainEntityOfPage <https://angel.co/oracle-hyperion-essbase> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#f52d391944ae8fe54f4556c0b7080ef4> rdfs:label "Datastax Enterprise " ;
-	schema:category "Wide column" , """
-Document store""" , """
-Graph DBMS""" ;
+	schema:category "Wide column" , "Document store" , "Graph DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/DataStax> .
 
 <http://productontology.org/id/DataStax> a schema:Product .
@@ -1264,8 +1229,7 @@ Graph DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#242da9f99e89cf996d335aeb0827c5cd> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Hazelcast" ;
-	schema:category "Key-value" , """
-Document store""" ;
+	schema:category "Key-value" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/Hazelcast> .
 
 <http://productontology.org/id/Hazelcast> a schema:Product .
@@ -1296,20 +1260,19 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#242da9f99e89cf996d335aeb0827c5cd> schema:mainEntityOfPage <https://angel.co/datastax-enterprise-dse-cassandra> .
 
-<https://db-engines.com/en/system/Realm> schema:name "DB Engines Analysis Page" .
+<http://www.openlinksw.com/data/turtle/database-applications/#ba7b7da7852a3fa283520f6c02efbacc> skos:related <http://productontology.org/id/Realm_(database)> ;
+	a dbms:DatabaseManagementSystem .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#ba7b7da7852a3fa283520f6c02efbacc> schema:mainEntityOfPage <https://db-engines.com/en/system/Realm> .
+<https://db-engines.com/en/system/Realm> schema:name "DB Engines Analysis Page" ;
+	a schema:CreativeWork .
 
-<https://db-engines.com/en/system/Realm> a schema:CreativeWork .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#ba7b7da7852a3fa283520f6c02efbacc> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Realm" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#ba7b7da7852a3fa283520f6c02efbacc> rdfs:label "Realm" ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Realm_(database)> .
 
 <http://productontology.org/id/Realm_(database)> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#ba7b7da7852a3fa283520f6c02efbacc> skos:related <http://productontology.org/id/Realm_(database)> .
+<http://www.openlinksw.com/data/turtle/database-applications/#ba7b7da7852a3fa283520f6c02efbacc> schema:mainEntityOfPage <https://db-engines.com/en/system/Realm> .
 
 <https://www.linkedin.com/company/realm-inc/> a schema:CreativeWork ;
 	schema:name "LinkedIn Page" .
@@ -1389,8 +1352,8 @@ Document store""" ;
 <http://www.openlinksw.com/data/turtle/database-applications/#5f61361769b9c5ae8aebe77c12424667> schema:mainEntityOfPage <https://angel.co/riak> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#ad4da5a72cfe91929191f3f66bb6f8a6> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Ehcache" ;
 	schema:category "Key-value" ;
+	rdfs:label "Ehcache" ;
 	owl:sameAs <http://dbpedia.org/resource/Ehcache> .
 
 <http://productontology.org/id/Ehcache> a schema:Product .
@@ -1417,9 +1380,9 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#ad4da5a72cfe91929191f3f66bb6f8a6> schema:mainEntityOfPage <https://angel.co/embarcadero-technologies> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#fca9994c7ac4e79a77a6e4aa1b30bcbf> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Aerospike " ;
+<http://www.openlinksw.com/data/turtle/database-applications/#fca9994c7ac4e79a77a6e4aa1b30bcbf> rdfs:label "Aerospike " ;
 	schema:category "Key-value" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/Aerospike_database> .
 
 <http://productontology.org/id/Aerospike_database> a schema:Product .
@@ -1452,8 +1415,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#2b52fef0ca388efdd3fea82de69a7445> a dbms:DatabaseManagementSystem ;
 	rdfs:label "OrientDB" ;
-	schema:category "Multi-model Document store" , """
-Key-value store""" ;
+	schema:category "Multi-model Document store" , "Key-value store" ;
 	owl:sameAs <http://dbpedia.org/resource/OrientDB> .
 
 <http://productontology.org/id/OrientDB> a schema:Product .
@@ -1486,8 +1448,7 @@ Key-value store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#69670a9d53817d1ec89e685997343ce2> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Amazon Aurora" ;
-	schema:category "Relational DBMS" , """
-Document store""" ;
+	schema:category "Relational DBMS" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/Amazon_Aurora> .
 
 <http://productontology.org/id/Amazon_Aurora> a schema:Product .
@@ -1499,10 +1460,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#69670a9d53817d1ec89e685997343ce2> schema:mainEntityOfPage <https://db-engines.com/en/system/AmazonAurora> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#683123fe5eaa949078b27fe65b6feb1b> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Kdb+ " ;
-	schema:category "Time Series" , """
-Relational DBMS DBMS""" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#683123fe5eaa949078b27fe65b6feb1b> rdfs:label "Kdb+ " ;
+	schema:category "Time Series" , "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Kdb%2B> .
 
 <http://productontology.org/id/Kdb%2B> a schema:Product .
@@ -1516,7 +1475,8 @@ Relational DBMS DBMS""" ;
 <https://db-engines.com/en/system/Kdb+> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#683123fe5eaa949078b27fe65b6feb1b> schema:mainEntityOfPage <https://db-engines.com/en/system/Kdb+> .
+<http://www.openlinksw.com/data/turtle/database-applications/#683123fe5eaa949078b27fe65b6feb1b> a dbms:DatabaseManagementSystem ;
+	schema:mainEntityOfPage <https://db-engines.com/en/system/Kdb+> .
 
 <https://www.linkedin.com/company/actian-corporation/> a schema:CreativeWork ;
 	schema:name "LinkedIn Page" .
@@ -1547,18 +1507,17 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#1209f64a7225ad05793765506cfea711> schema:mainEntityOfPage <https://angel.co/riak> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4c31f6ed277acc982f3e2285a6f0711a> rdfs:label "Microsoft Azure Search" ;
-	a dbms:DatabaseManagementSystem ;
-	schema:category "Search engine" ;
-	owl:sameAs <http://dbpedia.org/resource/Azure_Search> .
+<http://www.openlinksw.com/data/turtle/database-applications/#4c31f6ed277acc982f3e2285a6f0711a> schema:category "Search engine" ;
+	owl:sameAs <http://dbpedia.org/resource/Azure_Search> ;
+	schema:mainEntityOfPage <https://finance.yahoo.com/quote/MSFT?p=MSFT#finance> .
 
 <http://productontology.org/id/Azure_Search> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4c31f6ed277acc982f3e2285a6f0711a> skos:related <http://productontology.org/id/Azure_Search> .
-
 <https://finance.yahoo.com/quote/MSFT?p=MSFT#finance> schema:name "Funding Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4c31f6ed277acc982f3e2285a6f0711a> schema:mainEntityOfPage <https://finance.yahoo.com/quote/MSFT?p=MSFT#finance> .
+<http://www.openlinksw.com/data/turtle/database-applications/#4c31f6ed277acc982f3e2285a6f0711a> skos:related <http://productontology.org/id/Azure_Search> ;
+	a dbms:DatabaseManagementSystem ;
+	rdfs:label "Microsoft Azure Search" .
 
 <https://db-engines.com/en/system/Microsoft+Azure+Search> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -1570,9 +1529,9 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#4c31f6ed277acc982f3e2285a6f0711a> schema:mainEntityOfPage <https://angel.co/microsoft-azure-1> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#7a6c7e63c3eafe77b7a2d3450fc2c22c> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Ingres" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#7a6c7e63c3eafe77b7a2d3450fc2c22c> rdfs:label "Ingres" ;
 	schema:category "Relational DBMS" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/Ingres_(database)> .
 
 <http://productontology.org/id/Ingres_(database)> a schema:Product .
@@ -1588,9 +1547,9 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7a6c7e63c3eafe77b7a2d3450fc2c22c> schema:mainEntityOfPage <https://db-engines.com/en/system/Ingres> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#07b7a919a6c18ad5728cd585914fa1d0> rdfs:label "SAP SQL Anywhere" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#07b7a919a6c18ad5728cd585914fa1d0> a dbms:DatabaseManagementSystem ;
+	rdfs:label "SAP SQL Anywhere" ;
 	schema:category "Relational DBMS" ;
-	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/SQL_Anywhere> .
 
 <http://productontology.org/id/SQL_Anywhere> a schema:Product .
@@ -1645,8 +1604,8 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7e3c720afe1e04eadd7459f072be745b> schema:mainEntityOfPage <https://angel.co/kdb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#b570e354b7ebc40e20029fcc7a15e5a7> rdfs:label "Ignite" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#b570e354b7ebc40e20029fcc7a15e5a7> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Ignite" ;
 	schema:category "Multi-model Key-value store" ;
 	owl:sameAs <http://dbpedia.org/resource/Apache_Ignite> .
 
@@ -1669,8 +1628,7 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#b570e354b7ebc40e20029fcc7a15e5a7> schema:mainEntityOfPage <https://angel.co/apache-ignite> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#a3299e59da87991994cf4dc06313248b> schema:mainEntityOfPage <https://www.linkedin.com/showcase/kdb-/> ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#a3299e59da87991994cf4dc06313248b> a dbms:DatabaseManagementSystem ;
 	rdfs:label "SAP IQ" ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/SAP_IQ> .
@@ -1690,6 +1648,8 @@ Relational DBMS DBMS""" ;
 
 <https://www.linkedin.com/showcase/kdb-/> a schema:CreativeWork ;
 	schema:name "LinkedIn Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#a3299e59da87991994cf4dc06313248b> schema:mainEntityOfPage <https://www.linkedin.com/showcase/kdb-/> .
 
 <https://angel.co/rethinkdb> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
@@ -1738,7 +1698,10 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#875651e80e42a1a2ac055e4ce84d41c0> schema:mainEntityOfPage <https://db-engines.com/en/system/Microsoft+Azure+Table+Storage> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#fc812bd215c02b88ece46c205dfeb7d9> a dbms:DatabaseManagementSystem ;
+<https://db-engines.com/en/system/Google+Cloud+Store> schema:name "DB Engines Analysis Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#fc812bd215c02b88ece46c205dfeb7d9> schema:mainEntityOfPage <https://db-engines.com/en/system/Google+Cloud+Store> ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Google Cloud Datastore" ;
 	schema:category "Document" ;
 	owl:sameAs <http://dbpedia.org/resource/Google_Cloud_Datastore> .
@@ -1747,10 +1710,7 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#fc812bd215c02b88ece46c205dfeb7d9> skos:related <http://productontology.org/id/Google_Cloud_Datastore> .
 
-<https://db-engines.com/en/system/Google+Cloud+Store> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#fc812bd215c02b88ece46c205dfeb7d9> schema:mainEntityOfPage <https://db-engines.com/en/system/Google+Cloud+Store> .
+<https://db-engines.com/en/system/Google+Cloud+Store> a schema:CreativeWork .
 
 <https://angel.co/google-cloud-datastore> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
@@ -1776,9 +1736,9 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#961d793faf1d3e2a33ea543029830e2e> schema:mainEntityOfPage <https://angel.co/firestore> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#03ee3c33d2b9b714ecfc47950fb920e7> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Presto" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#03ee3c33d2b9b714ecfc47950fb920e7> rdfs:label "Presto" ;
 	schema:category "Relational DBMS" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/Presto_(SQL_query_engine)> .
 
 <http://productontology.org/id/Presto_(SQL_query_engine)> a schema:Product .
@@ -1800,10 +1760,9 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#03ee3c33d2b9b714ecfc47950fb920e7> schema:mainEntityOfPage <https://angel.co/prestodb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#f18b7acb81fca3cc0da2a24d5ff91378> rdfs:label "ArangoDB" ;
-	a dbms:DatabaseManagementSystem ;
-	schema:category "Multi-model Document store" , """
-Key-value store""" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#f18b7acb81fca3cc0da2a24d5ff91378> a dbms:DatabaseManagementSystem ;
+	rdfs:label "ArangoDB" ;
+	schema:category "Multi-model Document store" , "Key-value store" ;
 	owl:sameAs <http://dbpedia.org/resource/ArangoDB> .
 
 <http://productontology.org/id/ArangoDB> a schema:Product .
@@ -1859,8 +1818,8 @@ Key-value store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#15ec8934d96530d4c5f4a3b0f701f745> schema:mainEntityOfPage <https://angel.co/accumulo> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#8e77f216b89667a96288eaefd6aaad3c> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Accumulo" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#8e77f216b89667a96288eaefd6aaad3c> rdfs:label "Accumulo" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Wide column" ;
 	owl:sameAs <http://dbpedia.org/resource/Apache_Accumulo> .
 
@@ -1888,9 +1847,9 @@ Key-value store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#8e77f216b89667a96288eaefd6aaad3c> schema:mainEntityOfPage <https://angel.co/software-ag> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#72ceec27e9e0722c8d38fc944bc2ebc8> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#72ceec27e9e0722c8d38fc944bc2ebc8> schema:category "Search engine" ;
 	rdfs:label "Algolia" ;
-	schema:category "Search engine" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/Algolia> .
 
 <http://productontology.org/id/Algolia> a schema:Product .
@@ -1992,8 +1951,12 @@ Key-value store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#8d23c246e6e16f7cbd5d76d986ff8de7> schema:mainEntityOfPage <https://angel.co/cloudant> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#da2e8f2afe59b5f7d2dad1e0e8ae2475> a dbms:DatabaseManagementSystem ;
-	rdfs:label "OpenEdge" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#da2e8f2afe59b5f7d2dad1e0e8ae2475> schema:mainEntityOfPage <https://www.linkedin.com/company/progress-software/> , <https://db-engines.com/en/system/OpenEdge> ;
+	a dbms:DatabaseManagementSystem .
+
+<https://www.linkedin.com/company/progress-software/> a schema:CreativeWork .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#da2e8f2afe59b5f7d2dad1e0e8ae2475> rdfs:label "OpenEdge" ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/OpenEdge_Advanced_Business_Language> .
 
@@ -2004,12 +1967,7 @@ Key-value store""" ;
 <https://db-engines.com/en/system/OpenEdge> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#da2e8f2afe59b5f7d2dad1e0e8ae2475> schema:mainEntityOfPage <https://db-engines.com/en/system/OpenEdge> .
-
-<https://www.linkedin.com/company/progress-software/> a schema:CreativeWork ;
-	schema:name "LinkedIn Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#da2e8f2afe59b5f7d2dad1e0e8ae2475> schema:mainEntityOfPage <https://www.linkedin.com/company/progress-software/> .
+<https://www.linkedin.com/company/progress-software/> schema:name "LinkedIn Page" .
 
 <https://www.crunchbase.com/organization/progress-software> a schema:CreativeWork ;
 	schema:name "Crunchbase Page" .
@@ -2021,10 +1979,9 @@ Key-value store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#da2e8f2afe59b5f7d2dad1e0e8ae2475> schema:mainEntityOfPage <https://angel.co/progress-software> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#3cbeb0553c9f86c9dbf443791b0775f3> a dbms:DatabaseManagementSystem ;
-	rdfs:label "MemSQL " ;
-	schema:category "Relational DBMS" , """
-Document store""" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#3cbeb0553c9f86c9dbf443791b0775f3> rdfs:label "MemSQL " ;
+	a dbms:DatabaseManagementSystem ;
+	schema:category "Relational DBMS" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/MemSQL> .
 
 <http://productontology.org/id/MemSQL> a schema:Product .
@@ -2051,12 +2008,9 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#3cbeb0553c9f86c9dbf443791b0775f3> schema:mainEntityOfPage <https://angel.co/memsql> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#006d03d8a44e869801eeee1790e2bc24> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Virtuoso " ;
-	schema:category "Multi-model Graph DBMS" , """
-Relational DBMS DBMS""" , """
-RDF store""" , """
-Document store""" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#006d03d8a44e869801eeee1790e2bc24> rdfs:label "Virtuoso " ;
+	a dbms:DatabaseManagementSystem ;
+	schema:category "Multi-model Graph DBMS" , "Relational DBMS" , "RDF Store" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/Virtuoso_Universal_Server> .
 
 <http://productontology.org/id/Virtuoso_Universal_Server> a schema:Product .
@@ -2083,10 +2037,10 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#006d03d8a44e869801eeee1790e2bc24> schema:mainEntityOfPage <https://angel.co/openlink-software> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#7bca03d0eaf715eb4ab6803c92875d5d> owl:sameAs <http://dbpedia.org/resource/Rocket_U2> ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#7bca03d0eaf715eb4ab6803c92875d5d> a dbms:DatabaseManagementSystem ;
 	rdfs:label "UniData,UniVerse" ;
-	schema:category "Multivalue" .
+	schema:category "Multivalue" ;
+	owl:sameAs <http://dbpedia.org/resource/Rocket_U2> .
 
 <http://productontology.org/id/Rocket_U2> a schema:Product .
 
@@ -2112,14 +2066,14 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7bca03d0eaf715eb4ab6803c92875d5d> schema:mainEntityOfPage <https://angel.co/rocket-software> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#9e23f5f57a219d77d81a9193c8cc2e2c> a dbms:DatabaseManagementSystem .
-
-<http://productontology.org/id/Graphite_(software)> a schema:Product .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#9e23f5f57a219d77d81a9193c8cc2e2c> skos:related <http://productontology.org/id/Graphite_(software)> ;
+<http://www.openlinksw.com/data/turtle/database-applications/#9e23f5f57a219d77d81a9193c8cc2e2c> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Graphite" ;
 	schema:category "Time Series" ;
 	owl:sameAs <http://dbpedia.org/resource/Graphite_(software)> .
+
+<http://productontology.org/id/Graphite_(software)> a schema:Product .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#9e23f5f57a219d77d81a9193c8cc2e2c> skos:related <http://productontology.org/id/Graphite_(software)> .
 
 <https://db-engines.com/en/system/Graphite> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -2131,10 +2085,6 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#9e23f5f57a219d77d81a9193c8cc2e2c> schema:mainEntityOfPage <https://angel.co/graphite> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#13d601f86e39b69aa4a0670a17e2c273> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Snowflake " ;
-	schema:category "Relational DBMS" .
-
 <https://db-engines.com/en/system/Snowflake> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
@@ -2145,8 +2095,13 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#13d601f86e39b69aa4a0670a17e2c273> schema:mainEntityOfPage <https://www.linkedin.com/company/snowflake-computing/> .
 
-<https://www.crunchbase.com/organization/snowflake-computing> a schema:CreativeWork ;
-	schema:name "Crunchbase Page" .
+<https://www.crunchbase.com/organization/snowflake-computing> a schema:CreativeWork .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#13d601f86e39b69aa4a0670a17e2c273> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Snowflake " ;
+	schema:category "Relational DBMS" .
+
+<https://www.crunchbase.com/organization/snowflake-computing> schema:name "Crunchbase Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#13d601f86e39b69aa4a0670a17e2c273> schema:mainEntityOfPage <https://www.crunchbase.com/organization/snowflake-computing> .
 
@@ -2157,9 +2112,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#6bce4284dbd81261eddd1d428feac3ef> a dbms:DatabaseManagementSystem ;
 	rdfs:label "InterSystems Caché" ;
-	schema:category "Multi-model Key-value store" , """
-Relational DBMS DBMS""" , """
-Document store""" ;
+	schema:category "Multi-model Key-value store" , "Relational DBMS" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/InterSystems_Cach%C3%A9> .
 
 <http://productontology.org/id/InterSystems_Cach%C3%A9> a schema:Product .
@@ -2181,8 +2134,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#6bce4284dbd81261eddd1d428feac3ef> schema:mainEntityOfPage <https://angel.co/intersystems-software> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#2c05c159f382b7f990c9caa78a9613e9> rdfs:label "TimesTen " ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#2c05c159f382b7f990c9caa78a9613e9> a dbms:DatabaseManagementSystem ;
+	rdfs:label "TimesTen " ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/TimesTen> .
 
@@ -2205,14 +2158,14 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#2c05c159f382b7f990c9caa78a9613e9> schema:mainEntityOfPage <https://angel.co/oracle-timesten> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#f41c40d89bec36145492bbd36fba95c3> owl:sameAs <http://dbpedia.org/resource/Google_Search_Appliance> .
+<http://www.openlinksw.com/data/turtle/database-applications/#f41c40d89bec36145492bbd36fba95c3> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Google Search Appliance" ;
+	schema:category "Search engine" ;
+	owl:sameAs <http://dbpedia.org/resource/Google_Search_Appliance> .
 
 <http://productontology.org/id/Google_Search_Appliance> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#f41c40d89bec36145492bbd36fba95c3> skos:related <http://productontology.org/id/Google_Search_Appliance> ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "Google Search Appliance" ;
-	schema:category "Search engine" .
+<http://www.openlinksw.com/data/turtle/database-applications/#f41c40d89bec36145492bbd36fba95c3> skos:related <http://productontology.org/id/Google_Search_Appliance> .
 
 <https://db-engines.com/en/system/Google+Search+Appliance> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -2229,8 +2182,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#f41c40d89bec36145492bbd36fba95c3> schema:mainEntityOfPage <https://angel.co/google-search-appliance> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#25af0ff4d5730cf60270a7acc6575215> a dbms:DatabaseManagementSystem ;
-	rdfs:label "SAP Advantage Database Server" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#25af0ff4d5730cf60270a7acc6575215> rdfs:label "SAP Advantage Database Server" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Advantage_Database_Server> .
 
@@ -2243,31 +2196,31 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#25af0ff4d5730cf60270a7acc6575215> schema:mainEntityOfPage <https://db-engines.com/en/system/SAP+Advantage+Database+Server> .
 
+<http://www.openlinksw.com/data/turtle/database-applications/#69d6ec6a73e8a08e8b9a29ecd46cc4da> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Amazon CloudSearch" ;
+	schema:category "Search engine" .
+
 <https://db-engines.com/en/system/Amazon+Cloud+Search> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#69d6ec6a73e8a08e8b9a29ecd46cc4da> schema:mainEntityOfPage <https://db-engines.com/en/system/Amazon+Cloud+Search> ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "Amazon CloudSearch" ;
-	schema:category "Search engine" .
+<http://www.openlinksw.com/data/turtle/database-applications/#69d6ec6a73e8a08e8b9a29ecd46cc4da> schema:mainEntityOfPage <https://db-engines.com/en/system/Amazon+Cloud+Search> .
 
 <https://angel.co/amazon-cloudsearch-1> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#69d6ec6a73e8a08e8b9a29ecd46cc4da> schema:mainEntityOfPage <https://angel.co/amazon-cloudsearch-1> .
 
-<https://db-engines.com/en/system/Oracle+NoSQL> a schema:CreativeWork .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#7acab98b8870e7b63986fbfdf15e93fa> skos:related <http://productontology.org/id/Oracle_NoSQL_Database> ;
+<http://www.openlinksw.com/data/turtle/database-applications/#7acab98b8870e7b63986fbfdf15e93fa> schema:category "Key-value" , "Relational DBMS" ;
 	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Oracle NoSQL " ;
-	schema:category "Key-value" , """
-Relational DBMS DBMS""" ;
 	owl:sameAs <http://dbpedia.org/resource/Oracle_NoSQL_Database> .
 
 <http://productontology.org/id/Oracle_NoSQL_Database> a schema:Product .
 
-<https://db-engines.com/en/system/Oracle+NoSQL> schema:name "DB Engines Analysis Page" .
+<http://www.openlinksw.com/data/turtle/database-applications/#7acab98b8870e7b63986fbfdf15e93fa> skos:related <http://productontology.org/id/Oracle_NoSQL_Database> .
+
+<https://db-engines.com/en/system/Oracle+NoSQL> a schema:CreativeWork ;
+	schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7acab98b8870e7b63986fbfdf15e93fa> schema:mainEntityOfPage <https://db-engines.com/en/system/Oracle+NoSQL> .
 
@@ -2281,19 +2234,21 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7acab98b8870e7b63986fbfdf15e93fa> schema:mainEntityOfPage <https://angel.co/nosql> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e1723a08afd7bca35570fd31a7656f59> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Prometheus" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#e1723a08afd7bca35570fd31a7656f59> schema:mainEntityOfPage <https://www.crunchbase.com/organization/prometheus> .
+
+<https://db-engines.com/en/system/Prometheus> schema:name "DB Engines Analysis Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#e1723a08afd7bca35570fd31a7656f59> schema:mainEntityOfPage <https://db-engines.com/en/system/Prometheus> ;
+	a dbms:DatabaseManagementSystem .
+
+<https://www.crunchbase.com/organization/prometheus> a schema:CreativeWork .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#e1723a08afd7bca35570fd31a7656f59> rdfs:label "Prometheus" ;
 	schema:category "Time Series" .
 
-<https://db-engines.com/en/system/Prometheus> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
+<https://db-engines.com/en/system/Prometheus> a schema:CreativeWork .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e1723a08afd7bca35570fd31a7656f59> schema:mainEntityOfPage <https://db-engines.com/en/system/Prometheus> .
-
-<https://www.crunchbase.com/organization/prometheus> a schema:CreativeWork ;
-	schema:name "Crunchbase Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#e1723a08afd7bca35570fd31a7656f59> schema:mainEntityOfPage <https://www.crunchbase.com/organization/prometheus> .
+<https://www.crunchbase.com/organization/prometheus> schema:name "Crunchbase Page" .
 
 <https://angel.co/prometheus-4> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
@@ -2352,9 +2307,9 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#72cec270825d265253904cc19e4faf1e> schema:mainEntityOfPage <https://angel.co/pouchdb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#5d788a5782904e9dde85d71e4ab925b5> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#5d788a5782904e9dde85d71e4ab925b5> schema:category "Time Series" ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "RRDtool" ;
-	schema:category "Time Series" ;
 	owl:sameAs <http://dbpedia.org/resource/RRDtool> .
 
 <http://productontology.org/id/RRDtool> a schema:Product .
@@ -2395,31 +2350,26 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#43476755c48bba929665f35269051fd0> schema:mainEntityOfPage <https://angel.co/apache-drill> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e2c1a1fd66344661dcef4fa9aafbce00> schema:category "Navigational" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#e2c1a1fd66344661dcef4fa9aafbce00> rdfs:label "IMS" ;
+	schema:category "Navigational" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/IBM_Information_Management_System> .
-
-<https://db-engines.com/en/system/IMS> schema:name "DB Engines Analysis Page" .
 
 <http://productontology.org/id/IBM_Information_Management_System> a schema:Product .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#e2c1a1fd66344661dcef4fa9aafbce00> skos:related <http://productontology.org/id/IBM_Information_Management_System> .
 
-<https://db-engines.com/en/system/IMS> a schema:CreativeWork .
+<https://db-engines.com/en/system/IMS> a schema:CreativeWork ;
+	schema:name "DB Engines Analysis Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e2c1a1fd66344661dcef4fa9aafbce00> a dbms:DatabaseManagementSystem ;
-	schema:mainEntityOfPage <https://db-engines.com/en/system/IMS> ;
-	rdfs:label "IMS" .
+<http://www.openlinksw.com/data/turtle/database-applications/#e2c1a1fd66344661dcef4fa9aafbce00> schema:mainEntityOfPage <https://db-engines.com/en/system/IMS> .
 
 <https://angel.co/ims-db> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#e2c1a1fd66344661dcef4fa9aafbce00> schema:mainEntityOfPage <https://angel.co/ims-db> .
 
-<https://db-engines.com/en/system/PerconaServerforMySQL> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#3d2d76d1f5f6ac2c0f587540e55c70d1> schema:mainEntityOfPage <https://db-engines.com/en/system/PerconaServerforMySQL> ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#3d2d76d1f5f6ac2c0f587540e55c70d1> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Percona Server for MySQL " ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Percona_Server_for_MySQL> .
@@ -2427,6 +2377,11 @@ Relational DBMS DBMS""" ;
 <http://productontology.org/id/Percona_Server_for_MySQL> a schema:Product .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#3d2d76d1f5f6ac2c0f587540e55c70d1> skos:related <http://productontology.org/id/Percona_Server_for_MySQL> .
+
+<https://db-engines.com/en/system/PerconaServerforMySQL> a schema:CreativeWork ;
+	schema:name "DB Engines Analysis Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#3d2d76d1f5f6ac2c0f587540e55c70d1> schema:mainEntityOfPage <https://db-engines.com/en/system/PerconaServerforMySQL> .
 
 <https://www.crunchbase.com/organization/percona> a schema:CreativeWork ;
 	schema:name "Crunchbase Page" .
@@ -2438,9 +2393,9 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#3d2d76d1f5f6ac2c0f587540e55c70d1> schema:mainEntityOfPage <https://angel.co/percona-2> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#362762c6f1644491ee8903a4c6ed81af> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#362762c6f1644491ee8903a4c6ed81af> schema:category "Key-value" ;
 	rdfs:label "RocksDB" ;
-	schema:category "Key-value" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/RocksDB> .
 
 <http://productontology.org/id/RocksDB> a schema:Product .
@@ -2462,8 +2417,8 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#362762c6f1644491ee8903a4c6ed81af> schema:mainEntityOfPage <https://angel.co/rocksdb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#b5d351dd06894b666b9dad2021aaa01a> a dbms:DatabaseManagementSystem ;
-	rdfs:label "OmniSci " ;
+<http://www.openlinksw.com/data/turtle/database-applications/#b5d351dd06894b666b9dad2021aaa01a> rdfs:label "OmniSci " ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Relational DBMS" .
 
 <https://db-engines.com/en/system/OmniSci> a schema:CreativeWork ;
@@ -2557,8 +2512,8 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#6f727aa3a1dfae765f0018da9a65bcf3> schema:mainEntityOfPage <https://angel.co/cockroachdb-1> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#0e6e06eb13dd4214a1d83be511ece9e9> rdfs:label "Oracle Coherence" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#0e6e06eb13dd4214a1d83be511ece9e9> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Oracle Coherence" ;
 	schema:category "Key-value" ;
 	owl:sameAs <http://dbpedia.org/resource/Oracle_Coherence> .
 
@@ -2576,7 +2531,11 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#0e6e06eb13dd4214a1d83be511ece9e9> schema:mainEntityOfPage <https://angel.co/oracle-coherence> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#41afc14f55b4b8c6a7dc7fb9652f0c5f> a dbms:DatabaseManagementSystem ;
+<https://www.crunchbase.com/organization/open-tsbd#section-overview> a schema:CreativeWork ;
+	schema:name "Crunchbase Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#41afc14f55b4b8c6a7dc7fb9652f0c5f> schema:mainEntityOfPage <https://www.crunchbase.com/organization/open-tsbd#section-overview> ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "OpenTSDB" ;
 	schema:category "Time Series" .
 
@@ -2584,11 +2543,6 @@ Relational DBMS DBMS""" ;
 	schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#41afc14f55b4b8c6a7dc7fb9652f0c5f> schema:mainEntityOfPage <https://db-engines.com/en/system/OpenTSDB> .
-
-<https://www.crunchbase.com/organization/open-tsbd#section-overview> a schema:CreativeWork ;
-	schema:name "Crunchbase Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#41afc14f55b4b8c6a7dc7fb9652f0c5f> schema:mainEntityOfPage <https://www.crunchbase.com/organization/open-tsbd#section-overview> .
 
 <https://angel.co/opentsdb> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
@@ -2624,32 +2578,23 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#b17b30b02ee1e0acce1cddf6dec666c1> schema:mainEntityOfPage <https://angel.co/gridgain-systems> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4be8d6bd9498f52601c27c762ceb8bf0> rdfs:label "Amazon SimpleDB" .
-
-<https://db-engines.com/en/system/AmazonSimpleDB> schema:name "DB Engines Analysis Page" .
-
-<https://angel.co/rocket-software> a schema:CreativeWork .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#4be8d6bd9498f52601c27c762ceb8bf0> schema:mainEntityOfPage <https://db-engines.com/en/system/AmazonSimpleDB> ;
+<http://www.openlinksw.com/data/turtle/database-applications/#4be8d6bd9498f52601c27c762ceb8bf0> a dbms:DatabaseManagementSystem ;
+	schema:mainEntityOfPage <https://db-engines.com/en/system/AmazonSimpleDB> ;
+	rdfs:label "Amazon SimpleDB" ;
 	schema:category "Key-value" ;
 	owl:sameAs <http://dbpedia.org/resource/Amazon_SimpleDB> .
 
 <http://productontology.org/id/Amazon_SimpleDB> a schema:Product .
 
-<https://db-engines.com/en/system/AmazonSimpleDB> a schema:CreativeWork .
+<http://www.openlinksw.com/data/turtle/database-applications/#4be8d6bd9498f52601c27c762ceb8bf0> skos:related <http://productontology.org/id/Amazon_SimpleDB> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4be8d6bd9498f52601c27c762ceb8bf0> skos:related <http://productontology.org/id/Amazon_SimpleDB> ;
-	a dbms:DatabaseManagementSystem .
+<https://db-engines.com/en/system/AmazonSimpleDB> a schema:CreativeWork ;
+	schema:name "DB Engines Analysis Page" .
 
-<https://angel.co/rocket-software> schema:name "AngelList Page" .
+<https://angel.co/rocket-software> a schema:CreativeWork ;
+	schema:name "AngelList Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#4be8d6bd9498f52601c27c762ceb8bf0> schema:mainEntityOfPage <https://angel.co/rocket-software> .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#b2504e1cbb4e3e9fa06a81b063181067> a dbms:DatabaseManagementSystem ;
-	rdfs:label "EnterpriseDB " ;
-	schema:category "Relational DBMS" , """
-Document store""" ;
-	owl:sameAs <http://dbpedia.org/resource/EnterpriseDB> .
 
 <http://productontology.org/id/EnterpriseDB> a schema:Product .
 
@@ -2665,18 +2610,24 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#b2504e1cbb4e3e9fa06a81b063181067> schema:mainEntityOfPage <https://www.linkedin.com/company/enterprisedb/> .
 
-<https://www.crunchbase.com/organization/enterprisedb> a schema:CreativeWork ;
-	schema:name "Crunchbase Page" .
+<https://www.crunchbase.com/organization/enterprisedb> a schema:CreativeWork .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#b2504e1cbb4e3e9fa06a81b063181067> schema:mainEntityOfPage <https://www.crunchbase.com/organization/enterprisedb> .
+<https://angel.co/enterprisedb> a schema:CreativeWork .
 
-<https://angel.co/enterprisedb> a schema:CreativeWork ;
-	schema:name "AngelList Page" .
+<https://www.crunchbase.com/organization/enterprisedb> schema:name "Crunchbase Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#b2504e1cbb4e3e9fa06a81b063181067> schema:mainEntityOfPage <https://www.crunchbase.com/organization/enterprisedb> ;
+	a dbms:DatabaseManagementSystem ;
+	rdfs:label "EnterpriseDB " ;
+	schema:category "Relational DBMS" , "Document store" ;
+	owl:sameAs <http://dbpedia.org/resource/EnterpriseDB> .
+
+<https://angel.co/enterprisedb> schema:name "AngelList Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#b2504e1cbb4e3e9fa06a81b063181067> schema:mainEntityOfPage <https://angel.co/enterprisedb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#56d9b9ec8a036650891e6436cee32e7f> rdfs:label "EXASOL" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#56d9b9ec8a036650891e6436cee32e7f> a dbms:DatabaseManagementSystem ;
+	rdfs:label "EXASOL" ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Exasol> .
 
@@ -2747,8 +2698,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#31ae748073d36b38786b89e9b5e205b2> schema:mainEntityOfPage <https://angel.co/google-cloud-spanner-1> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#b13da57b96e7b4d97248c2d0144f3baf> rdfs:label "CloudKit" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#b13da57b96e7b4d97248c2d0144f3baf> a dbms:DatabaseManagementSystem ;
+	rdfs:label "CloudKit" ;
 	schema:category "Document" ;
 	owl:sameAs <http://dbpedia.org/resource/CloudKit> .
 
@@ -2804,10 +2755,17 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7aa5e34266352c7442d6245b763dfeeb> schema:mainEntityOfPage <https://db-engines.com/en/system/IBM+Db2+warehouse> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#cb564b97dce6b00c2678548340011b6d> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#cb564b97dce6b00c2678548340011b6d> schema:mainEntityOfPage <https://angel.co/monetdb-solutions> , <https://db-engines.com/en/system/MonetDB> .
+
+<https://angel.co/monetdb-solutions> a schema:CreativeWork .
+
+<https://www.linkedin.com/company/monetdb-solutions/> a schema:CreativeWork ;
+	schema:name "LinkedIn Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#cb564b97dce6b00c2678548340011b6d> schema:mainEntityOfPage <https://www.linkedin.com/company/monetdb-solutions/> ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "MonetDB " ;
-	schema:category "Relational DBMS" , """
-Document store""" ;
+	schema:category "Relational DBMS" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/MonetDB> .
 
 <http://productontology.org/id/MonetDB> a schema:Product .
@@ -2817,24 +2775,7 @@ Document store""" ;
 <https://db-engines.com/en/system/MonetDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#cb564b97dce6b00c2678548340011b6d> schema:mainEntityOfPage <https://db-engines.com/en/system/MonetDB> .
-
-<https://www.linkedin.com/company/monetdb-solutions/> a schema:CreativeWork ;
-	schema:name "LinkedIn Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#cb564b97dce6b00c2678548340011b6d> schema:mainEntityOfPage <https://www.linkedin.com/company/monetdb-solutions/> .
-
-<https://angel.co/monetdb-solutions> a schema:CreativeWork ;
-	schema:name "AngelList Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#cb564b97dce6b00c2678548340011b6d> schema:mainEntityOfPage <https://angel.co/monetdb-solutions> .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#340264adcd5ad05b3571a305f0f622f7> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Google Cloud Bigtable " ;
-	schema:category "Wide column" ;
-	owl:sameAs <http://dbpedia.org/resource/Bigtable> .
-
-<http://productontology.org/id/Bigtable> a schema:Product .
+<https://angel.co/monetdb-solutions> schema:name "AngelList Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#340264adcd5ad05b3571a305f0f622f7> skos:related <http://productontology.org/id/Bigtable> .
 
@@ -2843,8 +2784,16 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#340264adcd5ad05b3571a305f0f622f7> schema:mainEntityOfPage <https://db-engines.com/en/system/GoogleCloudBigtable> .
 
-<https://angel.co/google-cloud-bigtable-1> a schema:CreativeWork ;
-	schema:name "AngelList Page" .
+<https://angel.co/google-cloud-bigtable-1> a schema:CreativeWork .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#340264adcd5ad05b3571a305f0f622f7> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Google Cloud Bigtable " ;
+	schema:category "Wide column" ;
+	owl:sameAs <http://dbpedia.org/resource/Bigtable> .
+
+<http://productontology.org/id/Bigtable> a schema:Product .
+
+<https://angel.co/google-cloud-bigtable-1> schema:name "AngelList Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#340264adcd5ad05b3571a305f0f622f7> schema:mainEntityOfPage <https://angel.co/google-cloud-bigtable-1> .
 
@@ -2862,7 +2811,22 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#d34254a75b8a381514c3b4aeaf634519> schema:mainEntityOfPage <https://angel.co/geode-software> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#883200c3d88f8f7adfae0a2024d9b57d> a dbms:DatabaseManagementSystem ;
+<https://db-engines.com/en/system/VersantObjectDatabase> a schema:CreativeWork ;
+	schema:name "DB Engines Analysis Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#883200c3d88f8f7adfae0a2024d9b57d> schema:mainEntityOfPage <https://db-engines.com/en/system/VersantObjectDatabase> .
+
+<https://www.crunchbase.com/organization/versant> schema:name "Crunchbase Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#883200c3d88f8f7adfae0a2024d9b57d> schema:mainEntityOfPage <https://www.crunchbase.com/organization/versant> .
+
+<https://www.linkedin.com/company/versant/> a schema:CreativeWork ;
+	schema:name "LinkedIn Page" .
+
+<https://www.crunchbase.com/organization/versant> a schema:CreativeWork .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#883200c3d88f8f7adfae0a2024d9b57d> schema:mainEntityOfPage <https://www.linkedin.com/company/versant/> ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Versant Object Database" ;
 	schema:category "Object oriented" ;
 	owl:sameAs <http://dbpedia.org/resource/Versant_Object_Database> .
@@ -2870,21 +2834,6 @@ Document store""" ;
 <http://productontology.org/id/Versant_Object_Database> a schema:Product .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#883200c3d88f8f7adfae0a2024d9b57d> skos:related <http://productontology.org/id/Versant_Object_Database> .
-
-<https://db-engines.com/en/system/VersantObjectDatabase> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#883200c3d88f8f7adfae0a2024d9b57d> schema:mainEntityOfPage <https://db-engines.com/en/system/VersantObjectDatabase> .
-
-<https://www.linkedin.com/company/versant/> a schema:CreativeWork ;
-	schema:name "LinkedIn Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#883200c3d88f8f7adfae0a2024d9b57d> schema:mainEntityOfPage <https://www.linkedin.com/company/versant/> .
-
-<https://www.crunchbase.com/organization/versant> a schema:CreativeWork ;
-	schema:name "Crunchbase Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#883200c3d88f8f7adfae0a2024d9b57d> schema:mainEntityOfPage <https://www.crunchbase.com/organization/versant> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#d01a5675fb32f1aa8e07af975cd31632> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Red Brick" ;
@@ -2905,7 +2854,15 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#d01a5675fb32f1aa8e07af975cd31632> schema:mainEntityOfPage <https://angel.co/red-brick-systems> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#c476a5bfdbe1ade75a841fcb2a15fb92> a dbms:DatabaseManagementSystem ;
+<https://db-engines.com/en/system/Mnesia> schema:name "DB Engines Analysis Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#c476a5bfdbe1ade75a841fcb2a15fb92> schema:mainEntityOfPage <https://db-engines.com/en/system/Mnesia> .
+
+<https://www.crunchbase.com/organization/google-cloud-platform> a schema:CreativeWork ;
+	schema:name "Crunchbase Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#c476a5bfdbe1ade75a841fcb2a15fb92> schema:mainEntityOfPage <https://www.crunchbase.com/organization/google-cloud-platform> ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Mnesia" ;
 	schema:category "Document" ;
 	owl:sameAs <http://dbpedia.org/resource/Mnesia> .
@@ -2914,15 +2871,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c476a5bfdbe1ade75a841fcb2a15fb92> skos:related <http://productontology.org/id/Mnesia> .
 
-<https://db-engines.com/en/system/Mnesia> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#c476a5bfdbe1ade75a841fcb2a15fb92> schema:mainEntityOfPage <https://db-engines.com/en/system/Mnesia> .
-
-<https://www.crunchbase.com/organization/google-cloud-platform> a schema:CreativeWork ;
-	schema:name "Crunchbase Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#c476a5bfdbe1ade75a841fcb2a15fb92> schema:mainEntityOfPage <https://www.crunchbase.com/organization/google-cloud-platform> .
+<https://db-engines.com/en/system/Mnesia> a schema:CreativeWork .
 
 <https://angel.co/mnesia> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
@@ -2931,7 +2880,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#fdd845f262c07069e9f897d1b9d9c967> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Apache Jena - TDB" ;
-	schema:category "RDF" ;
+	schema:category "RDF Store" ;
 	owl:sameAs <http://dbpedia.org/resource/Apache_Jena> .
 
 <http://productontology.org/id/Apache_Jena> a schema:Product .
@@ -2943,8 +2892,22 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#fdd845f262c07069e9f897d1b9d9c967> schema:mainEntityOfPage <https://db-engines.com/en/system/ApacheJena-TDB> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e7b1c3af3203c42e8a5450beb229c09e> rdfs:label "Druid" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#e7b1c3af3203c42e8a5450beb229c09e> schema:mainEntityOfPage <https://db-engines.com/en/system/Druid> .
+
+<https://www.linkedin.com/company/druid_2/> a schema:CreativeWork .
+
+<https://angel.co/druid-2> a schema:CreativeWork .
+
+<https://www.linkedin.com/company/druid_2/> schema:name "LinkedIn Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#e7b1c3af3203c42e8a5450beb229c09e> schema:mainEntityOfPage <https://www.linkedin.com/company/druid_2/> .
+
+<https://www.crunchbase.com/organization/druid> a schema:CreativeWork ;
+	schema:name "Crunchbase Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#e7b1c3af3203c42e8a5450beb229c09e> schema:mainEntityOfPage <https://www.crunchbase.com/organization/druid> ;
 	a dbms:DatabaseManagementSystem ;
+	rdfs:label "Druid" ;
 	schema:category "Multi-model Relational DBMS DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Druid_(open-source_data_store)> .
 
@@ -2955,20 +2918,7 @@ Document store""" ;
 <https://db-engines.com/en/system/Druid> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e7b1c3af3203c42e8a5450beb229c09e> schema:mainEntityOfPage <https://db-engines.com/en/system/Druid> .
-
-<https://www.linkedin.com/company/druid_2/> a schema:CreativeWork ;
-	schema:name "LinkedIn Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#e7b1c3af3203c42e8a5450beb229c09e> schema:mainEntityOfPage <https://www.linkedin.com/company/druid_2/> .
-
-<https://www.crunchbase.com/organization/druid> a schema:CreativeWork ;
-	schema:name "Crunchbase Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#e7b1c3af3203c42e8a5450beb229c09e> schema:mainEntityOfPage <https://www.crunchbase.com/organization/druid> .
-
-<https://angel.co/druid-2> a schema:CreativeWork ;
-	schema:name "AngelList Page" .
+<https://angel.co/druid-2> schema:name "AngelList Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#e7b1c3af3203c42e8a5450beb229c09e> schema:mainEntityOfPage <https://angel.co/druid-2> .
 
@@ -2991,10 +2941,10 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c79385f2d41c496d35825d3250e33f83> schema:mainEntityOfPage <https://angel.co/msql> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#3b189ab24a046cc8d8fd869c5653570f> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#3b189ab24a046cc8d8fd869c5653570f> schema:category "Relational DBMS" ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "TiDB " ;
-	schema:category "Relational DBMS" , """
-Document store""" .
+	schema:category "Document store" .
 
 <https://db-engines.com/en/system/TiDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -3035,10 +2985,10 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#d0146c621ffbd24ccc771a74435de099> schema:mainEntityOfPage <https://angel.co/scylladb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#a76459a85bac08234c664a9f9aac3191> owl:sameAs <http://dbpedia.org/resource/Db4o> ;
+<http://www.openlinksw.com/data/turtle/database-applications/#a76459a85bac08234c664a9f9aac3191> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Db4o" ;
 	schema:category "Object oriented" ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "Db4o" .
+	owl:sameAs <http://dbpedia.org/resource/Db4o> .
 
 <http://productontology.org/id/Db4o> a schema:Product .
 
@@ -3059,22 +3009,23 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#a76459a85bac08234c664a9f9aac3191> schema:mainEntityOfPage <https://angel.co/db4objects> .
 
+<http://productontology.org/id/ObjectStore> a schema:Product .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#4ba74563164839d0b8410b3f864f8e58> skos:related <http://productontology.org/id/ObjectStore> .
+
+<https://db-engines.com/en/system/ObjectStore> a schema:CreativeWork .
+
 <http://www.openlinksw.com/data/turtle/database-applications/#4ba74563164839d0b8410b3f864f8e58> a dbms:DatabaseManagementSystem ;
 	rdfs:label "ObjectStore" ;
 	schema:category "Object oriented" ;
 	owl:sameAs <http://dbpedia.org/resource/ObjectStore> .
 
-<http://productontology.org/id/ObjectStore> a schema:Product .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#4ba74563164839d0b8410b3f864f8e58> skos:related <http://productontology.org/id/ObjectStore> .
-
-<https://db-engines.com/en/system/ObjectStore> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
+<https://db-engines.com/en/system/ObjectStore> schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#4ba74563164839d0b8410b3f864f8e58> schema:mainEntityOfPage <https://db-engines.com/en/system/ObjectStore> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#1e26d31f2ad5944dac66848cac0cfd8f> a dbms:DatabaseManagementSystem ;
-	rdfs:label "jBASE " ;
+<http://www.openlinksw.com/data/turtle/database-applications/#1e26d31f2ad5944dac66848cac0cfd8f> rdfs:label "jBASE " ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Multivalue" .
 
 <https://db-engines.com/en/system/jBASE> a schema:CreativeWork ;
@@ -3127,8 +3078,8 @@ Document store""" .
 <http://www.openlinksw.com/data/turtle/database-applications/#00262c783f80ad6bc49102cc454f3ae9> schema:mainEntityOfPage <https://angel.co/datameer> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#bacabc9e09c314ac47bb30bd2f431cf4> rdfs:label "Amazon Neptune" ;
-	a dbms:DatabaseManagementSystem ;
 	schema:category "Multi-model Graph DBMS" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/Amazon_Neptune> .
 
 <http://productontology.org/id/Amazon_Neptune> a schema:Product .
@@ -3159,8 +3110,8 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#81b76ea105856af2c6570a183d2f7166> schema:mainEntityOfPage <https://www.linkedin.com/groups/7424299/> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#22a3727522b8064ff595c019e110b294> a dbms:DatabaseManagementSystem ;
-	rdfs:label "JanusGraph" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#22a3727522b8064ff595c019e110b294> rdfs:label "JanusGraph" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Graph" ;
 	owl:sameAs <http://dbpedia.org/resource/JanusGraph> .
 
@@ -3316,15 +3267,6 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#35ff9c3c16234c7edd2f5fe73b0c50d9> schema:mainEntityOfPage <https://angel.co/ncache> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#96d63741a6c613cb01cba4348343258b> a dbms:DatabaseManagementSystem ;
-	rdfs:label "1010data" ;
-	schema:category "Relational DBMS" .
-
-<https://db-engines.com/en/system/1010data> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#96d63741a6c613cb01cba4348343258b> schema:mainEntityOfPage <https://db-engines.com/en/system/1010data> .
-
 <https://www.linkedin.com/company/1010data/> a schema:CreativeWork ;
 	schema:name "LinkedIn Page" .
 
@@ -3338,10 +3280,18 @@ Document store""" .
 <https://angel.co/1010data> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#96d63741a6c613cb01cba4348343258b> schema:mainEntityOfPage <https://angel.co/1010data> .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#b24b2e271ef098f86c0babfa1a9a70b7> rdfs:label "Giraph" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#96d63741a6c613cb01cba4348343258b> schema:mainEntityOfPage <https://angel.co/1010data> ;
 	a dbms:DatabaseManagementSystem ;
+	rdfs:label "1010data" ;
+	schema:category "Relational DBMS" .
+
+<https://db-engines.com/en/system/1010data> a schema:CreativeWork ;
+	schema:name "DB Engines Analysis Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#96d63741a6c613cb01cba4348343258b> schema:mainEntityOfPage <https://db-engines.com/en/system/1010data> .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#b24b2e271ef098f86c0babfa1a9a70b7> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Giraph" ;
 	schema:category "Graph" .
 
 <https://db-engines.com/en/system/Giraph> a schema:CreativeWork ;
@@ -3359,8 +3309,8 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#b24b2e271ef098f86c0babfa1a9a70b7> schema:mainEntityOfPage <https://angel.co/giraph> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4e77b1c49ded69950db9a190d586fd42> rdfs:label "Altibase" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#4e77b1c49ded69950db9a190d586fd42> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Altibase" ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Altibase> .
 
@@ -3409,8 +3359,7 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#5df7abff58ae25ccc9efd39868e2644e> a dbms:DatabaseManagementSystem ;
 	rdfs:label "FoundationDB" ;
-	schema:category "Multi-model Document store" , """
-Relational DBMS DBMS""" ;
+	schema:category "Multi-model Document store" , "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/FoundationDB> .
 
 <http://productontology.org/id/FoundationDB> a schema:Product .
@@ -3437,9 +3386,9 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#5df7abff58ae25ccc9efd39868e2644e> schema:mainEntityOfPage <https://angel.co/foundationdb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#67fa2209c04139aa8b27868b356d0268> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#67fa2209c04139aa8b27868b356d0268> schema:category "Relational DBMS" ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Infobright" ;
-	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Infobright> .
 
 <http://productontology.org/id/Infobright> a schema:Product .
@@ -3475,7 +3424,16 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#3edb8cfd55d790fcdce61ea5b4c3472c> schema:mainEntityOfPage <https://db-engines.com/en/system/Matisse> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#48c7054b7a2270eef8ae83609decc3c6> a dbms:DatabaseManagementSystem ;
+<https://www.linkedin.com/company/tarantool-enterprise-nosql/> a schema:CreativeWork ;
+	schema:name "LinkedIn Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#48c7054b7a2270eef8ae83609decc3c6> schema:mainEntityOfPage <https://www.linkedin.com/company/tarantool-enterprise-nosql/> .
+
+<https://www.crunchbase.com/organization/tarantool> a schema:CreativeWork ;
+	schema:name "Crunchbase Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#48c7054b7a2270eef8ae83609decc3c6> schema:mainEntityOfPage <https://www.crunchbase.com/organization/tarantool> ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Tarantool" ;
 	schema:category "Key-value" ;
 	owl:sameAs <http://dbpedia.org/resource/Tarantool> .
@@ -3489,29 +3447,19 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#48c7054b7a2270eef8ae83609decc3c6> schema:mainEntityOfPage <https://db-engines.com/en/system/Tarantool> .
 
-<https://www.linkedin.com/company/tarantool-enterprise-nosql/> a schema:CreativeWork ;
-	schema:name "LinkedIn Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#48c7054b7a2270eef8ae83609decc3c6> schema:mainEntityOfPage <https://www.linkedin.com/company/tarantool-enterprise-nosql/> .
-
-<https://www.crunchbase.com/organization/tarantool> a schema:CreativeWork ;
-	schema:name "Crunchbase Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#48c7054b7a2270eef8ae83609decc3c6> schema:mainEntityOfPage <https://www.crunchbase.com/organization/tarantool> .
-
 <https://angel.co/tarantool-nosql-database-mail-ru-1> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#48c7054b7a2270eef8ae83609decc3c6> schema:mainEntityOfPage <https://angel.co/tarantool-nosql-database-mail-ru-1> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#6cd9c1fda7535a98725eaa5d8558ea47> owl:sameAs <http://dbpedia.org/resource/NuoDB> .
+<http://www.openlinksw.com/data/turtle/database-applications/#6cd9c1fda7535a98725eaa5d8558ea47> a dbms:DatabaseManagementSystem ;
+	rdfs:label "NuoDB " ;
+	schema:category "Relational DBMS" ;
+	owl:sameAs <http://dbpedia.org/resource/NuoDB> .
 
 <http://productontology.org/id/NuoDB> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#6cd9c1fda7535a98725eaa5d8558ea47> a dbms:DatabaseManagementSystem ;
-	rdfs:label "NuoDB " ;
-	skos:related <http://productontology.org/id/NuoDB> ;
-	schema:category "Relational DBMS" .
+<http://www.openlinksw.com/data/turtle/database-applications/#6cd9c1fda7535a98725eaa5d8558ea47> skos:related <http://productontology.org/id/NuoDB> .
 
 <https://db-engines.com/en/system/NuoDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -3552,9 +3500,9 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#9b505bb987fdba5decc084c626f40933> schema:mainEntityOfPage <https://angel.co/dgraph-labs> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#58d98537cf11a002a65cc27b1865625d> a dbms:DatabaseManagementSystem ;
-	rdfs:label "IDMS" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#58d98537cf11a002a65cc27b1865625d> rdfs:label "IDMS" ;
 	schema:category "Navigational" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/IDMS> .
 
 <http://productontology.org/id/IDMS> a schema:Product .
@@ -3590,9 +3538,9 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#b959dd5bb9e1dcd37ba409fcb552faf9> schema:mainEntityOfPage <https://db-engines.com/en/system/Model204> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#b894134a25764cc639fcdffc6caf7b9b> rdfs:label "LiteDB" ;
-	a dbms:DatabaseManagementSystem ;
-	schema:category "Document" .
+<http://www.openlinksw.com/data/turtle/database-applications/#b894134a25764cc639fcdffc6caf7b9b> a dbms:DatabaseManagementSystem ;
+	schema:category "Document" ;
+	rdfs:label "LiteDB" .
 
 <https://db-engines.com/en/system/LiteDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -3618,8 +3566,8 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#ef0aeb0c33ca9c43da09f3688c7a892a> schema:mainEntityOfPage <https://www.linkedin.com/groups/3882120/> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#fa8a9a88c9baccd0b60ce3ef6ee1d91d> a dbms:DatabaseManagementSystem ;
-	rdfs:label "DataEase" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#fa8a9a88c9baccd0b60ce3ef6ee1d91d> rdfs:label "DataEase" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/DataEase> .
 
@@ -3691,8 +3639,7 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#fedae985dcd1c1f0e206fb211ceae383> a dbms:DatabaseManagementSystem ;
 	rdfs:label "TimescaleDB " ;
-	schema:category "Time Series" , """
-Relational DBMS DBMS""" .
+	schema:category "Time Series" , "Relational DBMS" .
 
 <https://db-engines.com/en/system/TimescaleDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -3730,8 +3677,7 @@ Relational DBMS DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#2c01561f454c299d39e888d886cab15b> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Citus" ;
-	schema:category "Relational DBMS" , """
-Document store""" .
+	schema:category "Relational DBMS" , "Document store" .
 
 <https://db-engines.com/en/system/Citus> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -3753,17 +3699,19 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#2c01561f454c299d39e888d886cab15b> schema:mainEntityOfPage <https://angel.co/citus-data> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#5786c4878bf880652eb473f928235aa7> a dbms:DatabaseManagementSystem ;
-	rdfs:label "XAP" ;
-	schema:category "Key-value" ;
-	owl:sameAs <http://dbpedia.org/resource/Apache_XAP> .
+<http://www.openlinksw.com/data/turtle/database-applications/#5786c4878bf880652eb473f928235aa7> owl:sameAs <http://dbpedia.org/resource/Apache_XAP> .
 
 <http://productontology.org/id/Apache_XAP> a schema:Product .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#5786c4878bf880652eb473f928235aa7> skos:related <http://productontology.org/id/Apache_XAP> .
 
-<https://db-engines.com/en/system/XAP> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
+<https://db-engines.com/en/system/XAP> a schema:CreativeWork .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#5786c4878bf880652eb473f928235aa7> a dbms:DatabaseManagementSystem ;
+	rdfs:label "XAP" ;
+	schema:category "Key-value" .
+
+<https://db-engines.com/en/system/XAP> schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#5786c4878bf880652eb473f928235aa7> schema:mainEntityOfPage <https://db-engines.com/en/system/XAP> .
 
@@ -3806,8 +3754,8 @@ Document store""" .
 <http://www.openlinksw.com/data/turtle/database-applications/#76cb453f1066a0433d65175a9a3df7f4> schema:mainEntityOfPage <https://www.crunchbase.com/organization/franz-inc-#section-overview> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c9cf81c8ed3e1b1a1055acdda2cf5c05> a dbms:DatabaseManagementSystem ;
-	schema:category "Object oriented" ;
 	rdfs:label "Objectivity/DB" ;
+	schema:category "Object oriented" ;
 	owl:sameAs <http://dbpedia.org/resource/Objectivity/DB> .
 
 <http://productontology.org/id/Objectivity/DB> a schema:Product .
@@ -3829,9 +3777,9 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c9cf81c8ed3e1b1a1055acdda2cf5c05> schema:mainEntityOfPage <https://angel.co/objectivity-4> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#164119f915de521d997e9d475693a5cc> rdfs:label "BigchainDB" ;
-	schema:category "Document" ;
-	a dbms:DatabaseManagementSystem .
+<http://www.openlinksw.com/data/turtle/database-applications/#164119f915de521d997e9d475693a5cc> a dbms:DatabaseManagementSystem ;
+	rdfs:label "BigchainDB" ;
+	schema:category "Document" .
 
 <https://db-engines.com/en/system/BigchainDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -3853,8 +3801,8 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#164119f915de521d997e9d475693a5cc> schema:mainEntityOfPage <https://angel.co/bigchaindb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#7fcd1d817c0c20cf767a85c28446d3ac> rdfs:label "Kognitio" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#7fcd1d817c0c20cf767a85c28446d3ac> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Kognitio" ;
 	schema:category "Relational DBMS" .
 
 <https://db-engines.com/en/system/Kognitio> a schema:CreativeWork ;
@@ -3877,9 +3825,9 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7fcd1d817c0c20cf767a85c28446d3ac> schema:mainEntityOfPage <https://angel.co/kognitio-1> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#a3deb6e481689f1d3303caecb8a6c401> schema:category "Multivalue" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#a3deb6e481689f1d3303caecb8a6c401> a dbms:DatabaseManagementSystem ;
 	rdfs:label "D3" ;
-	a dbms:DatabaseManagementSystem ;
+	schema:category "Multivalue" ;
 	owl:sameAs <http://dbpedia.org/resource/D3.js> .
 
 <http://productontology.org/id/D3.js> a schema:Product .
@@ -3958,9 +3906,9 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#0edfa67a185cd1f93e290ea686054ae5> schema:mainEntityOfPage <https://angel.co/tigergraph> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#2961c57f7d014ed031f65c29816c3a88> a dbms:DatabaseManagementSystem ;
-	rdfs:label "R:BASE" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#2961c57f7d014ed031f65c29816c3a88> rdfs:label "R:BASE" ;
 	schema:category "Relational DBMS" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/R:Base> .
 
 <http://productontology.org/id/R:Base> a schema:Product .
@@ -3986,9 +3934,9 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#d9c95f8c7a8083f144ded66c35b893b1> schema:mainEntityOfPage <https://db-engines.com/en/system/solidDB> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4e89ad898097ac3d008570e9cb3bab57> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#4e89ad898097ac3d008570e9cb3bab57> schema:category "Search engine" ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Xapian" ;
-	schema:category "Search engine" ;
 	owl:sameAs <http://dbpedia.org/resource/Xapian> .
 
 <http://productontology.org/id/Xapian> a schema:Product .
@@ -4038,8 +3986,8 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#a6153bbaa4db47d43db939ce09932a75> schema:mainEntityOfPage <https://www.crunchbase.com/organization/actian> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#28484a7cddd80fa7cc70c76d635c193e> rdfs:label "Datacom/DB" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#28484a7cddd80fa7cc70c76d635c193e> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Datacom/DB" ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/DATACOM/DB> .
 
@@ -4067,10 +4015,10 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#28484a7cddd80fa7cc70c76d635c193e> schema:mainEntityOfPage <https://angel.co/rocket-software> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#34926f5b12645aff716d17d03c7227b9> schema:category "Relational DBMS" ;
-	owl:sameAs <http://dbpedia.org/resource/Clustrix> ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "Clustrix" .
+<http://www.openlinksw.com/data/turtle/database-applications/#34926f5b12645aff716d17d03c7227b9> a dbms:DatabaseManagementSystem ;
+	schema:category "Relational DBMS" ;
+	rdfs:label "Clustrix" ;
+	owl:sameAs <http://dbpedia.org/resource/Clustrix> .
 
 <http://productontology.org/id/Clustrix> a schema:Product .
 
@@ -4125,8 +4073,8 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7dddb611debb6c2cedc43a8a1ae6c748> schema:mainEntityOfPage <https://angel.co/mapr-technologies-1> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#79c40309d8fbc04902423fef2cef3c8c> rdfs:label "ScaleArc" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#79c40309d8fbc04902423fef2cef3c8c> a dbms:DatabaseManagementSystem ;
+	rdfs:label "ScaleArc" ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/ScaleBase> .
 
@@ -4154,9 +4102,9 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#79c40309d8fbc04902423fef2cef3c8c> schema:mainEntityOfPage <https://angel.co/scalearc> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#7d6ab389df7923bb293cc172cb01868d> schema:category "Key-value" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#7d6ab389df7923bb293cc172cb01868d> rdfs:label "WebSphere eXtreme Scale" ;
+	schema:category "Key-value" ;
 	a dbms:DatabaseManagementSystem ;
-	rdfs:label "WebSphere eXtreme Scale" ;
 	owl:sameAs <http://dbpedia.org/resource/IBM_WebSphere_eXtreme_Scale> .
 
 <http://productontology.org/id/IBM_WebSphere_eXtreme_Scale> a schema:Product .
@@ -4178,23 +4126,23 @@ Document store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7d6ab389df7923bb293cc172cb01868d> schema:mainEntityOfPage <https://angel.co/websphere-extreme-scale> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#93603718dfc73a8fa2dbd558fc5eb996> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#93603718dfc73a8fa2dbd558fc5eb996> skos:related <http://productontology.org/id/CrateDB> .
+
+<https://db-engines.com/en/system/CrateDB> a schema:CreativeWork .
+
+<https://www.linkedin.com/company/crateio/> a schema:CreativeWork .
+
+<https://db-engines.com/en/system/CrateDB> schema:name "DB Engines Analysis Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#93603718dfc73a8fa2dbd558fc5eb996> schema:mainEntityOfPage <https://db-engines.com/en/system/CrateDB> ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "CrateDB " ;
-	schema:category "Multi-model Relational DBMS DBMS" , """
-Document store""" ;
+	schema:category "Multi-model Relational DBMS DBMS" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/CrateDB> .
 
 <http://productontology.org/id/CrateDB> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#93603718dfc73a8fa2dbd558fc5eb996> skos:related <http://productontology.org/id/CrateDB> .
-
-<https://db-engines.com/en/system/CrateDB> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#93603718dfc73a8fa2dbd558fc5eb996> schema:mainEntityOfPage <https://db-engines.com/en/system/CrateDB> .
-
-<https://www.linkedin.com/company/crateio/> a schema:CreativeWork ;
-	schema:name "LinkedIn Page" .
+<https://www.linkedin.com/company/crateio/> schema:name "LinkedIn Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#93603718dfc73a8fa2dbd558fc5eb996> schema:mainEntityOfPage <https://www.linkedin.com/company/crateio/> .
 
@@ -4208,8 +4156,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#93603718dfc73a8fa2dbd558fc5eb996> schema:mainEntityOfPage <https://angel.co/crate-io> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#2b32bcec24aaaef8c698b783c25d372b> rdfs:label "Splice Machine" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#2b32bcec24aaaef8c698b783c25d372b> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Splice Machine" ;
 	schema:category "Relational DBMS" .
 
 <https://db-engines.com/en/system/SpliceMachine> a schema:CreativeWork ;
@@ -4232,8 +4180,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#2b32bcec24aaaef8c698b783c25d372b> schema:mainEntityOfPage <https://angel.co/splice-machine> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#82a26307daed8bb18f914b96e2fc12c2> a dbms:DatabaseManagementSystem ;
-	rdfs:label "FrontBase" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#82a26307daed8bb18f914b96e2fc12c2> rdfs:label "FrontBase" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/FrontBase> .
 
@@ -4246,14 +4194,14 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#82a26307daed8bb18f914b96e2fc12c2> schema:mainEntityOfPage <https://db-engines.com/en/system/FrontBase> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#930f659e361e2bb63ef12d69561a4644> a dbms:DatabaseManagementSystem .
+<http://www.openlinksw.com/data/turtle/database-applications/#930f659e361e2bb63ef12d69561a4644> schema:category "Native XML" ;
+	rdfs:label "eXist-db" ;
+	a dbms:DatabaseManagementSystem ;
+	owl:sameAs <http://dbpedia.org/resource/EXist> .
 
 <http://productontology.org/id/EXist> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#930f659e361e2bb63ef12d69561a4644> owl:sameAs <http://dbpedia.org/resource/EXist> ;
-	rdfs:label "eXist-db" ;
-	schema:category "Native XML" ;
-	skos:related <http://productontology.org/id/EXist> .
+<http://www.openlinksw.com/data/turtle/database-applications/#930f659e361e2bb63ef12d69561a4644> skos:related <http://productontology.org/id/EXist> .
 
 <https://db-engines.com/en/system/eXist-db> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -4279,8 +4227,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#04d61fd609e82631771ca916a8a2fa72> schema:mainEntityOfPage <https://www.linkedin.com/company/nexus-database-systems-pty-ltd/> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#aa23575d6779a837305b8a3040924454> rdfs:label "SciDB" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#aa23575d6779a837305b8a3040924454> a dbms:DatabaseManagementSystem ;
+	rdfs:label "SciDB" ;
 	schema:category "Multivalue" ;
 	owl:sameAs <http://dbpedia.org/resource/SciDB> .
 
@@ -4307,8 +4255,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#0c31fc3024b2177c0ce53ede866d467b> schema:mainEntityOfPage <https://db-engines.com/en/system/ObjectDB> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4406b6cc1a5cf1e1a47b46755cf630a3> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Event Store" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#4406b6cc1a5cf1e1a47b46755cf630a3> rdfs:label "Event Store" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Event" ;
 	owl:sameAs <http://dbpedia.org/resource/Event_store> .
 
@@ -4383,16 +4331,16 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#165f2da9f88db989a1fb5aeb906c78c1> schema:mainEntityOfPage <https://db-engines.com/en/system/GBase> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#d54128a71f510ac8e03fb6195aa52f8d> a dbms:DatabaseManagementSystem ;
-	rdfs:label "InterSystems IRIS " ;
-	schema:category "Multi-model Document store" , """
+<http://www.openlinksw.com/data/turtle/database-applications/#d54128a71f510ac8e03fb6195aa52f8d> schema:category "Multi-model Document store" , """
 Object oriented DBMS""" , """
-Relational DBMS DBMS""" ;
+Relational DBMS""" ;
 	owl:sameAs <http://dbpedia.org/resource/InterSystems> .
 
 <http://productontology.org/id/InterSystems> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#d54128a71f510ac8e03fb6195aa52f8d> skos:related <http://productontology.org/id/InterSystems> .
+<http://www.openlinksw.com/data/turtle/database-applications/#d54128a71f510ac8e03fb6195aa52f8d> skos:related <http://productontology.org/id/InterSystems> ;
+	a dbms:DatabaseManagementSystem ;
+	rdfs:label "InterSystems IRIS " .
 
 <https://db-engines.com/en/system/InterSystemsIRIS> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -4485,16 +4433,15 @@ Relational DBMS DBMS""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#452ddd4fdd2e78e6dd0cdb1b7acafda2> schema:mainEntityOfPage <https://db-engines.com/en/system/BoltDB> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#da8c55f1a4d0483caeff32fc648a9833> schema:category "Multi-model Document store" , """
-Key-value store""" , """
+<http://www.openlinksw.com/data/turtle/database-applications/#da8c55f1a4d0483caeff32fc648a9833> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Sqrrl" ;
+	schema:category "Multi-model Document store" , "Key-value store" , """
 Wide column store""" ;
 	owl:sameAs <http://dbpedia.org/resource/Sqrrl> .
 
 <http://productontology.org/id/Sqrrl> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#da8c55f1a4d0483caeff32fc648a9833> skos:related <http://productontology.org/id/Sqrrl> ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "Sqrrl" .
+<http://www.openlinksw.com/data/turtle/database-applications/#da8c55f1a4d0483caeff32fc648a9833> skos:related <http://productontology.org/id/Sqrrl> .
 
 <https://db-engines.com/en/system/Sqrrl> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -4582,7 +4529,10 @@ Wide column store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#0d7a9825735f8f86abeaa48e8fc6e8b3> schema:mainEntityOfPage <https://db-engines.com/en/system/GraphEngine> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e4c55f22b61edaad63f797a9da2785ab> owl:sameAs <http://dbpedia.org/resource/Blazegraph> .
+<http://www.openlinksw.com/data/turtle/database-applications/#e4c55f22b61edaad63f797a9da2785ab> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Blazegraph" ;
+	schema:category "Multi-model Graph DBMS" ;
+	owl:sameAs <http://dbpedia.org/resource/Blazegraph> .
 
 <http://productontology.org/id/Blazegraph> a schema:Product .
 
@@ -4591,10 +4541,7 @@ Wide column store""" ;
 <https://db-engines.com/en/system/Blazegraph> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e4c55f22b61edaad63f797a9da2785ab> schema:mainEntityOfPage <https://db-engines.com/en/system/Blazegraph> ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "Blazegraph" ;
-	schema:category "Multi-model Graph DBMS" .
+<http://www.openlinksw.com/data/turtle/database-applications/#e4c55f22b61edaad63f797a9da2785ab> schema:mainEntityOfPage <https://db-engines.com/en/system/Blazegraph> .
 
 <https://www.linkedin.com/company/blazegraph/> a schema:CreativeWork ;
 	schema:name "LinkedIn Page" .
@@ -4662,8 +4609,8 @@ Wide column store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#4d07d2d8c71ffcd2deba51428eddb030> schema:mainEntityOfPage <https://db-engines.com/en/system/NorthgateReality> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#eb278c032f0229711a33149346e42153> rdfs:label "Perst" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#eb278c032f0229711a33149346e42153> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Perst" ;
 	schema:category "Object oriented" ;
 	owl:sameAs <http://dbpedia.org/resource/Perst> .
 
@@ -4676,8 +4623,8 @@ Wide column store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#eb278c032f0229711a33149346e42153> schema:mainEntityOfPage <https://db-engines.com/en/system/Perst> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#645c8f5729d9e6bfdc7a5d7fe89f57ba> rdfs:label "SQream DB" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#645c8f5729d9e6bfdc7a5d7fe89f57ba> a dbms:DatabaseManagementSystem ;
+	rdfs:label "SQream DB" ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/SQream_DB> .
 
@@ -4752,11 +4699,9 @@ Wide column store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#34da5f502177ed88ea6cc75075d19994> schema:mainEntityOfPage <https://angel.co/rasdaman> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#3886289482dc530e68ac08f74c5d1fd5> schema:category "Relational DBMS" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#3886289482dc530e68ac08f74c5d1fd5> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Postgres-XL" ;
-	a dbms:DatabaseManagementSystem ;
-	schema:category """
-Document store""" ;
+	schema:category "Relational DBMS" , "Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/Postgres-XL> .
 
 <http://productontology.org/id/Postgres-XL> a schema:Product .
@@ -4768,9 +4713,9 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#3886289482dc530e68ac08f74c5d1fd5> schema:mainEntityOfPage <https://db-engines.com/en/system/Postgres-XL> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#274dfb727bbae3908d1b83f0f07b165d> schema:category "RDF" ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "Algebraix" .
+<http://www.openlinksw.com/data/turtle/database-applications/#274dfb727bbae3908d1b83f0f07b165d> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Algebraix" ;
+	schema:category "RDF Store" .
 
 <https://db-engines.com/en/system/Algebraix> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -4792,8 +4737,8 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#274dfb727bbae3908d1b83f0f07b165d> schema:mainEntityOfPage <https://angel.co/algebraix-data> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#c11b5bebb8778b9517b2f827a0d819e5> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Trafodion" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#c11b5bebb8778b9517b2f827a0d819e5> rdfs:label "Trafodion" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Apache_Trafodion> .
 
@@ -4837,7 +4782,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#84180215f30d801ed683d0cd18c8c8fb> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Redland" ;
-	schema:category "RDF" ;
+	schema:category "RDF Store" ;
 	owl:sameAs <http://dbpedia.org/resource/Redland_RDF_Application_Framework> .
 
 <http://productontology.org/id/Redland_RDF_Application_Framework> a schema:Product .
@@ -4868,9 +4813,9 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#42b812849ff66b9265cf6602c7318ba4> schema:mainEntityOfPage <https://www.linkedin.com/company/infinitegraph/> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#8ea160c36287539f5c41009acfc7ea93> rdfs:label "Project Voldemort" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#8ea160c36287539f5c41009acfc7ea93> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Project Voldemort" ;
 	schema:category "Key-value" ;
-	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/Voldemort_(distributed_data_store)> .
 
 <http://productontology.org/id/Voldemort_(distributed_data_store)> a schema:Product .
@@ -4889,11 +4834,12 @@ Document store""" ;
 
 <http://productontology.org/id/Pervasive_PSQL> a schema:Product .
 
+<http://www.openlinksw.com/data/turtle/database-applications/#54b5f0d806f65349e9662bd6fb494a1a> skos:related <http://productontology.org/id/Pervasive_PSQL> .
+
 <https://db-engines.com/en/system/ActianPSQL> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#54b5f0d806f65349e9662bd6fb494a1a> schema:mainEntityOfPage <https://db-engines.com/en/system/ActianPSQL> ;
-	skos:related <http://productontology.org/id/Pervasive_PSQL> .
+<http://www.openlinksw.com/data/turtle/database-applications/#54b5f0d806f65349e9662bd6fb494a1a> schema:mainEntityOfPage <https://db-engines.com/en/system/ActianPSQL> .
 
 <https://www.linkedin.com/company/actian-corporation/> a schema:CreativeWork ;
 	schema:name "LinkedIn Page" .
@@ -4912,7 +4858,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7f7f02692d3039a77b6cd1f2d7bc88c5> a dbms:DatabaseManagementSystem ;
 	rdfs:label "RDF4J" ;
-	schema:category "RDF" ;
+	schema:category "RDF Store" ;
 	owl:sameAs <http://dbpedia.org/resource/RDF4J> .
 
 <http://productontology.org/id/RDF4J> a schema:Product .
@@ -4925,8 +4871,8 @@ Document store""" ;
 <http://www.openlinksw.com/data/turtle/database-applications/#7f7f02692d3039a77b6cd1f2d7bc88c5> schema:mainEntityOfPage <https://db-engines.com/en/system/RDF4J> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#101222f5de28a8ada8477a7dd32d01ac> schema:category "Object oriented" ;
-	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Jade" ;
+	a dbms:DatabaseManagementSystem ;
 	owl:sameAs <http://dbpedia.org/resource/JADE_(programming_language)> .
 
 <http://productontology.org/id/JADE_(programming_language)> a schema:Product .
@@ -4944,8 +4890,8 @@ Document store""" ;
 <http://www.openlinksw.com/data/turtle/database-applications/#101222f5de28a8ada8477a7dd32d01ac> schema:mainEntityOfPage <https://www.crunchbase.com/organization/jade-software-corporation> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c6ca3f826f8b64bc855a6f6c4ce179c3> a dbms:DatabaseManagementSystem ;
-	schema:category "Document" ;
-	rdfs:label "LokiJS" .
+	rdfs:label "LokiJS" ;
+	schema:category "Document" .
 
 <https://db-engines.com/en/system/LokiJS> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -5007,9 +4953,7 @@ Document store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c4e38a3114d9510baeb70f7e37260526> a dbms:DatabaseManagementSystem ;
 	rdfs:label "FaunaDB " ;
-	schema:category "Multi-model Document store" , """
-Relational DBMS DBMS""" , """
-Time Series DBMS""" .
+	schema:category "Multi-model Document store" , "Relational DBMS" , "Time Series DBMS" .
 
 <https://db-engines.com/en/system/FaunaDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -5031,9 +4975,9 @@ Time Series DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c4e38a3114d9510baeb70f7e37260526> schema:mainEntityOfPage <https://angel.co/fauna> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#8cf83b8854251da9706f8b9a5af4bac8> a dbms:DatabaseManagementSystem ;
-	rdfs:label "4store" ;
-	schema:category "RDF" .
+<http://www.openlinksw.com/data/turtle/database-applications/#8cf83b8854251da9706f8b9a5af4bac8> rdfs:label "4store" ;
+	schema:category "RDF Store" ;
+	a dbms:DatabaseManagementSystem .
 
 <https://db-engines.com/en/system/4store> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -5041,8 +4985,8 @@ Time Series DBMS""" .
 <http://www.openlinksw.com/data/turtle/database-applications/#8cf83b8854251da9706f8b9a5af4bac8> schema:mainEntityOfPage <https://db-engines.com/en/system/4store> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#54c8792def5ad13bc1ef8daf7d4dd562> a dbms:DatabaseManagementSystem ;
-	schema:category "Key-value" ;
-	rdfs:label "Scalaris" .
+	rdfs:label "Scalaris" ;
+	schema:category "Key-value" .
 
 <https://db-engines.com/en/system/Scalaris> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -5060,8 +5004,8 @@ Time Series DBMS""" .
 <http://www.openlinksw.com/data/turtle/database-applications/#54c8792def5ad13bc1ef8daf7d4dd562> schema:mainEntityOfPage <https://angel.co/scalaris-technologies> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#3e40666a6a74c008c33b8bd35a6ba38f> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Alibaba Cloud MaxCompute" ;
 	schema:category "Relational DBMS" ;
+	rdfs:label "Alibaba Cloud MaxCompute" ;
 	owl:sameAs <http://dbpedia.org/resource/Alibaba_Cloud> .
 
 <http://productontology.org/id/Alibaba_Cloud> a schema:Product .
@@ -5088,9 +5032,9 @@ Time Series DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#3e40666a6a74c008c33b8bd35a6ba38f> schema:mainEntityOfPage <https://angel.co/alibaba-com> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#827ea5483f822865e03f69235846e6a7> schema:category "Relational DBMS" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#827ea5483f822865e03f69235846e6a7> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Raima Database Manager" ;
-	a dbms:DatabaseManagementSystem ;
+	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Raima_Database_Manager> .
 
 <http://productontology.org/id/Raima_Database_Manager> a schema:Product .
@@ -5136,8 +5080,8 @@ Time Series DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#ca1f333c3912adadad6b91035ba7ecca> schema:mainEntityOfPage <https://angel.co/pipelinedb-yc-w14> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4975cc38ec2f335fe5cfa8c7f85c8334> rdfs:label "YugaByte DB" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#4975cc38ec2f335fe5cfa8c7f85c8334> a dbms:DatabaseManagementSystem ;
+	rdfs:label "YugaByte DB" ;
 	schema:category "Multi-model Document store" , """
 Wide column store""" .
 
@@ -5232,9 +5176,9 @@ Wide column store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#29f9a024b3e9fd1fe62dc8964b517d92> schema:mainEntityOfPage <https://angel.co/alibaba-com> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e61faf0370ff895cbdcbaa154526d415> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#e61faf0370ff895cbdcbaa154526d415> schema:category "Multi-model Document store" ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "Sequoiadb " ;
-	schema:category "Multi-model Document store" ;
 	owl:sameAs <http://dbpedia.org/resource/SequoiaDB> .
 
 <http://productontology.org/id/SequoiaDB> a schema:Product .
@@ -5258,8 +5202,7 @@ Wide column store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#e6a879b6f2671b5de8aadf57d8d360d9> a dbms:DatabaseManagementSystem ;
 	rdfs:label "GridDB " ;
-	schema:category "Multi-model Key-value store" , """
-Relational DBMS DBMS""" .
+	schema:category "Multi-model Key-value store" , "Relational DBMS" .
 
 <https://db-engines.com/en/system/GridDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -5324,8 +5267,8 @@ Relational DBMS DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#cca919df5fd1b8ec80c50d8c2272ae73> schema:mainEntityOfPage <https://angel.co/searchblox> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#7b3132a9e0ddcb8fa9f3cce0bba0e572> a dbms:DatabaseManagementSystem ;
-	rdfs:label "c-treeEDGE " ;
+<http://www.openlinksw.com/data/turtle/database-applications/#7b3132a9e0ddcb8fa9f3cce0bba0e572> rdfs:label "c-treeEDGE " ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Multi-model Key-value store" .
 
 <https://db-engines.com/en/system/c-treeEDGE> a schema:CreativeWork ;
@@ -5333,8 +5276,8 @@ Relational DBMS DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7b3132a9e0ddcb8fa9f3cce0bba0e572> schema:mainEntityOfPage <https://db-engines.com/en/system/c-treeEDGE> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#1a107ab3b3be1a5b5a8da1d891c6e27b> a dbms:DatabaseManagementSystem ;
-	rdfs:label "FlockDB" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#1a107ab3b3be1a5b5a8da1d891c6e27b> rdfs:label "FlockDB" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Graph" ;
 	owl:sameAs <http://dbpedia.org/resource/FlockDB> .
 
@@ -5366,8 +5309,8 @@ Relational DBMS DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#67f9810ca3964c77d82002c39c18408c> schema:mainEntityOfPage <https://db-engines.com/en/system/KyotoCabinet> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#fef44f5f2e7b2521c20a7c547d5600be> a dbms:DatabaseManagementSystem ;
-	rdfs:label "OpenQM" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#fef44f5f2e7b2521c20a7c547d5600be> rdfs:label "OpenQM" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Multivalue" ;
 	owl:sameAs <http://dbpedia.org/resource/OpenQM> .
 
@@ -5441,14 +5384,12 @@ Relational DBMS DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#8513293784821108c9c29529f8df016c> schema:mainEntityOfPage <https://db-engines.com/en/system/IBMDb2EventStore> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#d65e9c44e634dda26a957dc700d98e06> schema:category "Time Series" .
-
-<https://db-engines.com/en/system/RiakTS> a schema:CreativeWork .
-
 <http://www.openlinksw.com/data/turtle/database-applications/#d65e9c44e634dda26a957dc700d98e06> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Riak TS" .
+	rdfs:label "Riak TS" ;
+	schema:category "Time Series" .
 
-<https://db-engines.com/en/system/RiakTS> schema:name "DB Engines Analysis Page" .
+<https://db-engines.com/en/system/RiakTS> a schema:CreativeWork ;
+	schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#d65e9c44e634dda26a957dc700d98e06> schema:mainEntityOfPage <https://db-engines.com/en/system/RiakTS> .
 
@@ -5489,9 +5430,9 @@ Relational DBMS DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#5b953a63c49b17d9edc2bf556240b518> schema:mainEntityOfPage <https://www.linkedin.com/company/infogrid.org/> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#97c1053aab804e5802eb229b0f98a6ad> schema:category "Time Series" ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "Axibase" .
+<http://www.openlinksw.com/data/turtle/database-applications/#97c1053aab804e5802eb229b0f98a6ad> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Axibase" ;
+	schema:category "Time Series" .
 
 <https://db-engines.com/en/system/Axibase> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -5515,7 +5456,7 @@ Relational DBMS DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#9e92e298ffe40584ef0f6a5c5fe25265> a dbms:DatabaseManagementSystem ;
 	rdfs:label "CubicWeb" ;
-	schema:category "RDF" ;
+	schema:category "RDF Store" ;
 	owl:sameAs <http://dbpedia.org/resource/CubicWeb> .
 
 <http://productontology.org/id/CubicWeb> a schema:Product .
@@ -5534,8 +5475,7 @@ Relational DBMS DBMS""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#5db9a723b3c5d0790154a461e2a7e38b> a dbms:DatabaseManagementSystem ;
 	rdfs:label "AnzoGraph" ;
-	schema:category "Graph" , """
-RDF store""" ;
+	schema:category "Graph" , "RDF store" ;
 	owl:sameAs <http://dbpedia.org/resource/Cambridge_Semantics> .
 
 <http://productontology.org/id/Cambridge_Semantics> a schema:Product .
@@ -5563,8 +5503,8 @@ RDF store""" ;
 <http://www.openlinksw.com/data/turtle/database-applications/#5db9a723b3c5d0790154a461e2a7e38b> schema:mainEntityOfPage <https://angel.co/cambridge-semantics> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#08918c69fbd575ec7239b6c9bbfdabb4> schema:category "Graph" ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "HyperGraphDB" .
+	rdfs:label "HyperGraphDB" ;
+	a dbms:DatabaseManagementSystem .
 
 <https://db-engines.com/en/system/HyperGraphDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -5600,8 +5540,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#b6608fd4e2b1338206af18ecb3e930fb> schema:mainEntityOfPage <https://angel.co/alibaba-com> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#7244a40c1f46958e39bd7a0862aab4e2> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Lovefield" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#7244a40c1f46958e39bd7a0862aab4e2> rdfs:label "Lovefield" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Relational DBMS" .
 
 <https://db-engines.com/en/system/Lovefield> a schema:CreativeWork ;
@@ -5623,8 +5563,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c2d9a29b05241a6777425d5cd896530e> schema:mainEntityOfPage <https://angel.co/sts-international> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#c18f630d30cdbd65ed7d35e92c8e5df2> rdfs:label "TransLattice" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#c18f630d30cdbd65ed7d35e92c8e5df2> a dbms:DatabaseManagementSystem ;
+	rdfs:label "TransLattice" ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/TransLattice> .
 
@@ -5647,14 +5587,15 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c18f630d30cdbd65ed7d35e92c8e5df2> schema:mainEntityOfPage <https://angel.co/translattice> .
 
+<https://db-engines.com/en/system/Warp10> schema:name "DB Engines Analysis Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#c18a9b9c3b464a2039ee7e03f0e34cdf> schema:category "Time Series" .
+
+<https://db-engines.com/en/system/Warp10> a schema:CreativeWork .
+
 <http://www.openlinksw.com/data/turtle/database-applications/#c18a9b9c3b464a2039ee7e03f0e34cdf> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Warp 10" ;
-	schema:category "Time Series" .
-
-<https://db-engines.com/en/system/Warp10> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#c18a9b9c3b464a2039ee7e03f0e34cdf> schema:mainEntityOfPage <https://db-engines.com/en/system/Warp10> .
+	schema:mainEntityOfPage <https://db-engines.com/en/system/Warp10> ;
+	rdfs:label "Warp 10" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#6fc42c56bb8372574a28b2db529bd250> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Hawkular Metrics" ;
@@ -5665,7 +5606,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#6fc42c56bb8372574a28b2db529bd250> schema:mainEntityOfPage <https://db-engines.com/en/system/HawkularMetrics> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#722a7efc46021a1cac0cd0c757118be6> rdfs:label "EsgynDB " ;
+<http://www.openlinksw.com/data/turtle/database-applications/#722a7efc46021a1cac0cd0c757118be6> a dbms:DatabaseManagementSystem ;
+	rdfs:label "EsgynDB " ;
 	schema:category "Relational DBMS" .
 
 <https://db-engines.com/en/system/EsgynDB> a schema:CreativeWork ;
@@ -5673,11 +5615,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#722a7efc46021a1cac0cd0c757118be6> schema:mainEntityOfPage <https://db-engines.com/en/system/EsgynDB> .
 
-<https://www.linkedin.com/company/esgyn-corporation/> a schema:CreativeWork .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#722a7efc46021a1cac0cd0c757118be6> a dbms:DatabaseManagementSystem .
-
-<https://www.linkedin.com/company/esgyn-corporation/> schema:name "LinkedIn Page" .
+<https://www.linkedin.com/company/esgyn-corporation/> a schema:CreativeWork ;
+	schema:name "LinkedIn Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#722a7efc46021a1cac0cd0c757118be6> schema:mainEntityOfPage <https://www.linkedin.com/company/esgyn-corporation/> .
 
@@ -5686,12 +5625,13 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#722a7efc46021a1cac0cd0c757118be6> schema:mainEntityOfPage <https://www.crunchbase.com/organization/esgyn> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#f48ffd882fc1b27abdf379913f47ebd4> a dbms:DatabaseManagementSystem ;
-	rdfs:label "NEventStore" ;
-	schema:category "Event" .
+<https://db-engines.com/en/system/NEventStore> a schema:CreativeWork .
 
-<https://db-engines.com/en/system/NEventStore> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
+<http://www.openlinksw.com/data/turtle/database-applications/#f48ffd882fc1b27abdf379913f47ebd4> schema:category "Event" ;
+	a dbms:DatabaseManagementSystem ;
+	rdfs:label "NEventStore" .
+
+<https://db-engines.com/en/system/NEventStore> schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#f48ffd882fc1b27abdf379913f47ebd4> schema:mainEntityOfPage <https://db-engines.com/en/system/NEventStore> .
 
@@ -5709,9 +5649,9 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#52669b9991feb889be94120bd33c31a8> schema:mainEntityOfPage <https://www.linkedin.com/company/ittia/> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#9172cfd74573cc7bc8416a5b04c988ba> a dbms:DatabaseManagementSystem ;
-	rdfs:label "RedStore" ;
-	schema:category "RDF" .
+<http://www.openlinksw.com/data/turtle/database-applications/#9172cfd74573cc7bc8416a5b04c988ba> rdfs:label "RedStore" ;
+	a dbms:DatabaseManagementSystem ;
+	schema:category "RDF Store" .
 
 <https://db-engines.com/en/system/RedStore> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -5746,8 +5686,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#ba2b8067c8903280b1fff7360ffc9828> schema:mainEntityOfPage <https://db-engines.com/en/system/ValentinaServer> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#5ae342cf9c47540ee03644c2de22e112> a dbms:DatabaseManagementSystem ;
-	rdfs:label "ActorDB" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#5ae342cf9c47540ee03644c2de22e112> rdfs:label "ActorDB" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Relational DBMS" .
 
 <https://db-engines.com/en/system/ActorDB> a schema:CreativeWork ;
@@ -5798,6 +5738,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#9c41199d378d10a68e8b8a6a43e3bb3f> schema:mainEntityOfPage <https://angel.co/eloquera> .
 
+<https://www.linkedin.com/company/xtremedata/> a schema:CreativeWork .
+
 <http://www.openlinksw.com/data/turtle/database-applications/#b2fd9e4c41b2ebc9f959d9e8cf308394> a dbms:DatabaseManagementSystem ;
 	rdfs:label "XtremeData" ;
 	schema:category "Relational DBMS" .
@@ -5807,8 +5749,7 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#b2fd9e4c41b2ebc9f959d9e8cf308394> schema:mainEntityOfPage <https://db-engines.com/en/system/XtremeData> .
 
-<https://www.linkedin.com/company/xtremedata/> a schema:CreativeWork ;
-	schema:name "LinkedIn Page" .
+<https://www.linkedin.com/company/xtremedata/> schema:name "LinkedIn Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#b2fd9e4c41b2ebc9f959d9e8cf308394> schema:mainEntityOfPage <https://www.linkedin.com/company/xtremedata/> .
 
@@ -5851,15 +5792,14 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#0498dffc452706fbab8e9db5f58614c4> schema:mainEntityOfPage <https://angel.co/graknlabs> .
 
-<https://db-engines.com/en/system/Brytlyt> schema:name "DB Engines Analysis Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#cac064841ce12c168f7d7e917bd028e1> schema:mainEntityOfPage <https://db-engines.com/en/system/Brytlyt> ;
-	a dbms:DatabaseManagementSystem .
-
-<https://db-engines.com/en/system/Brytlyt> a schema:CreativeWork .
-
 <http://www.openlinksw.com/data/turtle/database-applications/#cac064841ce12c168f7d7e917bd028e1> rdfs:label "Brytlyt" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Relational DBMS" .
+
+<https://db-engines.com/en/system/Brytlyt> a schema:CreativeWork ;
+	schema:name "DB Engines Analysis Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#cac064841ce12c168f7d7e917bd028e1> schema:mainEntityOfPage <https://db-engines.com/en/system/Brytlyt> .
 
 <https://www.linkedin.com/company/brytlyt/> a schema:CreativeWork ;
 	schema:name "LinkedIn Page" .
@@ -5876,12 +5816,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#cac064841ce12c168f7d7e917bd028e1> schema:mainEntityOfPage <https://angel.co/brytlyt> .
 
-<https://www.linkedin.com/company/graphbase/> a schema:CreativeWork ;
-	schema:name "LinkedIn Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#f9c65f391b7f4ed7cf2587aaf3a5778e> schema:mainEntityOfPage <https://www.linkedin.com/company/graphbase/> ;
+<http://www.openlinksw.com/data/turtle/database-applications/#f9c65f391b7f4ed7cf2587aaf3a5778e> rdfs:label "GraphBase" ;
 	a dbms:DatabaseManagementSystem ;
-	rdfs:label "GraphBase" ;
 	schema:category "Graph" .
 
 <https://db-engines.com/en/system/GraphBase> a schema:CreativeWork ;
@@ -5889,8 +5825,13 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#f9c65f391b7f4ed7cf2587aaf3a5778e> schema:mainEntityOfPage <https://db-engines.com/en/system/GraphBase> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#3e8fc6e7b7cab502e5545470610065ae> a dbms:DatabaseManagementSystem ;
-	rdfs:label "TinkerGraph" ;
+<https://www.linkedin.com/company/graphbase/> a schema:CreativeWork ;
+	schema:name "LinkedIn Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#f9c65f391b7f4ed7cf2587aaf3a5778e> schema:mainEntityOfPage <https://www.linkedin.com/company/graphbase/> .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#3e8fc6e7b7cab502e5545470610065ae> rdfs:label "TinkerGraph" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Graph" .
 
 <https://db-engines.com/en/system/TinkerGraph> a schema:CreativeWork ;
@@ -5900,7 +5841,7 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#20e5d7ed3c66138bb139fc31e2eed55f> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Mulgara" ;
-	schema:category "RDF" ;
+	schema:category "RDF Store" ;
 	owl:sameAs <http://dbpedia.org/resource/Mulgara_(software)> .
 
 <http://productontology.org/id/Mulgara_(software)> a schema:Product .
@@ -5914,7 +5855,7 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#88656209ad3dd9e64f8faec93df40d10> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Strabon" ;
-	schema:category "RDF" .
+	schema:category "RDF Store" .
 
 <https://db-engines.com/en/system/Strabon> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -5935,8 +5876,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#a568a285077160076ee2da74c6de8d7e> schema:mainEntityOfPage <https://db-engines.com/en/system/Transbase> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#0ed9d8bc904104cb60c50aaefcaa5279> rdfs:label "Blueflood" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#0ed9d8bc904104cb60c50aaefcaa5279> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Blueflood" ;
 	schema:category "Time Series" .
 
 <https://db-engines.com/en/system/Blueflood> a schema:CreativeWork ;
@@ -5944,8 +5885,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#0ed9d8bc904104cb60c50aaefcaa5279> schema:mainEntityOfPage <https://db-engines.com/en/system/Blueflood> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#9f7e6e71987a19a6c0780c51bbe5429e> rdfs:label "TayzGrid" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#9f7e6e71987a19a6c0780c51bbe5429e> a dbms:DatabaseManagementSystem ;
+	rdfs:label "TayzGrid" ;
 	schema:category "Key-value" .
 
 <https://db-engines.com/en/system/TayzGrid> a schema:CreativeWork ;
@@ -5977,22 +5918,26 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#d6810a47f94d8edb77ab84582335059f> schema:mainEntityOfPage <https://angel.co/ejdb-1> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#c2f9961d7f0d0076732df801b6fe8df8> a dbms:DatabaseManagementSystem ;
-	rdfs:label "NosDB" ;
-	schema:category "Document" .
+<http://www.openlinksw.com/data/turtle/database-applications/#c2f9961d7f0d0076732df801b6fe8df8> schema:mainEntityOfPage <https://www.linkedin.com/showcase/nosdb/> .
+
+<https://www.crunchbase.com/organization/alachisoft> a schema:CreativeWork .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#c2f9961d7f0d0076732df801b6fe8df8> rdfs:label "NosDB" .
+
+<https://www.linkedin.com/showcase/nosdb/> schema:name "LinkedIn Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#c2f9961d7f0d0076732df801b6fe8df8> schema:category "Document" .
 
 <https://db-engines.com/en/system/NosDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c2f9961d7f0d0076732df801b6fe8df8> schema:mainEntityOfPage <https://db-engines.com/en/system/NosDB> .
 
-<https://www.linkedin.com/showcase/nosdb/> a schema:CreativeWork ;
-	schema:name "LinkedIn Page" .
+<https://www.linkedin.com/showcase/nosdb/> a schema:CreativeWork .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#c2f9961d7f0d0076732df801b6fe8df8> schema:mainEntityOfPage <https://www.linkedin.com/showcase/nosdb/> .
+<http://www.openlinksw.com/data/turtle/database-applications/#c2f9961d7f0d0076732df801b6fe8df8> a dbms:DatabaseManagementSystem .
 
-<https://www.crunchbase.com/organization/alachisoft> a schema:CreativeWork ;
-	schema:name "Crunchbase Page" .
+<https://www.crunchbase.com/organization/alachisoft> schema:name "Crunchbase Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c2f9961d7f0d0076732df801b6fe8df8> schema:mainEntityOfPage <https://www.crunchbase.com/organization/alachisoft> .
 
@@ -6001,23 +5946,23 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#c2f9961d7f0d0076732df801b6fe8df8> schema:mainEntityOfPage <https://angel.co/alachisoft> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#d77dad55b2cbcefc6132033189a7b082> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#d77dad55b2cbcefc6132033189a7b082> schema:category "Document" ;
 	rdfs:label "DensoDB" ;
-	schema:category "Document" .
+	a dbms:DatabaseManagementSystem .
 
 <https://db-engines.com/en/system/DensoDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#d77dad55b2cbcefc6132033189a7b082> schema:mainEntityOfPage <https://db-engines.com/en/system/DensoDB> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#8d860438ee964ad5860889d36e9c37a3> owl:sameAs <http://dbpedia.org/resource/Wakanda_(software)> .
+<http://www.openlinksw.com/data/turtle/database-applications/#8d860438ee964ad5860889d36e9c37a3> a dbms:DatabaseManagementSystem ;
+	rdfs:label "WakandaDB" ;
+	schema:category "Object oriented" ;
+	owl:sameAs <http://dbpedia.org/resource/Wakanda_(software)> .
 
 <http://productontology.org/id/Wakanda_(software)> a schema:Product .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#8d860438ee964ad5860889d36e9c37a3> skos:related <http://productontology.org/id/Wakanda_(software)> ;
-	a dbms:DatabaseManagementSystem ;
-	rdfs:label "WakandaDB" ;
-	schema:category "Object oriented" .
+<http://www.openlinksw.com/data/turtle/database-applications/#8d860438ee964ad5860889d36e9c37a3> skos:related <http://productontology.org/id/Wakanda_(software)> .
 
 <https://db-engines.com/en/system/WakandaDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -6091,8 +6036,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#49435fe3f9270cd2338f68fbd85798af> schema:mainEntityOfPage <https://www.crunchbase.com/organization/versant> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#64b1d5dcd9a24cc338cd67c013670103> a dbms:DatabaseManagementSystem ;
-	rdfs:label "SenseiDB" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#64b1d5dcd9a24cc338cd67c013670103> rdfs:label "SenseiDB" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Document" .
 
 <https://db-engines.com/en/system/SenseiDB> a schema:CreativeWork ;
@@ -6138,30 +6083,32 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#88da6b36430152a6e0a08431cc896921> schema:mainEntityOfPage <https://db-engines.com/en/system/Siaqodb> .
 
-<https://www.crunchbase.com/organization/tempoiq> schema:name "Crunchbase Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#f95b4292ff587d7913a01324c8471f52> schema:mainEntityOfPage <https://www.crunchbase.com/organization/tempoiq> , <https://db-engines.com/en/system/TempoIQ> .
-
-<https://www.linkedin.com/company/tempoiq/> a schema:CreativeWork ;
-	schema:name "LinkedIn Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#f95b4292ff587d7913a01324c8471f52> schema:mainEntityOfPage <https://www.linkedin.com/company/tempoiq/> ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#f95b4292ff587d7913a01324c8471f52> a dbms:DatabaseManagementSystem ;
 	rdfs:label "TempoIQ" ;
 	schema:category "Time Series" .
 
 <https://db-engines.com/en/system/TempoIQ> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
-<https://www.crunchbase.com/organization/tempoiq> a schema:CreativeWork .
+<http://www.openlinksw.com/data/turtle/database-applications/#f95b4292ff587d7913a01324c8471f52> schema:mainEntityOfPage <https://db-engines.com/en/system/TempoIQ> .
+
+<https://www.linkedin.com/company/tempoiq/> a schema:CreativeWork ;
+	schema:name "LinkedIn Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#f95b4292ff587d7913a01324c8471f52> schema:mainEntityOfPage <https://www.linkedin.com/company/tempoiq/> .
+
+<https://www.crunchbase.com/organization/tempoiq> a schema:CreativeWork ;
+	schema:name "Crunchbase Page" .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#f95b4292ff587d7913a01324c8471f52> schema:mainEntityOfPage <https://www.crunchbase.com/organization/tempoiq> .
 
 <https://angel.co/tempodb> a schema:CreativeWork ;
 	schema:name "AngelList Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#f95b4292ff587d7913a01324c8471f52> schema:mainEntityOfPage <https://angel.co/tempodb> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#13c62ae3d2255a2c082d357144fdea5b> rdfs:label "JaguarDB " ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#13c62ae3d2255a2c082d357144fdea5b> a dbms:DatabaseManagementSystem ;
+	rdfs:label "JaguarDB " ;
 	schema:category "Key-value" .
 
 <https://db-engines.com/en/system/JaguarDB> a schema:CreativeWork ;
@@ -6190,7 +6137,7 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#cd818aacd9688844752d60fd2f3da81f> a dbms:DatabaseManagementSystem ;
 	rdfs:label "BrightstarDB" ;
-	schema:category "RDF" .
+	schema:category "RDF Store" .
 
 <https://db-engines.com/en/system/BrightstarDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -6234,18 +6181,17 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#5841d0014fc42f0fcf9a019d349d50fd> schema:mainEntityOfPage <https://db-engines.com/en/system/Badger> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e65649c574c05414b4a8958ea1d16ff3> a dbms:DatabaseManagementSystem ;
-	rdfs:label "IRONdb " ;
-	schema:category "Time Series" .
-
 <https://db-engines.com/en/system/IRONdb> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#e65649c574c05414b4a8958ea1d16ff3> schema:mainEntityOfPage <https://db-engines.com/en/system/IRONdb> .
+<http://www.openlinksw.com/data/turtle/database-applications/#e65649c574c05414b4a8958ea1d16ff3> schema:mainEntityOfPage <https://db-engines.com/en/system/IRONdb> ;
+	a dbms:DatabaseManagementSystem ;
+	rdfs:label "IRONdb " ;
+	schema:category "Time Series" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7d1284d9ca0ad62cc432cd48dfb330d7> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Dydra" ;
-	schema:category "RDF" .
+	schema:category "RDF Store" .
 
 <https://db-engines.com/en/system/Dydra> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -6263,8 +6209,8 @@ RDF store""" ;
 <http://www.openlinksw.com/data/turtle/database-applications/#7d1284d9ca0ad62cc432cd48dfb330d7> schema:mainEntityOfPage <https://angel.co/dydra> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#305c6cc9d54e0063e090eb41d3f92630> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Manticore Search" ;
-	schema:category "Search engine" .
+	schema:category "Search engine" ;
+	rdfs:label "Manticore Search" .
 
 <https://db-engines.com/en/system/ManticoreSearch> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -6276,14 +6222,13 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#305c6cc9d54e0063e090eb41d3f92630> schema:mainEntityOfPage <https://www.linkedin.com/groups/13552665/> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#30cb38e5c34a1737ee20dad29de5410a> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#30cb38e5c34a1737ee20dad29de5410a> schema:mainEntityOfPage <https://db-engines.com/en/system/WhiteDB> ;
+	a dbms:DatabaseManagementSystem ;
 	rdfs:label "WhiteDB" ;
 	schema:category "Document" .
 
 <https://db-engines.com/en/system/WhiteDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
-
-<http://www.openlinksw.com/data/turtle/database-applications/#30cb38e5c34a1737ee20dad29de5410a> schema:mainEntityOfPage <https://db-engines.com/en/system/WhiteDB> .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#8073ddfaee00a83a32bacacc097e9ea3> a dbms:DatabaseManagementSystem ;
 	rdfs:label "LeanXcale" ;
@@ -6332,8 +6277,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#9a395ea98e956a88a50d60cecfbefc1f> schema:mainEntityOfPage <https://angel.co/dbsight> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#79fbe9dc0b0d3b38fd8c299a108f6a0e> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Memgraph " ;
+<http://www.openlinksw.com/data/turtle/database-applications/#79fbe9dc0b0d3b38fd8c299a108f6a0e> rdfs:label "Memgraph " ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Graph" .
 
 <https://db-engines.com/en/system/Memgraph> a schema:CreativeWork ;
@@ -6356,8 +6301,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#79fbe9dc0b0d3b38fd8c299a108f6a0e> schema:mainEntityOfPage <https://angel.co/memgraph> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#6a47e19fd09ead489683507fb5591a27> rdfs:label "CodernityDB" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#6a47e19fd09ead489683507fb5591a27> a dbms:DatabaseManagementSystem ;
+	rdfs:label "CodernityDB" ;
 	schema:category "Key-value" .
 
 <https://db-engines.com/en/system/CodernityDB> a schema:CreativeWork ;
@@ -6402,12 +6347,14 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#88d9fc349082239110077b8bafadde27> schema:mainEntityOfPage <https://db-engines.com/en/system/SmallSQL> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#50dd4ffaa75d5bda0c17c9c0091828cb> a dbms:DatabaseManagementSystem ;
-	rdfs:label "JethroData" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#50dd4ffaa75d5bda0c17c9c0091828cb> rdfs:label "JethroData" ;
 	schema:category "Relational DBMS" .
 
-<https://db-engines.com/en/system/JethroData> a schema:CreativeWork ;
-	schema:name "DB Engines Analysis Page" .
+<https://db-engines.com/en/system/JethroData> a schema:CreativeWork .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#50dd4ffaa75d5bda0c17c9c0091828cb> a dbms:DatabaseManagementSystem .
+
+<https://db-engines.com/en/system/JethroData> schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#50dd4ffaa75d5bda0c17c9c0091828cb> schema:mainEntityOfPage <https://db-engines.com/en/system/JethroData> .
 
@@ -6439,14 +6386,14 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#a9ea0b3156e1e44f2cffeed289ff1973> schema:mainEntityOfPage <https://db-engines.com/en/system/searchxml> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#3a6deb65468b284974fb4c3a1988c154> owl:sameAs <http://dbpedia.org/resource/Elliptics> .
-
-<http://productontology.org/id/Elliptics> a schema:Product .
-
 <http://www.openlinksw.com/data/turtle/database-applications/#3a6deb65468b284974fb4c3a1988c154> a dbms:DatabaseManagementSystem ;
 	rdfs:label "Elliptics" ;
 	schema:category "Key-value" ;
-	skos:related <http://productontology.org/id/Elliptics> .
+	owl:sameAs <http://dbpedia.org/resource/Elliptics> .
+
+<http://productontology.org/id/Elliptics> a schema:Product .
+
+<http://www.openlinksw.com/data/turtle/database-applications/#3a6deb65468b284974fb4c3a1988c154> skos:related <http://productontology.org/id/Elliptics> .
 
 <https://db-engines.com/en/system/Elliptics> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -6476,10 +6423,7 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#e2ad4928487d2580af7f2e55f446ab2c> schema:mainEntityOfPage <https://db-engines.com/en/system/InfinityDB> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#d2856b81bdfbe0611eba5847eaf5cf60> a dbms:DatabaseManagementSystem ;
-	rdfs:label "Exorbyte" ;
-	schema:category "Search engine" ;
-	owl:sameAs <http://dbpedia.org/resource/Exorbyte> .
+<http://www.openlinksw.com/data/turtle/database-applications/#d2856b81bdfbe0611eba5847eaf5cf60> owl:sameAs <http://dbpedia.org/resource/Exorbyte> .
 
 <http://productontology.org/id/Exorbyte> a schema:Product .
 
@@ -6493,7 +6437,10 @@ RDF store""" ;
 <https://www.linkedin.com/company/exorbyte-inc-/> a schema:CreativeWork ;
 	schema:name "LinkedIn Page" .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#d2856b81bdfbe0611eba5847eaf5cf60> schema:mainEntityOfPage <https://www.linkedin.com/company/exorbyte-inc-/> .
+<http://www.openlinksw.com/data/turtle/database-applications/#d2856b81bdfbe0611eba5847eaf5cf60> schema:mainEntityOfPage <https://www.linkedin.com/company/exorbyte-inc-/> ;
+	a dbms:DatabaseManagementSystem ;
+	rdfs:label "Exorbyte" ;
+	schema:category "Search engine" .
 
 <https://www.crunchbase.com/organization/exorbyte> a schema:CreativeWork ;
 	schema:name "Crunchbase Page" .
@@ -6505,9 +6452,9 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#d2856b81bdfbe0611eba5847eaf5cf60> schema:mainEntityOfPage <https://angel.co/exorbyte> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#9ed0e6f93c6698568d06753009a6a8aa> rdfs:label "ScaleOut StateServer" ;
-	schema:category "Key-value" ;
-	a dbms:DatabaseManagementSystem .
+<http://www.openlinksw.com/data/turtle/database-applications/#9ed0e6f93c6698568d06753009a6a8aa> a dbms:DatabaseManagementSystem ;
+	rdfs:label "ScaleOut StateServer" ;
+	schema:category "Key-value" .
 
 <https://db-engines.com/en/system/ScaleOutStateServer> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -6560,8 +6507,8 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#18a20e428abe48b8c9a775c14f4227c3> schema:mainEntityOfPage <https://angel.co/machbase> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#4659a4601601ff5a6e1b426a29d2b543> a dbms:DatabaseManagementSystem ;
-	rdfs:label "CortexDB" ;
+<http://www.openlinksw.com/data/turtle/database-applications/#4659a4601601ff5a6e1b426a29d2b543> rdfs:label "CortexDB" ;
+	a dbms:DatabaseManagementSystem ;
 	schema:category "Multi-model Document store" .
 
 <https://db-engines.com/en/system/CortexDB> a schema:CreativeWork ;
@@ -6592,10 +6539,9 @@ RDF store""" ;
 
 <http://www.openlinksw.com/data/turtle/database-applications/#e75ca9d6604be62ae09540d3c97d79aa> schema:mainEntityOfPage <https://db-engines.com/en/system/ResinCache> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#d030d2fc54cf96f560c424b9d89bba0a> a dbms:DatabaseManagementSystem ;
-	rdfs:label "DataChemist" ;
-	schema:category "Graph" , """
-RDF store""" .
+<http://www.openlinksw.com/data/turtle/database-applications/#d030d2fc54cf96f560c424b9d89bba0a> rdfs:label "DataChemist" ;
+	a dbms:DatabaseManagementSystem ;
+	schema:category "Graph" , "RDF store" .
 
 <https://db-engines.com/en/system/DataChemist> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -6653,8 +6599,8 @@ RDF store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#1f57881de6cb70a1050ea2412d0bcdee> schema:mainEntityOfPage <https://db-engines.com/en/system/DolphinDB> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#81e0adbb7dfcd0a8a5727b02a9aec0e0> rdfs:label "Linter" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#81e0adbb7dfcd0a8a5727b02a9aec0e0> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Linter" ;
 	schema:category "Relational DBMS" ;
 	owl:sameAs <http://dbpedia.org/resource/Linter_SQL_RDBMS> .
 
@@ -6669,15 +6615,15 @@ RDF store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#fe2648ac39afd62a31431069ae63c548> a dbms:DatabaseManagementSystem ;
 	rdfs:label "SparkleDB" ;
-	schema:category "RDF" .
+	schema:category "RDF Store" .
 
 <https://db-engines.com/en/system/SparkleDB> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#fe2648ac39afd62a31431069ae63c548> schema:mainEntityOfPage <https://db-engines.com/en/system/SparkleDB> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#7455eaa842575177f51f04e07c7af34b> rdfs:label "Newts" ;
-	a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#7455eaa842575177f51f04e07c7af34b> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Newts" ;
 	schema:category "Time Series" .
 
 <https://db-engines.com/en/system/Newts> a schema:CreativeWork ;
@@ -6685,9 +6631,9 @@ RDF store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#7455eaa842575177f51f04e07c7af34b> schema:mainEntityOfPage <https://db-engines.com/en/system/Newts> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#a619f0c5b9f1920b2ed32f4d086190b9> rdfs:label "Atos Standard Common Repository" ;
-	schema:category "Multi-model Document store" ;
-	a dbms:DatabaseManagementSystem .
+<http://www.openlinksw.com/data/turtle/database-applications/#a619f0c5b9f1920b2ed32f4d086190b9> a dbms:DatabaseManagementSystem ;
+	rdfs:label "Atos Standard Common Repository" ;
+	schema:category "Multi-model Document store" .
 
 <https://db-engines.com/en/system/AtosStandardCommonRepository> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
@@ -6833,9 +6779,9 @@ RDF store""" .
 
 <http://www.openlinksw.com/data/turtle/database-applications/#24d4670757f6b12a5b4e61ec01c29de6> schema:mainEntityOfPage <https://db-engines.com/en/system/SadasEngine> .
 
-<http://www.openlinksw.com/data/turtle/database-applications/#8dedd7ee5b0af61e220c0369089104ae> a dbms:DatabaseManagementSystem ;
+<http://www.openlinksw.com/data/turtle/database-applications/#8dedd7ee5b0af61e220c0369089104ae> schema:category "Time Series" ;
 	rdfs:label "SiteWhere" ;
-	schema:category "Time Series" .
+	a dbms:DatabaseManagementSystem .
 
 <https://db-engines.com/en/system/SiteWhere> a schema:CreativeWork ;
 	schema:name "DB Engines Analysis Page" .
