@@ -552,8 +552,6 @@ schema:description """Notation used to represent a collection of terms that have
 skos:related <http://data.openlinksw.com/oplweb/glossary-term/Tuple#this>, <http://dbpedia.org/resource/Tuple> ; 
 skos:inScheme :this .
 
-##
-
 ## Industry Trends ##
 
 <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>
@@ -573,6 +571,7 @@ skos:related dbpedia:Deductive_database,
 			 <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>,
 			 <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
+skos:narrower dbpedia:Semantic_Web ;
 schema:image <https://www.aitrends.com/wp-content/uploads/2016/06/pyramidofai-696x406.jpg> ;
 schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artificial-intelligence/> ;
 schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-operations-to-drive-business-value/>,
@@ -585,11 +584,10 @@ skos:inScheme :this .
 <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>
 a skos:Concept ;
 schema:name "Knowledge Graph"@en ;
-schema:image 
-<https://cdn-images-1.medium.com/max/880/1*A-VaSSx2cqNHrI19_t4cfA.png>,
-<https://lod-cloud.net/versions/2019-01-08/lod-cloud.png>,
-<https://enterprise-knowledge.com/cms/assets/uploads/2019/01/Knowledge-Graph.png> ,
-<https://www.researchgate.net/profile/Hijaz_Ahmad/post/What_is_Knowledge_Graphs/attachment/5ab8df4b4cde266d5893ceb5/AS%3A608399813251073%401522065227594/download/main-qimg-a8f2f3b409c3336d5839f247f10c9921.png> ;
+schema:image   <https://cdn-images-1.medium.com/max/880/1*A-VaSSx2cqNHrI19_t4cfA.png>,
+               <https://lod-cloud.net/versions/2019-01-08/lod-cloud.png>,
+               <https://enterprise-knowledge.com/cms/assets/uploads/2019/01/Knowledge-Graph.png> ,
+               <https://www.researchgate.net/profile/Hijaz_Ahmad/post/What_is_Knowledge_Graphs/attachment/5ab8df4b4cde266d5893ceb5/AS%3A608399813251073%401522065227594/download/main-qimg-a8f2f3b409c3336d5839f247f10c9921.png> ;
 skos:altLabel "KG"@en ;
 skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
 schema:description """An Entity Relationship Type Collection depicted as a Graph (Web or Network). In this
