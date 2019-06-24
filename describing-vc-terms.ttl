@@ -72,10 +72,10 @@ wdrs:describedby <> .
 a skos:Concept ;
 schema:name "CX" ;
 skos:prefLabel "Customer Experience" ; 
-is schema:about of <http://www.topdownsystems.com/resources/blog/winning-customers-for-life-with-great-customer-experience-strategy>,
+skos:related <http://www.topdownsystems.com/resources/blog/winning-customers-for-life-with-great-customer-experience-strategy>,
 				   <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore>,
 				   <http://www.forbes.com/forbesinsights/sitecore/index.html> ;
-is foaf:primaryTopic of <http://www.topdownsystems.com/resources/blog/winning-customers-for-life-with-great-customer-experience-strategy>,
+schema:mainEntityOfPage<http://www.topdownsystems.com/resources/blog/winning-customers-for-life-with-great-customer-experience-strategy>,
 	 					<http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore>,
 						<http://www.forbes.com/forbesinsights/sitecore/index.html> ;
 wdrs:describedby <> . 
@@ -84,9 +84,9 @@ wdrs:describedby <> .
 a skos:Concept ;
 schema:name "CLV" ;
 skos:prefLabel "Customer Life Time Value" ; 
-is schema:about of <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore>,
+skos:related <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore>,
 				   <http://www.forbes.com/forbesinsights/sitecore/index.html> ;
-is foaf:primaryTopic of  <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore>,
+schema:mainEntityOfPage <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore>,
 						<http://www.forbes.com/forbesinsights/sitecore/index.html> ;
 wdrs:describedby <> . 			
 
@@ -94,9 +94,9 @@ wdrs:describedby <> .
 a skos:Concept ;
 schema:name "ACV" ;
 skos:prefLabel "Annualized Contract Value" ; 
-is schema:about of <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore>,
+skos:related <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore>,
 				   <http://www.forbes.com/forbesinsights/sitecore/index.html> ;
-is foaf:primaryTopic of  <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore>,
+schema:mainEntityOfPage <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore>,
 						<http://www.forbes.com/forbesinsights/sitecore/index.html> ;
 wdrs:describedby <> . 							
 
@@ -124,7 +124,7 @@ a <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
 schema:name "CRR";
 skos:prefLabel "Customer Rentention Rate";
 <#hashTag> "#CRR" ; 
-is schema:about of <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/34/> ;
+skos:related <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/34/> ;
 wdrs:describedby <> . 
 
 <#DRR>
@@ -132,7 +132,7 @@ a <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
 schema:name "DRR";
 skos:prefLabel "Dollar Rentention Rate";
 <#hashTag> "#DRR" ; 
-is schema:about of <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/45/> ;
+skos:related <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/45/> ;
 wdrs:describedby <> . 
 
 <#CHI>
@@ -140,7 +140,7 @@ a <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
 schema:name "CHI";
 skos:prefLabel "Customer Happiness Index";
 <#hashTag> "#CHI" ; 
-is schema:about of <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/34/> ;
+skos:related <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/34/> ;
 wdrs:describedby <> . 
 						
 <#CAC>
@@ -149,7 +149,7 @@ schema:name "CAC";
 skos:prefLabel "Customer Acquisition Costs";
 
 <#hashTag> "#CAC" ; 
-is schema:about of <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/>,
+skos:related <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/>,
 					<http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/69/>, 
 					<http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/71/>,
 					<http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/9/>,
@@ -172,7 +172,7 @@ a <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA>, <http://sw.opencyc
 schema:name "LTV";
 skos:prefLabel "Life Time Value of a Customer";
 <#hashTag> "#LTV" ; 
-is schema:about of <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/> ;
+skos:related <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/> ;
 wdrs:describedby <> . 
 
 <#MRR>
@@ -180,7 +180,7 @@ a <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA>, <http://sw.opencyc
 schema:name "MRR";
 skos:prefLabel "Monthly Recurring Revenue";
 <#hashTag> "#MRR" ;  
-is schema:about of <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/53/> ;
+skos:related <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/53/> ;
 wdrs:describedby <> . 
 
 <#ARR>
@@ -188,7 +188,7 @@ a <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA>, <http://sw.opencyc
 schema:name "ARR";
 skos:prefLabel "Annual Recurring Revenue";
 <#hashTag> "#ARR" ;  
-is schema:about of <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/53/> ;
+skos:related <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/53/> ;
 wdrs:describedby <> . 
 
 <#OTE>
@@ -196,7 +196,7 @@ a <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA>, <http://sw.opencyc
 schema:name "OTE";
 skos:prefLabel "On Target Earnings";
 <#hashTag> "#OTE" ;
-is schema:about of <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/63/> ;
+skos:related <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/63/> ;
 wdrs:describedby <> . 
 
 <#RSVP>
@@ -221,7 +221,7 @@ a skos:Concept ;
 schema:name "DemandWare";
 schema:description "Commerce NOT Infrastructure" ;
 <#hashtag> "#DemandWare" ;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/24> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/24> ;
 wdrs:describedby <> . 
 
 <#Try>
@@ -229,7 +229,7 @@ a <#BusinessDevelopmentStage> ;
 schema:name "Try";
 schema:description "Early Product Life Cycle Stage" ;
 dcterms:isPartOf <#ProductLifeCycle> ;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
 wdrs:describedby <> . 
 
 <#Buy>
@@ -237,7 +237,7 @@ a <#BusinessDevelopmentStage> ;
 schema:name "Buy";
 schema:description "Product Life Cycle Stage that comes after Try." ;
 dcterms:isPartOf <#ProductLifeCycle> ;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
 wdrs:describedby <> . 
 
 <#Fly>
@@ -245,7 +245,7 @@ a <#BusinessDevelopmentStage> ;
 schema:name "Fly" ;
 schema:description "Product Life Cycle Stage that comes after Buy." ;
 dcterms:isPartOf <#ProductLifeCycle> ;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
 wdrs:describedby <> . 
 
 <#Die>
@@ -253,14 +253,14 @@ a <#BusinessDevelopmentStage> ;
 schema:name "Die" ;
 schema:description "Product Life Cycle Stage that comes after Fly." ;
 dcterms:isPartOf <#ProductLifeCycle> ;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
 wdrs:describedby <> . 
 
 <#FunnelBreakingPoint>
 a <#BusinessDevelopmentStage> ;
 schema:name "FunnelBreakingPoint";
 skos:prefLabel "Funnel Breaking Point" ;
-is schema:about of <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/16> ;
+skos:related <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/16> ;
 skos:related <#CAC> ;
 wdrs:describedby <> . 
 
@@ -269,7 +269,7 @@ a skos:Concept ;
 schema:name "TLAC" ;
 skos:prefLabel "Think Like A Customer" ; 
 skos:related <#CAC> ;
-is schema:about of <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/19> ;
+skos:related <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/19> ;
 foaf:depiction <http://media-cache-ec0.pinimg.com/originals/97/7b/47/977b473d3bef0c3bc0fdf1fe23e6dd39.jpg> ;
 wdrs:describedby <> . 
 
@@ -289,7 +289,7 @@ skos:prefLabel "Internal Rate of Return" ;
 skos:altLabel "Economic Rate of Return" ;
 schema:description """A metric used in capital budgeting measuring the profitability of potential investments. 
 	 			From a pool of potential investments those with the higher IRR are typically preffered.""";
-is schema:about of <http://www.investopedia.com/terms/i/irr.asp#this> ;
+skos:related <http://www.investopedia.com/terms/i/irr.asp#this> ;
 wdrs:describedby <> . 
 
 <#ROCE>
@@ -297,7 +297,7 @@ a skos:Concept ;
 schema:name "ROCE" ;
 skos:prefLabel "Return On Capital Employed" ;
 schema:description """Measures how efficiently equity and debt have been applied to business functions.""";
-is schema:about of <http://www.accountingtools.com/return-on-capital-employed#this>, <http://www.investopedia.com/terms/r/roce.asp#this> ;
+skos:related <http://www.accountingtools.com/return-on-capital-employed#this>, <http://www.investopedia.com/terms/r/roce.asp#this> ;
 wdrs:describedby <> . 
 
 <#VALE>
@@ -357,7 +357,7 @@ schema:name "CRR";
 skos:prefLabel "Customer Rention Rate";
 schema:description """Customers retained over a period of time. Difference between customers at the start of a period 
 and customers at the end of a period. """;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/16>,
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/16>,
 <http://www.evergage.com/blog/how-calculate-customer-retention/> ;
 wdrs:describedby <> . 
 
@@ -371,7 +371,7 @@ wdrs:describedby <> .
 a <http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA>, <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
 schema:name "CLV" ;
 skos:prefLabel "Customer Lifetime Value" ;
-is schema:about of <http://www.marketingcharts.com/online/4-in-10-senior-execs-at-large-organizations-dont-measure-customer-lifetime-value-45899/> ;
+skos:related <http://www.marketingcharts.com/online/4-in-10-senior-execs-at-large-organizations-dont-measure-customer-lifetime-value-45899/> ;
 wdrs:describedby <> . 
 
 <#REP>
@@ -416,30 +416,30 @@ schema:name "CARC";
 skos:prefLabel "Cost of Acquiring and Retaining Customer" ;
 <#hashtag> "#CARC" ;
 schema:description "" ;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/18>,
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/18>,
 <http://www.customerforlife.com/blog/salesforce/2013/03/26/retention-vs-acquisition/> ;
 wdrs:describedby <> . 
 
 <#SLIPPERY>
 a skos:Concept;
 schema:name "SLIPPERY" ;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/26> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/26> ;
 schema:description """Simple, Low to no initial costs, Installs and integrates, Proves value quickly, Package for progress,
               Experience is compelling, Return on investment [ROI] is obvious, Your customer can't live without it 
  [i.e, Sticky].""" ;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/26> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/26> ;
 wdrs:describedby <> . 
 
 <#ABC>
 a skos:Concept ;
 schema:name "ABC";
 skos:prefLabel "Amazing Because Cloud";
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/56> .
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/56> .
 
 <#IWC>
 schema:name "IWC";
 skos:prefLabel "Impossible Without Cloud";
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/57> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/57> ;
 wdrs:describedby <> . 
 
 <#LAE>
@@ -447,7 +447,7 @@ schema:name "LAE";
 skos:prefLabel "Land And Expand";
 schema:description """Negating thorny pathways to initial sale en route to expanding -- through future upselling 
 and/or introduction of new [complimentary] products and services. """;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/22> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/22> ;
 wdrs:describedby <> . 
 
 <#LEWF>
@@ -455,20 +455,20 @@ schema:name "LEWF";
 skos:prefLabel "Land and Expand Without Friction";
 schema:description """Negating [with least amount of friction, if any] thorny pathways to initial sale en route to expanding -- through future upselling 
 and/or introduction of new [complimentary] products and services. """;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/23> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/23> ;
 wdrs:describedby <> . 
 
 <#Upsell>
 schema:name "Upsell";
 schema:description """Following customer acquisition, introduction of new [complimentary] products and services. """;
-is schema:about of <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/17> ;
+skos:related <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/17> ;
 wdrs:describedby <> . 
 
 <#ProductLifeCycle>
 schema:name "ProductLifeCycle";
 skos:prefLabel "Product Life Cycle";
 schema:description """Product stages that cover inception, maturation, and decline. """ ;
-is foaf:primaryTopic of  <http://www.marketingteacher.com/three-levels-of-a-product/>, 
+schema:mainEntityOfPage <http://www.marketingteacher.com/three-levels-of-a-product/>, 
                       <http://www.investopedia.com/terms/p/product-life-cycle.asp> ;
 wdrs:describedby <> . 
 
@@ -478,7 +478,7 @@ schema:name "BusinessModel";
 skos:prefLabel "Business Model";
 schema:description """Entities, Entity Types, Entity Relationship Types, and Entity Relationships that represent a fluid and systematic
                 approach to creating and exchanging value, profitably.""" ;
-is schema:about of <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/11>,
+skos:related <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/11>,
 <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/12> ;
 wdrs:describedby <> . 
 
