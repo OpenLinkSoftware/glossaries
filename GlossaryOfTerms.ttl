@@ -36,7 +36,7 @@ sourceDAV:
     schema:comment """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2019-04-08T11:00:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2019-06-27T14:00:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +48,7 @@ source:
     schema:comment """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2019-04-08T11:00:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2019-06-27T14:00:00-04:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -232,7 +232,9 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/Mark#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/Tuple#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/TupleStructure#this> ,
-                    <http://data.openlinksw.com/oplweb/glossary-term/TupleRepresentation#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/TupleRepresentation#this> ,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -4776,3 +4778,34 @@ owl:IrreflexiveProperty
                  <https://twitter.com/hashtag/LinkedData#this> ,
                  <https://twitter.com/hashtag/SemanticWeb#this> ,
                  <https://twitter.com/hashtag/RDF#this> .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> 
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "DevOps" ;
+    # schema:image            <> ;
+    schema:description      """DevOps is a set of software development practices that blends software 
+                               development (Dev) with information technology operations (Ops) to shorten the 
+                               systems development life cycle while helping to keep frequent feature, fix, 
+                               and other updates aligned with business objectives.""" ;
+    owl:sameAs              <http://dbpedia.org/resource/DevOps> ;
+    schema:mainEntityOfPage <https://en.wikipedia.org/wiki/DevOps> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ;
+    skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> 
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "DataOps" ;
+    # schema:image            <> ;
+    schema:description      """DataOps is a process-oriented methodology which data and analytics teams use 
+                               to speed up and improve the quality of data analytics, through automation and 
+                               otherwise. DataOps impacts the entire data lifecycle from preparation to 
+                               reporting, and reflects the interconnection and interdependence of the data 
+                               analytics (Data) and information technology operations (Ops) teams and activities.""" ;
+    owl:sameAs              <http://dbpedia.org/resource/DataOps> ;
+    schema:mainEntityOfPage <https://en.wikipedia.org/wiki/DataOps> ,
+                            <https://medium.com/data-ops/the-dataops-enterprise-software-industry-2019-a862904857ef> ,
+                            <https://www.datakitchen.io/content/DataKitchen_dataops_cookbook.pdf>;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ;
+    skos:inScheme           :this .
