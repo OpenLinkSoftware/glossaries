@@ -1,0 +1,684 @@
+<>
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> ;
+    <http://www.w3.org/1999/xhtml/vocab#alternate>    <GlossaryOfTerms.txt> ;
+    <http://www.w3.org/2000/01/rdf-schema#label>      "Common Venture Capital Terms & Acronyms"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#comment>    """Covers the definition of a variety of terms commonly
+                                                         used in Venture Capital and other Business circles."""@en ;
+    <http://purl.org/dc/terms/created>                "2014-09-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    <http://purl.org/dc/terms/modified>               "2019-06-24"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:creator                                   <http://kingsley.idehen.net/dataspace/person/kidehen#this> ;
+    <http://www.w3.org/1999/xhtml/vocab#license>      <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    <http://creativecommons.org/ns#attributionName>   "Kingsley Uyi Idehen" ;
+    schema:about                                      <#ABC> ,
+                                                      <#ARPU> ,
+                                                      <#BusinessModel> ,
+                                                      <#Buy> ,
+                                                      <#CAC> ,
+                                                      <#CACR> ,
+                                                      <#CAGR> ,
+                                                      <#CHURN> ,
+                                                      <#CLV> ,
+                                                      <#CLV> ,
+                                                      <#CRR> ,
+                                                      <#CX> ,
+                                                      <#DemandWare> ,
+                                                      <#Die> ,
+                                                      <#Fly> ,
+                                                      <#FunnelBreakingPoint> ,
+                                                      <#IWC> ,
+                                                      <#LAE> ,
+                                                      <#LEWF> ,
+                                                      <#LTV> ,
+                                                      <#ProductLifeCycle> ,
+                                                      <#REP> ,
+                                                      <#RSVP> ,
+                                                      <#SLIPPERY> ,
+                                                      <#SpinIn> ,
+                                                      <#SpinOut> ,
+                                                      <#TCO> ,
+                                                      <#TLAC> ,
+                                                      <#Try> ,
+                                                      <#Upsell> ;
+    <http://creativecommons.org/ns#attributionURL>    <http://kingsley.idehen.net/dataspace/person/kidehen#this> ;
+    dcterms:references                                <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan> ,
+                                                      <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare> .
+
+## Metrics
+
+<#TractionGap>
+    a                       skos:Concept ;
+    schema:name             "TractionGap"@en ;
+    skos:prefLabel          "Traction Gap"@en ;
+    schema:mainEntityOfPage <http://wildcat.vc/wp-content/uploads/2017/05/Wildcat-Traction-Gap-Framework-4-2017.pdf> ;
+    wdrs:describedby        <> .
+
+<https://www.linkedin.com/pulse/search-science-sales-bruce-cleveland/>
+    schema:mentions         <#TractionGap> ,
+                            <#IPR> ,
+                            <#MVT> .
+
+<#IPR>
+    a                       skos:Concept ;
+    schema:name             "IPR" ;
+    skos:prefLabel          "Initial Product Release"@en ;
+    schema:description      "First publicly deployed product iteration"@en ;
+    wdrs:describedby        <> .
+
+<#MVT>
+    a                       skos:Concept ;
+    schema:name             "MVT" ;
+    schema:prefLabel        "Minimal Viable Traction"@en ;
+    schema:description      "Period between Initial Product Release (IPR) and Minimum Viable Traction (MVT)"@en ;
+    wdrs:describedby        <> .
+
+<#MVR>
+    a                       skos:Concept ;
+    schema:name             "MVR" ;
+    schema:prefLabel        "Minimal Viable Repeatability"@en ;
+    schema:description      "Solution-grade product, business model, and repeatable sales/marketing"@en ;
+    wdrs:describedby        <> .
+
+<http://wildcat.vc/wp-content/uploads/2017/05/Wildcat-Traction-Gap-Framework-4-2017.pdf>
+    schema:mentions       <#MVR> ,
+                          <#MVP> .
+
+<#MVP>
+    a                       skos:Concept ;
+    schema:name             "MVP" ;
+    schema:prefLabel        "Minimal Viable Product"@en ;
+    schema:description      "Product with minimal customer validation metrics"@en ;
+    wdrs:describedby        <> .
+
+<#EIR>
+    a                     skos:Concept ;
+    schema:name           "EIR" ;
+    skos:prefLabel        "Executive In Residence"@en ;
+    schema:description    """Refers to a person at a Venture Capital firm awaiting an executive position in a startup
+                             funded by the aforementioned firm."""@en ;
+    wdrs:describedby      <> .
+
+<#CX>
+    a                       skos:Concept ;
+    schema:name             "CX" ;
+    skos:prefLabel          "Customer Experience"@en ;
+    skos:related            <http://www.topdownsystems.com/resources/blog/winning-customers-for-life-with-great-customer-experience-strategy> ,
+                            <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore> ,
+                            <http://www.forbes.com/forbesinsights/sitecore/index.html> ;
+    schema:mainEntityOfPage <http://www.topdownsystems.com/resources/blog/winning-customers-for-life-with-great-customer-experience-strategy> ,
+                            <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore> ,
+                            <http://www.forbes.com/forbesinsights/sitecore/index.html> ;
+    wdrs:describedby        <> .
+
+<#CLV>
+    a                       skos:Concept ;
+    schema:name             "CLV" ;
+    skos:prefLabel          "Customer Life Time Value"@en ;
+    skos:related            <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore> ,
+                            <http://www.forbes.com/forbesinsights/sitecore/index.html> ;
+    schema:mainEntityOfPage <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore> ,
+                            <http://www.forbes.com/forbesinsights/sitecore/index.html> ;
+    wdrs:describedby        <> .
+
+<#ACV>
+    a                       skos:Concept ;
+    schema:name             "ACV" ;
+    skos:prefLabel          "Annualized Contract Value"@en ;
+    skos:related            <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore> ,
+                            <http://www.forbes.com/forbesinsights/sitecore/index.html> ;
+    schema:mainEntityOfPage <http://www.forbes.com/sites/forbespr/2014/09/10/companies-struggling-to-win-customers-for-life-says-new-study-by-forbes-insights-and-sitecore> ,
+                            <http://www.forbes.com/forbesinsights/sitecore/index.html> ;
+    wdrs:describedby        <> .
+
+<#SpinOut>
+    a                       skos:Concept ;
+    schema:name             "SpinOut" ;
+    schema:description      "When a company turns an internal project, department, or division into an independent company."@en ;
+    wdrs:describedby        <> .
+
+<#SpinIn>
+    a                       skos:Concept ;
+    schema:name             "SpinIn" ;
+    schema:description      """When a company funds an external project that's later acquired and turned into
+                               an internal project, department, division, or wholly owned subsidiary."""@en ;
+    wdrs:describedby        <> .
+
+<http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA>
+    a                       owl:Class ;
+    schema:name             "Interval-based Quantity Measurement"@en ;
+    wdrs:describedby        <> .
+
+<#CRR>
+    a                       <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
+    schema:name             "CRR" ;
+    skos:prefLabel          "Customer Retention Rate"@en ;
+    <#hashTag>              "#CRR" ;
+    skos:related            <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/34/> ;
+    wdrs:describedby        <> .
+
+<#DRR>
+    a                       <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
+    schema:name             "DRR" ;
+    skos:prefLabel          "Dollar Retention Rate"@en ;
+    <#hashTag>              "#DRR" ;
+    skos:related            <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/45/> ;
+    wdrs:describedby        <> .
+
+<#CHI>
+    a                       <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
+    schema:name             "CHI" ;
+    skos:prefLabel          "Customer Happiness Index"@en ;
+    <#hashTag>              "#CHI" ;
+    skos:related            <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/34/> ;
+    wdrs:describedby        <> .
+
+<#CAC>
+    a                       <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
+    schema:name             "CAC" ;
+    skos:prefLabel          "Customer Acquisition Costs"@en ;
+    <#hashTag>              "#CAC" ;
+    skos:related            <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/> ,
+                            <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/69/> ,
+                            <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/71/> ,
+                            <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/9/> ,
+                            <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/10/> ,
+                            <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/15/> ;
+    wdrs:describedby        <> .
+
+<http://labs.openviewpartners.com/market-segmentation-how-why-when/>
+    schema:mentions         <#CAC> .
+
+<http://labs.openviewpartners.com/ltv-cac-ratio/>
+    schema:mentions         <#CAC> .
+
+<#CacLtvRatio>
+    a                       <http://dbpedia.org/class/yago/Ratio113819207> ;
+    schema:name             "CAC:LTV Ratio"@en ;
+    skos:prefLabel          "Customer Acquisition Costs to Customer Life Time Value Ratio"@en ;
+    owl:sameAs              <http://labs.openviewpartners.com/ltv-cac-ratio/#.WSbOIdzyub8> ;
+    <#hashTag>              "#CACLTV" ;
+    schema:mainEntityOfPage <http://labs.openviewpartners.com/ltv-cac-ratio/> ;
+    wdrs:describedby        <> .
+
+<#LTV>
+    a                       <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
+    schema:name             "LTV" ;
+    skos:prefLabel          "Lifetime Value of a Customer"@en ;
+    <#hashTag>              "#LTV" ;
+    skos:related            <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/> ;
+    wdrs:describedby        <> .
+
+<#MRR>
+    a                       <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
+    schema:name             "MRR" ;
+    skos:prefLabel          "Monthly Recurring Revenue"@en ;
+    <#hashTag>              "#MRR" ;
+    skos:related            <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/53/> ;
+    wdrs:describedby        <> .
+
+<#ARR>
+    a                       <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
+    schema:name             "ARR" ;
+    skos:prefLabel          "Annual Recurring Revenue"@en ;
+    <#hashTag>              "#ARR" ;
+    skos:related            <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/53/> ;
+    wdrs:describedby        <> .
+
+<#OTE>
+    a                       <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvaEcosFuQdiNopS8VV8ODg> ;
+    schema:name             "OTE" ;
+    skos:prefLabel          "On Target Earnings"@en ;
+    <#hashTag>              "#OTE" ;
+    skos:related            <http://www.slideshare.net/DavidSkok/the-saas-business-model-and-metrics/63/> ;
+    wdrs:describedby        <> .
+
+<#RSVP>
+    a                       skos:Concept ;
+    schema:name             "RSVP" ;
+    skos:prefLabel          "Repeatable Sustainable Valuable Predictable"@en ;
+    <#hashtag>              "#RSVP" ;
+    wdrs:describedby        <> .
+
+<#TCO>
+    a                       <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "TCO" ;
+    skos:prefLabel          "Total Cost of Ownership"@en ;
+    <#hashtag>              "#RSVP" ;
+    schema:description      """Metric used to express total cost of product/service acquisition. For instance,
+                               in the case of software, this would be the total of product, support, and other
+                               professional services costs, over a period of time."""@en .
+
+<#DemandWare>
+    a                       skos:Concept ;
+    schema:name             "DemandWare" ;
+    schema:description      "Commerce NOT Infrastructure"@en ;
+    <#hashtag>              "#DemandWare" ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/24> ;
+    wdrs:describedby        <> .
+
+<#Try>
+    a                       <#BusinessDevelopmentStage> ;
+    schema:name             "Try"@en ;
+    schema:description      "Early Product Life Cycle Stage"@en ;
+    dcterms:isPartOf        <#ProductLifeCycle> ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
+    wdrs:describedby        <> .
+
+<#Buy>
+    a                       <#BusinessDevelopmentStage> ;
+    schema:name             "Buy"@en ;
+    schema:description      "Product Life Cycle Stage that comes after Try."@en ;
+    dcterms:isPartOf        <#ProductLifeCycle> ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
+    wdrs:describedby        <> .
+
+<#Fly>
+    a                       <#BusinessDevelopmentStage> ;
+    schema:name             "Fly"@en ;
+    schema:description      "Product Life Cycle Stage that comes after Buy."@en ;
+    dcterms:isPartOf        <#ProductLifeCycle> ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
+    wdrs:describedby        <> .
+
+<#Die>
+    a                       <#BusinessDevelopmentStage> ;
+    schema:name             "Die"@en ;
+    schema:description      "Product Life Cycle Stage that comes after Fly."@en ;
+    dcterms:isPartOf        <#ProductLifeCycle> ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/13> ;
+    wdrs:describedby        <> .
+
+<#FunnelBreakingPoint>
+    a                       <#BusinessDevelopmentStage> ;
+    schema:name             "FunnelBreakingPoint"@en ;
+    skos:prefLabel          "Funnel Breaking Point"@en ;
+    skos:related            <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/16> ;
+    skos:related            <#CAC> ;
+    wdrs:describedby        <> .
+
+<#TLAC>
+    a                       skos:Concept ;
+    schema:name             "TLAC" ;
+    skos:prefLabel          "Think Like A Customer"@en ;
+    skos:related            <#CAC> ;
+    skos:related            <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/19> ;
+    foaf:depiction          <http://media-cache-ec0.pinimg.com/originals/97/7b/47/977b473d3bef0c3bc0fdf1fe23e6dd39.jpg> ;
+    wdrs:describedby        <> .
+
+<http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA>
+    schema:name             "Rate".
+
+<#CAGR>
+    a                       <http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "CAGR" ;
+    skos:prefLabel          "Compound Annual Growth Rate"@en ;
+    wdrs:describedby        <> .
+
+<#IRR>
+    a                       <http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "IRR" ;
+    skos:prefLabel          "Internal Rate of Return"@en ;
+    skos:altLabel           "Economic Rate of Return"@en ;
+    schema:description      """A metric used in capital budgeting to measure the profitability of potential investments.
+                               In a pool of potential investments, those with higher IRR are typically preferred."""@en ;
+    skos:related            <http://www.investopedia.com/terms/i/irr.asp#this> ;
+    wdrs:describedby        <> .
+
+<#ROCE>
+    a                       skos:Concept ;
+    schema:name             "ROCE" ;
+    skos:prefLabel          "Return On Capital Employed"@en ;
+    schema:description      """Measures how efficiently equity and debt have been applied to business functions."""@en ;
+    skos:related            <http://www.accountingtools.com/return-on-capital-employed#this> ,
+                            <http://www.investopedia.com/terms/r/roce.asp#this> ;
+    wdrs:describedby        <> .
+
+<#VALE>
+    a                       skos:Concept ;
+    schema:name             "VALE" ;
+    skos:prefLabel          "Value Efficiency"@en ;
+    schema:description      """Valuation divided by Capital Raised. Metric that attempts to gauge how much was raised
+                               to attain post-money valuation."""@en ;
+    wdrs:describedby        <> .
+
+<http://tomtunguz.com/composition-1b-club/>
+    schema:mentions         <#VALE> .
+
+<#TAM>
+    a                       skos:Concept ;
+    owl:sameAs              dbpedia:Total_addressable_market ;
+    schema:name             "TAM" ;
+    skos:prefLabel          "Total Addressable Market"@en ;
+    skos:altLabel           "Total Available Market"@en ;
+    schema:description      """Total Available or Addressable Market, i.e., every entity (organization or person) afflicted by
+                               the problem that your product solves."""@en ;
+    wdrs:describedby        <> .
+
+<https://www.liveplan.com/blog/2012/06/the-importance-of-tam-sam-and-som-in-your-plan/#this>
+    schema:mentions         <#TAM> ,
+                            <#SAM> ,
+                            <#SOM> .
+
+<https://www.thebusinessplanshop.com/blog/en/entry/tam_sam_som#this> ;
+    schema:mentions         <#TAM> ,
+                            <#SAM> ,
+                            <#SOM> .
+
+<#SAM>
+    a                       skos:Concept ;
+    owl:sameAs              dbpedia:Serviceable_available_market ;
+    schema:name             "SAM" ;
+    skos:altLabel           "Serviceable Addressable Market"@en ;
+    skos:prefLabel          "Served Available Market"@en ;
+    schema:description      """Total Available or Addressable Market Segment, i.e., specific entities (organization or person)
+                               afflicted by the problem that your product solves."""@en ;
+    wdrs:describedby        <> .
+
+<#SOM>
+    a                       skos:Concept ;
+    owl:sameAs              dbpedia:Target_market ;
+    schema:name             "SOM" ;
+    skos:prefLabel          "Share Of Market"@en ;
+    skos:altLabel           "Target Market"@en ;
+    schema:description      """Share of Market you aim to pursue within Segmented Addressable Market (SAM), i.e., your Target Market."""@en ;
+    schema:mentions         <#SAM> ;
+    wdrs:describedby        <> .
+
+<#CRR>
+    a                       <http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "CRR" ;
+    skos:prefLabel          "Customer Retention Rate"@en ;
+    schema:description      """Customers retained over a period of time. Difference between customers at the start of a period
+                               and customers at the end of a period."""@en ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/16> ,
+                            <http://www.evergage.com/blog/how-calculate-customer-retention/> ;
+    wdrs:describedby        <> .
+
+<#ARPU>
+    a                       <http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "ARPU" ;
+    skos:prefLabel          "Average Revenue Per Unit"@en ;
+    wdrs:describedby        <> .
+
+<#CLV>
+    a                       <http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "CLV" ;
+    skos:prefLabel          "Customer Lifetime Value"@en ;
+    skos:related            <http://www.marketingcharts.com/online/4-in-10-senior-execs-at-large-organizations-dont-measure-customer-lifetime-value-45899/> ;
+    wdrs:describedby        <> .
+
+<#REP>
+    a                       <http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "REP" ;
+    skos:prefLabel          "Revenue Per Employee"@en ;
+    wdrs:describedby        <> .
+
+<#CHURN>
+    a                       <http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "CHURN" ;
+    skos:prefLabel          "Renewal Failure Rate"@en ;
+    schema:description      """Also known as the "Rate of Attrition," the Renewal Failure Rate is the percentage of subscribers
+                               to a service who discontinue or fail to renew their subscriptions within a given time period."""@en ;
+    schema:mainEntityOfPage <http://www.investopedia.com/terms/c/churnrate.asp> ,
+                            <https://info.recurly.com/research/churn-rate-benchmarks> ;
+    wdrs:describedby        <> .
+
+<#TAC>
+    a                       <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "TAC" ;
+    skos:prefLabel          "Traffic Acquisition Costs"@en ;
+    <#hashtag>              "#TAC" ;
+    schema:description      "Cost of acquiring site traffic and stickiness"@en ;
+    wdrs:describedby        <> .
+
+<http://recode.net/2016/04/06/yahoo-sale-book-financial-meltdown/#this>
+    schema:mentions         <#TAC> .
+
+<#MAU>
+    a                       <http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "MUA" ;
+    skos:prefLabel          "Monthly Active Users"@en ;
+    <#hashtag>              "#MAU" ;
+    schema:description      "Social Media and Networking oriented metric used to gauge monthly user activity"@en ;
+    schema:mainEntityOfPage <http://www.investopedia.com/terms/m/monthly-active-user-mau.asp#this> ;
+    skos:related            <http://www.investopedia.com/terms/s/social-networking-service-sns.asp#this> ;
+    wdrs:describedby        <> .
+
+<#CACR>
+    a                       <http://sw.opencyc.org/concept/Mx4rvVjrwpwpEbGdrcN5Y29ycA> ,
+                            <http://sw.opencyc.org/concept/Mx4rvViBYpwpEbGdrcN5Y29ycA> ;
+    schema:name             "CARC" ;
+    skos:prefLabel          "Cost of Acquiring and Retaining Customer"@en ;
+    <#hashtag>              "#CARC" ;
+    schema:description      "" ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/18> ,
+                            <http://www.customerforlife.com/blog/salesforce/2013/03/26/retention-vs-acquisition/> ;
+    wdrs:describedby        <> .
+
+<#SLIPPERY>
+    a                       skos:Concept ;
+    schema:name             "SLIPPERY" ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/26> ;
+    schema:description      """Simple, Low to no initial costs, Installs and integrates, Proves value quickly, Package for progress,
+                               Experience is compelling, Return On Investment (ROI) is obvious, Your customer can't live without it
+                               (i.e, Sticky)."""@en ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/26> ;
+    wdrs:describedby        <> .
+
+<#ABC>
+    a                       skos:Concept ;
+    schema:name             "ABC" ;
+    skos:prefLabel          "Amazing Because Cloud"@en ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/56> .
+
+<#IWC>
+    schema:name             "IWC" ;
+    skos:prefLabel          "Impossible Without Cloud"@en ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/57> ;
+    wdrs:describedby        <> .
+
+<#LAE>
+    schema:name             "LAE" ;
+    skos:prefLabel          "Land And Expand"@en ;
+    schema:description      """Negating thorny pathways to initial sale en route to expanding -- through future upselling
+                               and/or introduction of new (complementary) products and services."""@en ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/22> ;
+    wdrs:describedby        <> .
+
+<#LEWF>
+    schema:name             "LEWF" ;
+    skos:prefLabel          "Land and Expand Without Friction"@en ;
+    schema:description      """Negating (with least amount of friction, if any) thorny pathways to initial sale en route
+                               to expanding -- through future upselling and/or introduction of new (complementary) products
+                               and services."""@en ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/23> ;
+    wdrs:describedby        <> .
+
+<#Upsell>
+    schema:name             "Upsell"@en ;
+    schema:description      """Following customer acquisition, introduction of new (complementary) products and services."""@en ;
+    skos:related            <http://www.slideshare.net/mjskok/2014-09-bo-s-presentation-v16-final-for-slideshare/17> ;
+    wdrs:describedby        <> .
+
+<#ProductLifeCycle>
+    schema:name             "ProductLifeCycle"@en ;
+    skos:prefLabel          "Product Life Cycle"@en ;
+    schema:description      """Product stages that cover inception, maturation, and decline."""@en ;
+    schema:mainEntityOfPage <http://www.marketingteacher.com/three-levels-of-a-product/> ,
+                            <http://www.investopedia.com/terms/p/product-life-cycle.asp> ;
+    wdrs:describedby        <> .
+
+<#BusinessModel>
+    owl:equivalentClass     <business-model-description.ttl#BusinessModel> ,
+                            <https://twitter.com/hashtag/BusinessModel#this> ;
+    schema:name             "BusinessModel"@en ;
+    skos:prefLabel          "Business Model"@en ;
+    schema:description      """Entities, Entity Types, Entity Relationship Types, and Entity Relationships that represent
+                               a fluid and systematic approach to creating and exchanging value, profitably."""@en ;
+    skos:related            <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/11> ,
+                            <http://www.slideshare.net/DavidSkok/customer-acquisition-monetization-keys-to-your-business-plan/12> ;
+    wdrs:describedby        <> .
+
+## Company Classification
+
+<#SaaSFocusedCompany>
+    rdfs:subClassOf         schema:Organization ,
+                            foaf:Organization ,
+                            gr:BusinessEntity ;
+    schema:name             "SaaSFocusedCompany"@en ;
+    skos:prefLabel          "SaaS Focused Company"@en ;
+    schema:description      """Software as a Service company that operates under a Freemium and/or
+                               Subscription Model (Hourly, Monthly, Quarterly, Yearly)."""@en ;
+    skos:related            <#FreemiumBusinessModel> ,
+                            <#ElasticFreemiumBusinessModel> ;
+    wdrs:describedby        <> .
+
+<#EnterpriseFocusedCompany>
+    rdfs:subClassOf         schema:Organization ,
+                            foaf:Organization ,
+                            gr:BusinessEntity ;
+    schema:name             "EnterpriseFocusedCompany"@en ;
+    skos:prefLabel          "Enterprise Focused Company"@en ;
+    schema:description      """Targets business customers that pay for Software and/or Hardware installed locally and/or in
+                               private data-center clouds."""@en ;
+    wdrs:describedby        <> .
+
+<#ConsumerFocusedCompany>
+    rdfs:subClassOf         schema:Organization ,
+                            foaf:Organization ,
+                            gr:BusinessEntity ;
+    schema:name             "ConsumerFocusedCompany"@en ;
+    skos:prefLabel          "Consumer Focused Company"@en ;
+    schema:description      """Targets consumers that pay for products and services online. Infrastructure for these services
+                               is increasingly cloud based."""@en ;
+    wdrs:describedby        <> .
+
+<#ConsumerElectronicsIoTFocusedCompany>
+    rdfs:subClassOf         schema:Organization ,
+                            foaf:Organization ,
+                            gr:BusinessEntity ;
+    schema:name             "ConsumerFocusedCompany"@en ;
+    skos:prefLabel          "Consumer Internet of Things Focused Company"@en ;
+    skos:altLabel           "Consumer IoT Focused Company"@en ;
+    schema:description      """Targets consumers that pay for a physical product endowed with Web and Internet connectivity.
+                               Infrastructure for these services are increasingly cloud based."""@en ;
+    wdrs:describedby        <> .
+
+<#AudienceFocusedCompany>
+    rdfs:subClassOf         schema:Organization ,
+                            foaf:Organization ,
+                            gr:BusinessEntity ;
+    schema:name             "AudienceFocusedCompany"@en ;
+    skos:prefLabel          "Audience Focused Company"@en ;
+    schema:description      """Targets advertisers and marketeers seeking demographic specificity for add placement and leads generation."""@en ;
+    wdrs:describedby        <> .
+
+<#SocialMediaAudienceFocusedCompany>
+    rdfs:subClassOf         schema:Organization ,
+                            foaf:Organization ,
+                            gr:BusinessEntity ;
+    schema:name             "SocialMediaAudienceFocusedCompany"@en ;
+    skos:prefLabel          "Social Media Audience Focused Company"@en ;
+    schema:description      """Targets advertisers and marketeers seeking demographic specificity from social media enclaves
+                               for ad placement and generation of leads."""@en ;
+    wdrs:describedby        <> .
+
+<#eCommerceFocuseCompany>
+    rdfs:subClassOf         schema:Organization ,
+                            foaf:Organization ,
+                            gr:BusinessEntity ;
+    schema:name             "eCommerceFocusedCompany"@en ;
+    skos:prefLabel          "eCommerce Focused Company"@en ;
+    schema:description      """Targets companies and consumers seeking to acquire products and services where payment occurs online."""@en ;
+    wdrs:describedby        <> .
+
+# Business Model Vocabulary
+
+<#BusinessModelOntology>
+    a                       owl:Ontology ;
+    schema:name             "BusinessModelOntology"@en ;
+    skos:prefLabel          "A Business Model Ontology"@en ;
+    schema:description      """Ontology of terms that covers the characteristics of entity and relationship types
+                               that collectively describe a business model. This is being developed on-the-fly via
+                               a series of nanotation-laced Tweets and Facebook posts."""@en ;
+    wdrs:describedby        <> .
+
+<#BusinessModel>
+    a owl:Class;
+    owl:equivalentClass     <https://twitter.com/hashtag/BusinessModel#this> ;
+    schema:name             "BusinessModel"@en ;
+    rdfs:isDefinedBy        <#BusinessModelOntology> ;
+    wdrs:describedby        <> .
+
+<#FreemiumBusinessModel>
+    schema:name             "FreemiumBusinessModel"@en ;
+    skos:prefLabel          "Freemium Business Model"@en ;
+    rdfs:subClassOf         <#BusinessModel> ;
+    wdrs:describedby        <> .
+
+<#ElasticFreemiumBusinessModel>
+    xhv:related             <#BoLD> ,
+                            <https://groups.google.com/forum/#!topic/business-of-linked-data-bold/IcSpGe1h06I>  ;
+    wdrs:describedby        <> .
+
+<http://lists.foaf-project.org/pipermail/foaf-protocols/2010-May/002430.html>
+    foaf:topic              <#ElasticFreemiumBusinessModel> .
+
+<#hasMarketSegmentFocus>
+    a                       rdf:Property ,
+                            owl:ObjectProperty;
+    schema:name             "hasMarketSegmentFocus"@en ;
+    rdfs:range              <#MarketSegment> ;
+    rdfs:domain             <#BusinessModel>  ;
+    wdrs:describedby        <> .
+
+<#hasDistributionChannel>
+    a                       rdf:Property ,
+                            owl:ObjectProperty;
+    schema:name             "hasDistributionChannel"@en ;
+    rdfs:range              <#BusinessModelDistributionChannel> ;
+    rdfs:domain             <#BusinessModel>  ;
+    wdrs:describedby        <> .
+
+<#hasOperatingCostsSource>
+    a                       rdf:Property ,
+                            owl:ObjectProperty;
+    schema:name             "hasOperatingCostSource"@en ;
+    rdfs:range              <#BusinessModelOperatingCostSource> ;
+    rdfs:domain             <#BusinessModel>  ;
+    wdrs:describedby        <> .
+
+<#hasProductOrService>
+    a                       rdf:Property ,
+                            owl:ObjectProperty;
+    schema:name             "hasProductOrService"@en ;
+    rdfs:range              gr:ProductOrService ;
+    rdfs:domain             <#BusinessModel>  ;
+    wdrs:describedby        <> .
+
+<#hasOperatingRevenueSource>
+    a                       rdf:Property ,
+                            owl:ObjectProperty;
+    schema:name             "hasOperatingRevenueSource"@en ;
+    rdfs:range              <#BusinessModelOperatingRevenueSource> ;
+    rdfs:domain             <#BusinessModel>  ;
+    wdrs:describedby        <> .
+
+<#hasBusinessModel>
+    a                       rdf:Property ,
+                            owl:ObjectProperty;
+    schema:name             "hasBusinessModel"@en ;
+    rdfs:range              <#BusinessModel> ;
+    rdfs:domain             gr:BusinessEntity ;
+    wdrs:describedby        <> .
