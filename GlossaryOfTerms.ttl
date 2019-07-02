@@ -4783,13 +4783,13 @@ owl:IrreflexiveProperty
     a                       skos:Concept ;
     wdrs:describedby        source: ;
     schema:name             "DevOps" ;
-    # schema:image            <> ;
+    schema:image            <https://assets4.botmetric.com/wp-content/uploads/2017/11/Ingraphics-devops-to-agile.png> ;
     schema:description      """DevOps is a set of software development practices that blends software 
                                development (Dev) with information technology operations (Ops) to shorten the 
                                systems development life cycle while helping to keep frequent feature, fix, 
                                and other updates aligned with business objectives.""" ;
     owl:sameAs              <http://dbpedia.org/resource/DevOps> ;
-    schema:mainEntityOfPage <https://en.wikipedia.org/wiki/DevOps> ;
+    schema:mainEntityOfPage <https://en.wikipedia.org/wiki/DevOps>, <https://www.botmetric.com/blog/what-is-devops> ;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ;
     skos:inScheme           :this .
 
@@ -4797,7 +4797,7 @@ owl:IrreflexiveProperty
     a                       skos:Concept ;
     wdrs:describedby        source: ;
     schema:name             "DataOps" ;
-    # schema:image            <> ;
+    schema:image            <https://jdp491bprdv1ar3uk2puw37i-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/Dataops-1.png> ;
     schema:description      """DataOps is a process-oriented methodology which data and analytics teams use 
                                to speed up and improve the quality of data analytics, through automation and 
                                otherwise. DataOps impacts the entire data lifecycle from preparation to 
@@ -4806,6 +4806,6 @@ owl:IrreflexiveProperty
     owl:sameAs              <http://dbpedia.org/resource/DataOps> ;
     schema:mainEntityOfPage <https://en.wikipedia.org/wiki/DataOps> ,
                             <https://medium.com/data-ops/the-dataops-enterprise-software-industry-2019-a862904857ef> ,
-                            <https://www.datakitchen.io/content/DataKitchen_dataops_cookbook.pdf>;
+                            <https://www.datakitchen.io/content/DataKitchen_dataops_cookbook.pdf>, <https://www.tamr.com/blog/dataops-building-next-generation-data-engineering-organization>;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ;
     skos:inScheme           :this .
