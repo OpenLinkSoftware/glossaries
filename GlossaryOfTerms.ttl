@@ -234,7 +234,8 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/TupleStructure#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/TupleRepresentation#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ,
-                    <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
+                    <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -4789,8 +4790,10 @@ owl:IrreflexiveProperty
                                systems development life cycle while helping to keep frequent feature, fix, 
                                and other updates aligned with business objectives.""" ;
     owl:sameAs              <http://dbpedia.org/resource/DevOps> ;
-    schema:mainEntityOfPage <https://en.wikipedia.org/wiki/DevOps>, <https://www.botmetric.com/blog/what-is-devops> ;
-    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ;
+    schema:mainEntityOfPage <https://en.wikipedia.org/wiki/DevOps> , 
+                            <https://www.botmetric.com/blog/what-is-devops> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ;
     skos:inScheme           :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> 
@@ -4806,6 +4809,25 @@ owl:IrreflexiveProperty
     owl:sameAs              <http://dbpedia.org/resource/DataOps> ;
     schema:mainEntityOfPage <https://en.wikipedia.org/wiki/DataOps> ,
                             <https://medium.com/data-ops/the-dataops-enterprise-software-industry-2019-a862904857ef> ,
-                            <https://www.datakitchen.io/content/DataKitchen_dataops_cookbook.pdf>, <https://www.tamr.com/blog/dataops-building-next-generation-data-engineering-organization>;
-    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ;
+                            <https://www.datakitchen.io/content/DataKitchen_dataops_cookbook.pdf> , 
+                            <https://www.tamr.com/blog/dataops-building-next-generation-data-engineering-organization> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ;
+    skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> 
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "RevOps" ;
+#    schema:image            <> ;
+    schema:description      """RevOps, from "Revenue Operations", is a core business strategy that normalizes, 
+                               analyzes, rationalizes, and activates data from disparate business silos, created 
+                               by applications specific to various departments and functions, for the benefit 
+                               of the larger business.""" ;
+#    owl:sameAs              <http://dbpedia.org/resource/RevOps> ;      # DBpedia entity doesn't exist yet
+    schema:mainEntityOfPage # <https://en.wikipedia.org/wiki/DataOps> ,  # Wikipedia entry doesn't exist yet
+                            <https://www.martechadvisor.com/articles/sales-enablement/driving-business-forward-with-a-revops-framework/> , 
+                            <https://www.martechadvisor.com/articles/sales-enablement/revops-is-the-life-jacket-if-youre-drowning-in-martech/> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ;
     skos:inScheme           :this .
