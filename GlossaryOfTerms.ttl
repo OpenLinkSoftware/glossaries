@@ -4824,8 +4824,8 @@ owl:IrreflexiveProperty
                                analyzes, rationalizes, and activates data from disparate business silos, created 
                                by applications specific to various departments and functions, for the benefit 
                                of the larger business.""" ;
-#    owl:sameAs              <http://dbpedia.org/resource/RevOps> ;      # DBpedia entity doesn't exist yet
-    schema:mainEntityOfPage # <https://en.wikipedia.org/wiki/DataOps> ,  # Wikipedia entry doesn't exist yet
+#    owl:sameAs              <http://dbpedia.org/resource/RevOps> ;      # DBpedia "RevOps" entity doesn't exist yet
+    schema:mainEntityOfPage # <https://en.wikipedia.org/wiki/RevOps> ,   # Wikipedia "RevOps" entry doesn't exist yet
                             <https://www.martechadvisor.com/articles/sales-enablement/driving-business-forward-with-a-revops-framework/> , 
                             <https://www.martechadvisor.com/articles/sales-enablement/revops-is-the-life-jacket-if-youre-drowning-in-martech/> ;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
