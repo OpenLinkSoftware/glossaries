@@ -1,0 +1,64 @@
+#
+# oplcorp ontology - enhanced properties for corporations < Organizations
+#
+#
+#
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix oplcorp: <http://www.openlinksw.com/ontology/oplcorp#> .
+
+#Define this ontology
+oplcorp: a owl:Ontology ;
+  schema:name "OpenLink Corporation Ontology" .
+
+# Classes
+
+oplcorp:Corporation a rdfs:Class ;
+  rdfs:isDefinedBy oplcorp: ;
+  rdfs:comment "Corporation class" ;
+  dc:title "Corporation class" ;
+  rdfs:subClassOf schema:Corporation, foaf:Organization .
+
+oplcorp:ValueProposition a rdfs:Class ;
+  rdfs:isDefinedBy oplcorp: ;
+  rdfs:comment "Corporate Value Proposition" ;
+  dc:title "Corporate Value Proposition" .
+
+
+# Proprterties
+oplcorp:hasValueProposition a rdfs:Property ;
+  rdfs:isDefinedBy oplcorp: ;
+  rdfs:comment "Mapping from a Corporation to its Value Propositions" ;
+  dc:title "has value proposition" ;
+  rdfs:label "has value proposition" ;
+  rdfs:domain oplcorp:Corporation ;
+  rdfs:range oplcorp:ValueProposition .
+
+oplcorp:vpclaim a rdfs:Property ;
+  rdfs:isDefinedBy oplcorp: ;
+  rdfs:comment "A value proposition's primary claim" ;
+  dc:title "primary claim" ;
+  rdfs:domain: oplcorp:ValueProposition ;
+  rdfs:subPropertyOf schema:title ;
+  rdfs:range: xsd:string .
+
+oplcorp:vpdescription a rdfs:Property ;
+  rdfs:isDefinedBy oplcorp: ;
+  rdfs:comment "Further description of a value proposition" ;
+  dc:title "value proposition description" ;
+  rdfs:domain: oplcorp:ValueProposition ;
+  rdfs:subPropertyOf dc:description ;
+  rdfs:range: xsd:string .
+
+oplcorp:vpdepiction a rdfs:Property ;
+  rdfs:isDefinedBy oplcorp: ;
+  rdfs:comment "Image to depict a value proposition" ;
+  dc:title "value proposition depiction" ;
+  rdfs:domain: oplcorp:ValueProposition ;
+  rdfs:subPropertyOf dc:description ;
+  rdfs:range: xsd:anyURI .
