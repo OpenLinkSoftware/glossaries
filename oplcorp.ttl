@@ -4,81 +4,88 @@
 #
 #
 
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix schema: <http://schema.org/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix     owl: <http://www.w3.org/2002/07/owl#> .
+@prefix  schema: <http://schema.org/> .
+@prefix    rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix    foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix      dc: <http://purl.org/dc/elements/1.1/> .
+@prefix     xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix oplcorp: <http://www.openlinksw.com/ontology/oplcorp#> .
 
 #Define this ontology
-oplcorp: a owl:Ontology ;
-  schema:name "OpenLink Corporation Ontology" .
+oplcorp: 
+  a                  owl:Ontology ;
+  schema:name        "OpenLink Corporation Ontology" .
 
 # Classes
 
-oplcorp:Corporation a rdfs:Class ;
-  rdfs:label "Corporation class" ;
-  rdfs:isDefinedBy oplcorp: ;
-  rdfs:comment "Corporation class" ;
-  dc:title "Corporation class" ;
-  rdfs:subClassOf schema:Corporation, foaf:Organization .
+oplcorp:Corporation
+  a                  rdfs:Class ;
+  rdfs:label         "Corporation class" ;
+  rdfs:isDefinedBy   oplcorp: ;
+  rdfs:comment       "Corporation class" ;
+  dc:title           "Corporation class" ;
+  rdfs:subClassOf    schema:Corporation , 
+                     foaf:Organization .
 
-oplcorp:ValueProposition a rdfs:Class ;
-  rdfs:label "Corporate Value Proposition" ;
-  rdfs:isDefinedBy oplcorp: ;
-  rdfs:comment "Corporate Value Proposition" ;
-  dc:title "Corporate Value Proposition" .
+oplcorp:ValueProposition
+  a                  rdfs:Class ;
+  rdfs:label         "Corporate Value Proposition" ;
+  rdfs:isDefinedBy   oplcorp: ;
+  rdfs:comment       "Corporate Value Proposition" ;
+  dc:title           "Corporate Value Proposition" .
 
-oplcorp:ClaimSpecification a rdfs:Class ;
-  rdfs:label "Claim Specification" ;
-  rdfs:isDefinedBy oplcorp: ;
-  rdfs:comment "Specifies the nature of claims e.g., catering to primary claims associated supplimentary claims." ;
-  dc:title "Claim Specification" .
+oplcorp:ClaimSpecification 
+  a                  rdfs:Class ;
+  rdfs:label         "Claim Specification" ;
+  rdfs:isDefinedBy   oplcorp: ;
+  rdfs:comment       "Specifies the nature of claims, e.g., catering to primary claim's associated supplementary claims." ;
+  dc:title           "Claim Specification" .
 
+# Properties
 
-# Proprterties
+oplcorp:hasValueProposition 
+  a                  rdfs:Property ;
+  rdfs:isDefinedBy   oplcorp: ;
+  rdfs:comment       "Mapping from a Corporation to its Value Propositions" ;
+  dc:title           "has value proposition" ;
+  rdfs:label         "has value proposition" ;
+  rdfs:domain        oplcorp:Corporation ;
+  rdfs:range         oplcorp:ValueProposition .
 
-oplcorp:hasValueProposition a rdfs:Property ;
-  rdfs:isDefinedBy oplcorp: ;
-  rdfs:comment "Mapping from a Corporation to its Value Propositions" ;
-  dc:title "has value proposition" ;
-  rdfs:label "has value proposition" ;
-  rdfs:domain oplcorp:Corporation ;
-  rdfs:range oplcorp:ValueProposition .
+oplcorp:hasClaimSpecification 
+  a                  rdfs:Property ;
+  rdfs:isDefinedBy   oplcorp: ;
+  rdfs:comment       "Associates a Value Proposition with a Claim Specification." ;
+  rdfs:label         "hasClaimSpecification" ;
+  dc:title           "has claim specification" ;
+  rdfs:domain        oplcorp:ValueProposition ;
+  rdfs:range         oplcorp:ClaimSpecification .
 
-oplcorp:hasClaimSpecification a rdfs:Property ;
-  rdfs:isDefinedBy oplcorp: ;
-  rdfs:comment "Associates a Value Proposition with a Claim Specification." ;
-  rdfs:label "hasClaimSpecification" ;
-  dc:title "has claim specification" ;
-  rdfs:domain oplcorp:ValueProposition ;
-  rdfs:range oplcorp:ClaimSpecification .
-
-oplcorp:hasPrimaryClaim a rdfs:Property ;
-  rdfs:isDefinedBy oplcorp: ;
-  rdfs:comment "Primary claim with Claim Specification" ;
-  rdfs:label "hasPrimaryClaim" ;
-  dc:title "primary claim" ;
-  rdfs:domain oplcorp:ClaimSpecification ;
-  rdfs:range xsd:string ;
-  rdfs:subPropertyOf schema:name .
-  
-
-oplcorp:hasAdditionalClaim a rdfs:Property ;
-  rdfs:isDefinedBy oplcorp: ;
-  rdfs:comment "Supplemental claim" ;
-  rdfs:label "hasAdditionalClaim" ;
-  dc:title "has additional claim" ;
-  rdfs:domain oplcorp:ClaimSpecification ;
-  rdfs:range xsd:string ;
+oplcorp:hasPrimaryClaim 
+  a                  rdfs:Property ;
+  rdfs:isDefinedBy   oplcorp: ;
+  rdfs:comment       "Primary claim with Claim Specification" ;
+  rdfs:label         "hasPrimaryClaim" ;
+  dc:title           "primary claim" ;
+  rdfs:domain        oplcorp:ClaimSpecification ;
+  rdfs:range         xsd:string ;
   rdfs:subPropertyOf schema:name .
 
-oplcorp:vpdepiction a rdfs:Property ;
-  rdfs:isDefinedBy oplcorp: ;
-  rdfs:comment "Image to depict a value proposition" ;
-  dc:title "value proposition depiction" ;
-  rdfs:domain oplcorp:ClaimSpecification ;
+oplcorp:hasAdditionalClaim 
+  a                  rdfs:Property ;
+  rdfs:isDefinedBy   oplcorp: ;
+  rdfs:comment       "Supplemental claim" ;
+  rdfs:label         "hasAdditionalClaim" ;
+  dc:title           "has additional claim" ;
+  rdfs:domain        oplcorp:ClaimSpecification ;
+  rdfs:range         xsd:string ;
+  rdfs:subPropertyOf schema:name .
+
+oplcorp:vpdepiction  a rdfs:Property ;
+  rdfs:isDefinedBy   oplcorp: ;
+  rdfs:comment       "Image to depict a value proposition" ;
+  dc:title           "value proposition depiction" ;
+  rdfs:domain        oplcorp:ClaimSpecification ;
   rdfs:subPropertyOf dc:description ;
-  rdfs:range xsd:anyURI .
+  rdfs:range         xsd:anyURI .
