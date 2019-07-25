@@ -235,6 +235,7 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/TupleRepresentation#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ContentOps#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
@@ -4793,6 +4794,7 @@ owl:IrreflexiveProperty
     schema:mainEntityOfPage <https://en.wikipedia.org/wiki/DevOps> , 
                             <https://www.botmetric.com/blog/what-is-devops> ;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ContentOps#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ;
     skos:inScheme           :this .
 
@@ -4812,6 +4814,7 @@ owl:IrreflexiveProperty
                             <https://www.datakitchen.io/content/DataKitchen_dataops_cookbook.pdf> , 
                             <https://www.tamr.com/blog/dataops-building-next-generation-data-engineering-organization> ;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ContentOps#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ;
     skos:inScheme           :this .
 
@@ -4829,5 +4832,22 @@ owl:IrreflexiveProperty
                             <https://www.martechadvisor.com/articles/sales-enablement/driving-business-forward-with-a-revops-framework/> , 
                             <https://www.martechadvisor.com/articles/sales-enablement/revops-is-the-life-jacket-if-youre-drowning-in-martech/> ;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ContentOps#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ;
+    skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/ContentOps#this>
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "ContentOps" ;
+#    schema:image            <> ;
+    schema:description      """ContentOps, from "Content Operations", is the people, processes, and technologies 
+                               that allow an organization to implement its content strategy to efficiently 
+                               produce and effectively deliver content.""" ;
+#    owl:sameAs              <http://dbpedia.org/resource/ContentOps> ;      # DBpedia "ContentOps" entity doesn't exist yet
+    schema:mainEntityOfPage # <https://en.wikipedia.org/wiki/ContentOps> ,   # Wikipedia "ContentOps" entry doesn't exist yet
+                            <https://www.tanzenconsulting.com/blog/2019/7/24/content-operations-the-missing-link-between-strategy-and-delivery> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ;
     skos:inScheme           :this .
