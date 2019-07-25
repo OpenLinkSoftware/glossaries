@@ -4847,7 +4847,13 @@ owl:IrreflexiveProperty
 #    owl:sameAs              <http://dbpedia.org/resource/ContentOps> ;      # DBpedia "ContentOps" entity doesn't exist yet
     schema:mainEntityOfPage # <https://en.wikipedia.org/wiki/ContentOps> ,   # Wikipedia "ContentOps" entry doesn't exist yet
                             <https://www.tanzenconsulting.com/blog/2019/7/24/content-operations-the-missing-link-between-strategy-and-delivery> ;
+    schema:subjectOf        <https://community.openlinksw.com/t/solving-web-site-production-and-maintenance-challenges-via-a-knowledge-graph-that-manifests-as-a-semantic-web-of-linked-data/479> ,
+                            <https://community.openlinksw.com/t/usecase-openlink-structured-data-inclusion-engine-osdi/553> ,
+                            <https://www.theguardian.com/info/2019/may/10/structured-content-benefits-for-creating-and-publishing-articles> ;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ,
-                            <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ;
+                            <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ,
+                            <https://twitter.com/hashtag/SEO#this> ,
+                            <https://twitter.com/hashtag/SSEO#this> ,
+                            <https://twitter.com/hashtag/ContentManagement#this> ;
     skos:inScheme           :this .
