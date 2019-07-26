@@ -69,7 +69,7 @@ oplcorp:hasPrimaryClaim
   rdfs:label         "hasPrimaryClaim" ;
   dc:title           "primary claim" ;
   rdfs:domain        oplcorp:ClaimSpecification ;
-  rdfs:range         xsd:string ;
+  rdfs:range         oplcorp:PrimaryClaim ;
   rdfs:subPropertyOf schema:name .
 
 oplcorp:hasAdditionalClaim 
@@ -79,7 +79,7 @@ oplcorp:hasAdditionalClaim
   rdfs:label         "hasAdditionalClaim" ;
   dc:title           "has additional claim" ;
   rdfs:domain        oplcorp:ClaimSpecification ;
-  rdfs:range         xsd:string ;
+  rdfs:range         oplcorp:AdditionalClaim ;
   rdfs:subPropertyOf schema:name .
 
 oplcorp:vpdepiction  a rdfs:Property ;
