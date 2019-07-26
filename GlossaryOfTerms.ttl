@@ -4840,13 +4840,17 @@ owl:IrreflexiveProperty
     a                       skos:Concept ;
     wdrs:describedby        source: ;
     schema:name             "ContentOps" ;
-#    schema:image            <> ;
+    schema:image            <https://blog.gathercontent.com/wp-content/uploads/2019/06/ContentOps-Summary-1.png>,
+                            <https://i1.wp.com/avitage.com/wp-content/uploads/2017/12/Avitage-Six-Competency-Framework-for-Enterprise-Content-Strategy_600x337.jpg>,
+                            <http://www.thewordfactory.com/wp-content/uploads/2011/11/ContentSupplyChainv5.jpg>;
     schema:description      """ContentOps, from "Content Operations", is the people, processes, and technologies 
                                that allow an organization to implement its content strategy to efficiently 
                                produce and effectively deliver content.""" ;
 #    owl:sameAs              <http://dbpedia.org/resource/ContentOps> ;      # DBpedia "ContentOps" entity doesn't exist yet
-    schema:mainEntityOfPage # <https://en.wikipedia.org/wiki/ContentOps> ,   # Wikipedia "ContentOps" entry doesn't exist yet
-                            <https://www.tanzenconsulting.com/blog/2019/7/24/content-operations-the-missing-link-between-strategy-and-delivery> ;
+    schema:mainEntityOfPage # <https://en.wikipedia.org/wiki/ContentOps> ,   # Wikipedia "ContentOps" entity doesn't exist yet
+                            <https://www.tanzenconsulting.com/blog/2019/7/24/content-operations-the-missing-link-between-strategy-and-delivery>,
+                            <https://blog.gathercontent.com/what-is-contentops/>,
+                            <https://www.thewordfactory.com/a-better-job-description/>;
     schema:subjectOf        <https://community.openlinksw.com/t/solving-web-site-production-and-maintenance-challenges-via-a-knowledge-graph-that-manifests-as-a-semantic-web-of-linked-data/479> ,
                             <https://community.openlinksw.com/t/usecase-openlink-structured-data-inclusion-engine-osdi/553> ,
                             <https://www.theguardian.com/info/2019/may/10/structured-content-benefits-for-creating-and-publishing-articles> ;
