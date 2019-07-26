@@ -4822,7 +4822,9 @@ owl:IrreflexiveProperty
     a                       skos:Concept ;
     wdrs:describedby        source: ;
     schema:name             "RevOps" ;
-#    schema:image            <> ;
+    schema:image            <https://cdn-dev-site.people.ai/2019/06/What-Is-Revenue-Operations_1-1024x415.png>, 
+                            <https://salesbenchmarkindex.com/wp-content/uploads/2018/07/pic3-1024x413.png>,
+                            <https://cdn-dev-site.people.ai/2019/06/What-Is-Revenue-Operations_1-1024x415.png> ;
     schema:description      """RevOps, from "Revenue Operations", is a core business strategy that normalizes, 
                                analyzes, rationalizes, and activates data from disparate business silos, created 
                                by applications specific to various departments and functions, for the benefit 
@@ -4830,7 +4832,9 @@ owl:IrreflexiveProperty
 #    owl:sameAs              <http://dbpedia.org/resource/RevOps> ;      # DBpedia "RevOps" entity doesn't exist yet
     schema:mainEntityOfPage # <https://en.wikipedia.org/wiki/RevOps> ,   # Wikipedia "RevOps" entry doesn't exist yet
                             <https://www.martechadvisor.com/articles/sales-enablement/driving-business-forward-with-a-revops-framework/> , 
-                            <https://www.martechadvisor.com/articles/sales-enablement/revops-is-the-life-jacket-if-youre-drowning-in-martech/> ;
+                            <https://www.martechadvisor.com/articles/sales-enablement/revops-is-the-life-jacket-if-youre-drowning-in-martech/>,
+                            <https://people.ai/blog/what-is-revenue-operations-revops/>,
+                            <https://salesbenchmarkindex.com/insights/where-do-revenue-operations-and-revenue-enablement-sit-in-the-organization/>;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/ContentOps#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ;
