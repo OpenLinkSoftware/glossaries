@@ -42,6 +42,20 @@ oplcorp:ClaimSpecification
   rdfs:comment       "Specifies the nature of claims, e.g., catering to primary claim's associated supplementary claims." ;
   dc:title           "Claim Specification" .
 
+oplcorp:PrimaryClaim
+  a                  rdfs:Class ;
+  rdfs:label         "Primary Value Proposition Claim" ;
+  rdfs:isDefinedBy   oplcorp: ;
+  rdfs:comment       "A Primary Value Proposition Claim Claim" ;
+  dc:title           "Primary Value Proposition Claim" .
+
+oplcorp:AdditionalClaim
+  a                  rdfs:Class ;
+  rdfs:label         "Additional Value Proposition Claim" ;
+  rdfs:isDefinedBy   oplcorp: ;
+  rdfs:comment       "An Additional Value Proposition Claim Claim" ;
+  dc:title           "Additional Value Proposition Claim" .
+
 # Properties
 
 oplcorp:hasValueProposition 
