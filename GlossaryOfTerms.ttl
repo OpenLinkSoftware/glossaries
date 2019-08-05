@@ -36,7 +36,7 @@ sourceDAV:
     schema:comment """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2019-06-27T14:00:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2019-08-05T14:00:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +48,7 @@ source:
     schema:comment """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2019-06-27T14:00:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2019-08-05T14:00:00-04:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -236,7 +236,9 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/DataOps#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/ContentOps#this> ,
-                    <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/NamedGraph#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DocumentName#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -1977,11 +1979,45 @@ owl:IrreflexiveProperty
                            <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ;
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/Database#this> .
 
+<http://data.openlinksw.com/oplweb/glossary-term/DocumentName#this>
+    a skos:Concept ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Document Name" ;
+    schema:comment """An identifier for a Document."""@en ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/Document#this> ;
+    skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/NamedGraph#this>,
+                  <http://data.openlinksw.com/oplweb/glossary-term/DSN#this>,
+                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCSystemDSN#this>,
+                  <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
+    skos:inscheme :this. 
+
+<http://data.openlinksw.com/oplweb/glossary-term/NamedGraph#this>
+    a skos:Concept ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Named Graph" ;
+    schema:image <https://upload.wikimedia.org/wikipedia/commons/d/da/Named-graphs-1.jpg> ;
+    owl:sameAs dbpedia:Named_graph ;
+    schema:comment """An identifier for a Database Management System hosted Database Document comprising one or more 
+                      datasets (entity relationship type collections). Basically, this is used to identify the 
+                      target of Data Definition and Data Manipulation operations targeting specific datasets using
+                      the SPARQL Query Language"""@en ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/Document#this>, 
+                 <http://data.openlinksw.com/oplweb/glossary-term/SPARQLQueryLanguage#this>,
+                 <http://data.openlinksw.com/oplweb/glossary-term/NamedGraph#this>,
+                 <http://data.openlinksw.com/oplweb/glossary-term/DSN#this>,
+                 <http://data.openlinksw.com/oplweb/glossary-term/ODBCSystemDSN#this>,
+                 <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
+    skos:broader <http://data.openlinksw.com/oplweb/glossary-term/DocumentName#this> ;
+    skos:inscheme :this. 
+
 <http://data.openlinksw.com/oplweb/glossary-term/Database#this>
     a skos:Concept ;
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Database" ;
+    schema:image <https://www.darts-ip.com/wp-content/uploads/2019/04/Patent-Cases-Database.png> ;
     owl:differentFrom <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                       <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                       <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
