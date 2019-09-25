@@ -574,9 +574,8 @@ skos:related dbpedia:Deductive_database,
              <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
 skos:narrower dbpedia:Semantic_Web ;
-schema:image <https://miro.medium.com/max/750/1*am4CN5rs59EdB4_6bRRaXA.jpeg> ;
-schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artificial-intelligence/>, 
-            <https://news.greylock.com/the-new-moats-53f61aeac2d9> ;
+schema:image <https://www.aitrends.com/wp-content/uploads/2016/06/pyramidofai-696x406.jpg> ;
+schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artificial-intelligence/> ;
 schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-operations-to-drive-business-value/>,
                    <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>,
                    <https://medium.com/virtuoso-blog/magic-sets-and-custom-inference-rules-in-virtuoso-8-x-db783f8d98d2>,
@@ -662,7 +661,7 @@ skos:inScheme :this .
                  dbpedia:Semantic_Web,
                  dbpedia:Linked_Data;
     schema:name "Systems of Intelligence";
-    schema:image <https://msenterprise.global.ssl.fastly.net/wordpress/2016/04/systems-intelligence.png> ;
+    schema:image <https://miro.medium.com/max/750/1*am4CN5rs59EdB4_6bRRaXA.jpeg> ;
     schema:description """Systems that focus on cognitive deduction of insights from disparate data sources (i.e., Systems of Record and Systems of Engagement) .""" ;
     skos:related <https://twitter.com/hashtag/SemanticWeb#this> ,
                  <https://twitter.com/hashtag/LinkedData#this> ,
@@ -677,7 +676,9 @@ skos:inScheme :this .
                  <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfRecord#this> ;
     schema:relatedLink <https://wikibon.com/systems-of-intelligence-the-next-generation-of-enterprise-applications-built-on-big-data/> ,
                        <https://medium.com/yankeesabralimey/systems-of-intelligence-is-this-the-vc-meta-thesis-weve-been-looking-for-c1ad79eccfc2> ;
-    schema:cite <https://www.linkedin.com/pulse/intelligent-computing-systems-how-enterprise-evolve-geoffrey-moore#this> ; skos:inScheme :this .
+    schema:cite <https://www.linkedin.com/pulse/intelligent-computing-systems-how-enterprise-evolve-geoffrey-moore#this>,
+                <https://news.greylock.com/the-new-moats-53f61aeac2d9> ; 
+    skos:inScheme :this .
 
 ## Digital Transformation
 
