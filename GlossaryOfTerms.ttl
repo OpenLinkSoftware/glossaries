@@ -4848,7 +4848,8 @@ owl:IrreflexiveProperty
     schema:mainEntityOfPage <https://en.wikipedia.org/wiki/DataOps> ,
                             <https://medium.com/data-ops/the-dataops-enterprise-software-industry-2019-a862904857ef> ,
                             <https://www.datakitchen.io/content/DataKitchen_dataops_cookbook.pdf> , 
-                            <https://www.tamr.com/blog/dataops-building-next-generation-data-engineering-organization> ;
+                            <https://www.tamr.com/blog/dataops-building-next-generation-data-engineering-organization> ,
+                            <https://www.tamr.com/blog/the-people-of-dataops/>;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/DevOps#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/ContentOps#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this> ;
