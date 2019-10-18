@@ -69,7 +69,8 @@
               ami:hasCategory,
               ami:hasDefaultvCPUs,
               ami:hasDefaultCPUCores,
-              ami:hasValidThreadsPerCore ;
+              ami:hasValidThreadsPerCore,
+              ami:isEBSOptimized ;
   schema:about
               ami:AmazonEC2EBSBackedAMI ,
               ami:CloudHostedVirtualMachine  ,
@@ -107,7 +108,8 @@
               ami:hasCategory ,
               ami:hasDefaultvCPUs,
               ami:hasDefaultCPUCores,
-              ami:hasValidThreadsPerCore  .
+              ami:hasValidThreadsPerCore,
+              ami:isEBSOptimized  .
 
 <http://www.openlinksw.com/DAV/data/turtle/oplami.ttl>
   a foaf:Document , schema:TechArticle ;
@@ -382,14 +384,21 @@ ami:hasMemory
   rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
   rdfs:label "hasMemory";
   rdfs:domain ami:CloudHostedVirtualMachine ;
-  rdfs:range xsd:literal .
+  rdfs:range xsd:integer .
 
 ami:hasVPCOnly
   a owl:DatatypeProperty, rdf:Property ;
   rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
   rdfs:label "hasVPCOnly";
   rdfs:domain ami:CloudHostedVirtualMachine ;
-  rdfs:range xsd:literal .
+  rdfs:range xsd:boolean .
+
+ami:isEBSOptimized
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "isEBSOptimized";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:boolean .
 
 ami:hasMaxBandwidth
   a owl:DatatypeProperty, rdf:Property ;
@@ -417,14 +426,14 @@ ami:hasDefaultvCPUs
   rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
   rdfs:label "hasDefaultvCPUs";
   rdfs:domain ami:CloudHostedVirtualMachine ;
-  rdfs:range xsd:literal .
+  rdfs:range xsd:integer .
 
 ami:hasDefaultCPUCores
   a owl:DatatypeProperty, rdf:Property ;
   rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
   rdfs:label "hasDefaultCPUCores";
   rdfs:domain ami:CloudHostedVirtualMachine ;
-  rdfs:range xsd:literal .
+  rdfs:range xsd:integer .
 
 ami:hasValidThreadsPerCore
   a owl:DatatypeProperty, rdf:Property ;
