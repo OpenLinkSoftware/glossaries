@@ -1,0 +1,469 @@
+@prefix schema:  <http://schema.org/> .
+@prefix cvocab:  <http://open-services.net/ns/core#> .
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sioc:    <http://rdfs.org/sioc/ns#> .
+@prefix sioct:   <http://rdfs.org/sioc/types#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:      <http://purl.org/goodrelations/v1#> .
+@prefix siocs:   <http://rdfs.org/sioc/services#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix wdrs:    <http://www.w3.org/2007/05/powder-s#> .
+@prefix xhv:     <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oplrdfe: <http://www.openlinksw.com/ontology/rdfeditor#> .
+@prefix cc:      <http://creativecommons.org/ns#> .
+@prefix gc:      <http://www.oegov.org/core/owl/gc> .
+@prefix ami:     <http://www.openlinksw.com/ontology/oplami#> .
+
+<http://www.openlinksw.com/ontology/oplami#> a owl:Ontology  ;
+  rdfs:label """OpenLink Amazon EC2 AMI Entity Types Ontology"""^^xsd:string ;
+  rdfs:comment """Ontology that defines entity and relation types used to describe OpenLink Amazon EC2 AMI Entity Types."""@en ;
+  wdrs:describedby <http://www.openlinksw.com/ontology/oplami> ;
+  dcterms:created "2014-05-18T13:00:00-05:00"^^xsd:dateTime ;
+  schema:creator <http://www.openlinksw.com/#this> ;
+  dcterms:modified "2019-10-18T13:38:00-05:00"^^xsd:dateTime ;
+  owl:versionInfo "1.0.0"^^xsd:string  ;
+  owl:imports <http://purl.org/goodrelations/v1>  ,
+              <http://xmlns.com/foaf/0.1/> ,
+              <http://www.w3.org/2002/07/owl#> ,
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ,
+              <http://purl.org/dc/terms/> ;
+  <http://open.vocab.org/terms/defines>
+              ami:AmazonEC2EBSBackedAMI ,
+              ami:CloudHostedVirtualMachine  ,
+              ami:ec2AMI-ID ,
+              ami:ec2OwnerID ,
+              ami:ec2Status ,
+              ami:ec2StateReason ,
+              ami:ec2Platform ,
+              ami:ec2Architecture ,
+              ami:ec2ImageType ,
+              ami:ec2VirtualizationType ,
+              ami:ec2RootDeviceName ,
+              ami:Virtuoso-ami-c04220a8 ,
+              ami:AmazonEC2EBSSnapshot ,
+              ami:ec2EBSSnapshotVolumeID ,
+              ami:ec2EBSSnapshotID ,
+              ami:ec2EBSSnapshotOwnerID ,
+              ami:ec2EBSSnapshotStatus ,
+              ami:ec2EBSSnapshotCapacity ,
+              ami:ec2EBSSnapshotEncrypted ,
+              ami:ec2EBSSnapshotKMSKeyID ,
+              ami:ec2EBSSnapshotKMSKeyAliases ,
+              ami:ec2EBSSnapshotKMSKeyARN ,
+              ami:ec2EBSSnapshotProductCodes ,
+              ami:hasBlockDevices ,
+              ami:hasRootDeviceType ,
+              ami:hasProductCodes ,
+              ami:hasAMIName,
+              ami:hasvCPU,
+              ami:hasECU,
+              ami:hasMemory,
+              ami:hasVPCOnly,
+              ami:hasMaxBandwidth,
+              ami:hasNetworkPerformance,
+              ami:hasCategory,
+              ami:hasDefaultvCPUs,
+              ami:hasDefaultCPUCores,
+              ami:hasValidThreadsPerCore ;
+  schema:about
+              ami:AmazonEC2EBSBackedAMI ,
+              ami:CloudHostedVirtualMachine  ,
+              ami:ec2AMI-ID ,
+              ami:ec2OwnerID ,
+              ami:ec2Status ,
+              ami:ec2StateReason ,
+              ami:ec2Platform ,
+              ami:ec2Architecture ,
+              ami:ec2ImageType ,
+              ami:ec2VirtualizationType ,
+              ami:ec2RootDeviceName ,
+              ami:Virtuoso-ami-c04220a8 ,
+              ami:AmazonEC2EBSSnapshot ,
+              ami:ec2EBSSnapshotVolumeID ,
+              ami:ec2EBSSnapshotID ,
+              ami:ec2EBSSnapshotOwnerID ,
+              ami:ec2EBSSnapshotStatus ,
+              ami:ec2EBSSnapshotCapacity ,
+              ami:ec2EBSSnapshotEncrypted ,
+              ami:ec2EBSSnapshotKMSKeyID ,
+              ami:ec2EBSSnapshotKMSKeyAliases ,
+              ami:ec2EBSSnapshotKMSKeyARN ,
+              ami:ec2EBSSnapshotProductCodes ,
+              ami:hasBlockDevices ,
+              ami:hasRootDeviceType ,
+              ami:hasProductCodes ,
+              ami:hasAMIName ,
+              ami:hasvCPU,
+              ami:hasECU,
+              ami:hasMemory,
+              ami:hasVPCOnly,
+              ami:hasMaxBandwidth,
+              ami:hasNetworkPerformance,
+              ami:hasCategory ,
+              ami:hasDefaultvCPUs,
+              ami:hasDefaultCPUCores,
+              ami:hasValidThreadsPerCore  .
+
+<http://www.openlinksw.com/DAV/data/turtle/oplami.ttl>
+  a foaf:Document , schema:TechArticle ;
+  rdfs:label "OpenLink Amazon EC2 AMI Entity Types Ontology Description Document (Turtle)" ;
+  cc:license <http://creativecommons.org/licenses/by-sa/3.0/> ;
+  dcterms:created "2014-05-18T13:00:00-05:00"^^xsd:dateTime ;
+  dcterms:modified "2019-10-18T13:38:00-05:00"^^xsd:dateTime ;
+  schema:creator <http://www.openlinksw.com/#this> ;
+  rdfs:comment """This is a turtle document that uses Linked Data oriented content to describe an OpenLink ontology for Amazon EC2 AMI Entity Types"""@en ;
+  foaf:primaryTopic <http://www.openlinksw.com/ontology/oplami#> ;
+  xhv:canonical <http://www.openlinksw.com/ontology/oplami> ;
+  xhv:describes <http://www.openlinksw.com/ontology/oplami#> ;
+  schema:about <http://www.openlinksw.com/ontology/oplami#> ;
+  dcterms:subject <http://www.openlinksw.com/ontology/oplami#> .
+
+<http://www.openlinksw.com/data/turtle/oplami.ttl>
+  a foaf:Document , schema:TechArticle ;
+  rdfs:label "OpenLink Amazon EC2 AMI Entity Types Ontology Description Document (Turtle)" ;
+  cc:license <http://creativecommons.org/licenses/by-sa/3.0/> ;
+  schema:creator <http://www.openlinksw.com/#this> ;
+  rdfs:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink Amazon EC2 AMI Entity Types Ontology."""@en ;
+  foaf:primaryTopic <http://www.openlinksw.com/ontology/oplami#> ;
+  dcterms:created "2014-05-18T13:00:00-05:00"^^xsd:dateTime ;
+  dcterms:modified "2019-10-18T13:38:00-05:00"^^xsd:dateTime ;
+  xhv:canonical <http://www.openlinksw.com/ontology/oplami> ;
+  xhv:describes <http://www.openlinksw.com/ontology/oplami#> ;
+  schema:about <http://www.openlinksw.com/ontology/oplami#> ;
+  dcterms:subject <http://www.openlinksw.com/ontology/oplami#> .
+
+<http://www.openlinksw.com/ontology/oplami>
+  a foaf:Document , schema:TechArticle ;
+  rdfs:label """OpenLink Amazon EC2 AMI Entity Types Ontology Description Document"""^^xsd:string ;
+  cc:license <http://creativecommons.org/licenses/by-sa/3.0/> ;
+  schema:creator <http://www.openlinksw.com/#this> ;
+  rdfs:comment """This is a document that uses Linked Data oriented content to describe OpenLink Amazon EC2 AMI Entity Types Ontology."""@en ;
+  dcterms:subject <http://www.openlinksw.com/ontology/oplami#> ;
+  dcterms:created "2014-05-18T13:00:00-05:00"^^xsd:dateTime ;
+  dcterms:modified "2019-10-18T13:38:00-05:00"^^xsd:dateTime ;
+  foaf:primaryTopic <http://www.openlinksw.com/ontology/oplami#> ;
+  foaf:topic  ami:AmazonEC2EBSBackedAMI ,
+              ami:CloudHostedVirtualMachine  ,
+              ami:ec2AMI-ID ,
+              ami:ec2OwnerID ,
+              ami:ec2Status ,
+              ami:ec2StateReason ,
+              ami:ec2Platform ,
+              ami:ec2Architecture ,
+              ami:ec2ImageType ,
+              ami:ec2VirtualizationType ,
+              ami:ec2RootDeviceName ,
+              ami:Virtuoso-ami-c04220a8 ,
+              ami:AmazonEC2EBSSnapshot ,
+              ami:ec2EBSSnapshotVolumeID ,
+              ami:ec2EBSSnapshotID ,
+              ami:ec2EBSSnapshotOwnerID ,
+              ami:ec2EBSSnapshotStatus ,
+              ami:ec2EBSSnapshotCapacity ,
+              ami:ec2EBSSnapshotEncrypted ,
+              ami:ec2EBSSnapshotKMSKeyID ,
+              ami:ec2EBSSnapshotKMSKeyAliases ,
+              ami:ec2EBSSnapshotKMSKeyARN ,
+              ami:ec2EBSSnapshotProductCodes ,
+              ami:hasBlockDevices ,
+              ami:hasRootDeviceType ,
+              ami:hasProductCodes ,
+              ami:hasAMIName  .
+
+# < ------ Amazon EC2 AMI Relationship Types Classes --------- >
+
+ami:AmazonEC2EBSBackedAMI
+  a owl:Class ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:subClassOf ami:CloudHostedVirtualMachine ;
+  rdfs:label "AmazonEC2EBSBackedAMI";
+  skos:prefLabel "Amazon EC2 EBS-Backed AMI" .
+
+
+ami:CloudHostedVirtualMachine
+  a owl:Class ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:subClassOf <http://sw.opencyc.org/concept/Mx4rHbvIQu1FSeSucGLyF3GyrA> ;
+  rdfs:label "CloudHostedVirtualMachine";
+  skos:prefLabel "Cloud Hosted Virtual Machine" .
+
+ami:AmazonEC2EBSSnapshot
+  a owl:Class ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "AmazonEC2EBSSnapshot" ;
+  rdfs:subClassOf <http://sw.opencyc.org/concept/Mx4rv4A7PpwpEbGdrcN5Y29ycA> ;
+  skos:prefLabel "Amazon EC2 EBS Snapshot" .
+
+# < ------ Amazon EC2 AMI Relationship Types Properties --------- >
+
+ami:ec2AMI-ID
+  a owl:DatatypeProperty, owl:InverseFunctionalProperty , rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2AMI-ID" ;
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:string .
+
+ami:ec2OwnerID
+  a owl:DatatypeProperty, owl:InverseFunctionalProperty , rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2OwnerID" ;
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:string .
+
+ami:ec2Status
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2Status" ;
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:string .
+
+ami:ec2StateReason
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2StateReason" ;
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:string .
+
+ami:ec2Platform
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2Status" ;
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:string .
+
+ami:ec2Architecture
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2Architecture" ;
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:string .
+
+ami:ec2ImageType
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2ImageType" ;
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:string .
+
+ami:ec2VirtualizationType
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2VirtualizationType" ;
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:string .
+
+ami:ec2RootDeviceName
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2RootDeviceName" ;
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:string .
+
+ami:ec2EBSSnapshotVolumeID
+  a owl:DatatypeProperty, rdf:Property , owl:InverseFunctionalProperty ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2EBSSnapshotVolumeID" ;
+  rdfs:domain ami:AmazonEC2EBSSnapshot ;
+  rdfs:range xsd:string .
+
+ami:ec2EBSSnapshotID
+  a owl:DatatypeProperty, rdf:Property , owl:InverseFunctionalProperty ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2EBSSnapshotID" ;
+  rdfs:domain ami:AmazonEC2EBSSnapshot ;
+  rdfs:range xsd:string .
+
+ami:ec2EBSSnapshotOwnerID
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2EBSSnapshotOwnerID" ;
+  rdfs:domain ami:AmazonEC2EBSSnapshot ;
+  rdfs:range xsd:string .
+
+ami:ec2EBSSnapshotStatus
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2EBSSnapshotStatus" ;
+  rdfs:domain ami:AmazonEC2EBSSnapshot ;
+  rdfs:range xsd:string .
+
+ami:ec2EBSSnapshotCapacity
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2EBSSnapshotCapacity" ;
+  rdfs:domain ami:AmazonEC2EBSSnapshot ;
+  rdfs:range xsd:string .
+
+ami:ec2EBSSnapshotEncrypted
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2EBSSnapshotEncrypted" ;
+  rdfs:domain ami:AmazonEC2EBSSnapshot ;
+  rdfs:range xsd:boolean .
+
+ami:ec2EBSSnapshotKMSKeyID
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2EBSSnapshotKMSKeyID" ;
+  rdfs:domain ami:AmazonEC2EBSSnapshot ;
+  rdfs:range xsd:string .
+
+ami:ec2EBSSnapshotKMSKeyAliases
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2EBSSnapshotKMSKeyAliases" ;
+  rdfs:domain ami:AmazonEC2EBSSnapshot ;
+  rdfs:range xsd:string .
+
+ami:ec2EBSSnapshotKMSKeyARN
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2EBSSnapshotKMSKeyARN" ;
+  rdfs:domain ami:AmazonEC2EBSSnapshot ;
+  rdfs:range xsd:string .
+
+ami:ec2EBSSnapshotProductCodes
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "ec2EBSSnapshotProductCodes" ;
+  rdfs:domain ami:AmazonEC2EBSSnapshot ;
+  rdfs:range xsd:string .
+
+
+ami:hasBlockDevices
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasBlockDevices";
+  rdfs:range xsd:literal ;
+  rdfs:domain ami:AmazonEC2EBSBackedAMI .
+
+ami:hasRootDeviceType
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasRootDeviceType";
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:literal .
+
+ami:hasProductCodes
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasProductCodes";
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:literal .
+
+ami:hasAMIName
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasAMIName";
+  rdfs:domain ami:AmazonEC2EBSBackedAMI ;
+  rdfs:range xsd:literal .
+
+ami:hasvCPU
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasvCPU";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:literal .
+
+ami:hasECU
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasvECU";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:literal .
+
+ami:hasMemory
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasMemory";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:literal .
+
+ami:hasVPCOnly
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasVPCOnly";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:literal .
+
+ami:hasMaxBandwidth
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasMaxBandwidth";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:literal .
+
+ami:hasNetworkPerformance
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasNetworkPerformance";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:literal .
+
+ami:hasCategory 
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasCategory";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:literal .
+
+ami:hasDefaultvCPUs
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasDefaultvCPUs";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:literal .
+
+ami:hasDefaultCPUCores
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasDefaultCPUCores";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:literal .
+
+ami:hasValidThreadsPerCore
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasValidThreadsPerCore";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:literal .
+
+# Virtuoso EBS-backed AMI Description
+
+ami:Virtuoso-ami-c04220a8
+  a ami:AmazonEC2EBSBackedAMI, ami:CloudHostedVirtualMachine ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "Virtuoso-ami-c04220a8" ;
+  skos:altLabel "Virtuoso Universal Server 7.1 (EBS-backed AMI)" ;
+  skos:prefLabel "Virtuoso Universal Server 7.1 (EBS-backed AMI)" ;
+  rdfs:comment """High-Performance, Scalable, Secure, Data Server for Data Integration, Web Application Deployment,
+  Linked Open Data publication, and Native Data Management (Relational Tables and RDF Property Graphs)."""@en ;
+  foaf:depiction <http://media-cache-ak0.pinimg.com/originals/56/fe/1f/56fe1fe5f0deef3eee9c0a1a29272d62.jpg> ;
+  dcterms:identifier "Virtuoso-ami-c04220a8" ;
+  ami:ec2AMI-ID "ami-c04220a8" ;
+  ami:ec2OwnerID "940880361860" ;
+  ami:ec2Status "available" ;
+  ami:ec2StateReason "-" ;
+  ami:ec2Platform "Other Linux" ;
+  ami:ec2Architecture "x86_64" ;
+  ami:ec2ImageType "machine" ;
+  ami:ec2VirtualizationType "hvm" ;
+  ami:ec2RootDeviceName "/dev/sda1" ;
+  dcterms:isPartOf <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+  xhv:related <http://dbpedia.org/resource/Category:Cloud_platforms>,
+              <http://dbpedia.org/resource/Amazon_Web_Services> .
+
+
+
+<http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtEBSBackedBYOLAMI>
+  a schema:WebPage;
+  schema:url <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtEBSBackedBYOLAMI> ;
+  schema:about ami:Virtuoso-ami-c04220a8 ;
+  wdrs:describedby <http://www.openlinksw.com/ontology/oplami#> ;
+  rdfs:label """Deploying the EBS-backed BYOL Virtuoso EC2 AMI""" .
+
