@@ -70,7 +70,8 @@
               ami:hasDefaultvCPUs,
               ami:hasDefaultCPUCores,
               ami:hasValidThreadsPerCore,
-              ami:isEBSOptimized ;
+              ami:isEBSOptimized,
+              ami:hasDefaultThreadsPerCPUCore  ;
   schema:about
               ami:AmazonEC2EBSBackedAMI ,
               ami:CloudHostedVirtualMachine  ,
@@ -109,7 +110,8 @@
               ami:hasDefaultvCPUs,
               ami:hasDefaultCPUCores,
               ami:hasValidThreadsPerCore,
-              ami:isEBSOptimized  .
+              ami:isEBSOptimized,
+              ami:hasDefaultThreadsPerCPUCore  .
 
 <http://www.openlinksw.com/DAV/data/turtle/oplami.ttl>
   a foaf:Document , schema:TechArticle ;
@@ -175,7 +177,19 @@
               ami:hasBlockDevices ,
               ami:hasRootDeviceType ,
               ami:hasProductCodes ,
-              ami:hasAMIName  .
+              ami:hasAMIName  ,
+              ami:hasvCPU,
+              ami:hasECU,
+              ami:hasMemory,
+              ami:hasVPCOnly,
+              ami:hasMaxBandwidth,
+              ami:hasNetworkPerformance,
+              ami:hasCategory ,
+              ami:hasDefaultvCPUs,
+              ami:hasDefaultCPUCores,
+              ami:hasValidThreadsPerCore,
+              ami:isEBSOptimized,
+              ami:hasDefaultThreadsPerCPUCore  .
 
 # < ------ Amazon EC2 AMI Relationship Types Classes --------- >
 
@@ -432,6 +446,13 @@ ami:hasDefaultCPUCores
   a owl:DatatypeProperty, rdf:Property ;
   rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
   rdfs:label "hasDefaultCPUCores";
+  rdfs:domain ami:CloudHostedVirtualMachine ;
+  rdfs:range xsd:integer .
+
+ami:hasDefaultThreadsPerCPUCore
+  a owl:DatatypeProperty, rdf:Property ;
+  rdfs:isDefinedBy <http://www.openlinksw.com/ontology/oplami#>  ;
+  rdfs:label "hasDefaultThreadsPerCores";
   rdfs:domain ami:CloudHostedVirtualMachine ;
   rdfs:range xsd:integer .
 
