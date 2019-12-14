@@ -36,7 +36,7 @@ sourceDAV:
     schema:comment """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2019-09-25T10:00:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2019-12-14T13:50:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +48,7 @@ source:
     schema:comment """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2019-09-25T10:00:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2019-12-14T13:50:00-04:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -556,6 +556,27 @@ skos:inScheme :this .
 
 ## Industry Trends ##
 
+<http://data.openlinksw.com/oplweb/glossary-term/MachineLearning#this>
+a skos:Concept ;
+schema:name "Machine Learning"@en ;
+skos:altLabel "ML" ;
+schema:description """How an automomous software or machine acquires knowledge, progressively.
+                   """@en ;
+skos:related dbpedia:Analytics,
+             dbpedia:Deductive_database,
+             dbpedia:Semantic_Web,
+             dbpedia:Linked_Data,
+             dbpedia:Cognition, 
+             dbpedia:Machine_learning,
+             <https://www.merriam-webster.com/dictionary/learning#this> ;
+skos:broader <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this> ;
+schema:image <https://media.geeksforgeeks.org/wp-content/cdn-uploads/machineLearning3.png> ;
+schema:cite <https://www.technologyreview.com/s/612437/what-is-machine-learning-we-drew-you-another-flowchart/> ;
+schema:relatedLink <https://analyticsindiamag.com/10-machine-learning-algorithms-every-data-scientist-know/>,
+                   <https://www.geeksforgeeks.org/machine-learning/>, <https://www.merriam-webster.com/dictionary/learning>,
+                   <https://www.forbes.com/sites/cognitiveworld/2019/03/12/taxonomies-ontologies-and-machine-learning-the-future-of-knowledge-management/#59dca3dd6e85> ;
+skos:inScheme :this .
+
 <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>
 a skos:Concept ;
 schema:name "Artificial Intelligence"@en ;
@@ -579,7 +600,8 @@ schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artifi
 schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-operations-to-drive-business-value/>,
                    <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>,
                    <https://medium.com/virtuoso-blog/magic-sets-and-custom-inference-rules-in-virtuoso-8-x-db783f8d98d2>,
-                   <https://medium.com/virtuoso-blog/virtuoso-8-0-creating-a-custom-inference-rules-using-spin-vocabulary-d7a060f859ef> ;
+                   <https://medium.com/virtuoso-blog/virtuoso-8-0-creating-a-custom-inference-rules-using-spin-vocabulary-d7a060f859ef>,
+                   <https://www.technologyreview.com/s/612404/is-this-ai-we-drew-you-a-flowchart-to-work-it-out/> ;
 skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>
@@ -599,9 +621,12 @@ skos:related dbpedia:Knowledge_graph,
              dbpedia:Semantic_Web,
              dbpedia:Linked_Data,
              dbpedia:Knowledgebase, 
+             dbpedia:Conceptual_graph,
              dbpedia:Machine_learning,
              <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
-             <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+             <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ;
 schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artificial-intelligence/>,
             <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>,
             <https://enterprise-knowledge.com/best-practices-for-enterprise-knowledge-graph-design/> ;
@@ -609,7 +634,8 @@ schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-opera
                    <https://searchengineland.com/library/google/google-knowledge-graph>, <https://lod-cloud.net/>,
                    <https://medium.com/virtuoso-blog/five-simple-steps-to-experience-the-power-of-a-semantic-web-of-linked-data-using-virtuoso-3e016d01dfbe>,
                    <https://medium.com/openlink-software-blog/semantic-web-layer-cake-tweak-explained-6ba5c6ac3fab>,
-                   <https://medium.com/virtuoso-blog/from-open-data-to-a-semantic-web-of-linked-data-with-virtuoso-70fea9d3aadf> ;
+                   <https://medium.com/virtuoso-blog/from-open-data-to-a-semantic-web-of-linked-data-with-virtuoso-70fea9d3aadf>,
+                   <https://lists.w3.org/Archives/Public/semantic-web/2019Jun/0052.html> ;
 skos:inScheme :this .
 
 ## Business Systems
@@ -1810,7 +1836,7 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "RDF Relation" ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/06/46/83/06468323cb5fbe8fc594b47a9214ab9f.jpg> ;
-    schema:comment """Set of subjectâpredicateâobject-based statements that is grouped by predicate."""@en ;
+    schema:comment """Set of subjectÃ¢ÂÂpredicateÃ¢ÂÂobject-based statements that is grouped by predicate."""@en ;
     schema:description """One can accurately refer to the RDF statement (triple), { <#Bob>
                           <http://xmlns.com/foaf/0.1/knows> <#Alice> . } as a representation
                           of a relation identified by the IRI <http://xmlns.com/foaf/0.1/knows>
@@ -2130,7 +2156,7 @@ owl:IrreflexiveProperty
     a   schema:CreativeWork,
         schema:BlogPosting,
         foaf:Document ;
-    schema:name "Generate Relational Tables to RDF Relational Graphs mappingsâ using Virtuosoâs RDF Views Wizard " ;
+    schema:name "Generate Relational Tables to RDF Relational Graphs mappingsÃ¢ÂÂ using VirtuosoÃ¢ÂÂs RDF Views Wizard " ;
     schema:mainEntity <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> ;
     skos:related <http://dbpedia.org/resource/Federated_database_system> ,
              <http://dbpedia.org/resource/Data_virtualization> ,
@@ -2321,6 +2347,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Graph Model Database Management System" ;
+    schema:image <https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/ER_Diagram_MMORPG.png/450px-ER_Diagram_MMORPG.png> ;
     skos:altLabel "Graph Database",
                   "Triple Store",
                   "Quad Store" ;
@@ -2353,7 +2380,10 @@ owl:IrreflexiveProperty
                            <http://virtuoso.openlinksw.com/> ,
                            <http://www.openlinksw.com/> ,
                            <https://medium.com/@kidehen/heres-why-9d278d5aa725> ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/Graph#this>, 
+                 <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
     skos:inScheme :this .
+
 
 <https://medium.com/@kidehen/heres-why-9d278d5aa725>
     a   schema:CreativeWork,
@@ -3157,7 +3187,7 @@ owl:IrreflexiveProperty
     schema:mentions <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/WorldWideWeb#this> ,
-                 <http://dbpedia.org/resource/Entityâattributeâvalue_model> ,
+                 <http://dbpedia.org/resource/EntityÃ¢ÂÂattributeÃ¢ÂÂvalue_model> ,
                  <http://bit.ly/16EVFVG> ,
                  <http://youtu.be/USF1H70bRl0> ;
     dcterms:isReferencedBy <http://www.w3.org/TR/2014/PR-rdf11-concepts-20140109/> ,
