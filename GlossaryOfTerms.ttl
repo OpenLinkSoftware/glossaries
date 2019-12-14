@@ -238,7 +238,8 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/ContentOps#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/NamedGraph#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/DocumentName#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/DocumentName#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/MachineLearning#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
