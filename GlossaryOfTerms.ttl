@@ -36,7 +36,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-01-08T13:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-01-09T13:50:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +48,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-01-08T13:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-01-09T13:50:00-04:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -1703,6 +1703,22 @@ rdf:Property
                            <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
                            <https://bence.ferdinandy.com/2018/05/27/whats-the-difference-between-a-graph-and-a-network#> ;
     skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ;
+    skos:inScheme :this .
+
+# Community
+
+<http://data.openlinksw.com/oplweb/glossary-term/Community#this>
+    a skos:Concept ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Community" ;
+    schema:image <http://snap.stanford.edu/agm/ncaa.png> ;
+    schema:description """Part of a network clustered around topics-of-interest. """@en ;
+    skos:related <https://wenger-trayner.com/resources/communities-versus-networks#> ,
+                           <https://medium.com/conductal/the-difference-between-communities-groups-and-networks-179ac2052f25#>,
+                           <http://snap.stanford.edu/agm#>,
+                           <https://medium.com/@stangarfield/what-is-the-difference-between-a-community-of-practice-and-a-social-network-bcd1af362eca#> ;
+    skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/Network#this> ;
     skos:inScheme :this .
 
 # Resource
