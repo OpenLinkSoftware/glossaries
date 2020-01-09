@@ -33,10 +33,10 @@
 sourceDAV:
     a schema:CreativeWork ;
     schema:name """OpenLink Software Glossary of Terms"""^^xsd:string ;
-    schema:comment """Description of OpenLink Software Glossary of Terms."""@en ;
+    schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2019-12-14T13:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-01-08T13:50:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -45,10 +45,10 @@ sourceDAV:
 source:
     a schema:CreativeWork ;
     schema:name "OpenLink Software Glossary of Terms" ;
-    schema:comment """Covers the definition of a variety of terms associated with realm of
+    schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2019-12-14T13:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-01-08T13:50:00-04:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -239,7 +239,8 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/RevOps#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/NamedGraph#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/DocumentName#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/MachineLearning#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/MachineLearning#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/Network#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -277,7 +278,7 @@ source:
     a skos:ConceptScheme ;
     wdrs:describedby  source: ;
     schema:name "OpenLink Data Related Terms Concept Scheme";
-    schema:comment """Glossary covering the definition of a variety of terms associated
+    schema:description """Glossary covering the definition of a variety of terms associated
                       with realm of Data, Networks, and Cloud abstractions."""@en .
 
 ## Document creator's company description
@@ -296,7 +297,7 @@ source:
       schema:TechArticle ;
     schema:name "Twitter Page" ;
     schema:about <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
-    schema:comment """Twitter hosted social media point of presence."""@en .
+    schema:description """Twitter hosted social media point of presence."""@en .
 
 <https://plus.google.com/b/100570109519069333827/100570109519069333827/about>
     a schema:WebPage,
@@ -305,7 +306,7 @@ source:
       schema:TechArticle ;
     schema:name "Google+ Page" ;
     schema:about <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
-    schema:comment """Google+ hosted social media point of presence."""@en .
+    schema:description """Google+ hosted social media point of presence."""@en .
 
 <http://www.linkedin.com/company/openlink-software>
     a schema:WebPage,
@@ -314,7 +315,7 @@ source:
       schema:TechArticle ;
     schema:name "LinkedIn Page" ;
     schema:about <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
-    schema:comment """LinkedIn hosted social media point of presence."""@en .
+    schema:description """LinkedIn hosted social media point of presence."""@en .
 
 ## Terminology Descriptions
 # Properties
@@ -323,7 +324,7 @@ source:
     a <http://www.w3.org/2002/07/owl#Class> ;
     schema:name "Identity";
     wdrs:describedby  source: ;
-    schema:comment """Individual attributes collection by which an entity is recognized."""@en ;
+    schema:description """Individual attributes collection by which an entity is recognized."""@en ;
     dcterms:references <http://www.vocabulary.com/dictionary/identity> .
 
 <http://data.openlinksw.com/oplweb/glossary-term/denotedBy#this>
@@ -331,7 +332,7 @@ source:
     wdrs:describedby  source: ;
     owl:inverseOf <http://data.openlinksw.com/oplweb/glossary-term/denotes#this> ;
     schema:name "denotedBy" ;
-    schema:comment """Relationship property that associates an Entity with an Identifier,
+    schema:description """Relationship property that associates an Entity with an Identifier,
                       for the purpose of signification [standing for]."""@en ;
     rdfs:range <http://data.openlinksw.com/oplweb/glossary-term/Identifier#this> ;
     rdfs:domain <http://data.openlinksw.com/oplweb/glossary-term/Identity#this> ,
@@ -343,7 +344,7 @@ source:
     wdrs:describedby  source: ;
     schema:name "denotes" ;
     owl:inverseOf <http://data.openlinksw.com/oplweb/glossary-term/denotedBy#this> ;
-    schema:comment """Relationship property that associates an Identifier with an Entity,
+    schema:description """Relationship property that associates an Identifier with an Entity,
                       for the purpose of signification [standing for]."""@en ;
     rdfs:domain <http://data.openlinksw.com/oplweb/glossary-term/Identifier#this> ;
     rdfs:range <http://data.openlinksw.com/oplweb/glossary-term/Identity#this> ,
@@ -356,7 +357,7 @@ source:
                        <http://data.openlinksw.com/oplweb/glossary-term/Tag#this> ;
     schema:name "Name" ;
     wdrs:describedby  source: ;
-    schema:comment """Word or phrase by which one is identified (i.e., combination of
+    schema:description """Word or phrase by which one is identified (i.e., combination of
                       identifier denotation and description document connotation). """@en ;
     dcterms:references <http://www.vocabulary.com/dictionary/name> .
 
@@ -366,7 +367,7 @@ source:
     a skos:Concept ;
     schema:name "SPINRulesVocab"@en ;
     skos:prefLabel "SPIN Inference Rules Vocabulary"@en ;
-    schema:comment """Vocabulary of terms that enable the creation of custom reasoning & inference rules using SPARQL
+    schema:description """Vocabulary of terms that enable the creation of custom reasoning & inference rules using SPARQL
                       CONSTRUCT queries. Fundamentally, this is the product of applying the combined prowess of RDF
                       data definition language, SPARQL query language, and a Vocabulary to produce a modern variant
                       of Datalog that has the added benefit of working naturally with the infrastructure provided by
@@ -383,13 +384,13 @@ source:
     schema:mainEntityOfPage <https://medium.com/virtuoso-blog/virtuoso-8-0-creating-a-custom-inference-rules-using-spin-vocabulary-d7a060f859ef> ,
                             <https://www.linkedin.com/pulse/reasoning-inference-using-british-royal-family-part-idehen/> ,
                             <http://spinrdf.org/spin.html#spin-rules> ;
-    dcterms:isReferencedBy source: .
+    skos:related source: .
 
 <http://data.openlinksw.com/oplweb/glossary-term/SHACLInferenceVocab#this>
     a skos:Concept ;
     schema:name "SHACLInferenceVocab"@en ;
     skos:prefLabel "SHACL Inference Rules Vocabulary"@en ;
-    schema:comment """Vocabulary of terms that enable the creation of custom reasoning & inference 
+    schema:description """Vocabulary of terms that enable the creation of custom reasoning & inference 
                       rules using SPARQL CONSTRUCT queries. In similar fashion to the SPIN Inference 
                       Rules Vocabulary, it leverages the combined prowess of RDF data definition language, 
                       SPARQL query language, and a Vocabulary of terms produce a modern variant of Datalog. 
@@ -406,7 +407,7 @@ source:
                  dbpedia:Datalog,
                  dbpedia:Prolog ;
     schema:mainEntityOfPage <https://www.w3.org/TR/shacl-af/#SPARQLRule> ;
-    dcterms:isReferencedBy source: .
+    skos:related source: .
 
 ## Signs -- Mark, Tokens, and Types (Mr. Mark Token Type mnemonic)
 
@@ -807,7 +808,7 @@ skos:inScheme :this .
     a skos:Concept ;
     schema:name "GDPR" ;
     skos:prefLabel "General Data Protection Regulation"@en ;
-    schema:comment """Regulation from the European Union (EU) that outlines the data access protection and
+    schema:description """Regulation from the European Union (EU) that outlines the data access protection and
                       privacy privileges of all EU citizens that must be adhered to by all solution providers
                       that collate personally identifiable information (e.g., Email Addresses, Driver's Licenses,
                       Passport Numbers, Social Security Numbers, and other identifiers that share similar
@@ -828,7 +829,7 @@ skos:inScheme :this .
                        <https://medium.com/virtuoso-blog/web-logic-sentences-and-the-magic-of-being-you-e2a719d01f73> ,
                        <https://medium.com/virtuoso-blog/using-a-semantic-web-of-linked-data-to-reconcile-disparate-identities-83ab7a315568> ,
                        <http://vos.openlinksw.com/owiki/wiki/VOS/VAL_SpongerACLs> ;
-    dcterms:isReferencedBy source: .
+    skos:related source: .
 
 <http://data.openlinksw.com/oplweb/glossary-term/DataProvenance#this>
     a skos:Concept;
@@ -971,7 +972,7 @@ skos:inScheme :this .
     a skos:Concept ;
     schema:name "ABAC" ;
     skos:prefLabel "Attribute-based Access Controls"@en;
-    schema:comment """Data access control informed by applying reasoning and inference to the collective attributes
+    schema:description """Data access control informed by applying reasoning and inference to the collective attributes
                       of all actors seeking access (read, write, or execute) to a protected artifact on a network
                       (e.g., Intranet, World Wide Web, or Internet)."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#ABAC" ;
@@ -984,14 +985,14 @@ skos:inScheme :this .
     schema:mainEntityOfPage <https://medium.com/openlink-software-blog/simple-youid-browser-extension-usage-exercise-57fa3ff6c6b7> ,
                             <https://medium.com/virtuoso-blog/web-logic-sentences-and-the-magic-of-being-you-e2a719d01f73> ,
                             <http://vos.openlinksw.com/owiki/wiki/VOS/VAL_SpongerACLs> ;
-    dcterms:isReferencedBy source: ;
+    skos:related source: ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/RBAC#this>
     a skos:Concept ;
     schema:name "RBAC" ;
     skos:prefLabel "Role-based Access Controls"@en ;
-    schema:comment """Data access control informed by applying reasoning and inference to roles that are used to
+    schema:description """Data access control informed by applying reasoning and inference to roles that are used to
                       categorize actors seeking access (read, write, or execute) to a protected artifact on a network
                       (e.g., Intranet, World Wide Web, or Internet). This form of access control is more coarse-grained
                       relative to the Attributed-based access control alternative. """@en ;
@@ -1003,7 +1004,7 @@ skos:inScheme :this .
                        <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/GDPR#this> ;
     schema:mainEntityOfPage <http://vos.openlinksw.com/owiki/wiki/VOS/VAL_SpongerACLs> ;
-    dcterms:isReferencedBy source: ;
+    skos:related source: ;
     skos:inScheme :this .
 
 <http://vos.openlinksw.com/owiki/wiki/VOS/VAL_SpongerACLs>
@@ -1014,13 +1015,13 @@ skos:inScheme :this .
                           accessible to Virtuoso Linked Data Transformation Middleware Layer ("Sponger")."""@en ;
     schema:mentions <http://data.openlinksw.com/oplweb/glossary-term/RBAC#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this> ;
-    dcterms:isReferencedBy source: .
+    skos:related source: .
 
 <http://data.openlinksw.com/oplweb/glossary-term/MasterDataManagement#this>
     a skos:Concept ;
     schema:name "MDM" ;
     skos:prefLabel "Master Data Management"@en ;
-    schema:comment """Data abstraction that provides a unified and trusted view of data originating from a variety
+    schema:description """Data abstraction that provides a unified and trusted view of data originating from a variety
                       of sources. Typically, this applies to both internal and external data sources. In all cases,
                       data transformation and semantic cleansing are critical challenges that always impact the quality
                       and utility of the final product, i.e., Reference Data that serves the trust and quality needs Data
@@ -1032,14 +1033,14 @@ skos:inScheme :this .
                        <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DataLake#this> ;
     schema:mainEntityOfPage <https://youtu.be/M-5eu96-bgQ> ;
-    dcterms:isReferencedBy source: ;
+    skos:related source: ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/LDP#this>
     a <http://dbpedia.org/class/yago/NetworkProtocols> ;
     schema:name "LDP" ;
     skos:prefLabel "Linked Data Platform"@en ;
-    schema:comment """Protocol for performing a variety of operations (e.g., Create,
+    schema:description """Protocol for performing a variety of operations (e.g., Create,
                       Read, Update, and Delete) against resources (documents with static
                       or dynamically generated content) -- over HTTP-based networks. A key
                       differentiating characteristic between this protocol and WebDAV is the
@@ -1051,7 +1052,7 @@ skos:inScheme :this .
                        <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/WebDAV#this> ;
-    dcterms:isReferencedBy source: ;
+    skos:related source: ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/Tag#this>  a skos:Concept;
@@ -1060,7 +1061,7 @@ skos:inScheme :this .
                        <http://data.openlinksw.com/oplweb/glossary-term/Name#this> ;
     schema:name "Tag" ;
     wdrs:describedby  source: ;
-    schema:comment """HTTP URI baseed Name that Identifies a Topic. For example
+    schema:description """HTTP URI baseed Name that Identifies a Topic. For example
                       Weblog Post topics (also known as Tweets) are/used to be identified (named)
                       using tags. Unfortunately, this kind of identification was based on
                       literals as opposed to HTTP URIs which ultimately lead to emergence of
@@ -1078,7 +1079,7 @@ skos:inScheme :this .
     schema:name "HashTag" ;
     wdrs:describedby  source: ;
     skos:prefLabel "Hash Tag" ;
-    schema:comment """HTTP URI baseed Name that Identifies a Topic. For example
+    schema:description """HTTP URI baseed Name that Identifies a Topic. For example
                       Twitter Post topics [also known as Tweets] are identified (named) on Twitter using
                       hashtags. """@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/WorldWideWeb#this> ,
@@ -1093,7 +1094,7 @@ skos:inScheme :this .
       schema:Article,
       schema:TechArticle ;
     schema:name "Future of SEO: Linked Open Data" ;
-    schema:comment """Post about the role of Hash Tags (HTTP-URI-based entity names)
+    schema:description """Post about the role of Hash Tags (HTTP-URI-based entity names)
                       as prime drivers behind a Web end-user curated Semantic Web."""@en .
 
 <http://data.openlinksw.com/oplweb/glossary-term/Handle#this>
@@ -1103,7 +1104,7 @@ skos:inScheme :this .
                        <http://data.openlinksw.com/oplweb/glossary-term/Name#this> ;
     wdrs:describedby  source: ;
     schema:name "Handle" ;
-    schema:comment """Synonym of Name. For example, @handle is how Twitter users are
+    schema:description """Synonym of Name. For example, @handle is how Twitter users are
                       identified or named on Twitter."""@en ;
     dcterms:references <http://www.vocabulary.com/dictionary/handle> ;
     skos:inScheme :this .
@@ -1114,7 +1115,7 @@ rdf:Property
     a skos:Concept;
     schema:name "Handle" ;
     wdrs:describedby  source: ;
-    schema:comment """Characteristic of an entity [thing]."""@en ;
+    schema:description """Characteristic of an entity [thing]."""@en ;
     dcterms:references <http://www.vocabulary.com/dictionary/attribute> ;
     skos:inScheme :this .
 
@@ -1124,7 +1125,7 @@ rdf:Property
     wdrs:describedby  source: ;
     rdfs:subClassOf <http://data.openlinksw.com/oplweb/glossary-term/Attribute#this> ;
     schema:name "Property" ;
-    schema:comment """An attribute (characteristic) shared by all members of a class or
+    schema:description """An attribute (characteristic) shared by all members of a class or
                       category of things [entities]. Basically, a binary relationship that 
                       associates a class with the attributes of its members."""@en ;
     dcterms:references <http://www.vocabulary.com/dictionary/property> ;
@@ -1135,7 +1136,7 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "Ontology";
     wdrs:describedby  source: ;
-    schema:comment """A subcategory of Data Dictionary and Schema that's conceptual in
+    schema:description """A subcategory of Data Dictionary and Schema that's conceptual in
                       orientation, i.e., focused on the semantics of entity relationships --
                       represented by a series of assertions (in a variety of notations) that
                       cover the nature of entity and relation types."""@en ;
@@ -1153,7 +1154,7 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "Data Dictionary";
     wdrs:describedby  source: ;
-    schema:comment """A document that describes the semantics of entity and relationship types."""@en ;
+    schema:description """A document that describes the semantics of entity and relationship types."""@en ;
     owl:sameAs <http://dbpedia.org/resource/Data_dictionary> ,
                <http://data.openlinksw.com/oplweb/glossary-term/Ontology#this> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Semantics#this> ,
@@ -1168,7 +1169,7 @@ rdf:Property
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Database Schema";
-    schema:comment """A document that describes the organization of a database in regards to the
+    schema:description """A document that describes the organization of a database in regards to the
                       semantics of entity and relationship types."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Schema#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/DataDictionary#this> ,
@@ -1186,7 +1187,7 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "Schema";
     wdrs:describedby  source: ;
-    schema:comment """Framework for organized patterns of thought about entities and
+    schema:description """Framework for organized patterns of thought about entities and
                       semantics of entity and relationship types."""@en ;
     owl:sameAs <http://dbpedia.org/resource/Schema_(psychology)> ,
                <http://dbpedia.org/resource/Data_dictionary> ,
@@ -1202,14 +1203,14 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "Semantics" ;
     wdrs:describedby  source: ;
-    schema:comment """The meaning of words, phrases, and terms in a particular
+    schema:description """The meaning of words, phrases, and terms in a particular
                       usage context (scenario or situation). For instance, in sentences and
                       statements, it refers to meaning derived from the combined effects of
                       entity relationships and relationship participant roles
                       (e.g., subject, predicate, and object)."""@en ;
     schema:mentions <http://www.merriam-webster.com/dictionary/semantics> ;
     owl:sameAs <http://dbpedia.org/resource/Semantics> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDFStatement#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
@@ -1220,7 +1221,7 @@ rdf:Property
 <http://data.openlinksw.com/oplweb/glossary-term/Identifier#this>
     a skos:Concept ;
     schema:name "Identifier" ;
-    schema:comment """A sign used to identify an entity."""@en ;
+    schema:description """A sign used to identify an entity."""@en ;
     owl:sameAs <http://dbpedia.org/resource/Identifier> ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/96/1a/e3/961ae3fb72d6cbc554fc7a88bc0fff4f.jpg> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#Identifier" ;
@@ -1236,14 +1237,14 @@ rdf:Property
                   <http://data.openlinksw.com/oplweb/glossary-term/ODBCSystemDSN#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/ODBCFileDSN#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/IRI#this>
     a skos:Concept ;
     schema:name "IRI" ;
     wdrs:describedby source: ;
-    schema:comment """An Internationalized Resource Identifier (IRI) is a Universal
+    schema:description """An Internationalized Resource Identifier (IRI) is a Universal
                       Character Set (Unicode//ISO 10646) string-based sign used to
                       identify an entity."""@en ;
     owl:sameAs <http://dbpedia.org/resource/Identifier> ;
@@ -1255,7 +1256,7 @@ rdf:Property
                   <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/WebID#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://www.ietf.org/rfc/rfc3987.txt> ;
     skos:inScheme :this .
 
@@ -1263,7 +1264,7 @@ rdf:Property
     a skos:Concept ;
     schema:name "URI" ;
     wdrs:describedby  source: ;
-    schema:comment """A Uniform Resource Identifier (URI) is a string-based sign
+    schema:description """A Uniform Resource Identifier (URI) is a string-based sign
                       used to identify any kind of entity."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#URI" ;
     owl:sameAs <http://dbpedia.org/resource/Uniform_resource_identifier> ;
@@ -1276,7 +1277,7 @@ rdf:Property
                   <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/WebID#this> ;
     wdrs:describedby  source: ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fwww.ontologydesignpatterns.org%2Font%2Fweb%2Firw.owl%23URI> ,
                            <http://www.w3.org/DesignIssues/Axioms.html#opaque> ;
@@ -1286,7 +1287,7 @@ rdf:Property
     a skos:Concept ;
     schema:name "URL" ;
     wdrs:describedby  source: ;
-    schema:comment """A Uniform Resource Locator (URL) is string-based sign used to
+    schema:description """A Uniform Resource Locator (URL) is string-based sign used to
                       identify a document (a specific entity type) on a network."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#URL" ;
     owl:sameAs <http://dbpedia.org/resource/Uniform_resource_locator> ;
@@ -1296,7 +1297,7 @@ rdf:Property
                  <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ;
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this> ;
     wdrs:describedby  source: ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://www.w3.org/Addressing/URL/url-spec.txt> ,
                            <http://www.ietf.org/rfc/rfc1738.txt> ;
     skos:inScheme :this .
@@ -1305,7 +1306,7 @@ rdf:Property
     a skos:Concept ;
     schema:name "HTTP URI" ;
     wdrs:describedby  source: ;
-    schema:comment """An HTTP-scheme-based Uniform Resource Identifier (URI) endowed
+    schema:description """An HTTP-scheme-based Uniform Resource Identifier (URI) endowed
                       with the dual capability of entity denotation (signification)
                       and connotation (description) lookup over an HTTP-protocol-based network. Put differently,
                       this kind of identifier functions as a Name that can be used to Identify anything, in a manner
@@ -1319,14 +1320,14 @@ rdf:Property
                  <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ;
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://bit.ly/WAJGCp> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this>
     a skos:Concept ;
     schema:name "HTTP URL" ;
-    schema:comment """An HTTP-scheme-based Uniform Resource Locator (URL) used to identify
+    schema:description """An HTTP-scheme-based Uniform Resource Locator (URL) used to identify
                       a document on an HTTP-protocol-based network."""@en ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/fc/36/73/fc3673dd64e67044e07d52cdcfc5b16a.jpg> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#URL",
@@ -1337,14 +1338,14 @@ rdf:Property
                  <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/HTTPIRI#this>
     a skos:Concept ;
     schema:name "HTTP IRI" ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/af/39/76/af3976db8047320dc83df26c4eb6b28e.jpg> ;
-    schema:comment """An HTTP-scheme-based Internationalized Resource Identifier (IRI) is a
+    schema:description """An HTTP-scheme-based Internationalized Resource Identifier (IRI) is a
                       Universal Character Set (Unicode//ISO 10646) string-based sign
                       used to identify any entity."""@en ;
     owl:sameAs <http://dbpedia.org/resource/Identifier> ;
@@ -1353,7 +1354,7 @@ rdf:Property
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/WebID#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://www.ietf.org/rfc/rfc3987.txt> ;
     skos:inScheme :this .
 
@@ -1361,7 +1362,7 @@ rdf:Property
     a skos:Concept ;
     schema:name "WebID" ;
     skos:related <http://www.openlinksw.com/schemas/cert#WebID> ;
-    schema:comment """An HTTP scheme URI used to identify a Person, Organization, Software,
+    schema:description """An HTTP scheme URI used to identify a Person, Organization, Software,
                       Machine, or anything else capable of mechanized operation."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#WebID" ;
     schema:image <https://dvcs.w3.org/hg/WebID/raw-file/tip/spec/img/WebID-overview.png> ;
@@ -1370,13 +1371,13 @@ rdf:Property
                  <http://data.openlinksw.com/oplweb/glossary-term/Identifier#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/wiki/WebID> ;
+    skos:related <http://www.w3.org/wiki/WebID> ;
     wdrs:describedby  source: ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/NetID#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/NetIDTLSProtocol#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/WebID#this> ,
@@ -1387,7 +1388,7 @@ rdf:Property
     a skos:Concept ;
     schema:name "NetID" ;
     skos:related <http://www.openlinksw.com/schemas/cert#NetID> ;
-    schema:comment """A resolvable URI (http:, ldap:, mailto:, etc.) used to identify
+    schema:description """A resolvable URI (http:, ldap:, mailto:, etc.) used to identify
                       a Person, Organization, Software, Machine, or anything else capable of mechanized operation.
                       This kind of URI resolves to a document that describes its referent, using a variety of
                       resolution protocols. Resolution protocol examples include HTTP, LDAP, WebFinger, and
@@ -1405,7 +1406,7 @@ rdf:Property
                        <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/wiki/WebID> ,
+    skos:related <http://www.w3.org/wiki/WebID> ,
                            <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/NetIDTLSProtocol#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/WebIDTLSProtocol#this> ;
@@ -1416,7 +1417,7 @@ rdf:Property
     schema:name "DSN" ;
     wdrs:describedby  source: ;
     skos:prefLabel "Data Source Name" ;
-    schema:comment """String-based identifier used to identify a data source. This term is typically
+    schema:description """String-based identifier used to identify a data source. This term is typically
                       associated with an ODBC or JDBC drivers that provide compliant applications
                       with access to SQL relational databases."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#DSN" ;
@@ -1431,14 +1432,14 @@ rdf:Property
                        <http://data.openlinksw.com/oplweb/glossary-term/Database#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/ODBCDSN#this>
     a skos:Concept ;
     schema:name "ODBC Data Source Name (DSN)" ;
     skos:altLabel "ODBC DSN" ;
-    schema:comment """A string-based identifier used to identify an ODBC accessible database
+    schema:description """A string-based identifier used to identify an ODBC accessible database
                       item (Table, View, Stored Procedure).  Basically, this is an X.509
                       Distinguished Name (DN)."""@en ;
     wdrs:describedby  source: ;
@@ -1455,13 +1456,13 @@ rdf:Property
                        <http://data.openlinksw.com/oplweb/glossary-term/Database#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/ODBCDSNConnectString#this>
     a skos:Concept ;
     schema:name "ODBC DSN Connection String" ;
-    schema:comment """An identifier used to identify a specific ODBC accessible data item in a SQL database.
+    schema:description """An identifier used to identify a specific ODBC accessible data item in a SQL database.
                       Basically, this is a composite of items that make up an X.509 Distinguished Name (DN)
                       comprised of attribute values paired with attribute names that include Host, Password,
                       Username, and Database Item/Object (Table, View, Stored Procedure) Name."""@en ;
@@ -1473,14 +1474,14 @@ rdf:Property
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Database#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this>
     a skos:Concept ;
     schema:name "JDBC DSN" ;
     wdrs:describedby  source: ;
-    schema:comment """A string-based identifier used to denote (signify, name, or "refer to")
+    schema:description """A string-based identifier used to denote (signify, name, or "refer to")
                       a JDBC accessible database item (Table, View, Stored Procedure).
                       Basically, this takes the form of a jdbc: scheme URL."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#DSN",
@@ -1493,13 +1494,13 @@ rdf:Property
                        <http://data.openlinksw.com/oplweb/glossary-term/Database#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSNConnectString#this>
     a skos:Concept ;
     schema:name "JDBC DSN Connection String" ;
-    schema:comment """A composite string-based identifier used to denote (signify, name, or "refer to")
+    schema:description """A composite string-based identifier used to denote (signify, name, or "refer to")
                       the specific location of a JDBC-accessible data item in a database.
                       Basically, this is a composite of items that make up a jdbc: scheme URL,
                       including Host, Password, Username, Database Item/Object
@@ -1513,14 +1514,14 @@ rdf:Property
                        <http://data.openlinksw.com/oplweb/glossary-term/Database#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/SQLPrimaryKey#this>
     a skos:Concept ;
     schema:name "Primary Key" ;
     wdrs:describedby  source: ;
-    schema:comment """An identifier that denotes a record in a SQL relational database table."""@en ;
+    schema:description """An identifier that denotes a record in a SQL relational database table."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Identifier#this> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Database#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ;
@@ -1533,8 +1534,8 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "CoReference" ;
     wdrs:describedby  source: ;
-    schema:comment """When more than one Identifier denotes the same entity."""@en ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    schema:description """When more than one Identifier denotes the same entity."""@en ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/CoReference#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
@@ -1547,8 +1548,8 @@ rdf:Property
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Referent" ;
-    schema:comment """What an Identifier denotes (names, "refers to", or signifies)."""@en ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    schema:description """What an Identifier denotes (names, "refers to", or signifies)."""@en ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/CoReference#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
@@ -1560,14 +1561,14 @@ rdf:Property
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Denotes" ;
-    schema:comment """Relation that associates an identifier with an entity. In this kind of relation,
+    schema:description """Relation that associates an identifier with an entity. In this kind of relation,
                       the subject is a sign while the object is an entity signified by the sign, i.e., the sign's
                       referent. In RDF, this relation is implicit -- making it an integral implementation aspect of
                       any RDF compliant processor."""@en ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Referent#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Identifier#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -1588,12 +1589,12 @@ rdf:Property
     a <http://dbpedia.org/class/yago/NetworkProtocols> ;
     wdrs:describedby  source: ;
     schema:name "HTTP" ;
-    schema:comment """Protocol for performing a variety of operations (e.g., Create, Read,
+    schema:description """Protocol for performing a variety of operations (e.g., Create, Read,
                       Update, and Delete) against hypertext documents -- over TCP/IP-based 
                       networks."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#HTTP" ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://dbpedia.org/resource/Hypertext_Transfer_Protocol> ;
     skos:inScheme :this .
 
@@ -1603,12 +1604,12 @@ rdf:Property
     a <http://dbpedia.org/class/yago/NetworkProtocols> ;
     wdrs:describedby  source: ;
     schema:name "WebDAV" ;
-    schema:comment """Protocol for performing a variety of operations (e.g., Create, Read,
+    schema:description """Protocol for performing a variety of operations (e.g., Create, Read,
                       Update, and Delete) against hypertext documents -- over TCP/IP-based 
                       networks."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#WebDAV" ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/HTTP#this> ;
-    dcterms:isReferencedBy <GlossaryOfTerms.ttl#> ;
+    skos:related <GlossaryOfTerms.ttl#> ;
     skos:inScheme :this .
 
 ## WebID+TLS
@@ -1617,18 +1618,18 @@ rdf:Property
     a skos:Concept ;
     wdrs:describedby  source: ;
     schema:name "WebID-TLS" ;
-    schema:comment """WebID Authentication Protocol."""@en ;
+    schema:description """WebID Authentication Protocol."""@en ;
     schema:description """Combined use of Transport Layer Security (as already implemented by existing HTTPS user agents)
                           and RDF-based entity relationship semantics as a mechanism authenticating WebIDs -- that scales
                           from local area networks (or Intranets clouds) to the wide area networks (e.g., the public Web
                           and Internet clouds)."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#WebIDTLS" ;
-    dcterms:isReferencedBy <http://www.w3.org/wiki/WebID> ;
+    skos:related <http://www.w3.org/wiki/WebID> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ;
-    dcterms:isReferencedBy <https://dvcs.w3.org/hg/WebID/raw-file/tip/spec/tls-respec.html> ;
+    skos:related <https://dvcs.w3.org/hg/WebID/raw-file/tip/spec/tls-respec.html> ;
     skos:inScheme :this .
 
 ## NetID-TLS
@@ -1636,7 +1637,7 @@ rdf:Property
 <http://data.openlinksw.com/oplweb/glossary-term/NetIDTLSProtocol#this>
     a skos:Concept ;
     schema:name "NetID-TLS" ;
-    schema:comment """NetID Authentication Protocol."""@en ;
+    schema:description """NetID Authentication Protocol."""@en ;
     schema:description """Combined use of Transport Layer Security (as already implemented by existing HTTPS user agents)
                           and RDF-based entity relationship semantics as a mechanism for authenticating WebIDs and NetIDs --
                           that scales from local area networks (or Intranets clouds) to the wide area networks (e.g.,
@@ -1655,7 +1656,7 @@ rdf:Property
                        <http://data.openlinksw.com/oplweb/glossary-term/WorldWideWeb#this> ;
     skos:inScheme :this .
 
-## Graph, Resources, and Entities
+## Graph, Networks, Resources, and Entities
 
 # Graph
 
@@ -1664,12 +1665,10 @@ rdf:Property
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Graph" ;
-    schema:comment """Colloquialism used to refer to one or more statements that represent
-                      entity relationships. Overloaded use of this term is common across
-                      communities associated with Semantic Web, Linked Data, RDF, and
-                      Relational Property/Predicate Graph oriented Database Management
-                      Systems. """@en ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    schema:image <https://cdn.graphgrid.com/content/uploads/2016/01/11131322/WhatIsAGraphDatabase.png> ;
+    schema:description """How Entity Relationship Types (Relations) are represented on paper, screens, 
+                          and any other projection medium -- using a graphic notation. """@en ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -1677,7 +1676,33 @@ rdf:Property
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/BigData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SmartData#this> ,
-                           <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ;
+                           <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
+                           <https://bence.ferdinandy.com/2018/05/27/whats-the-difference-between-a-graph-and-a-network#> ;
+    skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/Network#this> ;
+    skos:inScheme :this .
+
+# Network
+
+<http://data.openlinksw.com/oplweb/glossary-term/Network#this>
+    a skos:Concept ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Network" ;
+    schema:image <https://cdn-images-1.medium.com/max/800/1*XEIW9h-UGL4aFvuTArSC2Q.png> ;
+    schema:description """How Entity Relationship Types (Relations) that are transitive in nature are represented on paper, screens, 
+                          and any other projection medium -- using a graphic notation. Relationship Type Transitivity is the critical
+                          attribute that makes a Network Depiction a sub-category of Graph Depticion"""@en ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/BigData#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/SmartData#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
+                           <https://bence.ferdinandy.com/2018/05/27/whats-the-difference-between-a-graph-and-a-network#> ;
+    skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ;
     skos:inScheme :this .
 
 # Resource
@@ -1687,7 +1712,7 @@ rdf:Property
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Resource" ;
-    schema:comment """Something that provides utility (usefulness)."""@en ;
+    schema:description """Something that provides utility (usefulness)."""@en ;
     schema:description """Unfortunately, due to general misunderstanding of the Architecture
                           of the World Wide Web (AWWW), in regards to what URIs and URLs
                           actually denote, this term has also become a colloquialism that
@@ -1696,7 +1721,7 @@ rdf:Property
     schema:mentions <http://lists.w3.org/Archives/Public/www-tag/2009Aug/0000.html> ,
                     <http://www.w3.org/TR/webarch/> ,
                     <http://www.w3.org/2000/01/rdf-schema#Resource> ;
-    dcterms:isReferencedBy <http://lists.w3.org/Archives/Public/www-tag/2009Aug/0000.html> ,
+    skos:related <http://lists.w3.org/Archives/Public/www-tag/2009Aug/0000.html> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
@@ -1714,8 +1739,8 @@ rdf:Property
     schema:mentions <http://www.w3.org/2000/01/rdf-schema#Resource> ;
     wdrs:describedby  source: ;
     schema:name "Entity" ;
-    schema:comment """Distinctly identifiable thing. """@en ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    schema:description """Distinctly identifiable thing. """@en ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -1736,12 +1761,12 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "Relationship" ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/d8/fd/8e/d8fd8e99137d34c7a2e4113608f70a3b.jpg> ;
-    schema:comment """Association between two or more entities where each has (or plays) a specific role.
+    schema:description """Association between two or more entities where each has (or plays) a specific role.
                       Subject (start), Predicate (connector), and Object (end) are typical relationship roles."""@en ;
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/RDFRelationship#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/SQLRelationship#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/Relation#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -1759,13 +1784,13 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "RDF Relationship" ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/06/46/83/06468323cb5fbe8fc594b47a9214ab9f.jpg> ;
-    schema:comment """Association between two or more entities where each has (or plays) a specific role.
+    schema:description """Association between two or more entities where each has (or plays) a specific role.
                       In RDF, a relationship is represented by a 3-tuple (triplet or triples or triad)-based
                       abstract syntax comprised of identifiers (IRIs) that denote entities playing the subject ,
                       predicate, and object roles."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Relationship#this> ;
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/RDFRelation#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -1783,7 +1808,7 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "SQL Relationship" ;
     schema:image <http://upload.wikimedia.org/wikipedia/commons/8/8d/Relational_model_concepts.png> ;
-    schema:comment """Association between two or more entities where each has (or plays) a specific role.
+    schema:description """Association between two or more entities where each has (or plays) a specific role.
                       In SQL, a relationship is represented by sets of n-tuple records in a table (the relation predicate).
                       In this kind of relationship, each record represents a collection of tuples that describes an entity.
                       Basically, each entity is identified by a primary key derived from the value of a
@@ -1792,7 +1817,7 @@ rdf:Property
                       it doesn't function as the primary-key, i.e., those tables use this as a reference mechanism
                       for identifying records in other tables."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Relationship#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/Relation#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -1808,7 +1833,7 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "Relation" ;
     schema:image <http://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Relational_database_terms.svg/700px-Relational_database_terms.svg.png> ;
-    schema:comment """A set of tuples grouped by an overarching condition (predicate). This set can be modelled 
+    schema:description """A set of tuples grouped by an overarching condition (predicate). This set can be modelled 
                       in a variety of ways, including as Records grouped by Tables operated on by the SQL Query 
                       Lanaguage that's supported by a majority of Relational Database Management systems; or as 
                       Sentences (or Statements) grouped by Sentence Predicate (depictable as Graphs) operated on 
@@ -1817,7 +1842,7 @@ rdf:Property
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Relationship#this> ;
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/RDFRelation#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/SQLRelation#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -1837,7 +1862,7 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "RDF Relation" ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/06/46/83/06468323cb5fbe8fc594b47a9214ab9f.jpg> ;
-    schema:comment """Set of subjectÃ¢ÂÂpredicateÃ¢ÂÂobject-based statements that is grouped by predicate."""@en ;
+    schema:description """Set of subjectÃ¢ÂÂpredicateÃ¢ÂÂobject-based statements that is grouped by predicate."""@en ;
     schema:description """One can accurately refer to the RDF statement (triple), { <#Bob>
                           <http://xmlns.com/foaf/0.1/knows> <#Alice> . } as a representation
                           of a relation identified by the IRI <http://xmlns.com/foaf/0.1/knows>
@@ -1857,7 +1882,7 @@ rdf:Property
                         <http://data.openlinksw.com/oplweb/glossary-term/RDFStatement#this> ,
                         <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                         <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -1903,7 +1928,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     schema:name "SQL Relation" ;
     schema:image <http://upload.wikimedia.org/wikipedia/commons/8/8d/Relational_model_concepts.png> ;
-    schema:comment """Set of tuples grouped by a predicate identified by a Table Name."""@en ;
+    schema:description """Set of tuples grouped by a predicate identified by a Table Name."""@en ;
     dcterms:references <http://dbpedia.org/resource/Relation_(history_of_concept)> ;
     <http://www.w3.org/1999/xhtml/vocab#related>
                         <http://data.openlinksw.com/oplweb/glossary-term/IRI#this> ,
@@ -1919,7 +1944,7 @@ owl:IrreflexiveProperty
     schema:hasPart <http://data.openlinksw.com/oplweb/glossary-term/SQLRelationHeader#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/SQLRelationBody#this> ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Relation#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SQL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/Relation#this> ,
@@ -1936,7 +1961,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "SQL Relation Header" ;
-    schema:comment """Part of a SQL Relation (i.e. Table) represented by a collection of columns,
+    schema:description """Part of a SQL Relation (i.e. Table) represented by a collection of columns,
                       where every column-name denotes a relationship property (playing predicate role) that has
                       the Table name as its domain (via an implicit "hasDomain" relation) and
                       the column-value datatypes as its range (via an implicit "hasRange" relation)
@@ -1949,7 +1974,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "SQL Relation Header" ;
-    schema:comment """Part of a SQL Relation (i.e. Table) represented by a collection of
+    schema:description """Part of a SQL Relation (i.e. Table) represented by a collection of
                       rows (records), each denoted by a record (typically a Primary Key),
                       that are associated with a class (or category)
                       denoted by the Table name via an implicit "IsA" or "instanceOf"
@@ -1965,7 +1990,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "RDF Statement" ;
     skos:altLabel "RDF Triple" ;
-    schema:comment """Representation of an entity relationship using a variety of notations
+    schema:description """Representation of an entity relationship using a variety of notations
                       (or concrete syntaxes in RDF spec. parlance) in conformance
                       with RDF's abstract subject->predicate->object syntax."""@en ;
     rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
@@ -1973,7 +1998,7 @@ owl:IrreflexiveProperty
     schema:hasPart <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> ,
                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> ,
                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -2000,9 +2025,9 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Document" ;
-    schema:comment """An artifact comprised of content. In the context of computer operating systems,
+    schema:description """An artifact comprised of content. In the context of computer operating systems,
                       "document" and "file" are terms that refer to the same kind of thing."""@en ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ;
@@ -2013,7 +2038,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Document Name" ;
-    schema:comment """An identifier for a Document."""@en ;
+    schema:description """An identifier for a Document."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/Document#this> ;
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/NamedGraph#this>,
                   <http://data.openlinksw.com/oplweb/glossary-term/DSN#this>,
@@ -2028,7 +2053,7 @@ owl:IrreflexiveProperty
     schema:name "Named Graph" ;
     schema:image <https://upload.wikimedia.org/wikipedia/commons/d/da/Named-graphs-1.jpg> ;
     owl:sameAs dbpedia:Named_graph ;
-    schema:comment """An identifier for a Database Management System hosted Database Document comprising one or more 
+    schema:description """An identifier for a Database Management System hosted Database Document comprising one or more 
                       datasets (entity relationship type collections). Basically, this is used to identify the 
                       target of Data Definition and Data Manipulation operations targeting specific datasets using
                       the SPARQL Query Language"""@en ;
@@ -2051,10 +2076,10 @@ owl:IrreflexiveProperty
                       <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                       <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                       <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ;
-    schema:comment """A document comprised of structured data. This isn't the same thing as a database
+    schema:description """A document comprised of structured data. This isn't the same thing as a database
                       management system (DBMS). Basically, this is what a DBMS application actually
                       manages."""@en ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ,
@@ -2068,7 +2093,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Database Management System" ;
-    schema:comment """An application that provides storage, indexing, and declarative query access to
+    schema:description """An application that provides storage, indexing, and declarative query access to
                       structured data (entity relationships)."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#DBMS" ;
     owl:differentFrom <http://data.openlinksw.com/oplweb/glossary-term/Database#this> ;
@@ -2078,7 +2103,7 @@ owl:IrreflexiveProperty
                   <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -2107,11 +2132,11 @@ owl:IrreflexiveProperty
     owl:sameAs <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this> ;
     skos:inScheme :this ;
     schema:name "Data Virtualization" ;
-    schema:comment """Abstraction that provides a harmonized interface to heterogeneously shaped data originating from disparate
+    schema:description """Abstraction that provides a harmonized interface to heterogeneously shaped data originating from disparate
                       sources."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#DataVirtualization" ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/f0/a5/a3/f0a5a31a7153ed228e87f24c26fb152b.jpg> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ,
                            <http://dbpedia.org/resource/Virtuoso_Universal_Server> ,
                            <http://virtuoso.openlinksw.com/> ,
@@ -2177,7 +2202,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Relational Database Management System" ;
-    schema:comment """A kind of application that provides storage, indexing,
+    schema:description """A kind of application that provides storage, indexing,
                       and declarative query access to data (entity relationships)
                       represented as relational tables or relational property/predicate
                       statement collections (or graphs). Unfortunately, this term
@@ -2193,7 +2218,7 @@ owl:IrreflexiveProperty
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ;
-    dcterms:isReferencedBy  <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
+    skos:related  <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/SQL#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
                             <http://slidesha.re/1hF48QL> ,
@@ -2218,14 +2243,14 @@ owl:IrreflexiveProperty
     a bibo:Article ;
     wdrs:describedby  source: ;
     schema:name """Entity Relationship Model -- Toward a Unified View of Data"""@en ;
-    schema:comment """A data model, called the entity-relationship model, is proposed.
+    schema:description """A data model, called the entity-relationship model, is proposed.
                       This model incorporates some of the important
                       semantic information about the real world.
                       A special diagrammatic technique is introduced
                       as a tool for database design."""@en ;
     schema:url <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf> ;
     schema:author <http://dbpedia.org/resource/Peter_Chen> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
@@ -2238,7 +2263,7 @@ owl:IrreflexiveProperty
     a bibo:Article ;
     wdrs:describedby  source: ;
     schema:name """Conceptual Graphs for a Data Base Interface"""@en ;
-    schema:comment """A data base system that supports natural language queries
+    schema:description """A data base system that supports natural language queries
                       is not really natural if it requires the user to know how
                       the data are represented. This paper defines a formalism,
                       called conceptual graphs, that can describe data according
@@ -2248,7 +2273,7 @@ owl:IrreflexiveProperty
                       computations that are not explicit in the initial query."""@en ;
     schema:url <http://www.jfsowa.com/pubs/cg1976.pdf> ;
     schema:author <http://dbpedia.org/resource/John_F._Sowa> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
@@ -2308,7 +2333,7 @@ owl:IrreflexiveProperty
     a bibo:Article ;
     wdrs:describedby  source: ;
     schema:name """A co-Relational Model of Data for Large Shared Data Banks"""@en ;
-    schema:comment """ACM article addressing the fact that:
+    schema:description """ACM article addressing the fact that:
                       Contrary to popular belief, SQL and NoSQL are really
                       just two sides of the same coin."""@en ;
     schema:url <http://queue.acm.org/detail.cfm?id=1961297> ;
@@ -2322,7 +2347,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "SQL Relational Database Management System" ;
-    schema:comment """A kind of database management system (DBMS) that provides
+    schema:description """A kind of database management system (DBMS) that provides
                       storage, indexing, and declarative query access to data (entity relationships)
                       represented as records in a table. This kinds of also supports
                       the Structured Query Language (SQL) as the prime mechanism for
@@ -2332,7 +2357,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ;
-    dcterms:isReferencedBy  <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
+    skos:related  <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/SQL#this> ,
                             <http://slidesha.re/1hF48QL> ,
                             <http://data.openlinksw.com/oplweb/glossary-term/R2RML#this> ,
@@ -2352,7 +2377,7 @@ owl:IrreflexiveProperty
     skos:altLabel "Graph Database",
                   "Triple Store",
                   "Quad Store" ;
-    schema:comment """A kind of database management system (DBMS) that provides storage, indexing,
+    schema:description """A kind of database management system (DBMS) that provides storage, indexing,
                       and declarative query access to data (entity relationships)
                       represented as statements (using product specific notations).
                       Typically, this kind of data management application is
@@ -2367,7 +2392,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/Relation#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
@@ -2407,7 +2432,7 @@ owl:IrreflexiveProperty
     schema:name "RDF (Graph) Database Management System" ;
     skos:altLabel "Triple Store" ,
                   "Quad Store" ;
-    schema:comment """A kind of database management system (DBMS) that provides storage, indexing,
+    schema:description """A kind of database management system (DBMS) that provides storage, indexing,
                       and declarative query access to data (entity relationships)
                       represented as RDF statements (triples)."""@en ;
     owl:sameAs <http://dbpedia.org/resource/Triplestore> ;
@@ -2421,7 +2446,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/RDFRelation#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Relation#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -2445,7 +2470,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "Central Processing Unit" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#CPU" ;
-    schema:comment """Central processing unit (CPU) is the hardware within a computer
+    schema:description """Central processing unit (CPU) is the hardware within a computer
                       that carries out the instructions of a computer program by
                       performing the basic arithmetical, logical, and input/output
                       operations of the system."""@en ;
@@ -2461,7 +2486,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "CPU Cores" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#Cores" ;
-    schema:comment """A CPU core is comprised of a logical execution unit containing an L1 cache and functional units.
+    schema:description """A CPU core is comprised of a logical execution unit containing an L1 cache and functional units.
                       Cores are able to independently execute programs or threads."""@en ;
     schema:isPartOf <http://data.openlinksw.com/oplweb/glossary-term/CPU#this> ;
     schema:mentions <https://kb.iu.edu/d/avfb> ;
@@ -2475,7 +2500,7 @@ owl:IrreflexiveProperty
     schema:name "Integrated Circuit (or Die)" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#IntegratedCircuit" ;
     owl:sameAs <http://dbpedia.org/resource/Integrated_circuit> ;
-    schema:comment """An integrated circuit or monolithic integrated circuit."""@en ;
+    schema:description """An integrated circuit or monolithic integrated circuit."""@en ;
     schema:mentions <https://kb.iu.edu/d/avfb> ;
     schema:image <http://en.wikipedia.org/wiki/Multi-core_processor#mediaviewer/File:Dual_Core_Generic.svg> ;
     skos:inScheme :this .
@@ -2490,13 +2515,13 @@ owl:IrreflexiveProperty
                       <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                       <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ,
                       <http://data.openlinksw.com/oplweb/glossary-term/SQL#this> ;
-    schema:comment """A document comprised of structured data represented as sets of relations. These
+    schema:description """A document comprised of structured data represented as sets of relations. These
                       relations are basically sets of tuples (representing entity relationships) grouped
                       by a predicate which indicates the entity relationship type. For instance, in a SQL
                       Relational Database Management system a Table Name functions as the Predicate. Whereas
                       in an RDF-Predicate/Property-Graph-based Relational Database Management system (or store)
                       a Predicate is self-evident part Subject->Predicate->Object-based 3-tuple."""@en ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ;
@@ -2519,7 +2544,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#Data" ;
-    schema:comment """Term that refers to entity relationship observation represented in reusable
+    schema:description """Term that refers to entity relationship observation represented in reusable
                       form using a combination of signs, syntax, and statements, i.e., a language."""@en ;
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/BigData#this> ,
@@ -2529,14 +2554,14 @@ owl:IrreflexiveProperty
                   <http://data.openlinksw.com/oplweb/glossary-term/SmartData#this> ;
     schema:mentions <http://bit.ly/UcnEGp> ,
                     <http://ontolog.cim3.net/forum/ontolog-forum/2013-05/msg00184.html> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/DataSet#this>
     a skos:Concept ;
     wdrs:describedby  source: ;
     schema:name "Dataset" ;
-    schema:comment  """Collection of statements representing entity
+    schema:description  """Collection of statements representing entity
                         relationships (e.g., RDF subject->predicate->object triples)
                         that are associated with a collection identifier. In W3C RDF parlance,
                         this kind of identifier is referred to as a Named Graph IRI, and used
@@ -2553,7 +2578,7 @@ owl:IrreflexiveProperty
                     <http://inference-web.org/2.0/pml-provenance.owl#Dataset> ,
                     <http://purl.org/vocommons/voaf#dataset> ,
                     <http://databugger.aksw.org/ns/core#Dataset> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2014/PR-n-quads-20140109/> ,
+    skos:related <http://www.w3.org/TR/2014/PR-n-quads-20140109/> ,
                            <http://www.w3.org/TR/2014/PR-trig-20140109/> ,
                            <http://www.w3.org/TR/rdf11-concepts/#section-dataset> ;
     skos:inScheme :this .
@@ -2564,7 +2589,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "Structured Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#StructuredData" ;
-    schema:comment """Data represented in machine & human readable (or comprehensible) form."""@en ;
+    schema:description """Data represented in machine & human readable (or comprehensible) form."""@en ;
     schema:description """Data represented in machine & human readable (or comprehensible) form,
                           using an open standard."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ;
@@ -2581,7 +2606,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "Big Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#BigData" ;
-    schema:comment """Data that's disparately located, varied in structure, voluminous, and rapidly changing."""@en ;
+    schema:description """Data that's disparately located, varied in structure, voluminous, and rapidly changing."""@en ;
     schema:description """Data (structured or unstructured) that's heterogeneously shaped, disparately
                           located, voluminous, and rapidly changing, such as the World Wide Web and the
                           many Data Spaces (e.g., feed-based Social Networks) it exposes. Same applies
@@ -2603,7 +2628,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "Open Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#OpenData" ;
-    schema:comment """Open-Standards-based Structured Data."""@en ;
+    schema:description """Open-Standards-based Structured Data."""@en ;
     schema:description """Open-Standards-based Structured Data Representation based on the use
                           of standards (e.g., CSV, JSON, RDF-Turtle, JSON-LD, HTML+Microdata,
                           HTML+RDFa, RDF/XML, etc.) -- thereby making structured data reusable
@@ -2625,7 +2650,7 @@ owl:IrreflexiveProperty
     schema:name "Public Open Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#PublicOpenData" ,
                                                                    "#POD" ;
-    schema:comment """Public Domain Open-Standards-based Structured Data."""@en ;
+    schema:description """Public Domain Open-Standards-based Structured Data."""@en ;
     schema:description """Public Open-Standards-based Structured Data Representation based on
                           the combined use of licensing and open standards (e.g., CSV, JSON,
                           RDF-Turtle, JSON-LD, HTML+Microdata, HTML+RDFa, RDF/XML, etc.) --
@@ -2648,7 +2673,7 @@ owl:IrreflexiveProperty
     schema:name "Linked Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#LinkedData" ;
     schema:image <http://media-cache-ak0.pinimg.com/originals/13/84/80/13848054bf8c69640e58fade12c32736.jpg> ;
-    schema:comment """Web-Like or Webby Structured Data """@en ;
+    schema:description """Web-Like or Webby Structured Data """@en ;
     schema:description """Structured Data Representation enhanced through the use of Hyperlinks (e.g.,
                           HTTP URIs) as a mechanism for turning entity names into terms, (i.e., names
                           that are implicitly mapped to referent description documents). Net effect,
@@ -2673,7 +2698,7 @@ owl:IrreflexiveProperty
     schema:name "Linked Open Data (LOD)" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#LOD" ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/13/99/81/139981feb3e085943e2842aa1f27c105.jpg> ;
-    schema:comment """Open & Webby Structured Data"""@en ;
+    schema:description """Open & Webby Structured Data"""@en ;
     schema:description """Structured Data Representation enhanced through the collective use of
                           Open Standards such as HTTP-URI-based HyperLinks as a mechanism for
                           turning names into terms that are implicitly mapped to referent
@@ -2699,7 +2724,7 @@ owl:IrreflexiveProperty
     schema:name "Smart Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#SmartData" ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
-    schema:comment """Open & Webby Structured Data + Machine Readable Relations Semantics."""@en ;
+    schema:description """Open & Webby Structured Data + Machine Readable Relations Semantics."""@en ;
     schema:description """Open-standards-based Structured Data Representation endowed with machine-
                           and human-comprehensible entity relationship semantics. Basically, the
                           meaning of a relationship between two entities is understandable by
@@ -2729,7 +2754,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "DBpedia" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#DBpedia" ;
-    schema:comment """RDF-based Linked Data rendition of Wikipedia's encyclopedic content."""@en ;
+    schema:description """RDF-based Linked Data rendition of Wikipedia's encyclopedic content."""@en ;
     schema:description """A community-based effort that's used crowd-sourcing to transform Wikipedia content into
                           web-like structured data -- endowed with human and machine comprehensible entity relationship
                           semantics. As a core component of the massive Linked Open Data (LOD) Cloud, DBpedia is a massive
@@ -2747,7 +2772,7 @@ owl:IrreflexiveProperty
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
                            <http://dbpedia.org/resource/Wikipedia> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
@@ -2760,7 +2785,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "DBpedia Live" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#DBpediaLive" ;
-    schema:comment """Live edition of DBpedia"""@en ;
+    schema:description """Live edition of DBpedia"""@en ;
     schema:description """A community-based effort that's used crowd-sourcing to transform Wikipedia content into
                           web-like structured data -- endowed with human and machine comprehensible entity relationship
                           semantics. This live edition of DBpedia is the frequently updates as content changes occur in
@@ -2773,7 +2798,7 @@ owl:IrreflexiveProperty
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
                            <http://dbpedia.org/resource/Wikipedia> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ;
@@ -2783,7 +2808,7 @@ owl:IrreflexiveProperty
     a <http://usefulinc.com/ns/doap#Project> ;
     wdrs:describedby  source: ;
     schema:name "OpenLink DBpedia Live" ;
-    schema:comment """Live edition of DBpedia Live hosted by OpenLink Software"""@en ;
+    schema:description """Live edition of DBpedia Live hosted by OpenLink Software"""@en ;
     schema:description """A community-based effort that's used crowd-sourcing to transform Wikipedia content into
                           web-like structured data -- endowed with human and machine comprehensible entity relationship
                           semantics. This live edition of DBpedia is frequently updated as content changes occur in
@@ -2798,7 +2823,7 @@ owl:IrreflexiveProperty
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
                            <http://dbpedia.org/resource/Wikipedia> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ;
@@ -2811,7 +2836,7 @@ owl:IrreflexiveProperty
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#LOD" ,
                                                                    "#LODCloud" ,
                                                                    "#LODCache" ;
-    schema:comment """Live instance of OpenLink Virtuoso that provides Linked-Data-based
+    schema:description """Live instance of OpenLink Virtuoso that provides Linked-Data-based
                       follow-your-nose exploration and ad-hoc SPARQL query access
                       to data loaded from Linked Open Data cloud datasets.
                       This service is comprised of 50 Billion+ entity
@@ -2837,7 +2862,7 @@ owl:IrreflexiveProperty
                            <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ;
@@ -2848,7 +2873,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "URIBurner" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#URIBurner" ;
-    schema:comment """Live instance of OpenLink Virtuoso that provides Linked-Data-based
+    schema:description """Live instance of OpenLink Virtuoso that provides Linked-Data-based
                       follow-your-nose exploration and ad-hoc SPARQL query access
                       to data loaded and transformed "on the fly" from HTTP accesible data
                       sources. This service is a live demonstration of Virtuoso's in-built middleware
@@ -2871,7 +2896,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ;
@@ -2883,7 +2908,7 @@ owl:IrreflexiveProperty
     a <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Software> ;
     wdrs:describedby  source: ;
     schema:name "RDF Mapper" ;
-    schema:comment """Software that loads, extracts, and transforms data from a variety of sources
+    schema:description """Software that loads, extracts, and transforms data from a variety of sources
                       into RDF-based structured data."""@en ;
     dcterms:references  <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
                         <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
@@ -2898,7 +2923,7 @@ owl:IrreflexiveProperty
     a <http://semanticscience.org/resource/SIO_000140> ;
     wdrs:describedby  source: ;
     schema:name "DBpedia SPARQL Endpoint" ;
-    schema:comment """DBpedia SPARQL Query Web Services access point."""@en ;
+    schema:description """DBpedia SPARQL Query Web Services access point."""@en ;
     schema:description """A HTTP-based point of interaction for query services that facilitate declarative querying of
                           RDF-based structured data (published by the DBpedia project) using SPARQL Query Language patterns."""@en ;
     schema:mainEntityOfPage <http://dbpedia.org/sparql> ;
@@ -2912,7 +2937,7 @@ owl:IrreflexiveProperty
 
 <http://dbpedia.org/sparql>
     schema:name "DBpedia SPARQL Endpoint" ;
-    schema:comment """HTTP-based Query Service Endpoint for executing live ad-hoc SPARQL queries
+    schema:description """HTTP-based Query Service Endpoint for executing live ad-hoc SPARQL queries
                       against the RDF database management system hosting DBpedia datasets."""@en ;
     dcterms:references   <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
                          <http://data.openlinksw.com/oplweb/glossary-term/DBpediaDataSet#this> ,
@@ -2924,7 +2949,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "DBpedia Dataset" ;
-    schema:comment  """Datasets derived from Wikipedia content (using RDF mapper-based extract, transform,
+    schema:description  """Datasets derived from Wikipedia content (using RDF mapper-based extract, transform,
                        and load [ETL] processing pipelines) and packaged for download and reuse
                        as part of the Linked Open Data (LOD) Cloud and broader Semantic Web."""@en ;
     schema:mainEntityOfPage <http://wiki.dbpedia.org/Datasets> ;
@@ -2941,7 +2966,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "DBpedia Linked Data" ;
-    schema:comment """5-Star Linked Open Data derived from Wikipedia content
+    schema:description """5-Star Linked Open Data derived from Wikipedia content
                       that's published to the Linked Open Data Cloud."""@en ;
     schema:image <http://media-cache-ak0.pinimg.com/originals/98/70/6b/98706b0f4e90b3f3968a85609951a667.jpg> ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
@@ -2958,7 +2983,7 @@ owl:IrreflexiveProperty
     a <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Software> ;
     wdrs:describedby  source: ;
     schema:name "DBpedia RDF Mapper" ;
-    schema:comment """Software that loads, extracts and transforms data from Wikipedia content
+    schema:description """Software that loads, extracts and transforms data from Wikipedia content
                       into RDF-based structured data that published in 5-Star Linked Data form
                       as part of the DBpedia Linked Data Space."""@en ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/43/42/3c/43423c79e0349ff15cd095110815e913.jpg> ;
@@ -2975,7 +3000,7 @@ owl:IrreflexiveProperty
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#WAN" ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/cd/18/2a/cd182a1f9c684c735fc2138d5565360c.jpg> ;
     wdrs:describedby  source: ;
-    schema:comment """Linked Computer Network (Cloud) that covers a wide area, e.g., a network across
+    schema:description """Linked Computer Network (Cloud) that covers a wide area, e.g., a network across
                       disparately located departments, branches, and divisions of an enterprise."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Internet#this> ;
     schema:mentions <http://dbpedia.org/resource/Abstraction> .
@@ -2988,7 +3013,7 @@ owl:IrreflexiveProperty
     skos:altLabel "Cloud" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#Internet" ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/cd/18/2a/cd182a1f9c684c735fc2138d5565360c.jpg> ;
-    schema:comment """Public Linked Computer Network (Cloud)."""@en ;
+    schema:description """Public Linked Computer Network (Cloud)."""@en ;
     schema:description """Global computer network facilitated by TCP/IP and the
                           Domain Name Service (DNS) protocols."""@en ;
     schema:mentions <http://dbpedia.org/resource/Abstraction> ;
@@ -3001,7 +3026,7 @@ owl:IrreflexiveProperty
     schema:name "LAN" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#LAN" ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/cd/18/2a/cd182a1f9c684c735fc2138d5565360c.jpg> ;
-    schema:comment """Privately accessible Linked Computer Network (Cloud)."""@en ;
+    schema:description """Privately accessible Linked Computer Network (Cloud)."""@en ;
     schema:description """Privately accessible computer network scoped to a local workgroup, division, or entire enterprise
                           situated at common physical location."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Internet#this> ;
@@ -3017,7 +3042,7 @@ owl:IrreflexiveProperty
     schema:image <http://kingsley.idehen.net/DAV/home/kidehen/Public/Linked%20Data%20Documents/TimBL-World-Wide-Web-Proposal/WWW-Original-Proposal-and-Linked-Data-3.jpg> ;
     schema:mentions <http://bit.ly/10Y9FL1> ,
                     <http://media-cache-ec0.pinimg.com/originals/5b/b0/db/5bb0db3e944cc8f30e5f0091b161962a.jpg> ;
-    schema:comment """Web of Linked Documents."""@en ;
+    schema:description """Web of Linked Documents."""@en ;
     schema:description """Globally accessible abstraction layer atop the Internet cloud comprised
                           of a network (or cloud) of Linked Documents. The predominant document
                           format is HTML."""@en ;
@@ -3027,7 +3052,7 @@ owl:IrreflexiveProperty
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Internet#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/WAN#this> ;
     schema:mentions <http://dbpedia.org/resource/Abstraction> ;
-    dcterms:isReferencedBy <http://www.w3.org/History/1989/proposal.html> ;
+    skos:related <http://www.w3.org/History/1989/proposal.html> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/Intranet#this>
@@ -3039,7 +3064,7 @@ owl:IrreflexiveProperty
     schema:image <http://kingsley.idehen.net/DAV/home/kidehen/Public/Linked%20Data%20Documents/TimBL-World-Wide-Web-Proposal/WWW-Original-Proposal-and-Linked-Data-3.jpg> ;
     schema:mentions <http://bit.ly/10Y9FL1> ,
                     <http://media-cache-ec0.pinimg.com/originals/5b/b0/db/5bb0db3e944cc8f30e5f0091b161962a.jpg> ;
-    schema:comment """Private Web of Linked Documents."""@en ;
+    schema:description """Private Web of Linked Documents."""@en ;
     schema:description """Privately accessible abstraction layer atop a local area network (LAN)
                           comprised of a network (or cloud) of Linked Documents.
                           The predominant document format is HTML."""@en ;
@@ -3060,7 +3085,7 @@ owl:IrreflexiveProperty
     schema:image <http://kingsley.idehen.net/DAV/home/kidehen/Public/Linked%20Data%20Documents/TimBL-World-Wide-Web-Proposal/WWW-Original-Proposal-and-Linked-Data-3.jpg> ;
     schema:mentions <http://bit.ly/10Y9FL1> ,
                     <http://media-cache-ec0.pinimg.com/originals/5b/b0/db/5bb0db3e944cc8f30e5f0091b161962a.jpg> ;
-    schema:comment """Conditionally private Web of Linked Resources (Data, Documents, Computers)."""@en ;
+    schema:description """Conditionally private Web of Linked Resources (Data, Documents, Computers)."""@en ;
     schema:description """Conditionally accessible (i.e, subject to access controls and policies) abstraction layer
                           atop a Local Area Network (LAN) or Wide Area Network (WAN) comprising Data, Documents,
                           and Machines (Large and Small)."""@en ;
@@ -3078,7 +3103,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "Linked Open Data (LOD) Cloud" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#LODCloud" ;
-    schema:comment """Open & Webby Structured Data Cloud on the Web."""@en ;
+    schema:description """Open & Webby Structured Data Cloud on the Web."""@en ;
     schema:description """A collection of Open Data and Linked Data resources published to the World Wide Web."""@en ;
     schema:image <http://lod-cloud.net/versions/2011-09-19/lod-cloud_colored.png> ;
     schema:mentions <http://lod-cloud.net/> ,
@@ -3100,7 +3125,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "Linked Open Vocabulary (LOV) Cloud" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#LOVCloud" ;
-    schema:comment """Entity Types & Relations oriented aspect of the Linked Open Data Cloud."""@en ;
+    schema:description """Entity Types & Relations oriented aspect of the Linked Open Data Cloud."""@en ;
     schema:description """A collection of Open Data and Linked Data resources published to the World Wide Web."""@en ;
     schema:url <http://lov.okfn.org/dataset/lov/> ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ;
@@ -3119,7 +3144,7 @@ owl:IrreflexiveProperty
     schema:name "Semantic Web" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#SemanticWeb" ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg> ;
-    schema:comment """Semantically Enhanced Linked Data Network (Cloud)."""@en ;
+    schema:description """Semantically Enhanced Linked Data Network (Cloud)."""@en ;
     schema:description """Webby (or Web-like) Structured Data that's endowed with machine- and
                           human-comprehensible Entity Relationship Type semantics. Basically, the
                           meaning of a relationship between two entities is represented in a manner 
@@ -3141,7 +3166,7 @@ owl:IrreflexiveProperty
                  <http://data.openlinksw.com/oplweb/glossary-term/WorldWideWeb#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/Internet#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/18CtxGK> ,
+    skos:related <http://slidesha.re/18CtxGK> ,
                            <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ;
@@ -3161,7 +3186,7 @@ owl:IrreflexiveProperty
     schema:about <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ;
     rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg> ;
-    schema:comment """RDF is a language (i.e., system of signs, syntax, and semantics) that
+    schema:description """RDF is a language (i.e., system of signs, syntax, and semantics) that
                       enables the construction of structured data that can be read and
                       understood by both humans and machines."""@en ;
     schema:description """RDF (Resource Description Framework) is a framework that enables
@@ -3191,7 +3216,7 @@ owl:IrreflexiveProperty
                  <http://dbpedia.org/resource/EntityÃ¢ÂÂattributeÃ¢ÂÂvalue_model> ,
                  <http://bit.ly/16EVFVG> ,
                  <http://youtu.be/USF1H70bRl0> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2014/PR-rdf11-concepts-20140109/> ,
+    skos:related <http://www.w3.org/TR/2014/PR-rdf11-concepts-20140109/> ,
                            <http://www.w3.org/TR/2014/PR-rdf11-mt-20140109/> ,
                            <http://www.w3.org/TR/2014/PR-turtle-20140109/> ,
                            <http://www.w3.org/TR/2014/PR-trig-20140109/> ,
@@ -3215,7 +3240,7 @@ owl:IrreflexiveProperty
     a <http://xmlns.com/foaf/0.1/Group> ;
     wdrs:describedby  source: ;
     schema:name "Schema.org" ;
-    schema:comment """A shared vocabulary collaboration effort aimed at bootstrapping
+    schema:description """A shared vocabulary collaboration effort aimed at bootstrapping
                       structured data construction and publication to the World Wide Web.
                       Notably, this collaboration is the combined effort of organizations such as:
                       W3C, Google, Microsoft, Yandex, Yahoo!, and the vast community of Semantic Web,
@@ -3228,7 +3253,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/JSONLD#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ;
-    dcterms:isReferencedBy <http://bit.ly/1gJLTdm> ,
+    skos:related <http://bit.ly/1gJLTdm> ,
                            <https://plus.google.com/u/0/explore/SchemaOrg#this> ,
                            <http://schema.org/docs/datamodel.html> ;
     skos:inScheme :this .
@@ -3238,7 +3263,7 @@ owl:IrreflexiveProperty
     schema:url <https://plus.google.com/u/0/explore/SchemaOrg> ;
     wdrs:describedby  source: ;
     schema:name "Collection of Schema.org Related Posts on Google+" ;
-    schema:comment """Google+ query results for hashtag SchemaOrg."""@en .
+    schema:description """Google+ query results for hashtag SchemaOrg."""@en .
 
 <http://bit.ly/1gJLTdm>
     a   schema:WebPage,
@@ -3247,11 +3272,11 @@ owl:IrreflexiveProperty
         schema:TechArticle ;
     wdrs:describedby  source: ;
     schema:name "How Search Engine Vendors Accelerated The Semantic Web's Arrival via Schema.org" ;
-    schema:comment """G+ Post triggered by Wired article about Semantic Search inflection."""@en .
+    schema:description """G+ Post triggered by Wired article about Semantic Search inflection."""@en .
 
 <http://schema.org/docs/datamodel/>
     schema:name "Schema.org Data Model" ;
-    schema:comment """
+    schema:description """
                       Excerpt from home page: Generic model derived from RDF Schema (which in turn
                       was derived from CycL, which in turn ...).  We have a set of types, arranged
                       in a multiple inheritance hierarchy where each type may be a sub class of
@@ -3278,13 +3303,13 @@ owl:IrreflexiveProperty
     rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
     wdrs:describedby  source: ;
     schema:name "RDF Schema Language" ;
-    schema:comment """A vocabulary comprised of terms used to describe Entity and associated
+    schema:description """A vocabulary comprised of terms used to describe Entity and associated
                       Relation types in regards to RDF-based structured data representation."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#RDFS" ;
     owl:sameAs <http://dbpedia.org/resource/RDF_Schema> ,
                <http://www.w3.org/2000/01/rdf-schema#> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2014/PER-rdf-schema-20140109/> ;
+    skos:related <http://www.w3.org/TR/2014/PER-rdf-schema-20140109/> ;
     skos:inScheme :this .
 
 # OWL Ontology Language
@@ -3295,7 +3320,7 @@ owl:IrreflexiveProperty
     rdfs:isDefinedBy <http://www.w3.org/2002/07/owl> ;
     wdrs:describedby  source: ;
     schema:name "Web Ontology Language (OWL)" ;
-    schema:comment """A vocabulary comprised of terms used to describe Entity and associated
+    schema:description """A vocabulary comprised of terms used to describe Entity and associated
                       Relation types in regards to RDF-based structured data representation.
                       In relation to RDF Schema, OWL provides terms that address more-fine
                       grained definition of entity relation types (e.g., InverseFunctional,
@@ -3303,7 +3328,7 @@ owl:IrreflexiveProperty
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#OWL" ;
     owl:sameAs <http://dbpedia.org/resource/Web_Ontology_Language> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/owl2-overview/> ;
+    skos:related <http://www.w3.org/TR/owl2-overview/> ;
     skos:inScheme :this .
 
 ## Structured Data Representation Notations
@@ -3314,14 +3339,14 @@ owl:IrreflexiveProperty
     a <http://sw.opencyc.org/concept/Mx4rvVkKC5wpEbGdrcN5Y29ycA> ;
     wdrs:describedby  source: ;
     schema:name "RDF/XML" ;
-    schema:comment """An XML-based notation for RDF-based structured data representation."""@en ;
+    schema:description """An XML-based notation for RDF-based structured data representation."""@en ;
     owl:sameAs <http://dbpedia.org/resource/RDF/XML> ;
     owl:differentFrom <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Notation#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/rdf-syntax-grammar/> ,
+    skos:related <http://www.w3.org/TR/rdf-syntax-grammar/> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDFStatement#this> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#RDF" ,
                                                                    "#XML" ,
@@ -3334,7 +3359,7 @@ owl:IrreflexiveProperty
     a <http://sw.opencyc.org/concept/Mx4rvVkKC5wpEbGdrcN5Y29ycA> ;
     wdrs:describedby  source: ;
     schema:name "N-Triples" ;
-    schema:comment """An RDF notation for structured data representation."""@en ;
+    schema:description """An RDF notation for structured data representation."""@en ;
     schema:description """This particular notation can also be seen as N-Triples is an easy to parse
                           line-based subset of RDF-Turtle. It doesn't support relative HTTP URIs or the @prefix
                           shorthand pattern."""@en ;
@@ -3343,7 +3368,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/n-triples/> ,
+    skos:related <http://www.w3.org/TR/n-triples/> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDFStatement#this> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#TURTLE" ;
     skos:inScheme :this .
@@ -3354,7 +3379,7 @@ owl:IrreflexiveProperty
     a <http://sw.opencyc.org/concept/Mx4rvVkKC5wpEbGdrcN5Y29ycA> ;
     wdrs:describedby  source: ;
     schema:name "Turtle" ;
-    schema:comment """An RDF notation for structured data representation."""@en ;
+    schema:description """An RDF notation for structured data representation."""@en ;
     schema:description """This particular notation can also be seen as N-Triples plus support for
                           relative HTTP URIs. Note, use of @prefix patterns are optional, and in many
                           cases leaving them out enable the exploitation of the RDF statement (triples)
@@ -3365,7 +3390,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2014/PR-turtle-20140109/> ,
+    skos:related <http://www.w3.org/TR/2014/PR-turtle-20140109/> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDFStatement#this> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#TURTLE" ;
     skos:inScheme :this .
@@ -3376,14 +3401,14 @@ owl:IrreflexiveProperty
     a <http://sw.opencyc.org/concept/Mx4rvVkKC5wpEbGdrcN5Y29ycA> ;
     wdrs:describedby  source: ;
     schema:name "JSON-LD" ;
-    schema:comment """JSON-based notation for structured data representation."""@en ;
+    schema:description """JSON-based notation for structured data representation."""@en ;
     owl:sameAs <http://dbpedia.org/resource/JSON-LD> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Notation#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2014/REC-json-ld-20140116/> ;
+    skos:related <http://www.w3.org/TR/2014/REC-json-ld-20140116/> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#JSONLD" ;
     skos:inScheme :this .
 
@@ -3393,12 +3418,12 @@ owl:IrreflexiveProperty
     a <http://sw.opencyc.org/concept/Mx4rvVkKC5wpEbGdrcN5Y29ycA> ;
     wdrs:describedby  source: ;
     schema:name "Microdata" ;
-    schema:comment """HTML-based notation for embedding structured data islands within HTML documents."""@en ;
+    schema:description """HTML-based notation for embedding structured data islands within HTML documents."""@en ;
     owl:sameAs <http://dbpedia.org/resource/Microdata_(HTML)> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Notation#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ;
-    dcterms:isReferencedBy <http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html#microdata> ;
+    skos:related <http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html#microdata> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#Microdata" ;
     skos:inScheme :this .
 
@@ -3408,13 +3433,13 @@ owl:IrreflexiveProperty
     a <http://dbpedia.org/class/yago/WorldWideWebConsortiumStandards> ;
     wdrs:describedby  source: ;
     schema:name "RDFa" ;
-    schema:comment """HTML-based notation for embedding RDF-based structured data islands within HTML documents."""@en ;
+    schema:description """HTML-based notation for embedding RDF-based structured data islands within HTML documents."""@en ;
     owl:sameAs <http://dbpedia.org/resource/RDFa> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Notation#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/rdfa-syntax/> ,
+    skos:related <http://www.w3.org/TR/rdfa-syntax/> ,
                            <http://www.w3.org/TR/xhtml-rdfa-primer/> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#RDFa" ;
     skos:inScheme :this .
@@ -3433,7 +3458,7 @@ owl:IrreflexiveProperty
     owl:sameAs <http://dbpedia.org/resource/Comma-separated_values> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#CSV" ;
     skos:related <https://medium.com/virtuoso-blog/generate-relational-tables-to-rdf-relational-graphs-mappings-using-virtuosos-rdb2rdf-wizard-c4b83402599a> ;
-    dcterms:isReferencedBy <http://tools.ietf.org/html/rfc4180> ;
+    skos:related <http://tools.ietf.org/html/rfc4180> ;
     skos:inScheme :this .
 
 ## Query Languages
@@ -3444,14 +3469,14 @@ owl:IrreflexiveProperty
     a <http://data.openlinksw.com/oplweb/glossary-term/Language#this> ;
     wdrs:describedby  source: ;
     schema:name "Structured Query Language (SQL)" ;
-    schema:comment """Declarative query language for performing Create, Read, Update, and Delete
+    schema:description """Declarative query language for performing Create, Read, Update, and Delete
                       operations on data represented as relational tables. This standard is widely
                       adopted across SQL relational database management (RDBMS) products; collectively,
                       these RDBMS products currently underly a majority applications and services that drive
                       the global economy. """@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#SQL" ;
     owl:sameAs <http://dbpedia.org/resource/SQL> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/glossary-term/R2RML#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/R2RML#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
@@ -3468,7 +3493,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "NewSQL" ;
-    schema:comment """Colloquialism for a variant (or generation) of SQL-based RDBMS product that handles
+    schema:description """Colloquialism for a variant (or generation) of SQL-based RDBMS product that handles
                       scalability challenges using techniques such as: clustering and vertical partitioning
                       of data. Basically, for all intents and purposes, this is about product specific extensions
                       to SQL aimed at scalability challenges posed by data access, integration, and management
@@ -3480,7 +3505,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://virtuoso.openlinksw.com/> ,
                            <http://www.openlinksw.com/> ;
     skos:inScheme :this .
@@ -3492,7 +3517,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "NoSQL" ;
-    schema:comment """Colloquialism for a variant (or generation) of RDBMS product that
+    schema:description """Colloquialism for a variant (or generation) of RDBMS product that
                       doesn't conflate SQL (Structured Query Language) and Relational Database. Typically, you will
                       find database management systems (DBMS) that support relations represented as relational
                       property/predicate graphs associated with this moniker."""@en ;
@@ -3505,7 +3530,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ;
-    dcterms:isReferencedBy <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://virtuoso.openlinksw.com/> ,
                            <http://www.openlinksw.com/> ;
     skos:inScheme :this .
@@ -3516,7 +3541,7 @@ owl:IrreflexiveProperty
     a <http://data.openlinksw.com/oplweb/glossary-term/Language#this> ;
     wdrs:describedby  source: ;
     schema:name "SPARQL & SQL Hybrid Query Language" ;
-    schema:comment """Declarative query language for performing Create, Read, Update, and Delete
+    schema:description """Declarative query language for performing Create, Read, Update, and Delete
                       operations on data represented as relational tables and/or RDF statement --
                       also known colloquially referred to as relational property (predicate) graphs.
                       This query language enables incorporation of SPARQL queries into SQL queries
@@ -3543,7 +3568,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "SPARQL" ;
     skos:altLabel "SPARQL" ;
-    schema:comment """Recursive acronym that covers: a Declarative Structured Query language for
+    schema:description """Recursive acronym that covers: a Declarative Structured Query language for
                       RDF-model-based structured data, Query Results Serialization Formats,
                       HTTP-based Query Service Protocol, and an HTTP-based Database- (or Store-)
                       oriented protocol for Create, Update, and Delete (CRUD) operations."""@en ;
@@ -3557,7 +3582,7 @@ owl:IrreflexiveProperty
                    <http://data.openlinksw.com/oplweb/glossary-term/SPARQLGraphStoreProtocol#this> ,
                    <http://data.openlinksw.com/oplweb/glossary-term/SPARQLFederatedQuery#this> ,
                    <http://data.openlinksw.com/oplweb/glossary-term/SPARQLServiceDescription#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2013/REC-sparql11-query-20130321/> ,
+    skos:related <http://www.w3.org/TR/2013/REC-sparql11-query-20130321/> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/R2RML#this> ,
                            <http://virtuoso.openlinksw.com/> ,
@@ -3583,7 +3608,7 @@ owl:IrreflexiveProperty
       <http://dbpedia.org/class/yago/WorldWideWebConsortiumStandards> ;
     wdrs:describedby  source: ;
     schema:name "SPARQL Query Language" ;
-    schema:comment """Like SQL (a declarative query language for entity relations represented
+    schema:description """Like SQL (a declarative query language for entity relations represented
                       as Tables), this query language provides a mechanism for creating, querying,
                       and updating entity relations represented as RDF triple-based statements
                       (colloquially referred to as: property or predicate graphs). As a moderen
@@ -3592,7 +3617,7 @@ owl:IrreflexiveProperty
                       historically associated deductive database technology."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#SPARQL" ;
     owl:sameAs <http://dbpedia.org/resource/SPARQL> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2013/REC-sparql11-query-20130321/> ,
+    skos:related <http://www.w3.org/TR/2013/REC-sparql11-query-20130321/> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/R2RML#this> ,
                            <http://virtuoso.openlinksw.com/> ,
@@ -3609,12 +3634,12 @@ owl:IrreflexiveProperty
     rdfs:isDefinedBy <http://www.w3.org/ns/sparql#> ;
     wdrs:describedby  source: ;
     schema:name "SPARQL 1.1 Query Protocol" ;
-    schema:comment """HTTP-based Protocol for executing Queries against SPARQL compliant data sources."""@en ;
+    schema:description """HTTP-based Protocol for executing Queries against SPARQL compliant data sources."""@en ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/sparql11-protocol/> ,
+    skos:related <http://www.w3.org/TR/sparql11-protocol/> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://virtuoso.openlinksw.com/> ,
                            <http://www.openlinksw.com/> ;
@@ -3638,13 +3663,13 @@ owl:IrreflexiveProperty
       <http://dbpedia.org/class/yago/WorldWideWebConsortiumStandards> ;
     wdrs:describedby  source: ;
     schema:name "SPARQL Query Results Format" ;
-    schema:comment """Query Results (or solution) representation and transmission (serialization)
+    schema:description """Query Results (or solution) representation and transmission (serialization)
                       formats that include: CSV, TSV, XML, and JSON for tabular representation of
                       SELECT and ASK query results; and Turtle, N-Triples, JSON-LD, HTML+Microdata,
                       HTML+RDFa, RDF/XML, CSV, TSV, and others, for handling DESCRIBE and CONSTRUCT
                       query results -- which are basically RDF statements describing entity relations
                       that match a given query pattern."""@en ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2013/REC-sparql11-results-json-20130321> ,
+    skos:related <http://www.w3.org/TR/2013/REC-sparql11-results-json-20130321> ,
                            <http://www.w3.org/TR/2013/REC-sparql11-results-csv-tsv-20130321> ,
                            <http://www.w3.org/TR/2013/REC-rdf-sparql-XMLres-20130321> .
 
@@ -3681,11 +3706,11 @@ owl:IrreflexiveProperty
       <http://dbpedia.org/class/yago/WorldWideWebConsortiumStandards> ;
     wdrs:describedby  source: ;
     schema:name "SPARQL Graph Store Protocol" ;
-    schema:comment """HTTP-based Protocol for performing Create, Update, and Delete operations
+    schema:description """HTTP-based Protocol for performing Create, Update, and Delete operations
                       scoped to RDF documents (i.e., containers of RDF triple-based statements)
                       associated with a database management system or store that supports indexing
                       and storage of RDF-based structured data."""@en ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2013/REC-sparql11-http-rdf-update-20130321> ,
+    skos:related <http://www.w3.org/TR/2013/REC-sparql11-http-rdf-update-20130321> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://www.openlinksw.com/> ;
     schema:mainEntityOfPage <https://medium.com/virtuoso-blog/what-is-a-virtuoso-sparql-endpoint-and-why-is-it-important-5244df738a3e> ;
@@ -3707,12 +3732,12 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "Federated SPARQL" ;
     skos:altLabel "SPARQL-FED" ;
-    schema:comment """Federated variant of the SPARQL query language that enables federated
+    schema:description """Federated variant of the SPARQL query language that enables federated
                       execution of queries across RDF data sources associated with SPARQL
                       endpoint (HTTP-based Web Service endpoint). Thus, given a number of
                       known SPARQL endpoints end-users and user agents are able to dispatch
                       SPARQL queries comprised of query patterns scoped to each endpoint. """@en ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2013/REC-sparql11-federated-query-20130321> ,
+    skos:related <http://www.w3.org/TR/2013/REC-sparql11-federated-query-20130321> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://www.openlinksw.com/> ;
     schema:mainEntityOfPage <https://medium.com/virtuoso-blog/what-is-a-virtuoso-sparql-endpoint-and-why-is-it-important-5244df738a3e> ;
@@ -3735,9 +3760,9 @@ owl:IrreflexiveProperty
       <http://dbpedia.org/class/yago/WorldWideWebConsortiumStandards> ;
     wdrs:describedby  source: ;
     schema:name "SPARQL Service Description" ;
-    schema:comment """A vocabulary comprised of terms used to describe a SPARQL Query Service endpoint."""@en ;
+    schema:description """A vocabulary comprised of terms used to describe a SPARQL Query Service endpoint."""@en ;
     rdfs:isDefinedBy <http://www.w3.org/ns/sparql-service-description#> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/2013/REC-sparql11-service-description-20130321> ;
+    skos:related <http://www.w3.org/TR/2013/REC-sparql11-service-description-20130321> ;
     skos:inScheme :this .
 
 <http://www.w3.org/TR/2013/REC-sparql11-service-description-20130321>
@@ -3754,7 +3779,7 @@ owl:IrreflexiveProperty
     a <http://semanticscience.org/resource/SIO_000140> ;
     wdrs:describedby  source: ;
     schema:name "SPARQL Endpoint" ;
-    schema:comment """SPARQL Query Web Services access point."""@en ;
+    schema:description """SPARQL Query Web Services access point."""@en ;
     schema:description """A HTTP-based point of interaction for query services that facilitate declarative querying of
                           RDF-based structured data using SPARQL Query Language patterns."""@en ;
     dcterms:references   <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
@@ -3775,7 +3800,7 @@ owl:IrreflexiveProperty
                      source: ;
     schema:name "SQL Relational Tables to RDF Property (Predicate) Graph Mapping Language" ;
     skos:altLabel "R2RML" ;
-    schema:comment """A vocabulary comprised of terms used to describe how entity relations
+    schema:description """A vocabulary comprised of terms used to describe how entity relations
                       represented by SQL relational tables are mapped to entity relations
                       represented by RDF statements (subject->predicate->object triples) --
                       for transformation by a compliant processor. Basically, an R2RML processor
@@ -3788,7 +3813,7 @@ owl:IrreflexiveProperty
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
-    dcterms:isReferencedBy <http://www.w3.org/TR/r2rml/> ,
+    skos:related <http://www.w3.org/TR/r2rml/> ,
                            <https://www.w3.org/2001/sw/wiki/R2RML> ,
                            <http://www.w3.org/2001/sw/rdb2rdf/wiki/Implementations> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
@@ -3805,7 +3830,7 @@ owl:IrreflexiveProperty
     owl:sameAs <http://sw.opencyc.org/concept/Mx4rvVj0iZwpEbGdrcN5Y29ycA> ;
     wdrs:describedby  source: ;
     schema:name "Language" ;
-    schema:comment """A system of signs [for denotation or naming], syntax [for grammar],
+    schema:description """A system of signs [for denotation or naming], syntax [for grammar],
                       and semantics [for entity relation roles & types] that enable encoding
                       and decoding of information gleaned from observation."""@en ;
     schema:mentions <http://www.slideshare.net/kidehen/knowledge-design-patterns-combining-logic-ontology-and-computation/5> ;
@@ -3816,9 +3841,9 @@ owl:IrreflexiveProperty
     owl:sameAs <http://sw.opencyc.org/concept/Mx4rvVj0iZwpEbGdrcN5Y29ycA> ;
     wdrs:describedby  source: ;
     schema:name "Grammar" ;
-    schema:comment """Rules controlling the arrangement of identifiers [words, phrases, and terms]
+    schema:description """Rules controlling the arrangement of identifiers [words, phrases, and terms]
                       in a language."""@en ;
-    dcterms:isReferencedBy  <http://linguistics.stackexchange.com/questions/3484/whats-the-difference-between-syntax-and-grammar> ,
+    skos:related  <http://linguistics.stackexchange.com/questions/3484/whats-the-difference-between-syntax-and-grammar> ,
                             <http://answers.yahoo.com/question/index?qid=20061222213318AAMSvWM> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Identifier#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Language#this> ;
@@ -3829,8 +3854,8 @@ owl:IrreflexiveProperty
     owl:sameAs <http://sw.opencyc.org/concept/Mx4rvVj0iZwpEbGdrcN5Y29ycA> ;
     wdrs:describedby  source: ;
     schema:name "Syntax" ;
-    schema:comment """How the grammar of a language is represented."""@en ;
-    dcterms:isReferencedBy  <http://linguistics.stackexchange.com/questions/3484/whats-the-difference-between-syntax-and-grammar> ,
+    schema:description """How the grammar of a language is represented."""@en ;
+    skos:related  <http://linguistics.stackexchange.com/questions/3484/whats-the-difference-between-syntax-and-grammar> ,
                             <http://answers.yahoo.com/question/index?qid=20061222213318AAMSvWM> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Grammar#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Language#this> ;
@@ -3841,7 +3866,7 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Notation" ;
-    schema:comment """A systematic use of symbols to express the syntax of a language. """@en ;
+    schema:description """A systematic use of symbols to express the syntax of a language. """@en ;
     owl:sameAs <http://dbpedia.org/resource/Notation> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Syntax#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Language#this> ;
@@ -3858,7 +3883,7 @@ owl:IrreflexiveProperty
     skos:altLabel "User DSN" ;
     wdrs:describedby  source: ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/5b/5f/eb/5b5febe7ce13bd79096eced2070d9f72.jpg> ;
-    schema:comment """A string-based identifier used to identify
+    schema:description """A string-based identifier used to identify
                       an ODBC-accessible database item (Table, View, Stored Procedure).
                       Basically, this is an X.509 Distinguished Name (DN). This kind of Data Source Name
                       is scoped to a specific user (identity principal) on a multi-user operating
@@ -3873,7 +3898,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/Database#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 # System:
@@ -3882,7 +3907,7 @@ owl:IrreflexiveProperty
     schema:name "ODBC System Data Source Name (DSN)" ;
     skos:altLabel "System DSN" ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/3c/f6/a9/3cf6a90aa06a3815c128a2334df345a7.jpg> ;
-    schema:comment """A string-based identifier used to identify
+    schema:description """A string-based identifier used to identify
                       an ODBC-accessible database item (Table, View, Stored Procedure).
                       Basically, this is an X.509 Distinguished Name (DN). This kind of Data Source Name
                       has system-wide scope and is therefore accessible by any user (identity principal)
@@ -3897,7 +3922,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/Database#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 # File System:
@@ -3906,7 +3931,7 @@ owl:IrreflexiveProperty
     schema:name "ODBC File Data Source Name (DSN)" ;
     skos:altLabel "File System DSN" ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/ef/f2/e3/eff2e3be4d523f9bfaaf55103d341c71.jpg> ;
-    schema:comment """A string-based identifier used to identify
+    schema:description """A string-based identifier used to identify
                       an ODBC-accessible database item (Table, View, Stored Procedure).
                       Basically, this is an X.509 Distinguished Name (DN). This kind of Data Source Name
                       has its ODBC Data Connection attributes (database connection information)
@@ -3924,7 +3949,7 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/Database#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>
@@ -3939,7 +3964,7 @@ owl:IrreflexiveProperty
     skos:altLabel "ODBC" ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/ef/b2/7e/efb27e54ef098c18a93aa8a074d5817d.jpg> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#ODBC" ;
-    schema:comment """A 'C'-programming-language-based application programming interface (API)
+    schema:description """A 'C'-programming-language-based application programming interface (API)
                       that enables the development and deployment of SQL relational database
                       independent (agnostic) applications. """@en ;
     owl:sameAs <http://dbpedia.org/resource/ODBC> ;
@@ -3949,7 +3974,7 @@ owl:IrreflexiveProperty
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/SQL#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://uda.openlinksw.com/> ,
                            <http://virtuoso.openlinksw.com/> ,
@@ -3967,12 +3992,12 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "ODBC Driver Manager" ;
     skos:altLabel "ODBC DM" ;
-    schema:comment """Runtime component that associates (binds) an ODBC Data Source Name (DN)
+    schema:description """Runtime component that associates (binds) an ODBC Data Source Name (DN)
                       with an actual data source specific data access driver (also known as 
                       an ODBC Driver)."""@en ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/ODBCDSN#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://www.iodbc.org/dataspace/iodbc/wiki/iODBC/> ;
     skos:inScheme :this .
 
@@ -3981,7 +4006,7 @@ owl:IrreflexiveProperty
       <http://data.openlinksw.com/oplweb/glossary-term/DatabaseConnectivityAPI#this> ;
     wdrs:describedby  source: ;
     schema:name "ODBC Administrator" ;
-    schema:comment """A user interaction and graphical user interface component
+    schema:description """A user interaction and graphical user interface component
                       enables a user (or compliant application) add, updated, and remove
                       ODBC Data Source Names (DSNs) via interactions with the underlying
                       ODBC Driver Manager. It also enables the user (or compliant application)
@@ -3995,7 +4020,7 @@ owl:IrreflexiveProperty
     owl:sameAs <http://dbpedia.org/resource/ODBC_Administrator> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/ODBCDSN#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://www.iodbc.org/dataspace/iodbc/wiki/iODBC/> ;
     skos:inScheme :this .
 
@@ -4006,14 +4031,14 @@ owl:IrreflexiveProperty
     schema:name "ODBC Driver"@en ;
     skos:altLabel "ODBC Connector"@en ;
     schema:image <https://uda.openlinksw.com/images/udapcategoryodbc.png> ;
-    schema:comment """An implementation of the ODBC Data Access API that provides data connectivity
+    schema:description """An implementation of the ODBC Data Access API that provides data connectivity
                       and access services for a specific combination of data source name and actual
                       data source type (e.g., an Oracle, SQL Server, Sybase, Informix, Ingres, MySQL,
                       Progress/OpenEdge, PostgreSQL, DB2, Firebird, etc. relational database
                       management system hosted database)."""@en ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/ODBCDSN#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://uda.openlinksw.com/> ,
                            <http://virtuoso.openlinksw.com/> ,
@@ -4032,14 +4057,14 @@ owl:IrreflexiveProperty
                     <http://data.openlinksw.com/oplweb/product_format_category/st/jdbc#this> ,
                     <http://data.openlinksw.com/oplweb/product_format_category/mt/jdbc#this> ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#JDBC" ;
-    schema:comment """A Java-programming-language-based application programming
+    schema:description """A Java-programming-language-based application programming
                       interface (API) that enables the development and deployment
                       of SQL relational database independent (agnostic) applications."""@en ;
     owl:sameAs <http://dbpedia.org/resource/JDBC> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/SQLDBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/SQL#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://uda.openlinksw.com/> ,
                            <http://virtuoso.openlinksw.com/> ,
@@ -4053,11 +4078,11 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "JDBC Driver Manager" ;
     skos:altLabel "JDBC DM" ;
-    schema:comment """A Java runtime component that associates (binds) a JDBC Data Source Name (DN) with an
+    schema:description """A Java runtime component that associates (binds) a JDBC Data Source Name (DN) with an
                       actual data source specific data access driver (also known as an JDBC Driver)."""@en ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> .
+    skos:related <http://slidesha.re/1hF48QL> .
 
 <http://data.openlinksw.com/oplweb/glossary-term/JDBCDriver#this>
     a <http://sw.opencyc.org/concept/Mx4rvyfkVpwpEbGdrcN5Y29ycA> ,
@@ -4066,14 +4091,14 @@ owl:IrreflexiveProperty
     schema:name "JDBC Driver"@en ;
     skos:altLabel "JDBC Connector"@en ;
     schema:image <https://i.pinimg.com/originals/75/11/a8/7511a81c2e4ec244473cc514d997bd0a.png> ;
-    schema:comment """An implementation of the JDBC Data Access API that provides data connectivity
+    schema:description """An implementation of the JDBC Data Access API that provides data connectivity
                       and access services for a specific combination of data source name and actual
                       data source type (e.g., an Oracle, SQL Server, Sybase, Informix, Ingres, MySQL,
                       Progress/OpenEdge, PostgreSQL, DB2, Firebird, etc., relational database
                       management system hosted database)."""@en ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://uda.openlinksw.com/> ,
                            <http://virtuoso.openlinksw.com/> ,
@@ -4090,11 +4115,11 @@ owl:IrreflexiveProperty
                     <http://data.openlinksw.com/oplweb/product_format_category/st/dotnet#this> ,
                     <http://data.openlinksw.com/oplweb/product_format_category/mt/dotnet#this> ;
     skos:altLabel "ADO.NET"@en ;
-    schema:comment """A Microsoft-.NET-based application programming interface (API) that enables
+    schema:description """A Microsoft-.NET-based application programming interface (API) that enables
                       the development and deployment of database and data source independent
                       (agnostic) applications. """@en ;
     owl:sameAs <http://dbpedia.org/resource/ADO.NET> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://uda.openlinksw.com/> ,
                            <http://virtuoso.openlinksw.com/> ,
@@ -4111,11 +4136,11 @@ owl:IrreflexiveProperty
                   "OLE-DB" ,
                   "OLEDB" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#OLEDB" ;
-    schema:comment """A Microsoft Object Linking & Embedding (OLE)-based application programming
+    schema:description """A Microsoft Object Linking & Embedding (OLE)-based application programming
                       interface (API) that enables the development and deployment of database
                       and data source independent (agnostic) applications. """@en ;
     owl:sameAs <http://dbpedia.org/resource/OLE_DB> ;
-    dcterms:isReferencedBy <http://slidesha.re/1hF48QL> ,
+    skos:related <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
                            <http://uda.openlinksw.com/> ,
                            <http://virtuoso.openlinksw.com/> ,
@@ -4135,11 +4160,11 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Serendipitous Discovery Quotient (SDQ)" ;
-    schema:comment """A metric that indicates a document's discoverability
+    schema:description """A metric that indicates a document's discoverability
                       as a function of the discernible and comprehensible
                       relation semantics represented in its content."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#SDQ" ;
-    dcterms:isReferencedBy <https://plus.google.com/112399767740508618350/posts/jaR8VQSHKVY> ,
+    skos:related <https://plus.google.com/112399767740508618350/posts/jaR8VQSHKVY> ,
                            <https://plus.google.com/112399767740508618350/posts/S49LWgrLSon> ,
                            <http://www.seangolliher.com/2009/linked-data/serendipitous-discovery-quotient-sdq-the-future-of-seo-or-an-abstract-concept/> ;
     skos:inScheme :this .
@@ -4152,7 +4177,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "Database Connectivity Application Programming Interface" ;
     skos:altLabel "Database Connectivity API" ;
-    schema:comment """An API that's specifically aimed at providing database
+    schema:description """An API that's specifically aimed at providing database
                       product independent connectivity."""@en .
 
 <http://data.openlinksw.com/oplweb/glossary-term/OpenDatabaseConnectivity#this>
@@ -4164,7 +4189,7 @@ owl:IrreflexiveProperty
                <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this> ,
                <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this> ;
     schema:name "Open Database Connectivity" ;
-    schema:comment """Term that refers to the kind of database connectivity provided
+    schema:description """Term that refers to the kind of database connectivity provided
                       by database management system oriented APIs such as:
                       SPARQL-Protocol, ODBC, JDBC, ADO.NET,
                       OLE-DB, and XMLA."""@en ;
@@ -4188,7 +4213,7 @@ owl:IrreflexiveProperty
                <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
     schema:image <http://media-cache-ak0.pinimg.com/originals/b6/c8/35/b6c8350a922a4bbcae10b88cd3a3b154.jpg> ;
     schema:name "Linked Open Data Connectivity" ;
-    schema:comment """Term that refers to the kind of data connectivity provided
+    schema:description """Term that refers to the kind of data connectivity provided
                       by data access APIs such as: HTTP, SPARQL-Protocol,
                       SPARQL Graph Store Protocol. Note, these APIs aren't SQL relational
                       database management system oriented, they simply provide open access
@@ -4201,12 +4226,12 @@ owl:IrreflexiveProperty
     a <http://purl.org/ontology/bibo/Slideshow> ;
     wdrs:describedby source: ;
     schema:name "Logic Patterns" ;
-    schema:comment """Slide from a presentation titled "Knowledge Design Patterns" by John F. Sowa."""@en .
+    schema:description """Slide from a presentation titled "Knowledge Design Patterns" by John F. Sowa."""@en .
 
 ## RDF label fixing due to fact that DBpedia description inherits RDF == RDF/XML misconception
 <http://dbpedia.org/resource/Resource_Description_Framework>
     schema:name "Resource Description Framework (RDF)" ;
-    schema:comment """W3C Language for Structured Data Representation that includes human
+    schema:description """W3C Language for Structured Data Representation that includes human
                       and machine comprehensible entity relation semantics."""@en .
 
 ## Document illustrating how Identifiers, Linked Data, and RDF come together
@@ -4245,7 +4270,7 @@ owl:IrreflexiveProperty
         schema:TechArticle ;
     wdrs:describedby  source: ;
     schema:name "Meaning of Resource (Proposed IETF/W3C task force)" ;
-    schema:comment """Mailing list post by TimBL providing historical
+    schema:description """Mailing list post by TimBL providing historical
                       perspective on the problem with the term "Resource".
                       To access TimBL's actual mailing list post (referred to by
                       this document) simply perform one of the following:
@@ -4268,7 +4293,7 @@ owl:IrreflexiveProperty
         schema:Article,
         schema:TechArticle ;
     schema:name "Web Architecture Design Issues & Philosophical Notes" ;
-    schema:comment """Collection of notes by TimBL chronicling his thoughts
+    schema:description """Collection of notes by TimBL chronicling his thoughts
                       about the Web and its architecture"""@en ;
     schema:url <http://www.w3.org/DesignIssues> ;
     schema:author <http://www.w3.org/People/Berners-Lee/card#i> .
@@ -4281,7 +4306,7 @@ owl:IrreflexiveProperty
         schema:Article,
         schema:TechArticle ;
     schema:name "The Need for Semantics in the World Wide Web (Web)" ;
-    schema:comment """Showcasing the roles of denotation and entity relation semantics as
+    schema:description """Showcasing the roles of denotation and entity relation semantics as
                       integral parts of the World Wide Web. """@en ;
     schema:url <http://www.w3.org/Talks/WWW94Tim/> ;
     schema:author <http://www.w3.org/People/Berners-Lee/card#i> .
@@ -4291,7 +4316,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:about <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ;
     schema:name "Understanding Data" ;
-    schema:comment """Data is an increasingly common term used on the assumption that its meaning
+    schema:description """Data is an increasingly common term used on the assumption that its meaning
                       is commonly understood. This presentation seeks to drill down into the very
                       specifics of what data is all about."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
@@ -4319,7 +4344,7 @@ owl:IrreflexiveProperty
 <http://slidesha.re/18CtxGK>  a <http://purl.org/ontology/bibo/Slideshow> ;
     wdrs:describedby  source: ;
     schema:name "Blogic" ;
-    schema:comment """ISWC 2009 Presentation by Pat Hayes that delves into the issues
+    schema:description """ISWC 2009 Presentation by Pat Hayes that delves into the issues
                       associated with infusing logic into the World Wide Web through
                       the use of RDF."""@en ;
     schema:author <http://www.ihmc.us/users/phayes/PatHayes> ;
@@ -4336,7 +4361,7 @@ owl:IrreflexiveProperty
         schema:Article,
         schema:TechArticle ;
     schema:name "Re: [ontolog-forum] mKR proof of correctness" ;
-    schema:comment """Explaining what 'Semantics' means."""@en ;
+    schema:description """Explaining what 'Semantics' means."""@en ;
     schema:author <http://www.ihmc.us/users/phayes/PatHayes> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/Language#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Semantics#this> .
@@ -4363,7 +4388,7 @@ owl:IrreflexiveProperty
         schema:TechArticle ;
     wdrs:describedby  source: ;
     schema:name "Webizing Existing Systems" ;
-    schema:comment """This discusses the introduction of URIs as names in a system to scale it to the web."""@en ;
+    schema:description """This discusses the introduction of URIs as names in a system to scale it to the web."""@en ;
     schema:author <http://www.w3.org/People/Berners-Lee/card#i> ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Data#this> .
@@ -4374,7 +4399,7 @@ owl:IrreflexiveProperty
     a <http://commontag.org/ns#Tag> ;
     wdrs:describedby  source: ;
     schema:name "Hashtag" ;
-    schema:comment """Shorthand for denoting (referring to or naming) topics using HTTP URIs that's
+    schema:description """Shorthand for denoting (referring to or naming) topics using HTTP URIs that's
                       broadly used across all major social networking and social media platforms.
                       Basically, this is how the end-users contribute to a Semantic Web or Web of
                       Data without digging into the specifics of Linked Data principles and/or RDF
@@ -4390,7 +4415,7 @@ owl:IrreflexiveProperty
         schema:TechArticle ;
     wdrs:describedby  source: ;
     schema:name "Linked Open Data & Future of SEO" ;
-    schema:comment """Article about the fact that Linked Open Data is really
+    schema:description """Article about the fact that Linked Open Data is really
                       about a Web of Linked Statements that take the form of specialized
                       Digital Sentences. Basically, that an open-standards-based
                       Linked Data statement (e.g., RDF-subject->predicate->object-based triple)
@@ -4406,7 +4431,7 @@ owl:IrreflexiveProperty
         schema:TechArticle ;
     wdrs:describedby  source: ;
     schema:name "RDF Challenge" ;
-    schema:comment """Blog post by Tim Bray about RDF challenges arising from RDF/XML. """@en .
+    schema:description """Blog post by Tim Bray about RDF challenges arising from RDF/XML. """@en .
 
 ## Linked Data Tutorial using Linked Data
 
@@ -4417,7 +4442,7 @@ owl:IrreflexiveProperty
         schema:TechArticle ;
     wdrs:describedby  source: ;
     schema:name "Linked Data Deployment Tutorial" ;
-    schema:comment """A Linked Data deployment tutorial that's 100% based on Linked Data, i.e.,
+    schema:description """A Linked Data deployment tutorial that's 100% based on Linked Data, i.e.,
                       the image mapped HTML document is comprised of HTTP URIs that resolve to
                       entity and relation descriptions. Thus, you can use Linked Data's
                       follow-your-nose pattern to every aspect of the tutorial. """@en ;
@@ -4432,7 +4457,7 @@ owl:IrreflexiveProperty
         schema:TechArticle ;
     wdrs:describedby  source: ;
     schema:name "Linked Data Deployment Tutorial Files" ;
-    schema:comment """Actual folder containing documents used by the Linked Data Deployment Tutorial."""@en ;
+    schema:description """Actual folder containing documents used by the Linked Data Deployment Tutorial."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/partOf#this> <http://bit.ly/1cbSTNb> .
 
 ## Description of a YouTube presentation by @Danbri
@@ -4442,7 +4467,7 @@ owl:IrreflexiveProperty
     schema:author <http://danbri.org/foaf.rdf#danbri> ;
     wdrs:describedby  source: ;
     schema:name "@danbri presentation about the Web of Linked Open Data";
-    schema:comment "World Wide Web 20th Anniversary Celebration Presentation by Dan Brickley";
+    schema:description "World Wide Web 20th Anniversary Celebration Presentation by Dan Brickley";
     schema:url <http://youtu.be/OgtbbJctXNk> ;
     schema:about <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/WorldWideWeb#this> ,
@@ -4463,7 +4488,7 @@ owl:IrreflexiveProperty
     schema:author <http://danbri.org/foaf.rdf#danbri> ;
     wdrs:describedby  source: ;
     schema:name "Lecture: Philosophy & Computation";
-    schema:comment """This lecture sheds light on the prevalent tendency (in computing)
+    schema:description """This lecture sheds light on the prevalent tendency (in computing)
                       to reduce Semantics to Syntax."""@en ;
     schema:url <http://youtu.be/OgtbbJctXNk> ;
     schema:about <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -4483,7 +4508,7 @@ owl:IrreflexiveProperty
     a rdf:Property ;
     wdrs:describedby  source: ;
     schema:name "partOf" ;
-    schema:comment """Relation that indicates an association whereby one entity (thing)
+    schema:description """Relation that indicates an association whereby one entity (thing)
                       is part of another. A hasPartOf relation is the inverse of this
                       kind of relation."""@en ;
     rdfs:domain <http://www.w3.org/2000/01/rdf-schema#Resource> ;
@@ -4495,7 +4520,7 @@ owl:IrreflexiveProperty
     a rdf:Property ;
     wdrs:describedby  source: ;
     schema:name "hasPart" ;
-    schema:comment """Relation that indicates an association whereby one entity (thing) is
+    schema:description """Relation that indicates an association whereby one entity (thing) is
                       part of another. A hasPartOf relation is the inverse of this kind of
                       relation."""@en ;
     rdfs:domain <http://www.w3.org/2000/01/rdf-schema#Resource> ;
@@ -4581,7 +4606,7 @@ owl:IrreflexiveProperty
 
 <http://www.w3.org/TR/2014/REC-json-ld-20140116/>
     schema:name "JSON-LD 1.0 Data Representation Notation Specification" ;
-    schema:comment """JSON-based language specification from the W3C for constructing both
+    schema:description """JSON-based language specification from the W3C for constructing both
                       basic and web-like (or webby) structured data (also known as Linked Data)."""@en ;
     a schema:WebPage,
         schema:CreativeWork,
@@ -4594,7 +4619,7 @@ owl:IrreflexiveProperty
 
 <http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/>
     schema:name "RDF 1.1 Semantics" ;
-    schema:comment """This document is part of RDF 1.1 document suite.
+    schema:description """This document is part of RDF 1.1 document suite.
                       It is a revision of the 2004 Semantics specification
                       for RDF, thereby superseding the aforementioned document."""@en ;
     a schema:WebPage,
@@ -4615,7 +4640,7 @@ owl:IrreflexiveProperty
         schema:TechArticle ;
     schema:name "Linked Open Data Cache SPARQL Endpoint (HTML Interface)" ;
     wdrs:describedby  source: ;
-    schema:comment """This interface enables live execution of ad-hoc SPARQL Queries that target
+    schema:description """This interface enables live execution of ad-hoc SPARQL Queries that target
                       61 Billion+ entity relationships (represented in RDF triple form), to anyone."""@en ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/LODCloudCache#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this> ,
@@ -4641,7 +4666,7 @@ owl:IrreflexiveProperty
     schema:name "Linked Open Data Cache Faceted Browsing Interface" ;
     wdrs:describedby  source: ;
     wdrs:describedby  source: ;
-    schema:comment """This interface enables follow-your-nose exploration over a massive number of
+    schema:description """This interface enables follow-your-nose exploration over a massive number of
                       relations (relationship types) associated with the 61 Billion+ entity relationships
                       (represented in RDF triple form), hosted by this instance."""@en ;
     dcterms:references <http://data.openlinksw.com/oplweb/glossary-term/LODCloudCache#this> ,
