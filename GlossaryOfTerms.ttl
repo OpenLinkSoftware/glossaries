@@ -430,12 +430,13 @@ skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/Mark#this>,
                <http://data.openlinksw.com/oplweb/glossary-term/Token#this>,
               <http://data.openlinksw.com/oplweb/glossary-term/Type#this> ;
 schema:description """A sign, or representamen, is something which stands to somebody for something in some
-respect or capacity. It addresses somebody, that is, creates in the mind of that person an 
-equivalent sign, or perhaps a more developed sign. That sign which it creates I call the
-interpretant of the first sign. The sign stands for something, its object. It stands for that
-object, not in all respects, but in reference to a sort of idea, which I have sometimes called
-the ground of the representamen. """@en ;
-schema:cite sowa-signs:pdf, <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ>,
+                      respect or capacity. It addresses somebody, that is, creates in the mind of that person an 
+                      equivalent sign, or perhaps a more developed sign. That sign which it creates I call the
+                      interpretant of the first sign. The sign stands for something, its object. It stands for that
+                      object, not in all respects, but in reference to a sort of idea, which I have sometimes called
+                      the ground of the representamen. """@en ;
+schema:cite sowa-signs:pdf , 
+            <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ> ,
              <https://oss.adm.ntu.edu.sg/ylee063/2d-ii-presentation-semiotic-signs-symbols-ways-of-meaning> ;
 skos:related <http://dbpedia.org/resource/Semiotics> ;
 skos:inScheme :this .
@@ -445,7 +446,7 @@ a skos:Concept ;
 schema:name "Token"@en ;
 skos:broader  <http://data.openlinksw.com/oplweb/glossary-term/Sign#this> ;
 schema:description """A token is a mark that has been classified as an instance of some type. But the same mark, for
-different reasons or different contexts, may be classified as a token of an open-ended variety of types. """@en ;
+                      different reasons or different contexts, may be classified as a token of an open-ended variety of types. """@en ;
 schema:cite sowa-signs:pdf, <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ>,
              <https://oss.adm.ntu.edu.sg/ylee063/2d-ii-presentation-semiotic-signs-symbols-ways-of-meaning> ;
 skos:inScheme :this .
@@ -466,7 +467,7 @@ a skos:Concept ;
 schema:name "Icon"@en ;
 schema:image <https://oss.adm.ntu.edu.sg/ylee063/wp-content/uploads/sites/849/2017/01/Screen-Shot-2017-01-17-at-11.33.55-PM.png> ;
 skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Sign#this> ;
-schema:descripton """An icon resembles its referent in some way. For example an image that resembles a telephone."""@en ;
+schema:description """An icon resembles its referent in some way. For example an image that resembles a telephone."""@en ;
 schema:cite <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ>,
              <https://oss.adm.ntu.edu.sg/ylee063/2d-ii-presentation-semiotic-signs-symbols-ways-of-meaning> ;
 skos:inScheme :this .
@@ -476,7 +477,7 @@ a skos:Concept ;
 schema:name "Symbol"@en ;
 schema:image <https://oss.adm.ntu.edu.sg/ylee063/wp-content/uploads/sites/849/2017/01/Screen-Shot-2017-01-17-at-11.34.03-PM.png> ;
 skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Icon#this> ;
-schema:descripton """An symbol is a visual resemblance cultivated from cultural (or learned) association with its referent. For example the '$' sign for symbolizing the U.S. Dollar or '?' for indicating a question."""@en ;
+schema:description """A symbol is a visual resemblance cultivated from cultural (or learned) association with its referent. For example the '$' sign for symbolizing the U.S. Dollar or '?' for indicating a question."""@en ;
 schema:cite <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ>,
              <https://oss.adm.ntu.edu.sg/ylee063/2d-ii-presentation-semiotic-signs-symbols-ways-of-meaning> ;
 skos:inScheme :this .
@@ -562,7 +563,7 @@ skos:inScheme :this .
 a skos:Concept ;
 schema:name "Machine Learning"@en ;
 skos:altLabel "ML" ;
-schema:description """How an automomous software or machine acquires knowledge, progressively.
+schema:description """How an autonomous software or machine acquires knowledge, progressively.
                    """@en ;
 skos:related dbpedia:Analytics,
              dbpedia:Deductive_database,
@@ -1691,7 +1692,7 @@ rdf:Property
     schema:image <https://cdn-images-1.medium.com/max/800/1*XEIW9h-UGL4aFvuTArSC2Q.png> ;
     schema:description """How Entity Relationship Types (Relations) that are transitive in nature are represented on paper, screens, 
                           and any other projection medium -- using a graphic notation. Relationship Type Transitivity is the critical
-                          attribute that makes a Network Depiction a sub-category of Graph Depticion"""@en ;
+                          attribute that makes a Network Depiction a sub-category of Graph Depiction"""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
@@ -1878,7 +1879,7 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "RDF Relation" ;
     schema:image <https://s-media-cache-ak0.pinimg.com/originals/06/46/83/06468323cb5fbe8fc594b47a9214ab9f.jpg> ;
-    schema:description """Set of subjectÃ¢ÂÂpredicateÃ¢ÂÂobject-based statements that is grouped by predicate."""@en ;
+    schema:description """Set of subject→predicate→object-based statements that is grouped by predicate."""@en ;
     schema:description """One can accurately refer to the RDF statement (triple), { <#Bob>
                           <http://xmlns.com/foaf/0.1/knows> <#Alice> . } as a representation
                           of a relation identified by the IRI <http://xmlns.com/foaf/0.1/knows>
@@ -2008,7 +2009,7 @@ owl:IrreflexiveProperty
     skos:altLabel "RDF Triple" ;
     schema:description """Representation of an entity relationship using a variety of notations
                       (or concrete syntaxes in RDF spec. parlance) in conformance
-                      with RDF's abstract subject->predicate->object syntax."""@en ;
+                      with RDF's abstract subject→predicate→object syntax."""@en ;
     rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
     owl:sameAs <http://www.w3.org/2000/01/rdf-schema#Statement> ;
     schema:hasPart <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> ,
@@ -2409,19 +2410,19 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
-                           <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
-                           <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
-                           <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
-                           <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this> ,
-                           <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
-                           <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
-                           <http://data.openlinksw.com/oplweb/glossary-term/BigData#this> ,
-                           <http://slidesha.re/1hF48QL> ,
-                           <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
-                           <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/notes/virtuoso-8-press-release-notes.ttl> ,
-                           <http://virtuoso.openlinksw.com/> ,
-                           <http://www.openlinksw.com/> ,
-                           <https://medium.com/@kidehen/heres-why-9d278d5aa725> ;
+                 <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/HTTPURL#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/BigData#this> ,
+                 <http://slidesha.re/1hF48QL> ,
+                 <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease71x#this> ,
+                 <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/notes/virtuoso-8-press-release-notes.ttl> ,
+                 <http://virtuoso.openlinksw.com/> ,
+                 <http://www.openlinksw.com/> ,
+                 <https://medium.com/@kidehen/heres-why-9d278d5aa725> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/Graph#this>, 
                  <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
     skos:inScheme :this .
@@ -2534,9 +2535,9 @@ owl:IrreflexiveProperty
     schema:description """A document comprised of structured data represented as sets of relations. These
                       relations are basically sets of tuples (representing entity relationships) grouped
                       by a predicate which indicates the entity relationship type. For instance, in a SQL
-                      Relational Database Management system a Table Name functions as the Predicate. Whereas
-                      in an RDF-Predicate/Property-Graph-based Relational Database Management system (or store)
-                      a Predicate is self-evident part Subject->Predicate->Object-based 3-tuple."""@en ;
+                      Relational Database Management system, a Table Name functions as the Predicate;
+                      in an RDF-Predicate/Property-Graph-based Relational Database Management system (or store),
+                      a Predicate is self-evident as part of a Subject→Predicate→Object-based 3-tuple."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
@@ -2578,7 +2579,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "Dataset" ;
     schema:description  """Collection of statements representing entity
-                        relationships (e.g., RDF subject->predicate->object triples)
+                        relationships (e.g., RDF subject→predicate→object triples)
                         that are associated with a collection identifier. In W3C RDF parlance,
                         this kind of identifier is referred to as a Named Graph IRI, and used
                         for dataset oriented structured data representation via TriG and N-Quads
@@ -3210,7 +3211,7 @@ owl:IrreflexiveProperty
                           comprehensible entity relationship semantics. It makes this possible
                           by providing a Language (system of Signs [IRIs], Syntax [Subject,
                           Predicate, Object relationship roles], Semantics [First-order Logic],
-                          and Statements [Subject->Predicate->Object]) for expressing,
+                          and Statements [Subject→Predicate→Object]) for expressing,
                           representing, serializing, and publishing entity relationships in
                           digital form. In usage patterns where IRIs take the form of HTTP
                           URIs, the end product is a public or private Linked Data Network
@@ -3818,7 +3819,7 @@ owl:IrreflexiveProperty
     skos:altLabel "R2RML" ;
     schema:description """A vocabulary comprised of terms used to describe how entity relations
                       represented by SQL relational tables are mapped to entity relations
-                      represented by RDF statements (subject->predicate->object triples) --
+                      represented by RDF statements (subject→predicate→object triples) --
                       for transformation by a compliant processor. Basically, an R2RML processor
                       will produce an RDF model-based representation of SQL entity relations by
                       processing the contents of an R2RML document."""@en ;
@@ -4434,7 +4435,7 @@ owl:IrreflexiveProperty
     schema:description """Article about the fact that Linked Open Data is really
                       about a Web of Linked Statements that take the form of specialized
                       Digital Sentences. Basically, that an open-standards-based
-                      Linked Data statement (e.g., RDF-subject->predicate->object-based triple)
+                      Linked Data statement (e.g., RDF-subject→predicate→object-based triple)
                       is simply a reusable mechanism for encoding and decoding information,
                       just like natural language sentences."""@en .
 
@@ -4707,6 +4708,7 @@ owl:IrreflexiveProperty
     schema:about <http://data.openlinksw.com/oplweb/glossary-term/LDP#this> ;
     schema:mainEntity <http://data.openlinksw.com/oplweb/glossary-term/LDP#this> ;
     schema:url <http://www.w3.org/TR/2015/REC-ldp-20150226/> ;
+    owl:sameAs <https://www.w3.org/TR/ldp/>
     schema:name "REC-ldp-20150226" .
 
 <http://kidehen.blogspot.com/2014/07/loosely-coupled-read-write-interactions.html>
@@ -4715,7 +4717,7 @@ owl:IrreflexiveProperty
     schema:about <http://data.openlinksw.com/oplweb/glossary-term/LDP#this> ;
     schema:mainEntity <http://data.openlinksw.com/oplweb/glossary-term/LDP#this> ;
     schema:url <http://kidehen.blogspot.com/2014/07/loosely-coupled-read-write-interactions.html> ;
-    schema:name "Loosely coupled read write interactions" .
+    schema:name "Loosely coupled read-write interactions" .
 
 <https://www.pinterest.com/pin/389561436491483477/>
     a schema:WebPage;
