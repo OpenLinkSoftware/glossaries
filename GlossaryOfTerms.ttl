@@ -36,7 +36,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-01-09T13:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-01-10T13:50:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +48,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-01-09T13:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-01-10T13:50:00-04:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -637,7 +637,7 @@ schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-opera
                    <https://medium.com/virtuoso-blog/five-simple-steps-to-experience-the-power-of-a-semantic-web-of-linked-data-using-virtuoso-3e016d01dfbe>,
                    <https://medium.com/openlink-software-blog/semantic-web-layer-cake-tweak-explained-6ba5c6ac3fab>,
                    <https://medium.com/virtuoso-blog/from-open-data-to-a-semantic-web-of-linked-data-with-virtuoso-70fea9d3aadf>,
-                   <https://lists.w3.org/Archives/Public/semantic-web/2019Jun/0052.html> ;
+                   <https://lists.w3.org/Archives/Public/semantic-web/2019Jun/0052.html>, <https://www.youtube.com/watch?v=25UIgiiYqsE> ;
 skos:inScheme :this .
 
 ## Business Systems
@@ -1701,7 +1701,11 @@ rdf:Property
                            <http://data.openlinksw.com/oplweb/glossary-term/BigData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SmartData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
-                           <https://bence.ferdinandy.com/2018/05/27/whats-the-difference-between-a-graph-and-a-network#> ;
+                           <https://bence.ferdinandy.com/2018/05/27/whats-the-difference-between-a-graph-and-a-network#>,
+                           <https://www.goodreads.com/book/show/818170.Six_Degrees#>,
+                           <https://www.goodreads.com/book/show/154293.Linked#>,
+                           <https://www.goodreads.com/book/show/2296.Emergence#>,
+                           <https://www.goodreads.com/book/show/6494620-connected#> ;
     skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ;
     skos:inScheme :this .
 
@@ -1719,6 +1723,115 @@ rdf:Property
                            <http://snap.stanford.edu/agm#>,
                            <https://medium.com/@stangarfield/what-is-the-difference-between-a-community-of-practice-and-a-social-network-bcd1af362eca#> ;
     skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/Network#this> ;
+    skos:inScheme :this .
+
+# Graph / Network Analytics and Algorithms 
+
+# Centrality 
+
+<http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> 
+    a skos:Concept ;
+        owl:sameAs dbpedia:Centrality ;
+        skos:inScheme :this ;
+        wdrs:describedby  source: ;
+        schema:name "Centrality" ;
+        skos:altLabel "Network Centrality" ;
+        schema:image <https://miro.medium.com/max/1024/1*0riRWkNP0U_Db19ITqQp3A.png> ;
+        schema:description """Measures the importance of a node in a graph simply by how "central" the node is, 
+                              relative to others in the same graph."""@en ;
+        skos:related <https://community.openlinksw.com/t/graph-analytics-using-virtuoso-s-sparql-bi-extensions-to-sparql/1443#>,
+                            <https://medium.com/virtuoso-blog/graph-analytics-using-virtuosos-sparql-bi-extensions-to-sparql-5e75b4be32b3#>,
+                            <https://towardsdatascience.com/graph-analytics-introduction-and-concepts-of-centrality-8f5543b55de3#>,
+                            <http://leonidzhukov.net/hse/2014/socialnetworks/papers/freeman79-centrality.pdf>,
+                            <https://networkx.github.io/documentation/stable/reference/algorithms/centrality.html> ;
+        skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/BetweenessCentrality#this>,
+                      <http://data.openlinksw.com/oplweb/glossary-term/ClosenessCentrality#this>,
+                      <http://data.openlinksw.com/oplweb/glossary-term/DegreeCentrality#this>,
+                      <http://data.openlinksw.com/oplweb/glossary-term/EigenVectorCentrality#this> ;
+        skos:inScheme :this .
+
+# Degree Centrality 
+
+<http://data.openlinksw.com/oplweb/glossary-term/DegreeCentrality#this>
+    a skos:Concept ;
+    owl:sameAs dbpedia:Degree_centrality ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Degree Centrality" ;
+    skos:altLabel "Degrees of Centrality" ;
+    schema:image <https://miro.medium.com/max/911/1*s0d1xiERigbaNbmXaCJrYw.png> ;
+    schema:description """Measures network importance based on in-bound connections from other nodes in the graph, 
+                          or out-bound connections to other nodes in the graph, given a starting node."""@en ;
+    skos:related <https://community.openlinksw.com/t/graph-analytics-using-virtuoso-s-sparql-bi-extensions-to-sparql/1443#>,
+                        <https://medium.com/virtuoso-blog/graph-analytics-using-virtuosos-sparql-bi-extensions-to-sparql-5e75b4be32b3#>,
+                        <https://towardsdatascience.com/graph-analytics-introduction-and-concepts-of-centrality-8f5543b55de3#> ,
+                        <http://leonidzhukov.net/hse/2014/socialnetworks/papers/freeman79-centrality.pdf> ;
+    skos:broader        <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ;
+    skos:inScheme :this .
+
+# Closeness Centrality 
+
+<http://data.openlinksw.com/oplweb/glossary-term/ClosenessCentrality#this>
+    a skos:Concept ;
+    owl:sameAs dbpedia:Closeness_centrality ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Closeness Centrality" ;
+    schema:image <https://miro.medium.com/max/432/1*rkbccriB91tmNbIDqsUx9w.png> ;
+    schema:description """Closeness Centrality is based on the number of "hops" (sometimes counted as the number of 
+                          intervening nodes plus one) between two nodes, based on the shortest path between each pair 
+                          of nodes."""@en ;
+    skos:related <https://community.openlinksw.com/t/graph-analytics-using-virtuoso-s-sparql-bi-extensions-to-sparql/1443#>,
+                        <https://medium.com/virtuoso-blog/graph-analytics-using-virtuosos-sparql-bi-extensions-to-sparql-5e75b4be32b3#>,
+                        <https://towardsdatascience.com/graph-analytics-introduction-and-concepts-of-centrality-8f5543b55de3#>,
+                        <http://leonidzhukov.net/hse/2014/socialnetworks/papers/freeman79-centrality.pdf> ;
+    skos:broader        <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ;
+    skos:inScheme :this .
+
+# Betweeness Centrality 
+
+<http://data.openlinksw.com/oplweb/glossary-term/BetweenessCentrality#this>
+    a skos:Concept ;
+    owl:sameAs dbpedia:Betweeness_centrality ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Betweeness Centrality" ;
+    schema:image <https://miro.medium.com/max/911/1*s0d1xiERigbaNbmXaCJrYw.png> ;
+    schema:description """Betweenness Centrality assigns importance to a node in a network based upon the number of times 
+                          that node occurs within the paths between all pairs of nodes in a graph. That is, each node in the 
+                          graph is paired with every other node; the shortest path between each pair of nodes is computed; and 
+                          then the number of occurrences of each intermediate node in those shortest-paths is counted, to discover 
+                          their relative importance."""@en ;
+    skos:related <https://community.openlinksw.com/t/graph-analytics-using-virtuoso-s-sparql-bi-extensions-to-sparql/1443#>,
+                        <https://medium.com/virtuoso-blog/graph-analytics-using-virtuosos-sparql-bi-extensions-to-sparql-5e75b4be32b3#>,
+                        <https://towardsdatascience.com/graph-analytics-introduction-and-concepts-of-centrality-8f5543b55de3#>,
+                        <http://leonidzhukov.net/hse/2014/socialnetworks/papers/freeman79-centrality.pdf> ;
+    skos:broader        <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ;
+    skos:inScheme :this .
+
+# EVC
+
+<http://data.openlinksw.com/oplweb/glossary-term/EigenVectorCentrality#this>
+    a skos:Concept ;
+    owl:sameAs dbpedia:Eigenvector_centrality ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Eigen Vector Centrality" ;
+    skos:prefLabel "EVC" ;
+    skos:altLabel "Eigencentrality" ;
+    schema:image <http://djjr-courses.wikidot.com/local--files/soc180:images/eigenvector-07.gif> ;
+    schema:description """Measures the importance of a node in a graph based 
+                          on the the importance of its neighbors. For instance, in a Social Network, the nature of 
+                          an Influencer depends on how many people they influence — where influence depends on the 
+                          total size of their audience rather than individual connection count, i.e., rather than 
+                          catering to a Star-Network with many unconnected low-audience followers, you end up with 
+                          an Influence-Network comprising a few nodes that each connect to a large-audience follower. 
+                          """@en ;
+    skos:related <http://djjr-courses.wikidot.com/soc180:eigenvector-centrality#> ,
+                           <https://community.openlinksw.com/t/graph-analytics-using-virtuoso-s-sparql-bi-extensions-to-sparql/1443#>,
+                           <https://medium.com/virtuoso-blog/graph-analytics-using-virtuosos-sparql-bi-extensions-to-sparql-5e75b4be32b3#>,
+                           <https://towardsdatascience.com/graph-analytics-introduction-and-concepts-of-centrality-8f5543b55de3#> ;
+    skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ;
     skos:inScheme :this .
 
 # Resource
@@ -2570,7 +2683,7 @@ owl:IrreflexiveProperty
                   <http://data.openlinksw.com/oplweb/glossary-term/SmartData#this> ;
     schema:mentions <http://bit.ly/UcnEGp> ,
                     <http://ontolog.cim3.net/forum/ontolog-forum/2013-05/msg00184.html> ;
-    skos:related <http://slidesha.re/1hF48QL> ;
+    skos:related <http://slidesha.re/1hF48QL>, <https://youtu.be/iCvmsMzlF7o?t=74> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/DataSet#this>
