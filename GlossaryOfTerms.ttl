@@ -628,7 +628,8 @@ skos:related dbpedia:Knowledge_graph,
              <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
              <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this>,
-             <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ;
+             <http://data.openlinksw.com/oplweb/glossary-term/Graph#this>, 
+             <http://linkeddata.uriburner.com/about/id/entity/https/www.youtube.com/watch?v=25UIgiiYqsE> ;
 schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artificial-intelligence/>,
             <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>,
             <https://enterprise-knowledge.com/best-practices-for-enterprise-knowledge-graph-design/> ;
@@ -637,7 +638,7 @@ schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-opera
                    <https://medium.com/virtuoso-blog/five-simple-steps-to-experience-the-power-of-a-semantic-web-of-linked-data-using-virtuoso-3e016d01dfbe>,
                    <https://medium.com/openlink-software-blog/semantic-web-layer-cake-tweak-explained-6ba5c6ac3fab>,
                    <https://medium.com/virtuoso-blog/from-open-data-to-a-semantic-web-of-linked-data-with-virtuoso-70fea9d3aadf>,
-                   <https://lists.w3.org/Archives/Public/semantic-web/2019Jun/0052.html>, <https://www.youtube.com/watch?v=25UIgiiYqsE> ;
+                   <https://lists.w3.org/Archives/Public/semantic-web/2019Jun/0052.html> ;
 skos:inScheme :this .
 
 ## Business Systems
