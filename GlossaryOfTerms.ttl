@@ -36,7 +36,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-01-24T10:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-02-05T10:50:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +48,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-01-24T10:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-02-05T10:50:00-04:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -247,7 +247,8 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/BetweenessCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/ClosenessCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/DegreeCentrality#this> ,
-                    <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -624,7 +625,9 @@ skos:altLabel "KG"@en ;
 skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
 schema:description """An Entity Relationship Type Collection depicted as a Graph (Web or Network). In this
                       kind of pictorial each Entity is depicted as a Node (or Vertex) while each Entity Relationship Type is 
-                      depicted as a Labelled Connection (or Edge).
+                      depicted as a Labeled Connection (or Edge). This form of structured data representation provides 'context lenses'
+                      for creating and discovering knowledge by applying reasoning and inference to the nature (semantics) of Relationship
+                      Types (Connections).
                       """@en ;
 skos:related dbpedia:Knowledge_graph,
              dbpedia:Semantic_Web,
@@ -632,10 +635,13 @@ skos:related dbpedia:Knowledge_graph,
              dbpedia:Knowledgebase, 
              dbpedia:Conceptual_graph,
              dbpedia:Machine_learning,
+             dbpedia:Entity–attribute–value_model,
+             <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC61391/#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
              <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/Graph#this>, 
+             <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this>,
              <http://linkeddata.uriburner.com/about/id/entity/https/www.youtube.com/watch?v=25UIgiiYqsE> ;
 schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artificial-intelligence/>,
             <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>,
@@ -645,7 +651,8 @@ schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-opera
                    <https://medium.com/virtuoso-blog/five-simple-steps-to-experience-the-power-of-a-semantic-web-of-linked-data-using-virtuoso-3e016d01dfbe>,
                    <https://medium.com/openlink-software-blog/semantic-web-layer-cake-tweak-explained-6ba5c6ac3fab>,
                    <https://medium.com/virtuoso-blog/from-open-data-to-a-semantic-web-of-linked-data-with-virtuoso-70fea9d3aadf>,
-                   <https://lists.w3.org/Archives/Public/semantic-web/2019Jun/0052.html> ;
+                   <https://lists.w3.org/Archives/Public/semantic-web/2019Jun/0052.html>,
+                   <https://www2.deloitte.com/content/dam/Deloitte/nl/Documents/risk/deloitte-nl-risk-knowledge-graphs-financial-services.pdf> ;
 skos:inScheme :this .
 
 ## Business Systems
@@ -1724,6 +1731,7 @@ rdf:Property
                            <http://data.openlinksw.com/oplweb/glossary-term/DegreeCentrality#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ,
                            foaf:Group ;
+    schema:relatedLink     <https://networkx.github.io/documentation/stable/reference/> ;
     skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ;
     skos:inScheme :this .
 
@@ -2831,6 +2839,22 @@ owl:IrreflexiveProperty
                   <http://data.openlinksw.com/oplweb/glossary-term/SmartData#this> ;
     skos:inScheme :this .
 
+<http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this>
+    a skos:Concept ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Connected Data" ;
+    <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#ConnectedData" ;
+    schema:image <https://miro.medium.com/max/772/1*59TIHdoqj9nlbffVyhZRGQ.png> ;
+    schema:description """Structured Data Representation depictable as an Entity Relationship Graph 
+                          comprising identifiers that are used to denote entities and entity relationship 
+                          types (relations). """@en ;
+    skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ;
+    skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>  ;
+    schema:relatedLink <https://medium.com/datadriveninvestor/connected-data-in-an-enterprise-part-1-f006a00032e8> ;
+    skos:inScheme :this .
+
 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>
     a skos:Concept ;
     skos:inScheme :this ;
@@ -2838,11 +2862,10 @@ owl:IrreflexiveProperty
     schema:name "Linked Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#LinkedData" ;
     schema:image <http://media-cache-ak0.pinimg.com/originals/13/84/80/13848054bf8c69640e58fade12c32736.jpg> ;
-    schema:description """Web-Like or Webby Structured Data """@en ;
     schema:description """Structured Data Representation enhanced through the use of Hyperlinks (e.g.,
-                          HTTP URIs) as a mechanism for turning entity names into terms, (i.e., names
-                          that are implicitly mapped to referent description documents). Net effect,
-                          the resulting Structured Data is Web-like (or Webby). """@en ;
+                          HTTP URIs) for denoting entities and entity relationship types 
+                          that manifests as a navigable data network (or Web) that's explorable
+                          using any HTTP-compliant tool or service. """@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/OpenData#this> ;
