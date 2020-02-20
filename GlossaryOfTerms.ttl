@@ -36,7 +36,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-02-05T10:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-02-20T10:50:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +48,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-02-05T10:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-02-20T10:50:00-04:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -141,6 +141,7 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/SQLRelationship#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/SQLRelation#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ,
+                    <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
@@ -248,7 +249,8 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/ClosenessCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/DegreeCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ,
-                    <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DataGovernance#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -566,6 +568,27 @@ skos:inScheme :this .
 
 ## Industry Trends ##
 
+<http://data.openlinksw.com/oplweb/glossary-term/DataGovernance#this> 
+a skos:Concept ;
+schema:name "Data Governance"@en ;
+schema:description """Data Collection, Management, and Security. Coverage includes:
+                      Data Architecture, Modelling, Storage & Operations, Security, 
+                      Integration & Interoperability, Documents and Content-Types, 
+                      Reference & Master Data, Warehousing & Business Intelligence, 
+                      Metadata, and Quality. 
+                   """@en ;
+skos:related dbpedia:Metadata,
+             dbpedia:Provenance,
+             dbpedia:Data_lineage,
+             dbpedia:Data_governance,
+             dbpedia:Master_data_management,
+             dbpedia:Data_quality, 
+             dbpedia:Data_security,
+             dbpedia:Data_integration ;
+schema:image <https://media.geeksforgeeks.org/wp-content/cdn-uploads/machineLearning3.png> ;
+schema:cite <https://www.cio.com/article/3521011/what-is-data-governance-a-best-practices-framework-for-managing-data-assets.html> ;
+skos:inScheme :this .
+
 <http://data.openlinksw.com/oplweb/glossary-term/MachineLearning#this>
 a skos:Concept ;
 schema:name "Machine Learning"@en ;
@@ -652,7 +675,9 @@ schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-opera
                    <https://medium.com/openlink-software-blog/semantic-web-layer-cake-tweak-explained-6ba5c6ac3fab>,
                    <https://medium.com/virtuoso-blog/from-open-data-to-a-semantic-web-of-linked-data-with-virtuoso-70fea9d3aadf>,
                    <https://lists.w3.org/Archives/Public/semantic-web/2019Jun/0052.html>,
-                   <https://www2.deloitte.com/content/dam/Deloitte/nl/Documents/risk/deloitte-nl-risk-knowledge-graphs-financial-services.pdf> ;
+                   <https://www2.deloitte.com/content/dam/Deloitte/nl/Documents/risk/deloitte-nl-risk-knowledge-graphs-financial-services.pdf>,
+                   <https://hackernoon.com/wtf-is-a-knowledge-graph-a16603a1a25f>,
+                   <http://jfsowa.com/talks/kng.pdf> ;
 skos:inScheme :this .
 
 ## Business Systems
@@ -811,7 +836,8 @@ skos:inScheme :this .
                  <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
                  <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>,
                  dbpedia:Datalog,
-                 dbpedia:Prolog ;
+                 dbpedia:Prolog,
+                 dbpedia:Data_integration ;
     schema:mainEntityOfPage <https://www.openlinksw.com/data/turtle/general/Sponger_LinkedDataGenOptions_2018_v3tjt.html>, 
                             <https://medium.com/virtuoso-blog/conceptual-data-virtualization-for-sql-and-rdf-using-open-standards-24520925c7ce> ;
     schema:relatedLink <https://www.gartner.com/doc/3893219/market-guide-data-virtualization>, <https://www.gartner.com/it-glossary/data-integration-tools> ;
@@ -1731,8 +1757,9 @@ rdf:Property
                            <http://data.openlinksw.com/oplweb/glossary-term/DegreeCentrality#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ,
                            foaf:Group ;
-    schema:relatedLink     <https://networkx.github.io/documentation/stable/reference/> ;
-    skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ;
+    schema:relatedLink     <https://networkx.github.io/documentation/stable/reference/>, <https://kk.org/thetechnium/1000-true-fans/>, 
+                           <https://a16z.com/2020/02/06/100-true-fans/>, <https://li-jin.co/2019/10/22/the-passion-economy-and-the-future-of-work/> ;
+    skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/Graph#this>, <https://engineering.linkedin.com/blog/2016/10/building-the-linkedin-knowledge-graph> ;
     skos:inScheme :this .
 
 # Network Group
