@@ -1,0 +1,664 @@
+## Turtle Document That Describes OpenLink Shop Pricing Glossary ##
+@prefix schema:    <http://schema.org/> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix oplsof:    <http://www.openlinksw.com/ontology/software#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix :          <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary.ttl#> .
+@prefix source:    <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary.ttl> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/data/turtle/general/ShopPricingGlossary.ttl> .
+
+sourceDAV:
+  a schema:CreativeWork ;
+  schema:name """OpenLink Shop Pricing Glossary Terms"""@en ;
+  schema:comment """Description of OpenLink Shop Pricing Glossary Terms."""@en ;
+  schema:description """A document containing a collection of OpenLink Shop Pricing Common Glossary Terms."""@en ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  schema:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  schema:dateCreated "2014-04-07T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2016-05-17T13:20:00-05:00"^^xsd:dateTime ;
+  cc:attributionName "OpenLink Software" ;
+  schema:mentions <https://shop.openlinksw.com/shop> ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  owl:sameAs source: .
+
+source:
+  a schema:CreativeWork ;
+  schema:name "OpenLink Shop Pricing Glossary"^^xsd:string ;
+  schema:comment """A collection of OpenLink Shop Pricing Glossary Terms."""@en ;
+  schema:description """A document containing a collection of OpenLink Shop Pricing Common Glossary Terms."""@en ;
+  schema:dateCreated "2014-04-07T13:00:00-05:00"^^xsd:dateTime ;
+  schema:dateModified "2016-05-17T13:20:00-05:00"^^xsd:dateTime ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  cc:attributionName "OpenLink Software" ;
+  owl:sameAs source:DAV ;
+  schema:mentions <https://shop.openlinksw.com/offers> ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink> ;
+  schema:about
+               <http://data.openlinksw.com/oplweb/glossary-term/offeravail#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/offeravailfrom#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/offerbenefit#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/cpus#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/offerdescr#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/license#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/offerlinkeddatauri#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/maxpurchase#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/offernumber#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/offervaliduntil#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/os#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/osfamily#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/ostype#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/offerorder#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/product#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/offerretailprice#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/offerspecialprice#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/offersummary#this> ,
+
+               <http://data.openlinksw.com/oplweb/glossary-term/adonet-provider#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/agent#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/bridge-agent#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/bros#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/brostype#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/dscope#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/database-agent#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/dengine#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/dbms#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/generic-client#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/jdbc-driver#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/sessions#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/uda-cpus#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/odbc-driver#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/oledb-provider#this> ,
+
+               <http://data.openlinksw.com/oplweb/glossary-term/request-broker#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/seats#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/machines#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/xmla-provider#this> ,
+
+               <http://data.openlinksw.com/oplweb/glossary-term/lodclientapprestrictions#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/lodapplabel#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/lodclientlabel#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/clustering#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/columnstore#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefColumnStoreModule#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/connections#this>  ,
+               <http://data.openlinksw.com/oplweb/glossary-term/cpu-affinity#this>  ,
+               <http://data.openlinksw.com/oplweb/glossary-term/virtuoso-cpus#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefDatabaseServerThreads#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/virtuoso-os#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoCluster#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoClusterNode#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoHostCluster#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoHostClusterNode#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoReplicationCluster#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerInstance#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerQuorum#this> ,
+               <http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#this> .
+
+
+<http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this>
+  a skos:ConceptScheme;
+  wdrs:describedby source: ;
+  schema:name "OpenLink Product Licenses Scheme" ;
+  schema:description """Taxonomy of terms used to describe OpenLink Product Licenses and other items associated with License Purchases""" .
+
+
+<http://data.openlinksw.com/oplweb/glossary-term/offeravail#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Availability" ;
+  schema:comment """Availability"""@en ;
+  schema:description """Presents the offer availability, i.e., whether or not it is in stock."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/offeravailfrom#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Available from" ;
+  schema:comment """Available from"""@en ;
+  schema:description """The offer is available for purchase from the identified company."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/offerbenefit#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Benefit" ;
+  schema:comment """Benefit"""@en ;
+  schema:description """Benefit associated with the offered product."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/cpus#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "CPUs" ;
+  schema:comment """CPUs"""@en ;
+  schema:description """The maximum number of Logical Processors which the license will utilize."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/offerdescr#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Offer Description" ;
+  schema:comment """Offer Description"""@en ;
+  schema:description """Detailed description of an Offer."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/license#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Duration" ;
+  schema:comment """Duration"""@en ;
+  schema:description """The duration of the product (license) on Offer, measured from issue date."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/offerlinkeddatauri#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Linked Data URI" ;
+  schema:comment """Linked Data URI"""@en ;
+  schema:description """Hyperlink-based Offer Identifier"""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/maxpurchase#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Max Purchase" ;
+  schema:comment """Max Purchase"""@en ;
+  schema:description """The maximum number of times a single customer is allowed to purchase a given Offer.
+                        This is typically used to restrict access to free Offers."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/offernumber#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Offer Code" ;
+  schema:comment """Offer Code"""@en ;
+  schema:description """A unique identifier for an Offer."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/offervaliduntil#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Offer Valid Until" ;
+  schema:comment """Offer Valid Until"""@en ;
+  schema:description """Date until which the offer is valid."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/os#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Operating System" ;
+  schema:comment """Operating System"""@en ;
+  schema:description """The Operating System(s) to which the Software Application License is scoped."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/osfamily#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Operating System Family" ;
+  schema:comment """Operating System Family"""@en ;
+  schema:description """The Operating System Family(ies) to which the Software Application License may be scoped."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/ostype#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Operating System Type" ;
+  schema:comment """Operating System Type"""@en ;
+  schema:description """The Types (Workstation or Server) of Operating System to which the Software Application License may be scoped."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/offerorder#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Order" ;
+  schema:comment """Order"""@en ;
+  schema:description """Add the Offer into your shopping cart."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/product#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Product" ;
+  schema:comment """Product"""@en ;
+  schema:description """Software Application License."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/offerretailprice#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Retail Price" ;
+  schema:comment """Retail Price"""@en ;
+  schema:description """Retail Price of an Offer."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/offerspecialprice#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Special Price" ;
+  schema:comment """Special Price"""@en ;
+  schema:description """Special Price of an Offer."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/offersummary#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Summary" ;
+  schema:comment """Summary"""@en ;
+  schema:description """Short summary description of an Offer."""@en .
+
+
+
+
+# UDA Terms
+
+#
+<http://data.openlinksw.com/oplweb/glossary-term/adonet-provider#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "ADO.NET Provider" ;
+  schema:comment """ADO.NET Provider"""@en ;
+  schema:description """A Software Application that provides a data access channel between an ADO.NET compliant applications
+                        and a backend database management system, using the native protocols of the target DBMS or Driver vendor."""@en .
+#
+
+#
+<http://data.openlinksw.com/oplweb/glossary-term/agent#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Agent" ;
+  schema:comment """Agent"""@en ;
+  schema:description """A Software Application.  May be a Bridge Agent or a Database Agent."""@en .
+#
+
+#
+<http://data.openlinksw.com/oplweb/glossary-term/bridge-agent#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Bridge Agent" ;
+  schema:comment """Bridge Agent"""@en ;
+  schema:description """A Software Application.  Provides connections to a DBMS-agnostic Data Access Mechanism (e.g., ODBC, JDBC).
+                        Enterprise Edition only."""@en .
+#
+
+<http://data.openlinksw.com/oplweb/glossary-term/bros#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Broker Operating System" ;
+  schema:comment """Broker Operating System"""@en ;
+  schema:description """The Operating System on which the Enterprise Edition Request Broker, Database Agents, and/or Bridge Agents
+                        will run; where the Enterprise Edition product (license) will be deployed."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/brostype#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Broker Operating System Type" ;
+  schema:comment """Broker Operating System Type"""@en ;
+  schema:description """The Types (Workstation or Server) of Operating System on which the Enterpris Edition product (license)
+                        may be deployed."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/dscope#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Data Access Protocol Scope" ;
+  schema:comment """Data Access Protocol Scope"""@en ;
+  schema:description """Specific data access protocol(s) (ODBC, JDBC, ADO.NET, OLE&nbsp;DB, and/or XMLA) supported by data access
+                        driver (Express or Lite Edition) and/or license (Enterprise Edition)."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/database-agent#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Database Agent" ;
+  schema:comment """Database Agent"""@en ;
+  schema:description """A Software Application.  Provides connections to a specific DBMS (e.g., Oracle 11g, Microsoft SQL
+                        Server, MySQL 5.x).  Enterprise Edition only."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/dengine#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Database Engine" ;
+  schema:comment """Database Engine"""@en ;
+  skos:related oplsof:hasDatabaseEngine ;
+  schema:description """Specific version(s) of a Database Management System (DBMS) supported by an ODBC driver, JDBC driver,
+                        ADO.NET provider, OLE&nbsp;DB provider, XMLA provider, or License File."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/dbms#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "DBMS Family" ;
+  schema:comment """DBMS Family"""@en ;
+  skos:related oplsof:hasDatabaseFamily ;
+  schema:description """Database Management System (DBMS) Family"""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/generic-client#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Generic Client" ;
+  schema:comment """Generic Client"""@en ;
+  schema:description """A Software Application.  An ADO.NET Provider, JDBC Driver, or ODBC Driver which connects
+                        a client application using such Data Access Mechanism to a Request Broker and associated
+                        Agents.  Enterprise Edition only."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/jdbc-driver#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "JDBC Driver" ;
+  schema:comment """JDBC Driver"""@en ;
+  schema:description """A Software Application.  A Software Application that provides a data access channel between
+                        a JDBC compliant applications and a backend database management system, using the native
+                        protocols of the target DBMS or Driver vendor."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/machines#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Maximum Concurrent Client Machines" ;
+  schema:comment """Maximum Concurrent Client Machines"""@en ;
+  schema:description """The maximum number of client hosts (physical or virtual, metered by IP address) which may simultaneously open
+                        ODBC, JDBC, ADO.NET, OLE&nbsp;DB, and/or XMLA database sessions through a Request Broker and/or Database or
+                        Bridge Agent under the given license. Only applicable to Enterprise Edition."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/sessions#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Maximum Database Sessions" ;
+  schema:comment """Maximum Database Sessions"""@en ;
+  schema:description """Maximum concurrent database sessions which may be opened under the given license. Opening a new session
+                        increments the count; closing an active session decrements the count. For Express or Lite Edition Drivers,
+                        this is per licensed host. For Enterprise Edition, this pool is shared by all client connections going
+                        through a given Request Broker."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/uda-cpus#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Maximum Logical Processors" ;
+  schema:comment """Maximum Logical Processors"""@en ;
+  schema:description """The maximum number of Logical Processors which the operating system reports as present in the machine
+                        (physical or virtual) on which the product (license) is deployed, i.e., the Express Edition Driver Host,
+                        Lite Edition Driver Host, or Enterprise Edition Request Broker Host."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/odbc-driver#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "ODBC Driver" ;
+  schema:comment """ODBC Driver"""@en ;
+  schema:description """A Software Application.  A Software Application that provides a data access channel between an ODBC
+                        compliant applications and a backend database management system, using the native protocols of the
+                        target DBMS or Driver vendor."""@en .
+<http://data.openlinksw.com/oplweb/glossary-term/oledb-provider#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "OLE&nbsp;DB Provider" ;
+  schema:comment """OLE&nbsp;DB Provider"""@en ;
+  schema:description """A Software Application.  A Software Application that provides a data access channel between an OLE&nbsp;DB
+                        compliant applications and a backend database management system, using the native protocols of the target
+                        DBMS or Driver vendor."""@en .
+<http://data.openlinksw.com/oplweb/glossary-term/request-broker#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Request Broker" ;
+  schema:comment """Request Broker or simply Broker"""@en ;
+  schema:description """A Software Application.  Receives connection requests from Generic Clients, and apportions these to Agents
+                        according to Rules defined by its administrator.  Enterprise Edition only."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/seats#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Seats" ;
+  schema:comment """Seats"""@en ;
+  schema:description """The number of systems (e.g., Enterprise Edition Request Broker hosts, Express or Lite Edition Driver
+                        hosts, Virtuoso Server hosts) on which the product (license) may be deployed."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/xmla-provider#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "XMLA Provider" ;
+  schema:comment """XMLA Provider"""@en ;
+  schema:description """A Software Application.  A Software Application that provides a data access channel between an XMLA compliant
+                        applications and a backend database management system, using the HTTP protocol."""@en .
+
+# Virtuoso Terms
+
+<http://data.openlinksw.com/oplweb/glossary-term/lodclientapprestrictions#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Client Application Connectivity Protocol Restrictions" ;
+  schema:comment """Client Application Connectivity Protocol Restrictions"""@en ;
+  schema:description """Client application connectivity protocol restriction which specifies the criteria of how a license allows
+                        an application to connect to a server."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/lodapplabel#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Client Application Restrictions" ;
+  schema:comment """Client Application Restrictions"""@en ;
+  schema:description """Client application restriction which specifies the criteria of how a license allows an application to
+                        connect to a server."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/lodclientlabel#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Client Connection Restrictions" ;
+  schema:comment """Client Connection Restrictions"""@en ;
+  schema:description """Client connection restriction which specifies the criteria of how a license allows a client to connect to a server."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Cluster Module" ;
+  schema:comment """Cluster Module"""@en ;
+  schema:description """Enables <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#this">Virtuoso Shared-Nothing Cluster</a></i>
+                        functionality. Not required for
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoReplicationCluster#this">Virtuoso Replication Clusters</a></i>."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/clustering#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Clustering" ;
+  schema:comment """Clustering"""@en ;
+  schema:description """Indicates whether the additional <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#this">Cluster Module</a></i>
+                        is enabled for the Software Application License."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/columnstore#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Column Store" ;
+  schema:comment """Column Store"""@en ;
+  skos:related <http://data.openlinksw.com/oplweb/module/Virtuoso7ColumnStore#this> ;
+  schema:description """Indicates whether the additional
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefColumnStoreModule#this">Column Store Module</a></i>
+                        is enabled for the Software Application License."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefColumnStoreModule#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Column Store Module" ;
+  schema:comment """Column Store Module"""@en ;
+  schema:description """Enables Column Store functionality."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/connections#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Connections" ;
+  schema:comment """Connections"""@en ;
+  schema:description """Client interface portals, formerly known as
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefDatabaseServerThreads#this">Database Server Threads</a></i>.
+                        A configurable number are dedicated to handling HTTP-based client requests; the remainder are available
+                        for any other data access mechanism (ODBC, JDBC, OLE&nbsp;DB, ADO.NET, XMLA, etc.)."""@en .
+
+#
+<http://data.openlinksw.com/oplweb/glossary-term/cpu-affinity#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "CPU Affinity" ;
+  schema:comment """CPU Affinity"""@en ;
+  schema:description """A programming mechanism by which an Application binds to one or more CPU Cores (Logical and/or Physical),
+                        irrespective of total available."""@en .
+#
+
+<http://data.openlinksw.com/oplweb/glossary-term/virtuoso-cpus#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "CPUs" ;
+  schema:comment """CPUs"""@en ;
+  schema:description """The maximum number of Logical Processors which the Software Application will utilize. On Windows and
+                        Linux (and soon on Solaris, AIX, and HP-UX), this is managed by CPU Affinity, so the license may be
+                        used on machines which report any number of processors, but the software will only utilize the number
+                        specified by the license.
+                        <ul class="news_articles"><li><i><b>Note:</b> Mac OS X does not support CPU Affinity, so your license
+                        must enable utilization of at least as many Logical Processors as are reported present in your
+                        Mac.</i></li></ul>"""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefDatabaseServerThreads#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Database Server Threads" ;
+  schema:comment """Database Server Threads"""@en ;
+  schema:description """See <i><a href="http://data.openlinksw.com/oplweb/glossary-term/connections#this">Connections</a></i>."""@en ;
+  schema:mentions <http://data.openlinksw.com/oplweb/glossary-term/connections#this> .
+
+<http://data.openlinksw.com/oplweb/glossary-term/virtuoso-os#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Operating System" ;
+  schema:comment """Operating System"""@en ;
+  schema:description """The Operating Systems for which the Software Application License may be scoped."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoCluster#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Virtuoso Cluster" ;
+  schema:comment """Virtuoso Cluster"""@en ;
+  schema:description """A collection of
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerInstance#this">Virtuoso Server Instances</a></i>
+                        configured to operate together, either as a
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoReplicationCluster#this">Virtuoso Replication Cluster</a></i>
+                        or a <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#this">Virtuoso Shared-Nothing Cluster</a></i>.
+                        A Virtuoso Cluster may be housed on a single machine, or distributed over multiple machines,
+                        which may themselves be geographically dispersed."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoClusterNode#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Virtuoso Cluster Node (VCN)" ;
+  schema:comment """Virtuoso Cluster Node (VCN)"""@en ;
+  schema:description """A <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerQuorum#this">Virtuoso Server Quorum</a></i>
+                        that&#39;s a member of a
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#this">Virtuoso Shared-Nothing Cluster</a></i>.
+                        Requires that the
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#this">Cluster Module</a></i>
+                        be licensed"""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoHostCluster#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Virtuoso Host Cluster (VHC)" ;
+  schema:comment """Virtuoso Host Cluster (VHC)"""@en ;
+  schema:description """A collection of machines, each hosting one or more
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerInstance#this">Virtuoso Server Instances</a></i>
+                        that are members of a
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoCluster#this">Virtuoso Cluster</a></i>."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoHostClusterNode#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Virtuoso Host Cluster Node (VHCN)" ;
+  schema:comment """Virtuoso Host Cluster Node (VHCN)"""@en ;
+  schema:description """A machine hosting one or more
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerInstance#this">Virtuoso Server Instances</a></i>
+                        that are members of a
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoCluster#this">Virtuoso Cluster</a></i>."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoReplicationCluster#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Virtuoso Replication Cluster" ;
+  schema:comment """Virtuoso Replication Cluster"""@en ;
+  schema:description """A collection of
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerInstance#this">Virtuoso Server Instances</a></i>
+                        and/or
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#this">Virtuoso Shared-Nothing Clusters</a></i>,
+                        each working individually, which are configured into any supported replication topology (e.g., star, chain,
+                        bidirectional). Requires that the
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#this">Cluster Module</a></i>
+                        be licensed if the Virtuoso Replication Cluster is comprised in part or in whole of
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#this">Virtuoso Shared-Nothing Clusters</a></i>."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerInstance#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Virtuoso Server Instance (VSI)" ;
+  schema:comment """Virtuoso Server Instance (VSI)"""@en ;
+  schema:description """One instantiation of the Virtuoso Server executable, minimally comprising an INI file, a DB file, and a TRX file."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerQuorum#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Virtuoso Server Quorum (VSQ)" ;
+  schema:comment """Virtuoso Server Quorum (VSQ)"""@en ;
+  schema:description """A collection of one or more mutually-mirroring
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoServerInstance#this">Virtuoso Server Instances</a></i>
+                        configured to operate as and appear to the world as one Instance, typically comprising a
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoClusterNode#this">Virtuoso Cluster Node</a></i>,
+                        as part of a
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#this">Virtuoso Shared-Nothing Cluster</a></i>.
+                        Requires that the
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#this">Cluster Module</a></i>
+                        be licensed."""@en .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoSharedNothingCluster#this>
+  a skos:Concept ;
+  wdrs:describedby source: ;
+  skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
+  schema:name "Virtuoso Shared-Nothing Cluster" ;
+  schema:comment """Virtuoso Shared-Nothing Cluster"""@en ;
+  schema:description """A collection of
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefVirtuosoClusterNode#this">Virtuoso Cluster Nodes</a></i>,
+                        working in parallel, controlled by a single Master Node. Optimal performance
+                        typically requires network, if not physical, proximity. Requires that the
+                        <i><a href="http://data.openlinksw.com/oplweb/glossary-term/DefClusterModule#this">Cluster Module</a></i>
+                        be licensed."""@en .
+
