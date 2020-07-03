@@ -36,7 +36,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-02-20T10:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-07-03T09:50:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +48,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-02-20T10:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-07-03T09:50:00-04:00"^^xsd:dateTime ;    
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -244,13 +244,16 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/Network#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/Graph#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/Community#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/Group#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/EigenVectorCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/BetweenessCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/ClosenessCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/DegreeCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/DataGovernance#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/DataGovernance#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DataWrangling#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -432,24 +435,6 @@ schema:cite sowa-signs:pdf, <https://groups.google.com/d/msg/ontolog-forum/2TDWB
              <https://oss.adm.ntu.edu.sg/ylee063/2d-ii-presentation-semiotic-signs-symbols-ways-of-meaning> ;
 skos:inScheme :this .
 
-<http://data.openlinksw.com/oplweb/glossary-term/Sign#this>
-a skos:Concept ;
-schema:name "Sign"@en ;
-schema:image <https://oss.adm.ntu.edu.sg/ylee063/wp-content/uploads/sites/849/2017/01/Screen-Shot-2017-01-18-at-12.01.02-AM.png> ;
-skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/Mark#this>,
-               <http://data.openlinksw.com/oplweb/glossary-term/Token#this>,
-              <http://data.openlinksw.com/oplweb/glossary-term/Type#this> ;
-schema:description """A sign, or representamen, is something which stands to somebody for something in some
-respect or capacity. It addresses somebody, that is, creates in the mind of that person an 
-equivalent sign, or perhaps a more developed sign. That sign which it creates I call the
-interpretant of the first sign. The sign stands for something, its object. It stands for that
-object, not in all respects, but in reference to a sort of idea, which I have sometimes called
-the ground of the representamen. """@en ;
-schema:cite sowa-signs:pdf, <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ>,
-             <https://oss.adm.ntu.edu.sg/ylee063/2d-ii-presentation-semiotic-signs-symbols-ways-of-meaning> ;
-skos:related <http://dbpedia.org/resource/Semiotics> ;
-skos:inScheme :this .
-
 <http://data.openlinksw.com/oplweb/glossary-term/Token#this>
 a skos:Concept ;
 schema:name "Token"@en ;
@@ -463,13 +448,36 @@ skos:inScheme :this .
 <http://data.openlinksw.com/oplweb/glossary-term/Type#this>
 a skos:Concept ;
 schema:name "Type"@en ;
-skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Sign#this> ;
-schema:description """A type is a general category, principle, law, or habit for classifying marks as tokens. Most of
-the ambiguities and complexities that Armstrong discussed are the result of trying to classify a
-continuous range of marks by a discrete set of types."""@en ;
+skos:related <http://data.openlinksw.com/oplweb/glossary-term/Sign#this> ;
+schema:description """A type is a general category, principle, law, or habit for classifying marks as tokens. 
+As an example, Peirce (CP 4.537) cited the word 'the'. English has a single type, spelled T-H-E, of
+which an article has several hundred marks that are classified as tokens of that type. Different marks
+might be printed in different fonts, written in different handwriting, or spoken in different voices, but
+each one is a token of the word type 'the'. """@en ;
 schema:cite sowa-signs:pdf, <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ>,
              <https://oss.adm.ntu.edu.sg/ylee063/2d-ii-presentation-semiotic-signs-symbols-ways-of-meaning> ;
+schema:mainEntityOfPage <https://www.merriam-webster.com/dictionary/the#> ;
 skos:inScheme :this .
+
+
+<http://data.openlinksw.com/oplweb/glossary-term/Sign#this>
+a skos:Concept ;
+schema:name "Sign"@en ;
+schema:image <https://oss.adm.ntu.edu.sg/ylee063/wp-content/uploads/sites/849/2017/01/Screen-Shot-2017-01-18-at-12.01.02-AM.png> ;
+skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/Mark#this>,
+               <http://data.openlinksw.com/oplweb/glossary-term/Token#this>,
+              <http://data.openlinksw.com/oplweb/glossary-term/Type#this> ;
+schema:description """A sign, or representamen, is something which stands to somebody for something in some
+respect or capacity. It addresses somebody, that is, creates in the mind of that person an 
+equivalent sign, or perhaps a more developed sign. That sign which it creates I call the
+interpretant of the first sign. The sign stands for something, its object. It stands for that
+object, not in all respects, but in reference to a sort of idea, which I have sometimes called
+the ground of the representamen -- John F. Sowa."""@en ;
+schema:cite sowa-signs:pdf, <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ>,
+             <https://oss.adm.ntu.edu.sg/ylee063/2d-ii-presentation-semiotic-signs-symbols-ways-of-meaning> ;
+skos:related <http://dbpedia.org/resource/Semiotics> ;
+skos:inScheme :this .
+
 
 <http://data.openlinksw.com/oplweb/glossary-term/Icon#this>
 a skos:Concept ;
@@ -568,6 +576,25 @@ skos:inScheme :this .
 
 ## Industry Trends ##
 
+<http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> 
+a skos:Concept ;
+schema:name "Self Sovereign Identity"@en ;
+schema:description """Identity associated with Credentials that are self-certified, courtesy of cryptography, without the requirement of a third-party notary service e.g., a Certificate Authority. 
+                   """@en ;
+skos:related dbpedia:Identity,
+             dbpedia:Cryptography,
+             dbpedia:Authentication,
+             dbpedia:Privacy, 
+             <http://dbpedia.org/resource/X.509>,
+             <http://dbpedia.org/resource/Category:Public-key_cryptography>,
+             <http://data.openlinksw.com/oplweb/glossary-term/WebID#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/NetID#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/WebIDTLSProtocol#this> ;
+schema:image <https://i.pinimg.com/originals/61/9e/fa/619efa4c328a4d0ec4a1b705d3d0fd88.png> ;
+schema:relatedLink <https://spectrum.ieee.org/tech-talk/telecom/security/pioneers-web-cryptography-future-authentication> ;
+skos:inScheme :this .
+
+
 <http://data.openlinksw.com/oplweb/glossary-term/DataGovernance#this> 
 a skos:Concept ;
 schema:name "Data Governance"@en ;
@@ -585,7 +612,7 @@ skos:related dbpedia:Metadata,
              dbpedia:Data_quality, 
              dbpedia:Data_security,
              dbpedia:Data_integration ;
-schema:image <https://media.geeksforgeeks.org/wp-content/cdn-uploads/machineLearning3.png> ;
+schema:image <http://sphere-marketing.net/wp-content/uploads/2017/08/data_2g1.png> ;
 schema:cite <https://www.cio.com/article/3521011/what-is-data-governance-a-best-practices-framework-for-managing-data-assets.html> ;
 skos:inScheme :this .
 
@@ -646,12 +673,8 @@ schema:image   <https://cdn-images-1.medium.com/max/880/1*A-VaSSx2cqNHrI19_t4cfA
                <https://www.researchgate.net/profile/Hijaz_Ahmad/post/What_is_Knowledge_Graphs/attachment/5ab8df4b4cde266d5893ceb5/AS%3A608399813251073%401522065227594/download/main-qimg-a8f2f3b409c3336d5839f247f10c9921.png> ;
 skos:altLabel "KG"@en ;
 skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
-schema:description """An Entity Relationship Type Collection depicted as a Graph (Web or Network). In this
-                      kind of pictorial each Entity is depicted as a Node (or Vertex) while each Entity Relationship Type is 
-                      depicted as a Labeled Connection (or Edge). This form of structured data representation provides 'context lenses'
-                      for creating and discovering knowledge by applying reasoning and inference to the nature (semantics) of Relationship
-                      Types (Connections).
-                      """@en ;
+schema:description """A collection of entity relationship types (relations) depicted as a graph. The relations in this kind of graphical depiction provide 'context lenses' that aid deductive discovery of insights by
+both humans and machines."""@en ;
 skos:related dbpedia:Knowledge_graph,
              dbpedia:Semantic_Web,
              dbpedia:Linked_Data,
@@ -659,13 +682,11 @@ skos:related dbpedia:Knowledge_graph,
              dbpedia:Conceptual_graph,
              dbpedia:Machine_learning,
              dbpedia:Entity–attribute–value_model,
-             <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC61391/#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
              <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/Graph#this>, 
-             <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this>,
-             <http://linkeddata.uriburner.com/about/id/entity/https/www.youtube.com/watch?v=25UIgiiYqsE> ;
+             <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this> ;
 schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artificial-intelligence/>,
             <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>,
             <https://enterprise-knowledge.com/best-practices-for-enterprise-knowledge-graph-design/> ;
@@ -677,7 +698,26 @@ schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-opera
                    <https://lists.w3.org/Archives/Public/semantic-web/2019Jun/0052.html>,
                    <https://www2.deloitte.com/content/dam/Deloitte/nl/Documents/risk/deloitte-nl-risk-knowledge-graphs-financial-services.pdf>,
                    <https://hackernoon.com/wtf-is-a-knowledge-graph-a16603a1a25f>,
-                   <http://jfsowa.com/talks/kng.pdf> ;
+                   <http://jfsowa.com/talks/kng.pdf>, <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC61391/#this>, 
+                   <http://linkeddata.uriburner.com/about/id/entity/https/www.youtube.com/watch?v=25UIgiiYqsE>,
+                   <http://www.openlinksw.com/data/turtle/general/knowledge-graph-manifestation-turtle-jsonld.html>,
+                   <https://www.openlinksw.com/data/turtle/general/covid-19-knowedge-graph.html> ;
+skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DataWrangling#this>
+a skos:Concept ;
+owl:same dbpedia:Data_wrangling ;
+schema:name "Data Wrangling"@en ;
+schema:image   <https://i.pinimg.com/originals/df/50/6a/df506ae96912118acc0dac06a936f337.png> ;
+# skos:altLabel "DW"@en ;
+skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ;
+schema:description """The act or process of mapping and transforming structured data in one form (or format) to another with the intention
+                      of increasing it access and usability.
+                      """@en ;
+skos:related dbpedia:Knowledge_graph,
+             dbpedia:Semantic_Web,
+             dbpedia:Linked_Data,
+             dbpedia:Data_integration ;
 skos:inScheme :this .
 
 ## Business Systems
@@ -1758,24 +1798,26 @@ rdf:Property
                            <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ,
                            foaf:Group ;
     schema:relatedLink     <https://networkx.github.io/documentation/stable/reference/>, <https://kk.org/thetechnium/1000-true-fans/>, 
-                           <https://a16z.com/2020/02/06/100-true-fans/>, <https://li-jin.co/2019/10/22/the-passion-economy-and-the-future-of-work/> ;
+                           <https://a16z.com/2020/02/06/100-true-fans/>, <https://li-jin.co/2019/10/22/the-passion-economy-and-the-future-of-work/>, <https://videos.cern.ch/record/2671957> ;
     skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/Graph#this>, <https://engineering.linkedin.com/blog/2016/10/building-the-linkedin-knowledge-graph> ;
     skos:inScheme :this .
 
 # Network Group
 
-<http://data.openlinksw.com/oplweb/glossary-term/Community#this>
+<http://data.openlinksw.com/oplweb/glossary-term/Group#this>
     a skos:Concept ;
     skos:inScheme :this ;
     wdrs:describedby  source: ;
-    schema:name "Group" ;
+    schema:name "Network Sub-Group" ;
     schema:image <http://snap.stanford.edu/agm/ncaa.png> ;
-    schema:description """Part of a network clustered formed around a variety of items. Membership could be explict or implict. """@en ;
+    schema:description """Part of a network clustered formed around a variety of items. Membership could be explict or implict. 
+                          For example Facebook uses friendship claims to create friend groups. Ditto LinkedIn regarding contact 
+                          groupings."""@en ;
     skos:related <https://wenger-trayner.com/resources/communities-versus-networks#> ,
                            <https://medium.com/conductal/the-difference-between-communities-groups-and-networks-179ac2052f25#>,
                            <https://medium.com/@stangarfield/what-is-the-difference-between-a-community-of-practice-and-a-social-network-bcd1af362eca#>, 
                            foaf:Group, foaf:member ;
-    skos:narrower           <http://data.openlinksw.com/oplweb/glossary-term/Community#this> ;
+    skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/Network#this> ;
     skos:inScheme :this .
 
 # Community
@@ -1785,9 +1827,11 @@ rdf:Property
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Community" ;
+    skos:prefLabel "Community Network" ;
     schema:image <http://snap.stanford.edu/agm/ncaa.png> ;
-    schema:description """Part of a group clustered around topics-of-interest, combined with a specific assertion of membership by actual members or observers
-                          (including a system that infer this variant of a network group/cluster)."""@en ;
+    schema:description """Part of a group clustered around topics-of-interest, combined with an explicit assertion of membership by actual members or observers
+                          (including a system that infer this variant of a network group/cluster). Explicit assertions could be found in the profile documents of 
+                          community members e.g., a WebID-Profile document."""@en ;
     skos:related <https://wenger-trayner.com/resources/communities-versus-networks#> ,
                            <https://medium.com/conductal/the-difference-between-communities-groups-and-networks-179ac2052f25#>,
                            <http://snap.stanford.edu/agm#>,
@@ -1904,6 +1948,9 @@ rdf:Property
                            <https://towardsdatascience.com/graph-analytics-introduction-and-concepts-of-centrality-8f5543b55de3#> ;
     skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ;
     skos:inScheme :this .
+
+## Game Theory & Neworks
+
 
 # Resource
 
@@ -2225,8 +2272,9 @@ owl:IrreflexiveProperty
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Document" ;
-    schema:description """An artifact comprised of content. In the context of computer operating systems,
-                      "document" and "file" are terms that refer to the same kind of thing."""@en ;
+    schema:description """An artifact comprised of content created by a write operation and removed by a delete operation. In the context of computer systems,
+                      it comprises content that is specifically understood by one or more applications which is how it is differentiated from a basic a file. 
+                      Examples include Word, Excel, HTML, and RDF documents."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
@@ -2285,6 +2333,25 @@ owl:IrreflexiveProperty
                            <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ,
                            <http://bit.ly/NC1yaP> ,
                            <http://cm.bell-labs.com/cm/cs/who/dmr/notes.html> ;
+    skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/GraphDatabase#this>
+    a skos:Concept ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Graph Database" ;
+    schema:image <https://www.sqlshack.com/wp-content/uploads/2019/08/simple-diagram-of-graph-database_1.png> ;
+    owl:differentFrom <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
+                      <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
+                      <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
+                      <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ;
+    schema:description """A document comprised of structured data in the form of a collection of entity relationship types that are depicatable
+                          as an entyity relationship graph. Despite conflated as such, this isn't the same thing as a database management system (DBMS). 
+                          Basically, this is about a document type that a DBMS application actually manages."""@en ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this>, 
+                           <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ;
     skos:inScheme :this .
 
 ## Database Management Systems
@@ -2591,7 +2658,8 @@ owl:IrreflexiveProperty
                        <http://data.openlinksw.com/oplweb/glossary-term/Relationship#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/Relation#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this> ,
-                       <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ;
+                       <http://data.openlinksw.com/oplweb/glossary-term/Graph#this> ,
+                       <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -2824,10 +2892,12 @@ owl:IrreflexiveProperty
 
 <http://data.openlinksw.com/oplweb/glossary-term/OpenData#this>
     a skos:Concept ;
+    schema:image <https://5stardata.info/images/5-star-steps.png> ;
     skos:inScheme :this ;
     wdrs:describedby  source: ;
     schema:name "Open Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#OpenData" ;
+    schema:mainEntityOfPage <https://5stardata.info/en/> ;
     schema:description """Open-Standards-based Structured Data."""@en ;
     schema:description """Open-Standards-based Structured Data Representation based on the use
                           of standards (e.g., CSV, JSON, RDF-Turtle, JSON-LD, HTML+Microdata,
@@ -2892,7 +2962,8 @@ owl:IrreflexiveProperty
     schema:description """Structured Data Representation enhanced through the use of Hyperlinks (e.g.,
                           HTTP URIs) for denoting entities and entity relationship types 
                           that manifests as a navigable data network (or Web) that's explorable
-                          using any HTTP-compliant tool or service. """@en ;
+                          using any HTTP-compliant tool or service. Succintly put, it is a principled
+                          approach to structured data representation that manifests as a Web of Data."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/OpenData#this> ;
@@ -3268,6 +3339,7 @@ owl:IrreflexiveProperty
                  <http://data.openlinksw.com/oplweb/glossary-term/WAN#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/Network#this> ;
     schema:mentions <http://dbpedia.org/resource/Abstraction> ;
+    schema:mainEntityOfPage <https://videos.cern.ch/record/2671957> ; 
     skos:related <http://www.w3.org/History/1989/proposal.html> ;
     skos:inScheme :this .
 
