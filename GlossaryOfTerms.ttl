@@ -36,7 +36,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-07-03T09:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2020-08-05T09:50:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +48,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-07-03T09:50:00-04:00"^^xsd:dateTime ;    
+    schema:dateModified "2020-08-05T09:50:00-04:00"^^xsd:dateTime ;    
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -673,8 +673,7 @@ schema:image   <https://cdn-images-1.medium.com/max/880/1*A-VaSSx2cqNHrI19_t4cfA
                <https://www.researchgate.net/profile/Hijaz_Ahmad/post/What_is_Knowledge_Graphs/attachment/5ab8df4b4cde266d5893ceb5/AS%3A608399813251073%401522065227594/download/main-qimg-a8f2f3b409c3336d5839f247f10c9921.png> ;
 skos:altLabel "KG"@en ;
 skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
-schema:description """A collection of entity relationship types (relations) depicted as a graph. The relations in this kind of graphical depiction provide 'context lenses' that aid deductive discovery of insights by
-both humans and machines."""@en ;
+schema:description """A collection of Entities, Entity Types, and Entity Relationship Types that manifests as an intelligible Web of Data informed by an Ontology."""@en ;
 skos:related dbpedia:Knowledge_graph,
              dbpedia:Semantic_Web,
              dbpedia:Linked_Data,
@@ -686,7 +685,10 @@ skos:related dbpedia:Knowledge_graph,
              <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/Graph#this>, 
-             <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this> ;
+             <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfIntelligence#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfEngagement#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfRecord#this> ;
 schema:cite <https://www.gartner.com/smarterwithgartner/the-cios-guide-to-artificial-intelligence/>,
             <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>,
             <https://enterprise-knowledge.com/best-practices-for-enterprise-knowledge-graph-design/> ;
@@ -1217,10 +1219,7 @@ rdf:Property
     skos:inScheme :this ;
     schema:name "Ontology";
     wdrs:describedby  source: ;
-    schema:description """A subcategory of Data Dictionary and Schema that's conceptual in
-                      orientation, i.e., focused on the semantics of entity relationships --
-                      represented by a series of assertions (in a variety of notations) that
-                      cover the nature of entity and relation types."""@en ;
+    schema:description """A collection of Entity Type and Entity Relationship Type definitions associated with a realm of discourse."""@en ;
     owl:sameAs <http://dbpedia.org/resource/Conceptual_schema> ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/DataDictionary#this> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/Semantics#this> ,
@@ -1761,8 +1760,10 @@ rdf:Property
                            <http://data.openlinksw.com/oplweb/glossary-term/SmartData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
                            <https://bence.ferdinandy.com/2018/05/27/whats-the-difference-between-a-graph-and-a-network#>,
-                           <http://dbpedia.org/resource/Glossary_of_graph_theory> ;
+                           <http://dbpedia.org/resource/Glossary_of_graph_theory>,
+                           <https://linkeddata.uriburner.com/about/id/entity/https/www.youtube.com/watch?v=MJuRnuA0hrM> ;
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/Network#this> ;
+    schema:relatedLink <https://www.youtube.com/watch?v=MJuRnuA0hrM> ;
     skos:inScheme :this .
 
 # Network
@@ -2898,7 +2899,7 @@ owl:IrreflexiveProperty
     schema:name "Open Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#OpenData" ;
     schema:mainEntityOfPage <https://5stardata.info/en/> ;
-    schema:description """Open-Standards-based Structured Data."""@en ;
+    skos:altLabel  """Open-Standards-based Structured Data."""@en ;
     schema:description """Open-Standards-based Structured Data Representation based on the use
                           of standards (e.g., CSV, JSON, RDF-Turtle, JSON-LD, HTML+Microdata,
                           HTML+RDFa, RDF/XML, etc.) -- thereby making structured data reusable
@@ -2920,7 +2921,7 @@ owl:IrreflexiveProperty
     schema:name "Public Open Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#PublicOpenData" ,
                                                                    "#POD" ;
-    schema:description """Public Domain Open-Standards-based Structured Data."""@en ;
+    skos:altLabel """Public Domain Open-Standards-based Structured Data."""@en ;
     schema:description """Public Open-Standards-based Structured Data Representation based on
                           the combined use of licensing and open standards (e.g., CSV, JSON,
                           RDF-Turtle, JSON-LD, HTML+Microdata, HTML+RDFa, RDF/XML, etc.) --
@@ -2959,11 +2960,7 @@ owl:IrreflexiveProperty
     schema:name "Linked Data" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#LinkedData" ;
     schema:image <http://media-cache-ak0.pinimg.com/originals/13/84/80/13848054bf8c69640e58fade12c32736.jpg> ;
-    schema:description """Structured Data Representation enhanced through the use of Hyperlinks (e.g.,
-                          HTTP URIs) for denoting entities and entity relationship types 
-                          that manifests as a navigable data network (or Web) that's explorable
-                          using any HTTP-compliant tool or service. Succintly put, it is a principled
-                          approach to structured data representation that manifests as a Web of Data."""@en ;
+    schema:description """A principled approach to Structured Data representation that manifests as a Web of Data.."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/OpenData#this> ;
@@ -3487,7 +3484,7 @@ owl:IrreflexiveProperty
     schema:description """RDF is a language (i.e., system of signs, syntax, and semantics) that
                       enables the construction of structured data that can be read and
                       understood by both humans and machines."""@en ;
-    schema:description """RDF (Resource Description Framework) is a framework that enables
+    rdfs:comment       """RDF (Resource Description Framework) is a framework that enables
                           the construction of structured data endowed with human and machine
                           comprehensible entity relationship semantics. It makes this possible
                           by providing a Language (system of Signs [IRIs], Syntax [Subject,
