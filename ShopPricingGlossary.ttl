@@ -369,18 +369,17 @@ source:
   a skos:Concept ;
   wdrs:describedby source: ;
   skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
-  schema:name "Maximum Concurrent Client Machines" ;
-  schema:comment """Maximum Concurrent Client Machines"""@en ;
-  schema:description """The maximum number of client hosts (physical or virtual, metered by IP address) which may simultaneously open
-                        ODBC, JDBC, ADO.NET, OLE&nbsp;DB, and/or XMLA database sessions through a Request Broker and/or Database or
-                        Bridge Agent under the given license. Only applicable to Enterprise Edition."""@en .
+  schema:name "Maximum Client Machine Installations" ;
+  schema:comment """Maximum Client Machine Installations"""@en ;
+  schema:description """The maximum client machines the ODBC, JDBC, ADO.NET, OLE&nbsp;DB, and/or XMLA client components can be installed on. 
+                          Only applicable to Enterprise Edition."""@en .
 
 <http://data.openlinksw.com/oplweb/glossary-term/sessions#this>
   a skos:Concept ;
   wdrs:describedby source: ;
   skos:inScheme <http://www.openlinksw.com/data/turtle/general/ShopPricingGlossary#this> ;
-  schema:name "Maximum Database Sessions" ;
-  schema:comment """Maximum Database Sessions"""@en ;
+  schema:name "Maximum Concurrent Database Sessions" ;
+  schema:comment """Maximum Concurrent Database Sessions"""@en ;
   schema:description """Maximum concurrent database sessions which may be opened under the given license. Opening a new session
                         increments the count; closing an active session decrements the count. For Express or Lite Edition Drivers,
                         this is per licensed host. For Enterprise Edition, this pool is shared by all client connections going
