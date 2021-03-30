@@ -38,7 +38,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2021-03-29T16:00:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2021-03-29T22:10:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -50,7 +50,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2021-03-29T16:00:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2021-03-29T22:10:00-04:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -5268,11 +5268,10 @@ owl:IrreflexiveProperty
     a                       skos:Concept ;
     wdrs:describedby        source: ;
     schema:name             "Enterprise Knowledge Graph" ;
-    schema:description      """An Enterprise Knowledge Graph (EKG) is a Knowledge Graph that springs from and
-                               centers on a particular Enterprise, typically a Company, most often building 
-                               outward from the Enterprise "Home Page" on the WorldWideWeb. Connections to
-                               Suppliers, Customers, Employees, Products, Competitors, and Partners are just
-                               a sampling of what may be found in an EKG.
+    schema:description      """An Enterprise Knowledge Graph (EKG) is a Knowledge Graph derived from entity
+                               relationships across various internal business domains. Examples of said
+                               domains include: Marketing, Human Resources, Suppliers, Customers, Employees, 
+                               Products, Competitors, Partners, and many others. 
                             """ ;
     schema:subjectOf        <http://www-kasm.nii.ac.jp/iswc2016/papers/paper_A29_.pdf> ,
                             <https://www2.deloitte.com/content/dam/Deloitte/de/Documents/operations/knowledge-graphs-pov.pdf> ,
@@ -5289,11 +5288,10 @@ owl:IrreflexiveProperty
     a                       skos:Concept ;
     wdrs:describedby        source: ;
     schema:name             "Product Knowledge Graph" ;
-    schema:description      """A Product Knowledge Graph is a Knowledge Graph that springs from and
-                               centers on a particular Product, most often building outward from the 
-                               Product "Home Page" on the WorldWideWeb. Connections to Users, Competing
-                               Products, Complementary Products, and Ingredients (physical and otherwise)
-                               are just a sampling of what may be found in a Product Knowledge Graph.
+    schema:description      """A Product Knowledge Graph is a Knowledge Graph derived from entity
+                               relationships across various product-associated domains, such as 
+                               Users, Producers, Competing Products, Complementary Products, 
+                               Components/Ingredients (physical and otherwise), and many more.
                             """ ;
     skos:broader            <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this> ,
@@ -5305,12 +5303,10 @@ owl:IrreflexiveProperty
     a                       skos:Concept ;
     wdrs:describedby        source: ;
     schema:name             "Profile Knowledge Graph" ;
-    schema:description      """A Profile Knowledge Graph is a Knowledge Graph that springs from and
-                               centers on a particular Entity, typically a Person, most often building 
-                               outward from the Person's "Profile Page" on the WorldWideWeb. Connections 
-                               to Employers, Coworkers, Family, Interests, Activities, Pictures, Movies,
-                               and Friends are just a sampling of what may be found in a Profile 
-                               Knowledge Graph.
+    schema:description      """A Profile Knowledge Graph is a Knowledge Graph derived from entity 
+                               relationships across various interpersonal domains including 
+                               Employers and Employees, Coworkers, Family, Interests, Activities, 
+                               Pictures, Movies, and Friends, among many others.
                             """ ;
     skos:broader            <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
     skos:related            <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this> ,
