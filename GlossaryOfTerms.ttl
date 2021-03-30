@@ -1,3 +1,5 @@
+# https://github.com/OpenLinkSoftware/glossaries/edit/master/GlossaryOfTerms.ttl
+
 @prefix        rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix        wdrs: <http://www.w3.org/2007/05/powder-s#> .
 @prefix        foaf: <http://xmlns.com/foaf/0.1/> .
@@ -36,7 +38,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-08-05T09:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2021-03-29T16:00:00-04:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +50,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-08-05T09:50:00-04:00"^^xsd:dateTime ;    
+    schema:dateModified "2021-03-29T16:00:00-04:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -253,6 +255,10 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/DataGovernance#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/DataWrangling#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
@@ -5256,4 +5262,77 @@ owl:IrreflexiveProperty
                             <https://twitter.com/hashtag/SEO#this> ,
                             <https://twitter.com/hashtag/SSEO#this> ,
                             <https://twitter.com/hashtag/ContentManagement#this> ;
+    skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this>,
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "Enterprise Knowledge Graph" ;
+    schema:description      """An Enterprise Knowledge Graph (EKG) is a Knowledge Graph that springs from and
+                               centers on a particular Enterprise, typically a Company, most often building 
+                               outward from the Enterprise "Home Page" on the WorldWideWeb. Connections to
+                               Suppliers, Customers, Employees, Products, Competitors, and Partners are just
+                               a sampling of what may be found in an EKG.
+                            """ ;
+    schema:subjectOf        <http://www-kasm.nii.ac.jp/iswc2016/papers/paper_A29_.pdf> ,
+                            <https://www2.deloitte.com/content/dam/Deloitte/de/Documents/operations/knowledge-graphs-pov.pdf> ,
+                            <https://dmccreary.medium.com/enterprise-knowledge-graph-2020-58fc0c494f7c> ,
+                            <https://enterprise-knowledge.com/what-is-an-enterprise-knowledge-graph-and-why-do-i-want-one/> ;
+    skos:broader            <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this> ,
+                            <https://dbpedia.org/resource/Enterprise_social_graph>;
+    skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this>,
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "Product Knowledge Graph" ;
+    schema:description      """A Product Knowledge Graph is a Knowledge Graph that springs from and
+                               centers on a particular Product, most often building outward from the 
+                               Product "Home Page" on the WorldWideWeb. Connections to Users, Competing
+                               Products, Complementary Products, and Ingredients (physical and otherwise)
+                               are just a sampling of what may be found in a Product Knowledge Graph.
+                            """ ;
+    skos:broader            <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this> ;
+    skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this>,
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "Profile Knowledge Graph" ;
+    schema:description      """A Profile Knowledge Graph is a Knowledge Graph that springs from and
+                               centers on a particular Entity, typically a Person, most often building 
+                               outward from the Person's "Profile Page" on the WorldWideWeb. Connections 
+                               to Employers, Coworkers, Family, Interests, Activities, Pictures, Movies,
+                               and Friends are just a sampling of what may be found in a Profile 
+                               Knowledge Graph.
+                            """ ;
+    skos:broader            <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this> ;
+    skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this>,
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "Data Mesh" ;
+    schema:description      """A Data Mesh is decentralized and domain focused collection of independently 
+                               modeled, defined, populated, and curated datasets, typically within an
+                               enterprise, where niche experts are enabled and empowered to handle their
+                               own data, instead of being beholden to a few DBMS wizards who limit and
+                               control what can be done and how. Connections between the data used by 
+                               projects, teams, departments, task forces, and the like, can be made —
+                               and unmade — on an ad-hoc basis, subject only to the needs of the user.
+                            """ ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/DataLake#this> ;
     skos:inScheme           :this .
