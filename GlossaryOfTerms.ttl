@@ -259,7 +259,8 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> ,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DigitalTwin#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -5337,3 +5338,21 @@ owl:IrreflexiveProperty
                             <http://data.openlinksw.com/oplweb/glossary-term/DataLake#this> ;
     schema:mainEntityOfPage <https://martinfowler.com/articles/data-monolith-to-mesh.html> ;
     skos:inScheme           :this .
+
+## Digital Twin
+
+<http://data.openlinksw.com/oplweb/glossary-term/DigitalTwin#this>
+    a skos:Concept;
+    schema:name "Digital Twin"@en ;
+    schema:description """A digital twin is a virtual representation that serves as the real-time digital 
+                          counterpart of a physical object or process. The digital twin acts as a proxy 
+                          for its thing; any application that needs data from the thing deals with the 
+                          proxy instead.
+                       """@en ;
+    owl:sameAs              dbpedia:Digital_twin ;
+    schema:mainEntityOfPage <http://en.wikipedia.org/wiki/Digital_twin> ,
+                            <https://www.gartner.com/smarterwithgartner/how-digital-twins-simplify-the-iot/> ,
+                            <https://www.digitaltwinconsortium.org/initiatives/the-definition-of-a-digital-twin.htm> ;
+    skos:related            <>
+    skos:inScheme :this .
+
