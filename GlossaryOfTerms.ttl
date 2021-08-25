@@ -38,7 +38,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2021-04-21T22:10:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2021-08-11T10:35:00-05:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -50,7 +50,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2021-04-21T22:10:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2021-08-11T10:35:00-05:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -259,7 +259,8 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> ,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DigitalTwin#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -5337,3 +5338,23 @@ owl:IrreflexiveProperty
                             <http://data.openlinksw.com/oplweb/glossary-term/DataLake#this> ;
     schema:mainEntityOfPage <https://martinfowler.com/articles/data-monolith-to-mesh.html> ;
     skos:inScheme           :this .
+
+## Digital Twin
+
+<http://data.openlinksw.com/oplweb/glossary-term/DigitalTwin#this>
+    a                       skos:Concept;
+    schema:name             "Digital Twin"@en ;
+    schema:image            <https://www.preddiotech.com/wp-content/uploads/2020/09/2.0-background-edit-digital-twin-pump-.png> ;
+    schema:description      """A digital twin is a digital representation of a physical artifact or process.
+                               It may also be a higher-fidelity rendition of another digital artifact. A
+                               digital twin provides a proxy for replicating interactions across digital and 
+                               analog realms.
+                            """@en ;
+    owl:sameAs              dbpedia:Digital_twin ;
+    schema:mainEntityOfPage <http://en.wikipedia.org/wiki/Digital_twin> ,
+                            <https://www.gartner.com/smarterwithgartner/how-digital-twins-simplify-the-iot/> ,
+                            <https://www.digitaltwinconsortium.org/initiatives/the-definition-of-a-digital-twin.htm> ,
+                            <https://www.preddiotech.com/what-is-a-digital-twin/> ;
+    skos:related            <> ,
+                            dbpedia:Digital_twin ;
+    skos:inScheme :this .
