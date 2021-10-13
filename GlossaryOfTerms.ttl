@@ -1,3 +1,5 @@
+# https://github.com/OpenLinkSoftware/glossaries/edit/master/GlossaryOfTerms.ttl
+
 @prefix        rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix        wdrs: <http://www.w3.org/2007/05/powder-s#> .
 @prefix        foaf: <http://xmlns.com/foaf/0.1/> .
@@ -36,7 +38,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-08-05T09:50:00-04:00"^^xsd:dateTime ;
+    schema:dateModified "2021-08-11T10:35:00-05:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -48,7 +50,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2020-08-05T09:50:00-04:00"^^xsd:dateTime ;    
+    schema:dateModified "2021-08-11T10:35:00-05:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -253,7 +255,12 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/ConnectedData#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/DataGovernance#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/DataWrangling#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> ,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DigitalTwin#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -673,7 +680,10 @@ schema:image   <https://cdn-images-1.medium.com/max/880/1*A-VaSSx2cqNHrI19_t4cfA
                <https://enterprise-knowledge.com/cms/assets/uploads/2019/01/Knowledge-Graph.png> ,
                <https://www.researchgate.net/profile/Hijaz_Ahmad/post/What_is_Knowledge_Graphs/attachment/5ab8df4b4cde266d5893ceb5/AS%3A608399813251073%401522065227594/download/main-qimg-a8f2f3b409c3336d5839f247f10c9921.png> ;
 skos:altLabel "KG"@en ;
-skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
+skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>, 
+              <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this>, 
+              <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this>,
+              <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this> ;
 schema:description """A collection of Entities, Entity Types, and Entity Relationship Types that manifests as an intelligible Web of Data informed by an Ontology."""@en ;
 skos:related dbpedia:Knowledge_graph,
              dbpedia:Semantic_Web,
@@ -4987,7 +4997,7 @@ owl:IrreflexiveProperty
     schema:about <http://data.openlinksw.com/oplweb/glossary-term/LDP#this> ;
     schema:mainEntity <http://data.openlinksw.com/oplweb/glossary-term/LDP#this> ;
     schema:url <http://www.w3.org/TR/2015/REC-ldp-20150226/> ;
-    owl:sameAs <https://www.w3.org/TR/ldp/>
+    owl:sameAs <https://www.w3.org/TR/ldp/> ;
     schema:name "REC-ldp-20150226" .
 
 <http://kidehen.blogspot.com/2014/07/loosely-coupled-read-write-interactions.html>
@@ -5257,3 +5267,94 @@ owl:IrreflexiveProperty
                             <https://twitter.com/hashtag/SSEO#this> ,
                             <https://twitter.com/hashtag/ContentManagement#this> ;
     skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this>
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "Enterprise Knowledge Graph" ;
+    schema:description      """An Enterprise Knowledge Graph (EKG) is a Knowledge Graph derived from entity
+                               relationships across various internal business domains. Examples of said
+                               domains include: Marketing, Human Resources, Suppliers, Customers, Employees, 
+                               Products, Competitors, Partners, and many others. 
+                            """ ;
+    schema:subjectOf        <http://www-kasm.nii.ac.jp/iswc2016/papers/paper_A29_.pdf> ,
+                            <https://www2.deloitte.com/content/dam/Deloitte/de/Documents/operations/knowledge-graphs-pov.pdf> ,
+                            <https://dmccreary.medium.com/enterprise-knowledge-graph-2020-58fc0c494f7c> ,
+                            <https://enterprise-knowledge.com/what-is-an-enterprise-knowledge-graph-and-why-do-i-want-one/> ;
+    skos:broader            <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this> ,
+                            <https://dbpedia.org/resource/Enterprise_social_graph>;
+    skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this>
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "Product Knowledge Graph" ;
+    schema:description      """A Product Knowledge Graph is a Knowledge Graph derived from entity
+                               relationships across various product-associated domains, such as 
+                               Users, Producers, Competing Products, Complementary Products, 
+                               Components/Ingredients (physical and otherwise), and many more.
+                            """ ;
+    skos:broader            <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this> ;
+    skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this>
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "Profile Knowledge Graph" ;
+    schema:description      """A Profile Knowledge Graph is a Knowledge Graph derived from entity 
+                               relationships across various interpersonal domains including 
+                               Employers and Employees, Coworkers, Family, Interests, Activities, 
+                               Pictures, Movies, and Friends, among many others.
+                            """ ;
+    skos:broader            <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this> ;
+    skos:inScheme           :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this>
+    a                       skos:Concept ;
+    wdrs:describedby        source: ;
+    schema:name             "Data Mesh" ;
+    schema:image            <https://martinfowler.com/articles/data-monolith-to-mesh/data-mesh.png> ;
+    schema:description      """A Data Mesh is decentralized and domain focused collection of independently 
+                               modeled, defined, populated, and curated datasets, typically within an
+                               enterprise, where niche experts are enabled and empowered to handle their
+                               own data, instead of being beholden to a few DBMS wizards who limit and
+                               control what can be done and how. Connections between the data used by 
+                               projects, teams, departments, task forces, and the like, can be made —
+                               and unmade — on an ad-hoc basis, subject only to the needs of the user.
+                            """ ;
+    skos:related            <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/EnterpriseKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this> ,
+                            <http://data.openlinksw.com/oplweb/glossary-term/DataLake#this> ;
+    schema:mainEntityOfPage <https://martinfowler.com/articles/data-monolith-to-mesh.html> ;
+    skos:inScheme           :this .
+
+## Digital Twin
+
+<http://data.openlinksw.com/oplweb/glossary-term/DigitalTwin#this>
+    a                       skos:Concept;
+    schema:name             "Digital Twin"@en ;
+    schema:image            <https://www.preddiotech.com/wp-content/uploads/2020/09/2.0-background-edit-digital-twin-pump-.png> ;
+    schema:description      """A digital twin is a digital representation of a physical artifact or process.
+                               It may also be a higher-fidelity rendition of another digital artifact. A
+                               digital twin provides a proxy for replicating interactions across digital and 
+                               analog realms.
+                            """@en ;
+    owl:sameAs              dbpedia:Digital_twin ;
+    schema:mainEntityOfPage <http://en.wikipedia.org/wiki/Digital_twin> ,
+                            <https://www.gartner.com/smarterwithgartner/how-digital-twins-simplify-the-iot/> ,
+                            <https://www.digitaltwinconsortium.org/initiatives/the-definition-of-a-digital-twin.htm> ,
+                            <https://www.preddiotech.com/what-is-a-digital-twin/> ;
+    skos:related            <> ,
+                            dbpedia:Digital_twin ;
+    skos:inScheme :this .
