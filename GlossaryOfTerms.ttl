@@ -3450,7 +3450,7 @@ owl:IrreflexiveProperty
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#SemanticWeb" ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg> ;
     schema:description """A collection of Entities, Entity Types, and Entity Relationship Types that manifests as an intelligible Entity Relationship Graph 
-                          informed by an Ontology."""@en ;
+                          informed by an Ontology and deployed using Linked Data Principles."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfIntelligence#this> ,
                  <http://dbpedia.org/resource/Semantic_Web> ,
