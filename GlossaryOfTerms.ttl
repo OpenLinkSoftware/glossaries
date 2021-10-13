@@ -3449,18 +3449,8 @@ owl:IrreflexiveProperty
     schema:name "Semantic Web" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#SemanticWeb" ;
     schema:image <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg> ;
-    schema:description """Semantically Enhanced Linked Data Network (Cloud)."""@en ;
-    schema:description """Webby (or Web-like) Structured Data that's endowed with machine- and
-                          human-comprehensible Entity Relationship Type semantics. Basically, the
-                          meaning of a relationship between two entities is represented in a manner 
-                          that is understandable by both machines and humans, e.g.,
-                          <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
-                          <http://dbpedia.org/resource/Semantic_Web>,
-                          <http://yago-knowledge.org/resource/Semantic_Web>, and
-                          <http://www.wikidata.org/entity/Q54837> are all terms that identify (name) the same entity, 
-                          using a pattern recognizable by both humans and software applications that understand
-                          RDF language sentences published using Linked Data principles (i.e., Entity Names resolve to
-                          Entity Description Documents)."""@en ;
+    schema:description """A collection of Entities, Entity Types, and Entity Relationship Types that manifests as an intelligible Entity Relationship Graph 
+                          informed by an Ontology."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfIntelligence#this> ,
                  <http://dbpedia.org/resource/Semantic_Web> ,
