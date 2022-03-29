@@ -373,15 +373,6 @@ source:
                <http://www.w3.org/2002/07/owl#Thing> ,
                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource> .
 
-<http://data.openlinksw.com/oplweb/glossary-term/Name#this>  a skos:Concept;
-    owl:equivalenClass <http://data.openlinksw.com/oplweb/glossary-term/Identity#this> ,
-                       <http://data.openlinksw.com/oplweb/glossary-term/Handle#this> ,
-                       <http://data.openlinksw.com/oplweb/glossary-term/Tag#this> ;
-    schema:name "Name" ;
-    wdrs:describedby  source: ;
-    schema:description """Word or phrase by which one is identified (i.e., combination of
-                      identifier denotation and description document connotation). """@en ;
-    skos:related <http://www.vocabulary.com/dictionary/name> .
 
 ## Concepts
 
@@ -583,6 +574,26 @@ schema:description """Notation used to represent a collection of terms that have
                    """@en ;
 skos:related <http://data.openlinksw.com/oplweb/glossary-term/Tuple#this>, <http://dbpedia.org/resource/Tuple> ; 
 skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/Name#this>  a skos:Concept;
+    schema:name "Name" ;
+    schema:description """Word or phrase by which one is identified (i.e., combination of
+                      identifier denotation and description document connotation). """@en ;
+    skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Identity#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/Handle#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/Tag#this> ;
+                 <http://data.openlinksw.com/oplweb/glossary-term/IRI#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ;
+    skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/WebID#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCDSN#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCUserDSN#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCSystemDSN#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCFileDSN#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
+    wdrs:describedby  source: ;
+    skos:related <http://www.vocabulary.com/dictionary/name> ;
+    skos:inScheme :this .
 
 ## Industry Trends ##
 
@@ -1332,27 +1343,6 @@ rdf:Property
                   <http://data.openlinksw.com/oplweb/glossary-term/ODBCFileDSN#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
     skos:related <http://slidesha.re/1hF48QL> ;
-    skos:inScheme :this .
-
-<http://data.openlinksw.com/oplweb/glossary-term/Name#this>
-    a skos:Concept ;
-    schema:name "Name" ;
-    schema:description """A sign that combines entity denotation an connotation by way of indirection. For example, the fragment identifier component of an HTTP-based hyperlink provides implicit 
-    indirection that turns an HTTP URL (Address) into an HTTP URI (Name)."""@en ;
-    owl:sameAs <http://dbpedia.org/resource/Name> ;
-    # schema:image <https://s-media-cache-ak0.pinimg.com/originals/96/1a/e3/961ae3fb72d6cbc554fc7a88bc0fff4f.jpg> ;
-    <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#Name" ;
-    wdrs:describedby  source: ;
-    skos:broader  <http://data.openlinksw.com/oplweb/glossary-term/IRI#this> ,
-                  <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ;
-    skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
-                  <http://data.openlinksw.com/oplweb/glossary-term/WebID#this> ,
-                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCDSN#this> ,
-                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCUserDSN#this> ,
-                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCSystemDSN#this> ,
-                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCFileDSN#this> ,
-                  <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
-    # skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/IRI#this>
