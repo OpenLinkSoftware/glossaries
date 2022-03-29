@@ -1,3 +1,4 @@
+## Turtle Start ##
 # https://github.com/OpenLinkSoftware/glossaries/edit/master/GlossaryOfTerms.ttl
 
 @prefix        rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -38,7 +39,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2021-10-14T16:45:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2021-10-12T10:35:00-05:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -50,7 +51,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2021-10-14T16:45:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2021-10-12T10:35:00-05:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -259,8 +260,9 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/ProductKnowledgeGraph#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/ProfileKnowledgeGraph#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> ,
-                    <http://data.openlinksw.com/oplweb/glossary-term/DigitalTwin#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/DigitalTwin#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/Name#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -1330,6 +1332,27 @@ rdf:Property
                   <http://data.openlinksw.com/oplweb/glossary-term/ODBCFileDSN#this> ,
                   <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
     skos:related <http://slidesha.re/1hF48QL> ;
+    skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/Name#this>
+    a skos:Concept ;
+    schema:name "Name" ;
+    schema:description """A sign that combines entity denotation an connotation by way of indirection. For example, the fragment identifier component of an HTTP-based hyperlink provides implicit 
+    indirection that turns an HTTP URL (Address) into an HTTP URI (Name)."""@en ;
+    owl:sameAs <http://dbpedia.org/resource/Name> ;
+    # schema:image <https://s-media-cache-ak0.pinimg.com/originals/96/1a/e3/961ae3fb72d6cbc554fc7a88bc0fff4f.jpg> ;
+    <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#Name" ;
+    wdrs:describedby  source: ;
+    skos:broader  <http://data.openlinksw.com/oplweb/glossary-term/IRI#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ;
+    skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/WebID#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCDSN#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCUserDSN#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCSystemDSN#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/ODBCFileDSN#this> ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/JDBCDSN#this> ;
+    # skos:related <http://slidesha.re/1hF48QL> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/IRI#this>
@@ -2975,7 +2998,9 @@ owl:IrreflexiveProperty
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/StructuredData#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/OpenData#this> ;
-    owl:sameAs <http:/dbpedia.org/resource/Linked_data> ;
+    owl:sameAs <http:/dbpedia.org/resource/Linked_data>, <http://www.omg.org/spec/DOL/DOL-terms/LinkedData#this> ;
+    skos:related <http://www.omg.org/spec/DOL/DOL-terms/LinkedData> ;
+    schema:relatedLink <http://www.omg.org/spec/DOL/DOL-terms/LinkedData> ;
     schema:mentions <http://bit.ly/19hvYja> ,
                     <http://bit.ly/1cbSTNb> ,
                     <http://bit.ly/1kVSEFs> ;
@@ -3864,11 +3889,10 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "SPARQL" ;
     skos:altLabel "SPARQL" ;
-    schema:description """Recursive acronym of "SPARQL Protocol and RDF Query Language", SPARQL comprises
-                          a Declarative Structured Query language for RDF-model-based structured data, Query
-                          Results Serialization Formats, HTTP-based Query Service Protocol, and an HTTP-based
-                          Database- (or Store-) oriented protocol for Create, Read, Update, and Delete (CRUD)
-                          operations."""@en ;
+    schema:description """Recursive acronym that covers: a Declarative Structured Query language for
+                      RDF-model-based structured data, Query Results Serialization Formats,
+                      HTTP-based Query Service Protocol, and an HTTP-based Database- (or Store-)
+                      oriented protocol for Create, Update, and Delete (CRUD) operations."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
@@ -5349,3 +5373,5 @@ owl:IrreflexiveProperty
     skos:related            <> ,
                             dbpedia:Digital_twin ;
     skos:inScheme :this .
+
+    ## Turtle End ##
