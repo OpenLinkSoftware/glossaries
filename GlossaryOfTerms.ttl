@@ -581,7 +581,7 @@ skos:inScheme :this .
                       identifier denotation and description document connotation). """@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Identity#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/Handle#this> ,
-                 <http://data.openlinksw.com/oplweb/glossary-term/Tag#this> ;
+                 <http://data.openlinksw.com/oplweb/glossary-term/Tag#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/IRI#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ;
     skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/HTTPURI#this> ,
