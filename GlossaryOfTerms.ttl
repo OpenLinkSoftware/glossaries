@@ -5120,7 +5120,8 @@ owl:IrreflexiveProperty
     skos:altLabel "Data Space"@en ;
     skos:prefLabel "Data Spaces"@en ;
     schema:image <https://i.pinimg.com/originals/ae/04/e1/ae04e10ded1510f421e8e16d3985ecf9.png> ;
-    skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/DataLake#this> ;
+    owl:sameAs <http://dbpedia.org/resource/Dataspaces> ;
+    skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/DataLake#this>, <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ;
     # schema:image <https://www.dunnsolutions.com/content/image/journal/article?img_id=747273&t=1484173183371> ;
     schema:description """Abstraction over File System (or Filesystem) and Database Management System (DBMS) that provides
                           a single access point to data originating from disparate sources. In conventional Filesystem form,
@@ -5130,7 +5131,8 @@ owl:IrreflexiveProperty
                           using one or more declarative query languages (e.g., SQL, SPARQL)."""@en ;
     schema:mainEntityOfPage <https://medium.com/@kidehen/personal-data-spaces-lockers-e9d8cd627ecf> ,
                             <http://ods.openlinksw.com/wiki/ODS/> ,
-                            <https://www.slideshare.net/kidehen/linked-data-spaces-data-portability-access> ;
+                            <https://www.slideshare.net/kidehen/linked-data-spaces-data-portability-access>,
+                            <https://homes.cs.washington.edu/~alon/files/dataspacesDec05.pdf> ;
     skos:related <https://twitter.com/hashtag/DigitalBusiness#this> ,
                  <https://twitter.com/hashtag/DataVirtualization#this> ,
                  <https://twitter.com/hashtag/LinkedData#this> ,
