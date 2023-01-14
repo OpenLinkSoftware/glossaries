@@ -262,7 +262,10 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/DataMesh#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/DigitalTwin#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/Name#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/Name#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/Fediverse#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ActivityStreams#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ActivityPub#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -3482,6 +3485,65 @@ owl:IrreflexiveProperty
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ;
     schema:mentions <http://dbpedia.org/resource/Abstraction> ;
+    skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/Fediverse#this>
+    a skos:Concept ;
+    owl:sameAs <http://dbpedia.org/resource/Fediverse> ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "Fediverse" ;
+    <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#Fediverse" ;
+    schema:image <https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Fediverse_branches_1.2.png/800px-Fediverse_branches_1.2.png> ;
+    schema:description """A collection of Data Spaces connected by common support of ActivityPub for (C)reate, (R)ead, (U)pdate, and (D)elete
+    operations dispatched over HTTP comprising ActivityStreams (content-type "applicaition/activity+json") payloads."""@en ;
+    skos:broader <http://data.openlinksw.com/oplweb/glossary-term/WorldWideWeb#this> ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+                <https://www.w3.org/TR/activitystreams-vocabulary/#object-types> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/DataSpace#this> ,
+                <https://github.com/w3c/activitypub#this> ;
+    skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/ActivityStreams#this>
+    a skos:Concept ;
+    owl:sameAs <http://dbpedia.org/resource/Activity_Streams_(format)> ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "ActivityStreams" ;
+    <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#ActivityStreams" ;
+    # schema:image <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg> ;
+    schema:description """A structured data representation format that represents activities associated with an 
+    HTTP-accessible Data Space. Payloads constructed using this format are transmitted across Data Spaces federations (a/k/a the Fediverse)
+    via the ActivityPub protocol."""@en ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/DataSpace#this> ,
+                <https://github.com/w3c/activitypub#this> ;
+    skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/ActivityPub#this>
+    a skos:Concept ;
+    owl:sameAs <http://dbpedia.org/resource/ActivityPub> ;
+    skos:inScheme :this ;
+    wdrs:describedby  source: ;
+    schema:name "ActivityPub" ;
+    <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#ActivityPub" ;
+    schema:image <https://upload.wikimedia.org/wikipedia/commons/2/20/ActivityPub-tutorial-image.png> ;
+    schema:description """A (C)reate, (R)ead, (U)pdate, and (D)elete operations protocol for publishing ActivityStreams across Data Spaces."""@en ;
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/DataSpace#this> ,
+                <https://github.com/w3c/activitypub#this> ;
     skos:inScheme :this .
 
 ## Structured Data Representation
