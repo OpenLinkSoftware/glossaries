@@ -39,7 +39,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2022-03-31T14:25:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2022-03-31T10:35:00-05:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -51,7 +51,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2022-03-31T14:25:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2022-03-31T10:35:00-05:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -3505,6 +3505,7 @@ owl:IrreflexiveProperty
                 <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                 <https://www.w3.org/TR/activitystreams-vocabulary/#object-types> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/DataSpace#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/ActivityStreams#this> ,
                 <https://github.com/w3c/activitypub#this> ;
     skos:inScheme :this .
 
@@ -3525,6 +3526,8 @@ owl:IrreflexiveProperty
                 <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/DataSpace#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/ActivityPub#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/Fediverse#this> ,
                 <https://github.com/w3c/activitypub#this> ;
     skos:inScheme :this .
 
@@ -3543,6 +3546,8 @@ owl:IrreflexiveProperty
                 <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/DataSpace#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/ActivityStreams#this> ,
+                <http://data.openlinksw.com/oplweb/glossary-term/Fediverse#this> ,
                 <https://github.com/w3c/activitypub#this> ;
     skos:inScheme :this .
 
@@ -3941,11 +3946,10 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "SPARQL" ;
     skos:altLabel "SPARQL" ;
-    schema:description """Recursive acronym of "SPARQL Protocol and RDF Query Language", SPARQL comprises:
-                          a Declarative Structured Query language for RDF-model-based structured data;
-                          Query Results Serialization Formats; an HTTP-based Query Service Protocol; and
-                          an HTTP-based Database- (or Store-) oriented protocol for Create, Read, Update,
-                          and Delete (CRUD) operations."""@en ;
+    schema:description """Recursive acronym that covers: a Declarative Structured Query language for
+                      RDF-model-based structured data, Query Results Serialization Formats,
+                      HTTP-based Query Service Protocol, and an HTTP-based Database- (or Store-)
+                      oriented protocol for Create, Update, and Delete (CRUD) operations."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ,
