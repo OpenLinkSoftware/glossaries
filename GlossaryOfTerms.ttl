@@ -3517,9 +3517,19 @@ owl:IrreflexiveProperty
     schema:name "ActivityStreams" ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#ActivityStreams" ;
     # schema:image <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg> ;
-    schema:description """A structured data representation format that represents activities associated with an 
-    HTTP-accessible Data Space. Payloads constructed using this format are transmitted across Data Spaces federations (a/k/a the Fediverse)
-    via the ActivityPub protocol."""@en ;
+    # schema:description """A Document type comprising content that represents activities associated with an 
+    # HTTP-accessible Data Space. Payloads constructed using this format are transmitted across Data Spaces federations (a/k/a the Fediverse)
+    # via the ActivityPub protocol."""@en ;
+    schema:description """ActivityStreams are documents comprising content that describe social media activities 
+    such as: 
+                1. Following & Unfollowing
+                2. Liking 
+                3. Reposting (or Boosting)
+                4. Post Creation
+                5. Post Commenting (or replying to) 
+                6. Account Blocking and UnBlocking
+    The content of these documents are constructed using Linked Data principles and reside in a Fediverse DataSpace associated with 
+    (C)reate, (R)ead, (U)pdate, and (D)elete operation operation endpoints that support the ActivityPub protocol.  """@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
