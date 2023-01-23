@@ -39,7 +39,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2022-03-31T10:35:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2023-01-23T17:35:00-05:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -265,7 +265,8 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/Name#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/Fediverse#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/ActivityStreams#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/ActivityPub#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/ActivityPub#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/WebFinger#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -1518,6 +1519,28 @@ rdf:Property
                            <http://slidesha.re/1hF48QL> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/NetIDTLSProtocol#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/WebIDTLSProtocol#this> ;
+    skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/WebFinger#this>
+    a skos:Concept ;
+    schema:name "WebFinger" ;
+    owl:sameAs <http://dbpedia.org/resource/WebFinger> ;
+    schema:description """A resolution protocol used to associate entities denoted using acct: or mailto: scheme Uniform Resource Identiers to
+    subject profile information represented in a variety of structured data formats. These formats include JSON dialects such as the 
+    Extensible Resource Description [XRD], JSON Resource Descriptors [JRD](content-type 'application/json'), and ActivityStreams (content-type 'application/activity+json') 
+    which is commonly used across the burgeoning Fediverse. Platforms that support this protocol provide a '.well-known/host-meta' or '.well-known/webfinger' 
+    service endpoint for service discovery via HTTP. """@en ;
+    <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#WebFinger" ;
+    wdrs:describedby  source: ;
+    # schema:image <https://dvcs.w3.org/hg/WebID/raw-file/tip/spec/img/WebID-overview.png> ;
+    skos:broader <http://data.openlinksw.com/oplweb/glossary-term/IRI#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/Identifier#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+    skos:related <http://data.openlinksw.com/oplweb/glossary-term/NetID#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/ActivityStreams#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/Fediverse#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/ActivityPub#this> ,
+                 <https://www.rfc-editor.org/rfc/rfc7033> ;
     skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/DSN#this>
