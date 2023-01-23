@@ -1535,7 +1535,7 @@ rdf:Property
     # schema:image <https://dvcs.w3.org/hg/WebID/raw-file/tip/spec/img/WebID-overview.png> ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/IRI#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/Identifier#this> ,
-                 <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
+                 <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/NetID#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/ActivityStreams#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/Fediverse#this> ,
