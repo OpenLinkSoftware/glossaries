@@ -39,7 +39,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2023-01-23T17:35:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2023-05-04T14:35:00-05:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -266,7 +266,8 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/Fediverse#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/ActivityStreams#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/ActivityPub#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/WebFinger#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/WebFinger#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/EncryptionAtRest#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -1710,6 +1711,25 @@ rdf:Property
                            <http://data.openlinksw.com/oplweb/glossary-term/LinkedOpenData#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
                            <http://slidesha.re/1hF48QL> ;
+    skos:inScheme :this .
+
+## Data Security
+
+<http://data.openlinksw.com/oplweb/glossary-term/EncryptionAtRest#this>
+    a skos:Concept ;
+    wdrs:describedby  source: ;
+    schema:name "Encryption At Rest" ;
+    skos:altLabel "EAR" ;
+    schema:image <https://phoenixnap.com/blog/wp-content/uploads/2021/11/encryption-explained.jpg> ;
+    schema:description """Document content in encrypted form using its resting state, before or after any content transmission (serialization)
+                          related operations."""@en ;
+    schema:description """Encryption At Rest” (EAR) prevents data visibility in the event of its unauthorized access or theft, 
+                          and is commonly used to protect data in persistent form (at rest) following secure transmission using e.g.,
+                          via the Transport Layer Security (TLS) protocol """@en ;
+    <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#EncryptionAtREST" ;
+    skos:related <https://dbpedia.org/resource/Data_at_rest>,
+                 <https://community.openlinksw.com/t/virtuoso-encryption-at-rest-ear-usage-guide/3380#>,
+                 <https://phoenixnap.com/blog/encryption-at-rest#> ;
     skos:inScheme :this .
 
 ## Protocols
