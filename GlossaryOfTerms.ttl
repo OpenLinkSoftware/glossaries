@@ -39,7 +39,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2023-05-04T14:35:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2023-05-04T15:57:00-05:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -51,7 +51,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2022-03-31T10:35:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2023-05-04T15:57:00-05:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -249,7 +249,7 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/Community#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/Group#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/EigenVectorCentrality#this> ,
-                    <http://data.openlinksw.com/oplweb/glossary-term/BetweenessCentrality#this> ,
+                    <http://data.openlinksw.com/oplweb/glossary-term/BetweennessCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/ClosenessCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/DegreeCentrality#this> ,
                     <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ,
@@ -605,7 +605,8 @@ skos:inScheme :this .
 <http://data.openlinksw.com/oplweb/glossary-term/SelfSovereignIdentity#this> 
 a skos:Concept ;
 schema:name "Self Sovereign Identity"@en ;
-schema:description """Identity associated with Credentials that are self-certified, courtesy of cryptography, without the requirement of a third-party notary service e.g., a Certificate Authority. 
+schema:description """Identity associated with Credentials that are self-certified, courtesy of cryptography, 
+                      without requiring a third-party notary service such as a Certificate Authority. 
                    """@en ;
 skos:related dbpedia:Identity,
              dbpedia:Cryptography,
@@ -775,7 +776,8 @@ skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/SystemsOfEngagement#this>
     a skos:Concept;
-    skos:related dbpedia:Apache_Hadoop,dbpedia:File_system,
+    skos:related dbpedia:Apache_Hadoop, 
+                 dbpedia:File_system,
                  dbpedia:Distributed_file_system,
                  dbpedia:Analytics,
                  dbpedia:Apache_Kafka ;
@@ -1724,8 +1726,8 @@ rdf:Property
     schema:description """Document content in encrypted form using its resting state, before or after any content transmission (serialization)
                           related operations."""@en ;
     schema:description """Encryption At Rest” (EAR) prevents data visibility in the event of its unauthorized access or theft, 
-                          and is commonly used to protect data in persistent form (at rest) following secure transmission using e.g.,
-                          via the Transport Layer Security (TLS) protocol """@en ;
+                          and is commonly used to protect data in persistent form (at rest) following secure transmission via,
+                          for instance, the Transport Layer Security (TLS) protocol."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#EncryptionAtREST" ;
     skos:related <https://dbpedia.org/resource/Data_at_rest>,
                  <https://community.openlinksw.com/t/virtuoso-encryption-at-rest-ear-usage-guide/3380#>,
@@ -1863,7 +1865,7 @@ rdf:Property
                            <https://www.goodreads.com/book/show/6494620-connected#>,
                            <https://www.nfx.com/post/your-life-network-effects#> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/EigenVectorCentrality#this> ,
-                           <http://data.openlinksw.com/oplweb/glossary-term/BetweenessCentrality#this> ,
+                           <http://data.openlinksw.com/oplweb/glossary-term/BetweennessCentrality#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/ClosenessCentrality#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/DegreeCentrality#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ,
@@ -1881,8 +1883,8 @@ rdf:Property
     wdrs:describedby  source: ;
     schema:name "Network Sub-Group" ;
     schema:image <http://snap.stanford.edu/agm/ncaa.png> ;
-    schema:description """Part of a network clustered formed around a variety of items. Membership could be explict or implict. 
-                          For example Facebook uses friendship claims to create friend groups. Ditto LinkedIn regarding contact 
+    schema:description """Part of a network clustered formed around a variety of items. Membership could be explicit or implict. 
+                          For example, Facebook uses friendship claims to create friend groups. LinkedIn does the same for contact 
                           groupings."""@en ;
     skos:related <https://wenger-trayner.com/resources/communities-versus-networks#> ,
                            <https://medium.com/conductal/the-difference-between-communities-groups-and-networks-179ac2052f25#>,
@@ -1901,8 +1903,8 @@ rdf:Property
     skos:prefLabel "Community Network" ;
     schema:image <http://snap.stanford.edu/agm/ncaa.png> ;
     schema:description """Part of a group clustered around topics-of-interest, combined with an explicit assertion of membership by actual members or observers
-                          (including a system that infer this variant of a network group/cluster). Explicit assertions could be found in the profile documents of 
-                          community members e.g., a WebID-Profile document."""@en ;
+                          (including a system that infers this variant of a network group/cluster). Explicit assertions could be found in the profile documents of 
+                          community members, e.g., a WebID-Profile document."""@en ;
     skos:related <https://wenger-trayner.com/resources/communities-versus-networks#> ,
                            <https://medium.com/conductal/the-difference-between-communities-groups-and-networks-179ac2052f25#>,
                            <http://snap.stanford.edu/agm#>,
@@ -1930,7 +1932,7 @@ rdf:Property
                             <https://towardsdatascience.com/graph-analytics-introduction-and-concepts-of-centrality-8f5543b55de3#>,
                             <http://leonidzhukov.net/hse/2014/socialnetworks/papers/freeman79-centrality.pdf>,
                             <https://networkx.github.io/documentation/stable/reference/algorithms/centrality.html> ;
-        skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/BetweenessCentrality#this>,
+        skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/BetweennessCentrality#this>,
                       <http://data.openlinksw.com/oplweb/glossary-term/ClosenessCentrality#this>,
                       <http://data.openlinksw.com/oplweb/glossary-term/DegreeCentrality#this>,
                       <http://data.openlinksw.com/oplweb/glossary-term/EigenVectorCentrality#this> ;
@@ -1974,14 +1976,15 @@ rdf:Property
     skos:broader        <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ;
     skos:inScheme :this .
 
-# Betweeness Centrality 
+# Betweenness Centrality 
 
-<http://data.openlinksw.com/oplweb/glossary-term/BetweenessCentrality#this>
+<http://data.openlinksw.com/oplweb/glossary-term/BetweennessCentrality#this>
     a skos:Concept ;
-    owl:sameAs dbpedia:Betweeness_centrality ;
+    owl:sameAs dbpedia:Betweenness_centrality ,
+                  <http://data.openlinksw.com/oplweb/glossary-term/BetweennessCentrality#this>;
     skos:inScheme :this ;
     wdrs:describedby  source: ;
-    schema:name "Betweeness Centrality" ;
+    schema:name "Betweenness Centrality" ;
     schema:image <https://miro.medium.com/max/911/1*s0d1xiERigbaNbmXaCJrYw.png> ;
     schema:description """Betweenness Centrality assigns importance to a node in a network based upon the number of times 
                           that node occurs within the paths between all pairs of nodes in a graph. That is, each node in the 
@@ -2020,7 +2023,7 @@ rdf:Property
     skos:broader           <http://data.openlinksw.com/oplweb/glossary-term/NetworkCentrality#this> ;
     skos:inScheme :this .
 
-## Game Theory & Neworks
+## Game Theory & Networks
 
 
 # Resource
@@ -2153,7 +2156,7 @@ rdf:Property
     schema:image <http://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Relational_database_terms.svg/700px-Relational_database_terms.svg.png> ;
     schema:description """A set of tuples grouped by an overarching condition (predicate). This set can be modelled 
                       in a variety of ways, including as Records grouped by Tables operated on by the SQL Query 
-                      Lanaguage that's supported by a majority of Relational Database Management systems; or as 
+                      Language that's supported by a majority of Relational Database Management systems; or as 
                       Sentences (or Statements) grouped by Sentence Predicate (depictable as Graphs) operated on 
                       by the SPARQL Query Language supported by a majority of RDF-compliant Relational 
                       Database Management Systems and Triple- or Quad-stores."""@en ;
@@ -2416,9 +2419,9 @@ owl:IrreflexiveProperty
                       <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                       <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
                       <http://data.openlinksw.com/oplweb/glossary-term/RDFDBMS#this> ;
-    schema:description """A document comprised of structured data in the form of a collection of entity relationship types that are depicatable
-                          as an entyity relationship graph. Despite conflated as such, this isn't the same thing as a database management system (DBMS). 
-                          Basically, this is about a document type that a DBMS application actually manages."""@en ;
+    schema:description """A document comprised of structured data in the form of a collection of entity relationship types that are depictable
+                          as an entity relationship graph. Despite often being conflated as such, this isn't the same thing as a database management system (DBMS); 
+                          this is a document type that a DBMS application actually manages."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/DBMS#this>, 
                            <http://data.openlinksw.com/oplweb/glossary-term/RDBMS#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/GraphDBMS#this> ,
@@ -2520,7 +2523,7 @@ owl:IrreflexiveProperty
     a   schema:CreativeWork,
         schema:BlogPosting,
         foaf:Document ;
-    schema:name "Generate Relational Tables to RDF Relational Graphs mappingsÃ¢ÂÂ using VirtuosoÃ¢ÂÂs RDF Views Wizard " ;
+    schema:name "Generate Relational Tables to RDF Relational Graphs mappings using Virtuoso's RDF Views Wizard" ;
     schema:mainEntity <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> ;
     skos:related <http://dbpedia.org/resource/Federated_database_system> ,
              <http://dbpedia.org/resource/Data_virtualization> ,
@@ -3539,7 +3542,7 @@ owl:IrreflexiveProperty
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#Fediverse" ;
     schema:image <https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Fediverse_branches_1.2.png/800px-Fediverse_branches_1.2.png> ;
     schema:description """A collection of Data Spaces connected by common support of ActivityPub for (C)reate, (R)ead, (U)pdate, and (D)elete
-    operations dispatched over HTTP comprising ActivityStreams (content-type "applicaition/activity+json") payloads."""@en ;
+    operations dispatched over HTTP comprising ActivityStreams (content-type "application/activity+json") payloads."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/WorldWideWeb#this> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
@@ -3572,7 +3575,7 @@ owl:IrreflexiveProperty
                 5. Post Commenting (or replying to) 
                 6. Account Blocking and UnBlocking
     The content of these documents are constructed using Linked Data principles and reside in a Fediverse DataSpace associated with 
-    (C)reate, (R)ead, (U)pdate, and (D)elete operation operation endpoints that support the ActivityPub protocol.  """@en ;
+    (C)reate, (R)ead, (U)pdate, and (D)elete operation operation endpoints that support the ActivityPub protocol."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
