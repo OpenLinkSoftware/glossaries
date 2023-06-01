@@ -270,7 +270,8 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/EncryptionAtRest#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/LargeLanguageModel#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/ArtificialGeneralIntelligence#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/ArtificialGeneralIntelligence#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ChatGPT#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -738,6 +739,7 @@ skos:related dbpedia:Semantic_Web,
              dbpedia:Artificial_intelligence,
              dbpedia:Language_model,
              <http://data.openlinksw.com/oplweb/glossary-term/ArtificialGeneralIntelligence#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/ChatGPT#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
@@ -749,7 +751,41 @@ schema:relatedLink  <https://www.techopedia.com/definition/34948/large-language-
                     <https://www.scientificamerican.com/article/artificial-general-intelligence-is-not-as-imminent-as-you-might-think1/>,
                     <https://research.aimultiple.com/large-language-models/>, 
                     <https://arxiv.org/pdf/2108.07258.pdf>, 
-                    <https://a16z.com/2023/05/25/ai-canon/> ;
+                    <https://a16z.com/2023/05/25/ai-canon/>,
+                    <https://community.openlinksw.com/search?expanded=true&q=GPT%20%23rdbms%3Atips-tricks-howtos%20tags%3Ahowto%2Cchatgpt%20status%3Apublic%20%40kidehen> ;
+skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/ChatGPT#this>
+a skos:Concept ;
+schema:name "ChatGPT"@en ;
+skos:altLabel "CHAT-GPT"@en ;
+skos:prefLabel "ChatGPT"@en ;
+schema:description """ChatGPT is a model developed by OpenAI that interacts in a conversational way. 
+                      It is a sibling model to InstructGPT, which is trained to follow an instruction 
+                      in a prompt and provide a detailed response¹. The dialogue format makes it possible 
+                      for ChatGPT to answer follow-up questions, admit its mistakes, challenge incorrect premises, 
+                      and reject inappropriate requests.
+                   """@en ;
+skos:related dbpedia:GPT-3,
+             dbpedia:GPT-2,
+             dbpedia:Machine_learning,
+             dbpedia:Artificial_intelligence,
+             dbpedia:Language_model,
+             <http://data.openlinksw.com/oplweb/glossary-term/ArtificialGeneralIntelligence#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/LargeLanguageModel#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
+schema:image <https://www.ultimate.ai/hubfs/ChatGPT_Blog_Header_1200x628_2x.jpg> ;
+schema:relatedLink  <https://openai.com/blog/chatgpt>,
+                    <https://www.techradar.com/news/chatgpt-explained>,
+                    <https://openai.com/blog/chatgpt>,
+                    <https://en.wikipedia.org/wiki/ChatGPT>,
+                    <https://ontologforum.s3.amazonaws.com/General/EvaluatingGPT--JohnSowa_20230531.pdf>,
+                    <https://research.aimultiple.com/large-language-models/>, 
+                    <https://arxiv.org/pdf/2108.07258.pdf>, 
+                    <https://a16z.com/2023/05/25/ai-canon/>,
+                    <https://community.openlinksw.com/search?expanded=true&q=GPT%20%23rdbms%3Atips-tricks-howtos%20tags%3Ahowto%2Cchatgpt%20status%3Apublic%20%40kidehen> ;
 skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>
