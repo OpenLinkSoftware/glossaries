@@ -267,7 +267,10 @@ source:
                     <http://data.openlinksw.com/oplweb/glossary-term/ActivityStreams#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/ActivityPub#this>,
                     <http://data.openlinksw.com/oplweb/glossary-term/WebFinger#this>,
-                    <http://data.openlinksw.com/oplweb/glossary-term/EncryptionAtRest#this> ;
+                    <http://data.openlinksw.com/oplweb/glossary-term/EncryptionAtRest#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/LargeLanguageModel#this>,
+                    <http://data.openlinksw.com/oplweb/glossary-term/ArtificialGeneralIntelligence#this> ;
     schema:mentions
                     <http://www.w3.org/People/Berners-Lee/card#i> ,
                     <http://bit.ly/1kVSEFs> ,
@@ -666,6 +669,7 @@ skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>
 a skos:Concept ;
+owl:sameAs dbpedia:Artificial_intelligence ;
 schema:name "Artificial Intelligence"@en ;
 skos:altLabel "AI" ;
 schema:description """Software and Software-driven machinery equipped with an ability to apply reasoning 
@@ -678,6 +682,8 @@ skos:related dbpedia:Deductive_database,
              dbpedia:Linked_Data,
              dbpedia:Cognition, 
              dbpedia:Machine_learning,
+             dbpedia:Artificial_general_intelligence,
+             dbpedia:Language_model,
              <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>,
              <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>,
              <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
@@ -688,7 +694,62 @@ schema:relatedLink <https://www.gartner.com/smarterwithgartner/optimize-it-opera
                    <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>,
                    <https://medium.com/virtuoso-blog/magic-sets-and-custom-inference-rules-in-virtuoso-8-x-db783f8d98d2>,
                    <https://medium.com/virtuoso-blog/virtuoso-8-0-creating-a-custom-inference-rules-using-spin-vocabulary-d7a060f859ef>,
-                   <https://www.technologyreview.com/s/612404/is-this-ai-we-drew-you-a-flowchart-to-work-it-out/> ;
+                   <https://www.technologyreview.com/s/612404/is-this-ai-we-drew-you-a-flowchart-to-work-it-out/>,
+                   <https://ontologforum.s3.amazonaws.com/General/EvaluatingGPT--JohnSowa_20230531.pdf>,
+                   <https://a16z.com/2023/05/25/ai-canon/> ;
+skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/ArtificialGeneralIntelligence#this>
+a skos:Concept ;
+owl:sameAs dbpedia:Artificial_general_intelligence ;
+schema:name "Artificial General Intelligence"@en ;
+skos:altLabel "AGI" ;
+schema:description """Artificial general intelligence (AGI) is the representation of generalized human cognitive abilities in software so that, 
+                      faced with an unfamiliar task, the AGI system could find a solution. The intention of an AGI system is to match human task
+                      performing capability.
+                   """@en ;
+skos:related dbpedia:Deductive_database,
+             dbpedia:Analytics,
+             dbpedia:Semantic_Web,
+             dbpedia:Linked_Data,
+             dbpedia:Cognition, 
+             dbpedia:Machine_learning,
+             dbpedia:Artificial_intelligence,
+             dbpedia:Language_model,
+             <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
+schema:image <https://static.scientificamerican.com/sciam/cache/file/737236C8-7BF8-42C3-913CECC6C90D0295_source.jpg> ;
+schema:relatedLink  <https://www.techtarget.com/searchenterpriseai/definition/artificial-general-intelligence-AGI>,
+                    <https://arxiv.org/abs/2303.12712>, <https://ontologforum.s3.amazonaws.com/General/EvaluatingGPT--JohnSowa_20230531.pdf>,
+                    <https://www.scientificamerican.com/article/artificial-general-intelligence-is-not-as-imminent-as-you-might-think1/> ;
+skos:inScheme :this .
+
+<http://data.openlinksw.com/oplweb/glossary-term/LargeLanguageModel#this>
+a skos:Concept ;
+schema:name "Large Language Model"@en ;
+skos:altLabel "LLM" ;
+schema:description """A large language model (LLM) is a type of machine learning model that can perform a variety of 
+                      natural language processing (NLP) tasks, including generating and classifying text, answering questions 
+                      in a conversational manner and translating text from one language to another.
+                   """@en ;
+skos:related dbpedia:Semantic_Web,
+             dbpedia:Machine_learning,
+             dbpedia:Artificial_intelligence,
+             dbpedia:Language_model,
+             <http://data.openlinksw.com/oplweb/glossary-term/ArtificialGeneralIntelligence#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/ArtificialIntelligence#this>,
+             <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
+schema:image <https://lh5.googleusercontent.com/Rl3jaVxNteHl9tthHyprvvZD0ZlnKO5KHXKqKXDrLOR_Uyz1B4pOncHIRP3Ktap3YVQFS7KVbsu4kOzeEMrQ8qHPHs2HHcr7wZNTE5yfqwe5vX00ViNY6dwR6pFl9zAzIItp8blBV478vS2ZoI3buu4> ;
+schema:relatedLink  <https://www.techopedia.com/definition/34948/large-language-model-llm>, 
+                    <https://www.techtarget.com/whatis/definition/large-language-model-LLM>,
+                    <https://www.fastcompany.com/90884581/what-is-a-large-language-model>,
+                    <https://ontologforum.s3.amazonaws.com/General/EvaluatingGPT--JohnSowa_20230531.pdf>,
+                    <https://www.scientificamerican.com/article/artificial-general-intelligence-is-not-as-imminent-as-you-might-think1/>,
+                    <https://research.aimultiple.com/large-language-models/>, 
+                    <https://arxiv.org/pdf/2108.07258.pdf>, 
+                    <https://a16z.com/2023/05/25/ai-canon/> ;
 skos:inScheme :this .
 
 <http://data.openlinksw.com/oplweb/glossary-term/KnowledgeGraph#this>
