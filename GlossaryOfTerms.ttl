@@ -39,7 +39,7 @@ sourceDAV:
     schema:description """Description of OpenLink Software Glossary of Terms."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2023-06-01T10:57:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2023-06-15T16:07:00-05:00"^^xsd:dateTime ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
     cc:attributionName "OpenLink Software" ;
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
@@ -51,7 +51,7 @@ source:
     schema:description """Covers the definition of a variety of terms associated with realm of
                       Data, Networks, and Cloud abstractions."""@en ;
     schema:dateCreated "2014-01-03T13:00:00-05:00"^^xsd:dateTime ;
-    schema:dateModified "2023-06-01T10:57:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2023-06-15T16:07:00-05:00"^^xsd:dateTime ;
     owl:sameAs sourceDAV: ;
     schema:author <http://www.openlinksw.com/#this> ;
     xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
@@ -549,7 +549,7 @@ skos:inScheme :this .
 <http://data.openlinksw.com/oplweb/glossary-term/Argument#this>
 a skos:Concept ;
 schema:name "Argument"@en ;
-schema:description """A sequence of propositions that expresses a predefined (sort of lawlike or consequential) connection: 
+schema:description """A sequence of propositions that expresses a predefined (sort of law-like or consequential) connection: 
                       'It may be an emergency. You should answer the phone."""@en ;
 skos:related <http://data.openlinksw.com/oplweb/glossary-term/Proposition#this>, <http://dbpedia.org/resource/Argument> ;
 schema:cite <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ>,
@@ -1102,7 +1102,7 @@ skos:inScheme :this .
     schema:description """How access to data is controlled, i.e., data access policy creation and enforcement methodology."""@en ;
     schema:related <https://twitter.com/hashtag/ABAC#this> ,
                    <https://twitter.com/hashtag/ABAC#this> ,
-                   <http://data.openlinksw.com/oplweb/product_feature/AtributeBasedAccessControls#this> ,
+                   <http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this> ,
                    <http://data.openlinksw.com/oplweb/glossary-term/GDPR#this> ,
                    <http://www.visualcapitalist.com/personal-data-ecosystem/> ;
     skos:narrower  <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this> ,
@@ -1121,7 +1121,7 @@ skos:inScheme :this .
                    <https://twitter.com/hashtag/ABAC#this> ,
                    <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this> ,
                    <http://data.openlinksw.com/oplweb/glossary-term/RBAC#this> ,
-                   <http://data.openlinksw.com/oplweb/product_feature/AtributeBasedAccessControls#this> ,
+                   <http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this> ,
                    <http://data.openlinksw.com/oplweb/glossary-term/GDPR#this> ;
     skos:inScheme :this .
 
@@ -1142,7 +1142,7 @@ skos:inScheme :this .
                    <https://twitter.com/hashtag/GDPRthis> ,
                    <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this> ,
                    <http://data.openlinksw.com/oplweb/glossary-term/RBAC#this> ,
-                   <http://data.openlinksw.com/oplweb/product_feature/AtributeBasedAccessControls#this> ,
+                   <http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this> ,
                    <http://data.openlinksw.com/oplweb/glossary-term/GDPR#this> ,
                    <http://www.visualcapitalist.com/personal-data-ecosystem/> ;
     schema:mainEntityOfPage <https://medium.com/virtuoso-blog/using-a-semantic-web-of-linked-data-to-reconcile-disparate-identities-83ab7a315568> ,
@@ -1155,7 +1155,7 @@ skos:inScheme :this .
     schema:name "Demonstrating PII Fluidity using Entity Relationship Type Semantics" ;
     schema:image <https://i.pinimg.com/originals/71/96/d2/7196d29bbb232c1c071ae3ef50809ab7.png> ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this> ,
-                 <http://data.openlinksw.com/oplweb/product_feature/AtributeBasedAccessControls#this> ,
+                 <http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/GDPR#this> ,
                  <http://www.visualcapitalist.com/personal-data-ecosystem/> ;
     skos:inScheme :this .
@@ -1175,7 +1175,7 @@ skos:inScheme :this .
                  <https://twitter.com/hashtag/GDPRthis> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/ABAC#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/RBAC#this> ,
-                 <http://data.openlinksw.com/oplweb/product_feature/AtributeBasedAccessControls#this> ,
+                 <http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this> ,
                  <http://data.openlinksw.com/oplweb/glossary-term/GDPR#this> ;
     skos:inScheme :this .
 
@@ -1625,9 +1625,9 @@ rdf:Property
     a skos:Concept ;
     schema:name "WebFinger" ;
     owl:sameAs <http://dbpedia.org/resource/WebFinger> ;
-    schema:description """A resolution protocol used to associate entities denoted using acct: or mailto: scheme Uniform Resource Identiers to
+    schema:description """A resolution protocol used to associate entities denoted using acct: or mailto: scheme Uniform Resource Identifiers with
     subject profile information represented in a variety of structured data formats. These formats include JSON dialects such as the 
-    Extensible Resource Description [XRD], JSON Resource Descriptors [JRD](content-type 'application/json'), and ActivityStreams (content-type 'application/activity+json') 
+    Extensible Resource Description [XRD], JSON Resource Descriptors [JRD] (content-type 'application/json'), and ActivityStreams (content-type 'application/activity+json') 
     which is commonly used across the burgeoning Fediverse. Platforms that support this protocol provide a '.well-known/host-meta' or '.well-known/webfinger' 
     service endpoint for service discovery via HTTP. """@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#WebFinger" ;
@@ -1980,7 +1980,7 @@ rdf:Property
     wdrs:describedby  source: ;
     schema:name "Network Sub-Group" ;
     schema:image <http://snap.stanford.edu/agm/ncaa.png> ;
-    schema:description """Part of a network cluster formed around a variety of items. Membership could be explicit or implict. 
+    schema:description """Part of a network cluster formed around a variety of items. Membership could be explicit or implict.
                           For example, Facebook uses friendship claims to create friend groups. LinkedIn does the same for contact 
                           groupings."""@en ;
     skos:related <https://wenger-trayner.com/resources/communities-versus-networks#> ,
