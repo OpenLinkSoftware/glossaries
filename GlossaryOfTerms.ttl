@@ -309,8 +309,8 @@ source:
     a skos:ConceptScheme ;
     wdrs:describedby  source: ;
     schema:name "OpenLink Data Related Terms Concept Scheme";
-    schema:description """Glossary covering the definition of a variety of terms associated
-                      with realm of Data, Networks, and Cloud abstractions."""@en .
+    schema:description """Glossary covering the definitions of a variety of terms associated
+                      with the realms of Data, Networks, and Cloud abstractions."""@en .
 
 ## Document creator's company description
 
@@ -390,8 +390,8 @@ source:
     schema:name "SPINRulesVocab"@en ;
     skos:prefLabel "SPIN Inference Rules Vocabulary"@en ;
     schema:description """Vocabulary of terms that enable the creation of custom reasoning & inference rules using SPARQL
-                      CONSTRUCT queries. Fundamentally, this is the product of applying the combined prowess of RDF
-                      data definition language, SPARQL query language, and a Vocabulary to produce a modern variant
+                      CONSTRUCT queries. Fundamentally, this is the product of applying the combined prowess of the RDF
+                      data definition language, the SPARQL query language, and a Vocabulary to produce a modern variant
                       of Datalog that has the added benefit of working naturally with the infrastructure provided by
                       the underlying architecture of the World Wide Web."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#SpinRules" ;
@@ -414,8 +414,8 @@ source:
     skos:prefLabel "SHACL Inference Rules Vocabulary"@en ;
     schema:description """Vocabulary of terms that enable the creation of custom reasoning & inference 
                       rules using SPARQL CONSTRUCT queries. In similar fashion to the SPIN Inference 
-                      Rules Vocabulary, it leverages the combined prowess of RDF data definition language, 
-                      SPARQL query language, and a Vocabulary of terms produce a modern variant of Datalog. 
+                      Rules Vocabulary, it leverages the combined prowess of the RDF data definition language, 
+                      the SPARQL query language, and a Vocabulary of terms to produce a modern variant of Datalog. 
                       It differs from SPIN's vocabulary by using a different namespace and including terms 
                       that allows the use of curies in SPARQL CONSTRUCT statements used to create rules.
                    """@en ;
@@ -431,7 +431,7 @@ source:
     schema:mainEntityOfPage <https://www.w3.org/TR/shacl-af/#SPARQLRule> ;
     skos:related source: .
 
-## Signs -- Mark, Tokens, and Types (Mr. Mark Token Type mnemonic)
+## Signs — Mark, Tokens, and Types (Mr. Mark Token Type mnemonic)
 
 <http://data.openlinksw.com/oplweb/glossary-term/Mark#this>
 a skos:Concept ;
@@ -463,7 +463,7 @@ schema:description """A type is a general category, principle, law, or habit for
                       As an example, Peirce (CP 4.537) cited the word 'the'. English has a single type, spelled T-H-E, of
                       which an article has several hundred marks that are classified as tokens of that type. Different marks
                       might be printed in different fonts, written in different handwriting, or spoken in different voices, but
-                      each one is a token of the word type 'the'. """@en ;
+                      each one is a token of the word type 'the'."""@en ;
 schema:cite sowa-signs:pdf , 
             <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ> ,
             <https://oss.adm.ntu.edu.sg/ylee063/2d-ii-presentation-semiotic-signs-symbols-ways-of-meaning> ;
@@ -478,11 +478,11 @@ skos:narrower <http://data.openlinksw.com/oplweb/glossary-term/Mark#this>,
                <http://data.openlinksw.com/oplweb/glossary-term/Token#this>,
               <http://data.openlinksw.com/oplweb/glossary-term/Type#this> ;
 schema:description """A sign, or representamen, is something which stands to somebody for something in some
-                      respect or capacity. It addresses somebody, that is, creates in the mind of that person an 
+                      respect or capacity. It addresses somebody; that is, it creates in the mind of that person an 
                       equivalent sign, or perhaps a more developed sign. That sign which it creates I call the
                       interpretant of the first sign. The sign stands for something, its object. It stands for that
                       object, not in all respects, but in reference to a sort of idea, which I have sometimes called
-                      the ground of the representamen. -- John F. Sowa"""@en ;
+                      the ground of the representamen. — John F. Sowa"""@en ;
 schema:cite sowa-signs:pdf , 
             <https://groups.google.com/d/msg/ontolog-forum/2TDWB_QaQIg/ldfw3oAxAwAJ> ,
              <https://oss.adm.ntu.edu.sg/ylee063/2d-ii-presentation-semiotic-signs-symbols-ways-of-meaning> ;
@@ -705,9 +705,9 @@ a skos:Concept ;
 owl:sameAs dbpedia:Artificial_general_intelligence ;
 schema:name "Artificial General Intelligence"@en ;
 skos:altLabel "AGI" ;
-schema:description """Artificial general intelligence (AGI) is the representation of generalized human cognitive abilities in software so that, 
-                      faced with an unfamiliar task, the AGI system could find a solution. The intention of an AGI system is to match human task
-                      performing capability.
+schema:description """Artificial general intelligence (AGI) is the representation of generalized human cognitive abilities in software so that,
+                      faced with an unfamiliar task, the AGI system can find a solution. The intent behind an AGI system is to match the
+                      capability of a human performing a given task.
                    """@en ;
 skos:related dbpedia:Deductive_database,
              dbpedia:Analytics,
@@ -732,7 +732,7 @@ schema:name "Large Language Model"@en ;
 skos:altLabel "LLM" ;
 schema:description """A large language model (LLM) is a type of machine learning model that can perform a variety of 
                       natural language processing (NLP) tasks, including generating and classifying text, answering questions 
-                      in a conversational manner and translating text from one language to another.
+                      in a conversational manner, and translating text from one language to another.
                    """@en ;
 skos:related dbpedia:Semantic_Web,
              dbpedia:Machine_learning,
@@ -1221,7 +1221,7 @@ skos:inScheme :this .
 <http://vos.openlinksw.com/owiki/wiki/VOS/VAL_SpongerACLs>
     a   schema:CreativeWork,
         foaf:Document ;
-    schema:name "Documentation -- Virtuoso Authentication Layer (VAL) & Access Controls"@en;
+    schema:name "Documentation — Virtuoso Authentication Layer (VAL) & Access Controls"@en;
     schema:description """Documentation about how to use Access Controls to control access to Named Graphs (Data Sources) accessible
                           accessible to Virtuoso Linked Data Transformation Middleware Layer ("Sponger")."""@en ;
     schema:mentions <http://data.openlinksw.com/oplweb/glossary-term/RBAC#this> ,
@@ -1253,7 +1253,7 @@ skos:inScheme :this .
     skos:prefLabel "Linked Data Platform"@en ;
     schema:description """Protocol for performing a variety of operations (e.g., Create,
                       Read, Update, and Delete) against resources (documents with static
-                      or dynamically generated content) -- over HTTP-based networks. A key
+                      or dynamically generated content) — over HTTP-based networks. A key
                       differentiating characteristic between this protocol and WebDAV is the
                       fact that file (document) and folder (collection) metadata is represented
                       using RDF Language, in Linked Data form, using TURTLE Notation (with JSON-LD
@@ -1794,7 +1794,7 @@ rdf:Property
     schema:name "Denotes" ;
     schema:description """Relation that associates an identifier with an entity. In this kind of relation,
                       the subject is a sign while the object is an entity signified by the sign, i.e., the sign's
-                      referent. In RDF, this relation is implicit -- making it an integral implementation aspect of
+                      referent. In RDF, this relation is implicit — making it an integral implementation aspect of
                       any RDF compliant processor."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/Referent#this> ,
                        <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
@@ -1840,7 +1840,7 @@ rdf:Property
     wdrs:describedby  source: ;
     schema:name "HTTP" ;
     schema:description """Protocol for performing a variety of operations (e.g., Create, Read,
-                      Update, and Delete) against hypertext documents -- over TCP/IP-based 
+                      Update, and Delete) against hypertext documents — over TCP/IP-based 
                       networks."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#HTTP" ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ;
@@ -1855,7 +1855,7 @@ rdf:Property
     wdrs:describedby  source: ;
     schema:name "WebDAV" ;
     schema:description """Protocol for performing a variety of operations (e.g., Create, Read,
-                      Update, and Delete) against hypertext documents -- over TCP/IP-based 
+                      Update, and Delete) against hypertext documents — over TCP/IP-based 
                       networks."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#WebDAV" ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/HTTP#this> ;
@@ -1870,7 +1870,7 @@ rdf:Property
     schema:name "WebID-TLS" ;
     schema:description """WebID Authentication Protocol."""@en ;
     schema:description """Combined use of Transport Layer Security (as already implemented by existing HTTPS user agents)
-                          and RDF-based entity relationship semantics as a mechanism authenticating WebIDs -- that scales
+                          and RDF-based entity relationship semantics as a mechanism authenticating WebIDs — that scales
                           from local area networks (or Intranets clouds) to the wide area networks (e.g., the public Web
                           and Internet clouds)."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#WebIDTLS" ;
@@ -1889,7 +1889,7 @@ rdf:Property
     schema:name "NetID-TLS" ;
     schema:description """NetID Authentication Protocol."""@en ;
     schema:description """Combined use of Transport Layer Security (as already implemented by existing HTTPS user agents)
-                          and RDF-based entity relationship semantics as a mechanism for authenticating WebIDs and NetIDs --
+                          and RDF-based entity relationship semantics as a mechanism for authenticating WebIDs and NetIDs —
                           that scales from local area networks (or Intranets clouds) to the wide area networks (e.g.,
                           the public Web and Internet clouds)."""@en ;
     wdrs:describedby  source: ;
@@ -1918,7 +1918,7 @@ rdf:Property
     schema:name "Graph" ;
     schema:image <https://cdn.graphgrid.com/content/uploads/2016/01/11131322/WhatIsAGraphDatabase.png> ;
     schema:description """How Entity Relationship Types (Relations) are represented on paper, screens, 
-                          and any other projection medium -- using a graphic notation. """@en ;
+                          and any other projection medium — using a graphic notation. """@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
@@ -1944,7 +1944,7 @@ rdf:Property
     schema:name "Network" ;
     schema:image <https://cdn-images-1.medium.com/max/800/1*XEIW9h-UGL4aFvuTArSC2Q.png> ;
     schema:description """How Entity Relationship Types (Relations) that are transitive in nature are represented on paper, screens, 
-                          and any other projection medium -- using a graphic notation. Relationship Type Transitivity is the critical
+                          and any other projection medium — using a graphic notation. Relationship Type Transitivity is the critical
                           attribute that makes a Network Depiction a sub-category of Graph Depiction"""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/URI#this> ,
                            <http://data.openlinksw.com/oplweb/glossary-term/URL#this> ,
@@ -1980,7 +1980,7 @@ rdf:Property
     wdrs:describedby  source: ;
     schema:name "Network Sub-Group" ;
     schema:image <http://snap.stanford.edu/agm/ncaa.png> ;
-    schema:description """Part of a network clustered formed around a variety of items. Membership could be explicit or implicit. 
+    schema:description """Part of a network cluster formed around a variety of items. Membership could be explicit or implict.
                           For example, Facebook uses friendship claims to create friend groups. LinkedIn does the same for contact 
                           groupings."""@en ;
     skos:related <https://wenger-trayner.com/resources/communities-versus-networks#> ,
@@ -2001,7 +2001,7 @@ rdf:Property
     schema:image <http://snap.stanford.edu/agm/ncaa.png> ;
     schema:description """Part of a group clustered around topics-of-interest, combined with an explicit assertion of membership by actual members or observers
                           (including a system that infers this variant of a network group/cluster). Explicit assertions could be found in the profile documents of 
-                          community members, e.g., a WebID-Profile document."""@en ;
+                          community members such as their WebID-Profile documents."""@en ;
     skos:related <https://wenger-trayner.com/resources/communities-versus-networks#> ,
                            <https://medium.com/conductal/the-difference-between-communities-groups-and-networks-179ac2052f25#>,
                            <http://snap.stanford.edu/agm#>,
@@ -2680,7 +2680,7 @@ owl:IrreflexiveProperty
 <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>
     a bibo:Article ;
     wdrs:describedby  source: ;
-    schema:name """Entity Relationship Model -- Toward a Unified View of Data"""@en ;
+    schema:name """Entity Relationship Model — Toward a Unified View of Data"""@en ;
     schema:description """A data model, called the entity-relationship model, is proposed.
                       This model incorporates some of the important
                       semantic information about the real world.
@@ -3072,7 +3072,7 @@ owl:IrreflexiveProperty
     skos:altLabel  """Open-Standards-based Structured Data."""@en ;
     schema:description """Open-Standards-based Structured Data Representation based on the use
                           of standards (e.g., CSV, JSON, RDF-Turtle, JSON-LD, HTML+Microdata,
-                          HTML+RDFa, RDF/XML, etc.) -- thereby making structured data reusable
+                          HTML+RDFa, RDF/XML, etc.) — thereby making structured data reusable
                           across a variety of operating systems, applications, frameworks,
                           services, and platforms."""@en ;
     skos:broader <http://data.openlinksw.com/oplweb/glossary-term/Data#this> ,
@@ -3094,7 +3094,7 @@ owl:IrreflexiveProperty
     skos:altLabel """Public Domain Open-Standards-based Structured Data."""@en ;
     schema:description """Public Open-Standards-based Structured Data Representation based on
                           the combined use of licensing and open standards (e.g., CSV, JSON,
-                          RDF-Turtle, JSON-LD, HTML+Microdata, HTML+RDFa, RDF/XML, etc.) --
+                          RDF-Turtle, JSON-LD, HTML+Microdata, HTML+RDFa, RDF/XML, etc.) —
                           thereby making structured data freely accessible, redistributable,
                           and reusable across a variety of operating systems, applications,
                           frameworks, services, and platforms."""@en ;
@@ -3211,7 +3211,7 @@ owl:IrreflexiveProperty
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#DBpedia" ;
     schema:description """RDF-based Linked Data rendition of Wikipedia's encyclopedic content."""@en ;
     schema:description """A community-based effort that's used crowd-sourcing to transform Wikipedia content into
-                          web-like structured data -- endowed with human and machine comprehensible entity relationship
+                          web-like structured data — endowed with human and machine comprehensible entity relationship
                           semantics. As a core component of the massive Linked Open Data (LOD) Cloud, DBpedia is a massive
                           5-Star Linked Data collective comprised of: entities, entity types, entity relationships, and
                           entity relation semantics."""@en ;
@@ -3242,7 +3242,7 @@ owl:IrreflexiveProperty
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#DBpediaLive" ;
     schema:description """Live edition of DBpedia"""@en ;
     schema:description """A community-based effort that's used crowd-sourcing to transform Wikipedia content into
-                          web-like structured data -- endowed with human and machine comprehensible entity relationship
+                          web-like structured data — endowed with human and machine comprehensible entity relationship
                           semantics. This live edition of DBpedia is the frequently updates as content changes occur in
                           Wikipedia."""@en ;
     schema:mainEntityOfPage <http://live.dbpedia.org/> ;
@@ -3265,7 +3265,7 @@ owl:IrreflexiveProperty
     schema:name "OpenLink DBpedia Live" ;
     schema:description """Live edition of DBpedia Live hosted by OpenLink Software"""@en ;
     schema:description """A community-based effort that's used crowd-sourcing to transform Wikipedia content into
-                          web-like structured data -- endowed with human and machine comprehensible entity relationship
+                          web-like structured data — endowed with human and machine comprehensible entity relationship
                           semantics. This live edition of DBpedia is frequently updated as content changes occur in
                           Wikipedia."""@en ;
     schema:author <http://www.openlinksw.com/#this> ;
@@ -3672,7 +3672,7 @@ owl:IrreflexiveProperty
                 5. Post Commenting (or replying to) 
                 6. Account Blocking and UnBlocking
     The content of these documents are constructed using Linked Data principles and reside in a Fediverse DataSpace associated with 
-    (C)reate, (R)ead, (U)pdate, and (D)elete operation operation endpoints that support the ActivityPub protocol."""@en ;
+    (C)reate, (R)ead, (U)pdate, and (D)elete operation endpoints that support the ActivityPub protocol."""@en ;
     skos:related <http://data.openlinksw.com/oplweb/glossary-term/RDF#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this> ,
                 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this> ,
@@ -4073,7 +4073,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "SPARQL & SQL Hybrid Query Language" ;
     schema:description """Declarative query language for performing Create, Read, Update, and Delete
-                      operations on data represented as relational tables and/or RDF statement --
+                      operations on data represented as relational tables and/or RDF statement —
                       also known colloquially referred to as relational property (predicate) graphs.
                       This query language enables incorporation of SPARQL queries into SQL queries
                       via the SQL WHERE clause."""@en ;
@@ -4144,7 +4144,7 @@ owl:IrreflexiveProperty
                       and updating entity relations represented as RDF triple-based statements
                       (colloquially referred to as: property or predicate graphs). As a moderen
                       query language, SPARQL enables broad exploitation of relational data theory
-                      while also incorporating concepts such as inference and reasoning --
+                      while also incorporating concepts such as inference and reasoning —
                       historically associated deductive database technology."""@en ;
     <http://data.openlinksw.com/oplweb/glossary-term/hashTag#this> "#SPARQL" ;
     owl:sameAs <http://dbpedia.org/resource/SPARQL> ;
@@ -4157,7 +4157,7 @@ owl:IrreflexiveProperty
                             <https://medium.com/virtuoso-blog/what-is-a-virtuoso-sparql-endpoint-and-why-is-it-important-5244df738a3e> ;
     skos:inScheme :this .
 
-## SPARQL Protocol -- HTTP-based Protocol for executing Queries against SPARQL compliant data sources
+## SPARQL Protocol — HTTP-based Protocol for executing Queries against SPARQL compliant data sources
 
 <http://data.openlinksw.com/oplweb/glossary-term/SPARQLProtocol#this>
     a <http://data.openlinksw.com/oplweb/glossary-term/Language#this> ,
@@ -4187,7 +4187,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "SPARQL 1.1 Query Protocol Specification" .
 
-## SPARQL Query Results Format -- Query Results (or solution) data representation and transmission (serialization) format
+## SPARQL Query Results Format — Query Results (or solution) data representation and transmission (serialization) format
 
 <http://data.openlinksw.com/oplweb/glossary-term/SPARQLResultsFormat#this>
     a <http://data.openlinksw.com/oplweb/glossary-term/Language#this> ,
@@ -4198,7 +4198,7 @@ owl:IrreflexiveProperty
                       formats that include: CSV, TSV, XML, and JSON for tabular representation of
                       SELECT and ASK query results; and Turtle, N-Triples, JSON-LD, HTML+Microdata,
                       HTML+RDFa, RDF/XML, CSV, TSV, and others, for handling DESCRIBE and CONSTRUCT
-                      query results -- which are basically RDF statements describing entity relations
+                      query results — which are basically RDF statements describing entity relations
                       that match a given query pattern."""@en ;
     skos:related <http://www.w3.org/TR/2013/REC-sparql11-results-json-20130321> ,
                            <http://www.w3.org/TR/2013/REC-sparql11-results-csv-tsv-20130321> ,
@@ -4210,7 +4210,7 @@ owl:IrreflexiveProperty
         schema:Article,
         schema:TechArticle ;
     wdrs:describedby  source: ;
-    schema:name "SPARQL 1.1 (SELECT & ASK) Query Results Format Specification -- JSON" .
+    schema:name "SPARQL 1.1 (SELECT & ASK) Query Results Format Specification — JSON" .
 
 <http://www.w3.org/TR/2013/REC-sparql11-results-csv-tsv-20130321>
     a   schema:WebPage,
@@ -4218,7 +4218,7 @@ owl:IrreflexiveProperty
         schema:Article,
         schema:TechArticle ;
     wdrs:describedby  source: ;
-    schema:name "SPARQL 1.1 (SELECT & ASK) Query Results Format Specification -- CSV & TSV" .
+    schema:name "SPARQL 1.1 (SELECT & ASK) Query Results Format Specification — CSV & TSV" .
 
 <http://www.w3.org/TR/2013/REC-rdf-sparql-XMLres-20130321>
     a   schema:WebPage,
@@ -4226,9 +4226,9 @@ owl:IrreflexiveProperty
         schema:Article,
         schema:TechArticle ;
     wdrs:describedby  source: ;
-    schema:name "SPARQL 1.1 (SELECT & ASK) Query Results Format Specification -- XML" .
+    schema:name "SPARQL 1.1 (SELECT & ASK) Query Results Format Specification — XML" .
 
-## SPARQL Graph Update Protocol -- HTTP-based Protocol for performing Create, Update, and Delete
+## SPARQL Graph Update Protocol — HTTP-based Protocol for performing Create, Update, and Delete
 ## operations scoped to RDF documents
 ## (i.e., containers of RDF triple-based statements)
 
@@ -4255,7 +4255,7 @@ owl:IrreflexiveProperty
     wdrs:describedby  source: ;
     schema:name "SPARQL 1.1 Graph Store Protocol" .
 
-## SPARQL-FED -- Federated variant of SPARQL
+## SPARQL-FED — Federated variant of SPARQL
 
 <http://data.openlinksw.com/oplweb/glossary-term/SPARQLFederatedQuery#this>
     a <http://data.openlinksw.com/oplweb/glossary-term/Language#this> ,
@@ -4333,7 +4333,7 @@ owl:IrreflexiveProperty
     skos:altLabel "R2RML" ;
     schema:description """A vocabulary comprised of terms used to describe how entity relations
                       represented by SQL relational tables are mapped to entity relations
-                      represented by RDF statements (subject→predicate→object triples) --
+                      represented by RDF statements (subject→predicate→object triples) —
                       for transformation by a compliant processor. Basically, an R2RML processor
                       will produce an RDF model-based representation of SQL entity relations by
                       processing the contents of an R2RML document."""@en ;
